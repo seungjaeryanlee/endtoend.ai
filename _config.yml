@@ -1,0 +1,13 @@
+# basic options
+title: End to End AI
+author: Seung Jae (Ryan) Lee
+email: seungjaeryanlee@gmail.com
+description: Simplifying complex systems with AI
+github_username:  seungjaeryanlee
+linkedin_username: seungjaeryanlee
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+permalink: pretty
