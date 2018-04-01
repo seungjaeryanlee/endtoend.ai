@@ -1,8 +1,14 @@
 # basic options
 title: End to End AI
-author: Seung Jae (Ryan) Lee
-email: seungjaeryanlee@gmail.com
-description: Simplifying complex systems with AI
+
+author1: Seungmin Brian Lee
+email1: sl3254@columbia.edu
+author1-description: Computer Vision.
+
+author2: Seung Jae Ryan Lee
+email2: seungjaeryanlee@gmail.com
+author2-description: Reinforcement Learning.
+
 github_username:  seungjaeryanlee
 linkedin_username: seungjaeryanlee
 
