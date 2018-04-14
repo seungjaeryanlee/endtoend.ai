@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Effective Data: Partition
+title: "Effective Data: Partition"
 author: Seung Jae (Ryan) Lee
 ---
 
