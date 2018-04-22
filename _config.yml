@@ -17,7 +17,7 @@ author2-linkedin_username: seungjaeryanlee
 markdown: kramdown
 theme: minima
 
-permalink: pretty
+permalink: /:categories/:title
 
 plugins:
   - jekyll-feed
