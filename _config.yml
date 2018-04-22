@@ -21,3 +21,4 @@ permalink: /:categories/:title
 
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
