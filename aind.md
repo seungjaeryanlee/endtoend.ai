@@ -7,4 +7,5 @@ AIND is Udacity's AI Nanodegree program designed to introduce students to the fi
 
 1. [Intro to Artificial Intelligence](/mooc/aind/1)
 2. [Constraint Satisfaction Problems](/mooc/aind/2)
-3. [Informed Search](/mooc/aind/3)
+3. [Uninformed Search](/mooc/aind/3)
+4. [Informed Search](/mooc/aind/4)
