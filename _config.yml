@@ -22,3 +22,6 @@ permalink: /:categories/:title
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
+
+# Fixed Mixed Content Error
+url: "https://www.endtoend.ai"
