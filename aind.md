@@ -11,4 +11,4 @@ AIND is Udacity's AI Nanodegree program designed to introduce students to the fi
 4. [Informed Search](/mooc/aind/4)
 5. [Propositional Logic](/mooc/aind/5)
 6. [First Order Logic](/mooc/aind/6)
-7. [Introduction to Planning](/mood/aind/7)
+7. [Introduction to Planning](/mooc/aind/7)
