@@ -8,8 +8,13 @@
   margin-top: 30px;
 }
 .post-content img {
+  /* Add more horizontal margin */
   margin-top: 15px;
   margin-bottom: 15px;
+  /* Center Image */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 /**
