@@ -7,3 +7,4 @@ Massive Open Online Courses are a great way to learn new topics. We have taken n
 
 MOOCS
  * [Udacity AI Nanodegree](/mooc/aind)
+ * [Udacity Deep Learning Nanodegree](/mooc/dlnd)
