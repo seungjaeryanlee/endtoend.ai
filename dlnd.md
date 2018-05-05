@@ -7,3 +7,4 @@ DLND is Udacity's Deep Learning Nanodegree program designed to introduce student
 
 1. [Perceptrons](/mooc/dlnd/1)
 2. [Error Function and Gradient Descent](/mooc/dlnd/2)
+3. [Neural Network](/mooc/dlnd/3)
