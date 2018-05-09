@@ -14,3 +14,4 @@ AIND is Udacity's AI Nanodegree program designed to introduce students to the fi
 7. [Introduction to Planning](/mooc/aind/7)
 8. [Classical Planning](/mooc/aind/8)
 9. [Hill Climbing and Simulated Annealing](/mooc/aind/9)
+10. [Genetic Algorithms](/mooc/aind/10)
