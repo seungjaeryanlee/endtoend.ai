@@ -18,3 +18,5 @@ AIND is Udacity's AI Nanodegree program designed to introduce students to the fi
 11. [Minimax Search](/mooc/aind/11)
 12. [Improving Minimax Search](/mooc/aind/12)
 13. [Extending Minimax Search](/mooc/aind/13)
+14. [Probability](/mooc/aind/14)
+15. [Bayes' Theorem and Naive Bayes](/mooc/aind/15)
