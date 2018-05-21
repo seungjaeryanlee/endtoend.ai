@@ -21,3 +21,5 @@ AIND is Udacity's AI Nanodegree program designed to introduce students to the fi
 14. [Probability](/mooc/aind/14)
 15. [Bayes' Theorem and Naive Bayes](/mooc/aind/15)
 16. [Bayes Network](/mooc/aind/16)
+17. [Exact Inference: Enumeration](/mooc/aind/17)
+18. [Exact Inference: Variable Elimination](/mooc/aind/18)
