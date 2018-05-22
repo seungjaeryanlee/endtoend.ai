@@ -25,3 +25,4 @@ AIND is Udacity's AI Nanodegree program designed to introduce students to the fi
 18. [Exact Inference: Variable Elimination](/mooc/aind/18)
 19. [Approximate Inference](/mooc/aind/19)
 20. [Hidden Markov Models](/mooc/aind/20)
+21. [Dynamic Time Warping](/mooc/aind/21)
