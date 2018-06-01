@@ -18,3 +18,8 @@ plugins:
 
 # Fixed Mixed Content Error
 url: "https://www.endtoend.ai"
+
+# Put all pages except index.md in _pages directory
+include:
+  - "_pages"
+  - "_posts"
