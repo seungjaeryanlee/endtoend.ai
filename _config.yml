@@ -22,4 +22,7 @@ url: "https://www.endtoend.ai"
 # Put all pages except index.md in _pages directory
 include:
   - "_pages"
+  - "_pages/mooc"
+  - "_pages/mooc/aind"
+  - "_pages/mooc/dlnd"
   - "_posts"
