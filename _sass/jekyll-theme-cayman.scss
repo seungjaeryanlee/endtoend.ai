@@ -1,9 +1,6 @@
 @import "normalize";
 @import "rouge-github";
 @import "variables";
-@import "home";
-@import "footer";
-@import "blog";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 @mixin large {
@@ -360,3 +357,7 @@ a {
 .site-footer-credits {
   color: $blockquote-text-color;
 }
+
+@import "home";
+@import "footer";
+@import "blog";
