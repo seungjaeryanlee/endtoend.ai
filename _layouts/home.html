@@ -17,35 +17,12 @@
     </section>
 
     <section class="main-content">
-      <div class="cards">
-
-        <a class="card" href="/sutton-barto-notebooks">
-          <img src="/assets/home/sutton-barto.png">
-          <h3>Sutton and Barto Notebooks</h3>
-        </a>
-        <a class="card" href="/mooc">
-          <img src="/assets/home/mooc.svg">
-          <h3>MOOC Notes</h3>
-        </a>
-        <a class="card" href="/blog">
-          <img src="/assets/home/blog.svg">
-          <h3>Blog</h3>
-        </a>
-      </div>
+      {%- include cards.html -%}
 
       {{ content }}
-
     </section>
 
-    <footer class="site-footer">
-      <div class="site-footer-links">
-        <span class="site-footer-home"><a href="/">Home</a></span>
-        <span class="site-footer-about"><a href="/about">About</a></span>
-        <span class="site-footer-github"><a href="https://github.com/seungjaeryanlee/">
-          <i class="fa fa-lg fa-github" aria-hidden="true"></i>
-        </a></span>
-      </div>
-    </footer>
+    {%- include footer.html -%}
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119780437-1"></script>

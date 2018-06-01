@@ -1,60 +1,9 @@
-<footer class="site-footer h-card">
-    <data class="u-url" href="{{ "/" | relative_url }}"></data>
-  
-    <div class="wrapper">
-  
-      <h2 class="footer-heading">{{ site.title | escape }}</h2>
-  
-      <div class="footer-col-wrapper">
-        <div class="footer-col footer-col-1">
-          <ul class="contact-list">
-            <li class="p-name">
-              {%- if site.author1 -%}
-                {{ site.author1 | escape }}
-              {%- else -%}
-                {{ site.title | escape }}
-              {%- endif -%}
-              </li>
-              {%- if site.email1 -%}
-              <li><a class="u-email" href="mailto:{{ site.email1 }}">{{ site.email1 }}</a></li>
-              {%- endif -%}
-          </ul>
-        </div>
-  
-        <div class="footer-col footer-col-2">
-          {%- include social1.html -%}
-        </div>
-  
-        <div class="footer-col footer-col-3">
-          <p>{{- site.author1-description | escape -}}</p>
-        </div>
-      </div>
-
-      <div class="footer-col-wrapper">
-        <div class="footer-col footer-col-1">
-          <ul class="contact-list">
-            <li class="p-name">
-              {%- if site.author2 -%}
-                {{ site.author2 | escape }}
-              {%- else -%}
-                {{ site.title | escape }}
-              {%- endif -%}
-              </li>
-              {%- if site.email2 -%}
-              <li><a class="u-email" href="mailto:{{ site.email2 }}">{{ site.email2 }}</a></li>
-              {%- endif -%}
-          </ul>
-        </div>
-  
-        <div class="footer-col footer-col-2">
-          {%- include social2.html -%}
-        </div>
-  
-        <div class="footer-col footer-col-3">
-          <p>{{- site.author2-description | escape -}}</p>
-        </div>
-      </div>
-  
-    </div>
-  
-  </footer>
+<footer class="site-footer">
+  <div class="site-footer-links">
+    <span class="site-footer-home"><a href="/">Home</a></span>
+    <span class="site-footer-about"><a href="/about">About</a></span>
+    <span class="site-footer-github"><a href="https://github.com/seungjaeryanlee/">
+      <i class="fa fa-lg fa-github" aria-hidden="true"></i>
+    </a></span>
+  </div>
+</footer>
