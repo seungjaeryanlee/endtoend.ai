@@ -29,6 +29,5 @@ $grey-color:       #828282 !default;
 }
 
 .post-link {
-    display: block;
     @include relative-font-size(1.5);
 }
