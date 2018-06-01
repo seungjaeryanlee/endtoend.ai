@@ -1,10 +1,14 @@
 /**
- * Post list from Minima
+ * Style from Minima
  */
 $spacing-unit:     30px !default;
 $base-font-size:   16px !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $grey-color:       #828282 !default;
+
+@mixin relative-font-size($ratio) {
+    font-size: $base-font-size * $ratio;
+}
 
 .post-list {
     margin-left: 0;
