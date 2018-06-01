@@ -25,7 +25,8 @@ $grey-color:       #828282 !default;
 }
 
 .post-title {
-    margin-top: 0;
+    /* HACK: Override style in main SCSS file */
+    margin-top: 0 !important;
 }
 
 .post-link {
