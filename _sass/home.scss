@@ -1,0 +1,38 @@
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card {
+    flex: 1 0 calc(33% - 28px);
+    padding: 14px;
+    margin: 0 14px 28px 14px;
+
+    text-align: center;
+
+    border: 2px solid lightgray;
+    box-shadow: 3px 3px gray;
+
+    transition: .4s;
+}
+.card:hover {
+    background-color: lightgray;
+    box-shadow: 5px 5px darkgray;
+}
+.card:hover h3 {
+    text-decoration: none;
+}
+.card img {
+    width: 50%;
+}
+
+
+@media screen and (max-width: 40em) {
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card {
+        flex: 0 1 calc(100% - 1em);
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="/favicon-256.png"/>
+    <title>{{ page.title | default: site.title }}</title>
+    {% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">{{ page.header_title | default: site.header_title }}</h1>
+      <h2 class="project-tagline">&#8203;</h2>
+    </section>
+
+    <section class="main-content">
+      <div class="cards">
+
+        <a class="card" href="/sutton-barto-notebooks">
+          <img src="/assets/home/sutton_barto.png">
+          <h3>Sutton and Barto 코드</h3>
+        </a>
+        <!-- <a class="card" href="/newsletter">
+          <img src="/assets/home/newsletter.svg">
+          <h3>뉴스레터</h3>
+        </a> -->
+        <a class="card" href="/env">
+          <img src="/assets/home/env.png">
+          <h3>강화학습 환경</h3>
+        </a>
+        <a class="card" href="/competitions">
+          <img src="/assets/home/competitions.svg">
+          <h3>인공지능 대회</h3>
+        </a>
+        <!-- <a class="card" href="/rules-of-ml">
+          <img src="/assets/home/rules-of-ml.svg">
+          <h3>기계학습 가이드</h3>
+        </a> -->
+      </div>
+
+      {{ content }}
+
+    </section>
+
+    <footer class="site-footer">
+      <div class="site-footer-links">
+        <span class="site-footer-home"><a href="/">Home</a></span>
+        <span class="site-footer-about"><a href="/about">About</a></span>
+        <span class="site-footer-github"><a href="https://github.com/seungjaeryanlee/">
+          <i class="fa fa-lg fa-github" aria-hidden="true"></i>
+        </a></span>
+      </div>
+    </footer>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117425613-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-117425613-1');
+    </script>
+  </body>
+</html>
