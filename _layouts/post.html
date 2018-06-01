@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-    <title>{{ page.title | default: site.title }}</title>
+    <title>{{ page.title | append: ' | End to End AI' | default: site.title }}</title>
     {% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
@@ -13,7 +13,7 @@
   <body>
     <section class="page-header">
       <h1 class="project-name"><a href="/">{{ page.header_title | default: site.header_title }}</a></h1>
-      <h2 class="project-tagline">{{ page.header_description | default: site.header_description }}</h2>
+      <h2 class="project-tagline">{{ page.header_description | page.title | default: site.header_description }}</h2>
     </section>
 
     <section class="main-content">

@@ -1,8 +1,7 @@
 ---
 layout: page
-title: Sutton and Barto Notebooks | End to End AI
+title: Sutton and Barto Notebooks
 permalink: /sutton-barto-notebooks
-header_description: Sutton and Barto Notebooks
 ---
 
 (In Progress)
