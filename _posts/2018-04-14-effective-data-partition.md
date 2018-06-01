@@ -11,7 +11,7 @@ To train a good model, you need lots of data. Luckily, over the last few decade
 
 There is an art to collecting data. One popular technique used especially in image recognition and detection is **Data Augmentation**. A single picture can be flipped, rotated, cropped, or recolored to create "new" data.
 
-![Example of Data Augmentation]({{ "/assets/cat_data_augmentation.png" | absolute_url }})
+![Example of Data Augmentation]({{ "/assets/blog/effective-data-partition/cat_data_augmentation.png" | absolute_url }})
 
 However, there is little value to data if you use it incorrectly. Even if you double or triple the dataset manually or through data augmentation, without proper partition of data, you will be left clueless on how helpful adding more data was. In fact, if you partitioned your data correctly, you might have concluded that you didn't need more data!
 
@@ -19,7 +19,7 @@ However, there is little value to data if you use it incorrectly. Even if you do
 
 The most naïve way of using data is to allocate all data to the **training set**, the set used for training the model. This is definitely **not recommended** for any real projects, but it *may* work for simple examples just to test theoretical concepts. Because there is no data allocated to test the trained model, the problem must be simple enough so that a human could easily look at the model to evaluate its accuracy.
 
-![An example of linear approximation]({{ "/assets/linear_approximation.png" | absolute_url }})
+![An example of linear approximation]({{ "/assets/blog/effective-data-partition/linear_approximation.png" | absolute_url }})
 
 Above is one case where it is somewhat acceptable to allocate all data to the test set. You assume that there is a linear correlation between temperature and sales of frozen yogurt and want to predict frozen yogurt sale. In this simple model, you can visualize the data and the model with a 2D plot, so it is easy to evaluate the model. 
 
@@ -29,7 +29,7 @@ However, in most models both the data and the model is obscure, and it is imposs
 
 The **Train - Test** partition is a significant improvement to the first "partition." You allocate most of the data to the training set but leave enough data for the **test set**. The test set allows you to objectively evaluate the performance of your model. 
 
-![Overfit model on training and test set]({{ "/assets/train_test.png" | absolute_url }})
+![Overfit model on training and test set]({{ "/assets/blog/effective-data-partition/train_test.png" | absolute_url }})
 
 Take a look at the orange model above. For the training set (marked by blue points on the left diagram), the model performs quite well. However, for the test set (the right diagram), the model performs poorly. The model has overfit the training set.
 
@@ -63,7 +63,7 @@ Now suppose that you find that the error for training and the development set is
 
 Although the standard Train - Dev - Test partition works well in most times, sometimes you need another partition. Consider you want to build a self-driving car model using the black box camera. Unfortunately, you have a small amount of data. So, you decide to use a game to simulate the traffic and get data. Now you might have enough data to train the model, but **the data is a mix of simulated and real data**.
 
-![Comparison of Simulated and Real Data]({{ "/assets/simul_real.png" | absolute_url }})
+![Comparison of Simulated and Real Data]({{ "/assets/blog/effective-data-partition/simul_real.png" | absolute_url }})
 
 Then, how would you divide this mixed data? Because your goal is to train a model that drives a car in real life, your dev set and test set must have data from real life. Then, the only place the simulated data belongs to is the training set. Therefore, your training set and dev set has different data sources.
 
