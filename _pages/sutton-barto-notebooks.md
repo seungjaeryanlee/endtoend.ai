@@ -6,7 +6,7 @@ permalink: /sutton-barto-notebooks
 
 (In Progress)
 
-[Sutton and Barto의 Reinforcement Learning: An Introduction](http://incompleteideas.net/book/the-book-2nd.html) is a seminal textbook of Reinforcement Learning due to its thorough explanations accompanied with abundant examples. The book contains numerous insightful figures. These are implementations of the figures.
+[Sutton and Barto's Reinforcement Learning: An Introduction](http://incompleteideas.net/book/the-book-2nd.html) is a seminal textbook of Reinforcement Learning due to its thorough explanations accompanied with abundant examples. The book contains numerous insightful figures. These are implementations of the figures.
 
 ## 목차
 
