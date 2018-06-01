@@ -1,0 +1,34 @@
+/**
+ * Post list
+ * from https://github.com/lorepirri/cayman-blog/blob/master/_sass/blog/_layout.scss
+ */
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit * 1.5;
+    }
+
+    > li > h2 {
+        margin-top: 0rem;
+        margin-bottom: 0.4rem;
+    }
+}
+
+@include media-query($on-palm) {
+    .post-list {
+        -webkit-margin-end: 10px;
+        -webkit-padding-start: 10px;
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+.post-link {
+    display: block;
+    @include relative-font-size(1.5);
+}
