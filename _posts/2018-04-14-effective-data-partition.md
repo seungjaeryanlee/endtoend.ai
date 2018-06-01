@@ -2,6 +2,7 @@
 layout: post
 title: "Effective Data: Partition"
 author: Seung Jae (Ryan) Lee
+permalink: /blog/effective-data-partition
 redirect_from:
  - /2018/04/14/effective-data-partition/
  - /2018/04/14/effective-data-partition
