@@ -1,6 +1,6 @@
 ---
 layout: page
-title: A Tour of RL: Introduction
+title: "A Tour of RL: Introduction"
 permalink: /tour/rl/introduction
 ---
 
