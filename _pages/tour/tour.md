@@ -15,6 +15,6 @@ Tour is a series of posts summarizing the contents of seminal books of AI.
   * *Pattern Recognition and Machine Learning* by Christopher Bishop
 * A Tour of Deep Learning
   * *Deep Learning* by Ian Goodfellow, Yoshua Bengio, Aaron Courville
-* [A Tour of Reinforcement Learning](/tour/rl)
+* [A Tour of Reinforcement Learning](/tour/rl) (In Progress)
   - *Reinforcement Learning: An Introduction* by Richard S. Sutton and Andrew G. Barto
 
