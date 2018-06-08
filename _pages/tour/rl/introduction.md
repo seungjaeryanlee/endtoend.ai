@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "A Tour of RL: Introduction"
+title: "A Tour of Reinforcement Learning: Introduction"
 permalink: /tour/rl/introduction
 ---
 
@@ -8,16 +8,42 @@ Reinforcement Learning is a computational approach to interaction-based learning
 
 ![OpenSim environment for lower body](osim-rl.gif)
 
-Reinforcement Learning is different from other fields of Machine Learning such as Supervised Learning or Unsupervised Learning. Instead of the other two fields of Machine Learning where a labeled or unlabeled data set is given to the learner, in Reinforcement Learning, the learner accumulates the data by interacting with the environment. Through **trial and error**, the learner eventually learns favorable actions.
+### Supervised vs Unsupervised vs Reinforcement Learning
 
-The goal of an agent in Reinforcement Learning is to maximize the reward by selecting "correct" actions. This is challenging because previous actions often affect your current state, action, and reward. If you stepped on a slippery ice on your last step and lost your balance, you will fall down in the next few steps. In other words, actions can have **delayed reward**: the effect of an action might not be apparent from its immediate reward.
+Reinforcement Learning is different from other fields of Machine Learning such as Supervised Learning or Unsupervised Learning. The goal of Supervised Learning is to extrapolate from known data. However, in Reinforcement Learning problems, there are uncharted territories that requires interactions with the environment to collect experience. Through **trial and error**, the learner eventually learns favorable actions.
 
-Because the learner or agent learns by interacting with the environment, it has to balance **exploration and exploitation**. The agent seeks to maximize its total reward, so it should *exploit* its knowledge and choose the action that will give the agent the most reward. However, to find this action, it needs to *explore* and test actions to estimate their rewards.
+The goal of Unsupervised Learning is to find hidden structure in unlabeled data. In contrast, in Reinforcement Learning, although the agent does not receive information about the optimal action at each step, the agent is given a reward based on its actions, and its goal is to maximize the reward, not to find hidden structure.
 
-For example, suppose a new restaurant opens near your house. At first, you do not know what their best dish is, so you try different dishes (exploration). Once you tried a few dishes, you prefer a particular dish and order it most times (exploitation). However, there are still some dishes in the menu you have not tried, so sometimes you order other dishes. Also, for some dishes, you might have been unlucky last time you ordered it (bad ingredient, novice chef, etc.), so you might order a dish you did not like.
+![Supervised vs. Unsupervised vs Reinforcement Learning](sl_usl_rl.png)
 
-![](menu.jpg)
+Maximizing rewards is a challenging task because previous actions often affect your current state, action, and reward. If you stepped on a slippery ice on your last step and lost your balance, you will fall down in the next few steps. However, the negative reward from falling down is not shown to the agent after those few steps. In other words, actions can have **delayed reward**: the effect of an action might not be apparent from its immediate reward.
 
+Because the effect of an action cannot be fully predicted, it is also crucial that the agent observes the environment frequently to react appropriately. For example, if you are walking on ice and you hear a crack, you should react to the observation and distance yourself from the crack rather than continuing to walk the same direction.
 
+### Exploration vs Exploitation 
 
-*This is a summary of Sections 1.1, 1.2, 1.4 of Reinforcement Learning: An Introduction by Richard S. Sutton and Andrew G. Barto. You can find the full book [in their website](http://incompleteideas.net/book/the-book-2nd.html).*
+Another interesting aspect of Reinforcement Learning is the idea of balancing **exploration and exploitation**. The agent seeks to maximize its total reward, so it should *exploit* its knowledge and choose the action that will give the agent the most reward. However, to gain this knowledge, it needs to *explore* and test actions to estimate their rewards.
+
+For example, suppose you move into a new neighbor and need to find a place to eat. At first, you do not know where the best restaurant is, so you try different restaurants (exploration). Once you tried a few places, you gain a preference and go to the same restaurant most times (exploitation). However, there might be some restaurants that you have not tried yet, so sometimes you try a new restaurant. Also, you might have chosen the wrong dish in some restaurants, so you might go to a restaurant you did not like and try a different dish. Until you go to every restaurant and try every dish multiple times, you cannot be sure you are making the best decision. However, the more experience you collect, the more certain you get.
+
+![Exploration vs. Exploitation](expl_expl.png)
+
+### Elements of Reinforcement Learning
+
+There are four central components in Reinforcement Learning: policy, reward signal, value function, and (optionally) the model of the environment.
+
+The **policy** defines the agent's *behavior*. Simply, the policy maps an observed state to an action. Policies can be both deterministic or stochastic. In other words, the agent could always choose the same action for a same observation, or it could choose between multiple actions with some probabilities for the same observation.
+
+The **reward signal** defines the *goal* in the Reinforcement Learning problem. Every time step, the environment gives the agent a number called the **reward**, and the agent's goal is to maximize the total reward it receives in the long run. Reward signals is the primary reason to alter a policy: low reward signifies bad situations, and high reward signifies favorable situations. Rewards are normally stochastic functions of the state of the environment and the actions taken by the agent.
+
+The **value function** defines the *long-term result* of a state or an action. The **state value** (value of a state) is the expected total reward that the agent will accumulate in the long run starting from that state. Because the goal of the agent is to maximize reward in the long run, agents choose actions based on the value function, not the reward. Thus, the goal of almost all reinforcement learning algorithms is to estimate the value function efficiently.
+
+Finally, the **model** of the environment is the model that allows the agent to infer the environment's behaviors. Models are used for planning: to predict the future without directly experiencing it. The model of the environment is not necessary to an agent. If the agent does not learn from a model, it learns only through trial and error. Reinforcement Learning methods that use models are called *model-based* methods, and those that do not are called *model-free* methods.
+
+### Limitations and Scope of Reinforcement Learning
+
+(In Progress)
+
+*This is a summary of Sections 1.1, 1.2, 1.3, 1.4 of Reinforcement Learning: An Introduction by Richard S. Sutton and Andrew G. Barto. You can find the full book [in their website](http://incompleteideas.net/book/the-book-2nd.html).*
+
+*Pictures from [NIPS AI for Prosthetics Competition](https://github.com/stanfordnmbl/osim-rl), [energy_py](http://adgefficiency.com/energy_py-reinforcement-learning-for-energy-systems/), and [Probyto](https://probyto.com/articles/Exploration%20vs%20Exploitation%20trade-off%20for%20evolving%20Data%20Science).*
