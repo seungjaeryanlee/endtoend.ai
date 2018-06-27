@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "AI for Prosthetics Week 1"
+title: "AI for Prosthetics Week 1: Understanding the Challenge"
 author: Seung Jae (Ryan) Lee
 permalink: /blog/ai-for-prosthetics-1
 ---
 
-# NIPS 2018: AI for Prosthetics Week 1: Understanding the Challenge
+# AI for Prosthetics Week 1: Understanding the Challenge
 
 
 
@@ -13,7 +13,7 @@ permalink: /blog/ai-for-prosthetics-1
 
 The **AI for Prosthetics** challenge is one of NIPS 2018 Competition tracks. In this challenge, the participants seek to build an agent that can make a 3D model of human with prosthetics run.
 
-![Prosthetics](prosthetics.jpeg)
+![Prosthetics]({{ "assets/blog/ai-for-prosthetics-1/prosthetics.jpeg" | absolute_url }})
 
 This challenge is a continuation of the Learning to Run challenge (shown below) that was part of NIPS 2017 Competition Track. The challenge was enhanced in three ways:
 
@@ -21,7 +21,7 @@ This challenge is a continuation of the Learning to Run challenge (shown below) 
 * The model can now fall sideways (2D to 3D)
 * A model has a prosthetic leg
 
-![NIPS 2017: Learning to Run](learning2run.gif)
+![NIPS 2017: Learning to Run]({{ "assets/blog/ai-for-prosthetics-1/learning2run.gif" | absolute_url }})
 
 ## Installation
 
@@ -90,9 +90,11 @@ The action space is also formatted with `gym.spaces.Box`. A valid action is a li
 
 
 
-## `osim-rl-helper` repository
+## osim-rl-helper
 
-### `Agent` Template
+I created a repository with starter code for the competition and made it public. You can view it [here](https://github.com/seungjaeryanlee/osim-rl-helper). 
+
+### Agent
 
 I like trying multiple ideas before converging to one, and I like to keep track of every changes I have made. Thus, I created an `Agent` class that will act as a prototype for all agents to neatly organize my failed endeavors. The agent classes will differ greatly by their algorithm, but they will have 2 things in common: they had to be run locally and they had to be submitted to server. Thus, I implemented two functions `Agent.test()` and `Agent.submit()` that used unimplemented `Agent.act()` to retrieve an action from the agent.
 
@@ -131,6 +133,8 @@ class RandomAgent(Agent):
         return self.env.action_space.sample().tolist()
 ```
 
+![RandomAgent]({{ "assets/blog/ai-for-prosthetics-1/RandomAgent.gif" | absolute_url }})
+
 I also created a `FixedActionAgent` that always chooses the same action.
 
 ```python
@@ -145,7 +149,9 @@ class FixedActionAgent(Agent):
         return self.action
 ```
 
-I organized the code into a small repository and made it public. You can view it [here](https://github.com/seungjaeryanlee/osim-rl-helper). I will regularly upload more baseline agents throughout the competition, so if please star it on [GitHub](https://github.com/seungjaeryanlee/osim-rl-helper)!
+![FixedActionAgent]({{ "assets/blog/ai-for-prosthetics-1/FixedActionAgent.gif" | absolute_url }})
+
+I will regularly upload more baseline agents throughout the competition, so if please star it on [GitHub](https://github.com/seungjaeryanlee/osim-rl-helper)!
 
 
 
