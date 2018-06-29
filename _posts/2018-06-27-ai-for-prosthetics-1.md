@@ -7,6 +7,9 @@ permalink: /blog/ai-for-prosthetics-1
 
 # AI for Prosthetics Week 1: Understanding the Challenge
 
+- **Week 1: Understanding the Challenge**
+- [Week 2: Understanding the Action Space](/blog/ai-for-prosthetics-2)
+
 
 
 ## Background
