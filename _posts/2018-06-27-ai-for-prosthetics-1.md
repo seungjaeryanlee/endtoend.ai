@@ -44,7 +44,7 @@ pip install git+https://github.com/stanfordnmbl/osim-rl.git
 ## Environment
 
 ```python
-from osim.env import ProstheticEnv
+from osim.env import ProstheticsEnv
 env = ProstheticsEnv()
 ```
 
