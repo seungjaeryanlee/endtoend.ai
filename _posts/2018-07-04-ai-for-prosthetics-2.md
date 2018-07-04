@@ -3,7 +3,6 @@ layout: post
 title: "AI for Prosthetics Week 2: Understanding the Action Space"
 author: Seung Jae (Ryan) Lee
 permalink: /blog/ai-for-prosthetics-2
-published: false
 ---
 
 # AI for Prosthetics Week 2: Understanding the Action Space
@@ -15,91 +14,91 @@ published: false
 
 ## Muscles
 
-[Last week](/blog/ai-for-prosthetics-1), we briefly saw how a valid action has 19 numbers, each between 0 and 1. The 19 numbers represented the amount of force to put to each muscle. I know barely anything about muscles, so I decided to manually go through all the muscles to understand the effects of each muscle.
+[Last week](/blog/ai-for-prosthetics-1), we saw how a valid action has 19 numbers, each between 0 and 1. The 19 numbers represented the amount of force to put to each muscle. I know barely anything about muscles, so I decided to manually go through all the muscles to understand the effects of each muscle.
 
 #### Index 0
 
-![](0.gif)
+![]({{ "assets/blog/ai-for-prosthetics-2/0.gif" | absolute_url }})
 
 #### Index 1
 
-![](1.gif)
+![]({{ "assets/blog/ai-for-prosthetics-2/1.gif" | absolute_url }})
 
 #### Index 2
 
-![](2.gif)
+![]({{ "assets/blog/ai-for-prosthetics-2/2.gif" | absolute_url }})
 
 #### Index 3
 
-![](3.gif)
+![]({{ "assets/blog/ai-for-prosthetics-2/3.gif" | absolute_url }})
 
 #### Index 4
 
-![](4.gif)
+![]({{ "assets/blog/ai-for-prosthetics-2/4.gif" | absolute_url }})
 
 #### Index 5
 
-![](5.gif)
+![]({{ "assets/blog/ai-for-prosthetics-2/5.gif" | absolute_url }})
 
 #### Index 6
 
-![](6.gif)
+![]({{ "assets/blog/ai-for-prosthetics-2/6.gif" | absolute_url }})
 
 #### Index 7
 
-![](7.gif)
+![]({{ "assets/blog/ai-for-prosthetics-2/7.gif" | absolute_url }})
 
 #### Index 8
 
-![](8.gif)
+![]({{ "assets/blog/ai-for-prosthetics-2/8.gif" | absolute_url }})
 
 #### Index 9
 
-![](9.gif)
+![]({{ "assets/blog/ai-for-prosthetics-2/9.gif" | absolute_url }})
 
 #### Index 10
 
-![](10.gif)
+![]({{ "assets/blog/ai-for-prosthetics-2/10.gif" | absolute_url }})
 
 #### Index 11
 
-![](11.gif)
+![]({{ "assets/blog/ai-for-prosthetics-2/11.gif" | absolute_url }})
 
 #### Index 12
 
-![](12.gif)
+![]({{ "assets/blog/ai-for-prosthetics-2/12.gif" | absolute_url }})
 
 #### Index 13
 
-![](13.gif)
+![]({{ "assets/blog/ai-for-prosthetics-2/13.gif" | absolute_url }})
 
 #### Index 14
 
-![](14.gif)
+![]({{ "assets/blog/ai-for-prosthetics-2/14.gif" | absolute_url }})
 
 #### Index 15
 
-![](15.gif)
+![]({{ "assets/blog/ai-for-prosthetics-2/15.gif" | absolute_url }})
 
 #### Index 16
 
-![](16.gif)
+![]({{ "assets/blog/ai-for-prosthetics-2/16.gif" | absolute_url }})
 
 #### Index 17
 
-![](17.gif)
+![]({{ "assets/blog/ai-for-prosthetics-2/17.gif" | absolute_url }})
 
 #### Index 18
 
-![](18.gif)
+![]({{ "assets/blog/ai-for-prosthetics-2/18.gif" | absolute_url }})
 
 ### Hip Thrust
 
 Let's test our intuition by trying to create a "hip-thrust" action. The indices 2, 4, 10, 12 look promising, so let's try fully activating these muscles.
 
-![](hip-thrust.gif)
+![]({{ "assets/blog/ai-for-prosthetics-2/hip-thrust.gif" | absolute_url }})
 
-Awesome! We now have some intuition on how each muscle affects the biomechanical model.
+Awesome! We now have some basic intuition on how each muscle affects the biomechanical model.
 
 
 

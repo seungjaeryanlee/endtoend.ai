@@ -8,7 +8,7 @@ permalink: /blog/ai-for-prosthetics-1
 # AI for Prosthetics Week 1: Understanding the Challenge
 
 - **Week 1: Understanding the Challenge**
-- Week 2: Understanding the Action Space [Coming soon]
+- [Week 2: Understanding the Action Space](/blog/ai-for-prosthetics-2)
 
 
 
@@ -154,7 +154,7 @@ class FixedActionAgent(Agent):
 
 ![FixedActionAgent]({{ "assets/blog/ai-for-prosthetics-1/FixedActionAgent.gif" | absolute_url }})
 
-I will regularly upload more baseline agents throughout the competition, so if please star it on [GitHub](https://github.com/seungjaeryanlee/osim-rl-helper)!
+I will regularly upload more baseline agents throughout the competition, so if you're interested, please star it on [GitHub](https://github.com/seungjaeryanlee/osim-rl-helper)!
 
 
 
