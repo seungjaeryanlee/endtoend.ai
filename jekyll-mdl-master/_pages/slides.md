@@ -2,6 +2,7 @@
 layout: page
 title: Slides
 permalink: /slides
+display_front: true
 ---
 
 This is a collection of slides we created for presentations.
