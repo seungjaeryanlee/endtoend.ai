@@ -9,11 +9,10 @@ layout: default
             {% if post.display_front %}
 
             <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-                <div class="mdl-card__title" {% if post.image %} style="background: url('{{ post.image }}') center/cover;" {% endif %}>
-                    <h2 class="mdl-card__title-text">{{ post.title }}</h2>
+                <div class="mdl-card__title" {% if post.image %} style="margin: 10px 0; height: 140px; background: url('{{ post.image }}') center no-repeat white; background-size: contain;" {% endif %}>
                 </div>
                 <div class="mdl-card__supporting-text">
-                    <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+                    <h2 class="mdl-card__title-text">{{ post.title }}</h2>
                     <p>{{ post.excerpt }}</p>
                 </div>
                 <div class="mdl-card__actions mdl-card--border">

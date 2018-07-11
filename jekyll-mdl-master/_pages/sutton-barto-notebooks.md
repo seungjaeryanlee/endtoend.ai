@@ -3,6 +3,7 @@ layout: page
 title: Sutton and Barto Notebooks
 permalink: /sutton-barto-notebooks
 display_front: true
+image: https://www.endtoend.ai/assets/home/sutton-barto.png
 ---
 
 (In Progress)
