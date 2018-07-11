@@ -20,6 +20,9 @@ layout: default
         {% include disqus.html %}
       </div>
       {% endif %}
+      {% for heading in page.nav %}
+          <li><a href="{{ heading.permalink }}">{{ heading.name }}</a></li>
+      {% endfor %}
     </div>
   </div>
 </main>
