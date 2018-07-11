@@ -35,3 +35,7 @@ disqus_shortname: 'gdgmanagua'
 
 # Build settings
 markdown: kramdown
+
+# Put all pages except index.md in _pages directory
+include:
+  - "_pages"
