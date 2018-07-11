@@ -2,37 +2,40 @@
 layout: default
 ---
 
-<div class="page-content">
-    <div class="mdl-grid">
+<main class="mdl-layout__content">
+    <div class="page-content">
+        <div class="mdl-grid">
 
-        {% for post in site.pages %}
-            {% if post.display_front %}
+            {% for post in site.pages %}
+                {% if post.display_front %}
 
-            <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-                <div class="mdl-card__title" {% if post.image %} style="margin: 10px 0; height: 140px; background: url('{{ post.image }}') center no-repeat white; background-size: contain;" {% endif %}>
+                <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+                    <div class="mdl-card__title" {% if post.image %} style="margin: 10px 0; height: 140px; background: url('{{ post.image }}') center no-repeat white; background-size: contain;" {% endif %}>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <h2 class="mdl-card__title-text">{{ post.title }}</h2>
+                        <p>{{ post.excerpt }}</p>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ post.url | prepend: site.baseurl }}">
+                        Read More
+                        </a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-{{ post.id }}">
+                        <i class="material-icons">share</i>
+                        </button>
+                        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-{{ post.id }}">
+                        <li><a href="https://www.facebook.com/dialog/share?app_id={{site.facebook_app_id}}&display=page&href={{ post.url | prepend: site.baseurl }}&redirect_uri={{ site.baseurl }}" class="mdl-menu__item">Facebook</a></li>
+                        <li><a href="https://twitter.com/share?url={{ post.url | prepend: site.baseurl }}&text={{ post.title }}&via={{ site.twitter_username }}" class="mdl-menu__item">Twitter</a></li>
+                        <li><a href="https://plus.google.com/share?url={{ post.url | prepend: site.baseurl }}" class="mdl-menu__item">Google+</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="mdl-card__supporting-text">
-                    <h2 class="mdl-card__title-text">{{ post.title }}</h2>
-                    <p>{{ post.excerpt }}</p>
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ post.url | prepend: site.baseurl }}">
-                    Read More
-                    </a>
-                </div>
-                <div class="mdl-card__menu">
-                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-{{ post.id }}">
-                    <i class="material-icons">share</i>
-                    </button>
-                    <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-{{ post.id }}">
-                    <li><a href="https://www.facebook.com/dialog/share?app_id={{site.facebook_app_id}}&display=page&href={{ post.url | prepend: site.baseurl }}&redirect_uri={{ site.baseurl }}" class="mdl-menu__item">Facebook</a></li>
-                    <li><a href="https://twitter.com/share?url={{ post.url | prepend: site.baseurl }}&text={{ post.title }}&via={{ site.twitter_username }}" class="mdl-menu__item">Twitter</a></li>
-                    <li><a href="https://plus.google.com/share?url={{ post.url | prepend: site.baseurl }}" class="mdl-menu__item">Google+</a></li>
-                    </ul>
-                </div>
-            </div>
 
-            {% endif %}
-        {% endfor %}
+                {% endif %}
+            {% endfor %}
+        </div>
     </div>
-</div>
+    <div class="mdl-layout-spacer"></div>
+</main>
