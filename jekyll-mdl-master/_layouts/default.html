@@ -11,7 +11,8 @@
       {% include search_result.html %}
       {% include header_fixed.html %}
     {% else %}
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <!-- mdl-layout--no-tablet-drawer-button defined in _header.scss -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button mdl-layout--no-tablet-drawer-button">
       {% include search_result.html %}
       {% include header.html %}
     {% endif %}
