@@ -16,7 +16,7 @@ post_type: highlight    # values [ highlight, default ]
 pagination_type: default  # values [ ops, default ]
 
 disqus: true
-disqus_shortname: 'gdgmanagua'
+# disqus_shortname: 'www.endtoend.ai'
 
 # Build settings
 markdown: kramdown
