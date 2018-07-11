@@ -42,9 +42,8 @@
     </style>
   </head>
   <body>
-
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        {%- include header.html -%}
+      {%- include header.html -%}
 
       <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
@@ -77,6 +76,7 @@
         </nav>
       </div>
 
+      <div class="android-content mdl-layout__content">
         {{ content }}
         {%- include footer.html -%}
       </div>

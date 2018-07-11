@@ -18,7 +18,7 @@ body {
   margin: 0;
 }
 
-/* Disable ugly boxes around images in IE10 */
+/* Disable ugly boxes around /assets in IE10 */
 a img{
   border: 0px;
 }
@@ -175,7 +175,7 @@ a img{
   height: 800px;
   width: auto;
   background-color: #f3f3f3;
-  background: url('images/slide01.jpg') center 30% no-repeat;
+  background: url('/assets/slide01.jpg') center 30% no-repeat;
   background-size: cover;
 }
 
@@ -302,7 +302,7 @@ a img{
 
 .android-wear-section {
   position: relative;
-  background: url('images/wear.png') center top no-repeat;
+  background: url('/assets/wear.png') center top no-repeat;
   background-size: cover;
   height: 800px;
 }
@@ -373,7 +373,7 @@ a img{
   }
 
 .android-customized-section-image {
-  background: url('images/devices.jpg') center top no-repeat;
+  background: url('/assets/devices.jpg') center top no-repeat;
   background-size: cover;
   height: 400px;
 }
