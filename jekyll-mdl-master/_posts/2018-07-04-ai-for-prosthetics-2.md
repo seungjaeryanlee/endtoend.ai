@@ -3,7 +3,7 @@ layout: post
 title: "AI for Prosthetics Week 2: Understanding the Action Space"
 author: Seung Jae (Ryan) Lee
 permalink: /blog/ai-for-prosthetics-2
-image: /assets/blog/ai-for-prosthetics-1/prosthetics.jpeg
+image: /assets/blog/ai-for-prosthetics-2/front.jpeg
 nav:
 - name: muscles
   permalink: '#muscles'

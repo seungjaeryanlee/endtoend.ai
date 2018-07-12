@@ -3,7 +3,7 @@ layout: post
 title: "Jupyter Notebook extensions to enhance your efficiency"
 author: Seung Jae (Ryan) Lee
 permalink: /blog/jupyter-notebook-extensions-to-enhance-your-efficiency
-image: http://www.cytoscape.org/images/logo/jupyter-logo.svg
+image: /assets/blog/jupyter-notebook-extensions-to-enhance-your-efficiency/front.svg
 front_text: >
     Jupyter Notebook is a great tool that allows you to integrate live code,
     equations, visualizations and narrative text into a document. It is used

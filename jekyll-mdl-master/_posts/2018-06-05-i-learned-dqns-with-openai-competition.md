@@ -3,7 +3,7 @@ layout: post
 title: "I learned DQNs with OpenAI competition"
 author: Seung Jae (Ryan) Lee
 permalink: /blog/i-learned-dqns-with-openai-competition
-image: https://upload.wikimedia.org/wikipedia/en/c/c1/SonicTheHedgehog1.png
+image: /assets/blog/i-learned-dqns-with-openai-competition/front.png
 front_text: >
     On April, OpenAI held a two-month-long competition called the Retro Contest
     where participants had to develop an agent that can achieve perform well on
