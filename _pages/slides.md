@@ -6,7 +6,7 @@ permalink: /slides
 display_front: true
 front_image: /assets/home/slides.png
 front_text: >
-    This is a colleciton of presentation slides summarizing contents of books
+    This is a collection of presentation slides summarizing contents of books
     and state-of-the-art results.
 ---
 
