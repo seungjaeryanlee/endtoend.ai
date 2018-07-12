@@ -1,0 +1,15 @@
+.mdl-layout-title a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .mdl-layout--no-tablet-drawer-button {
+        .mdl-layout__drawer-button {
+            display: none;
+        }
+        .mdl-layout__header-row {
+            padding-left: 40px;
+        }
+    }
+}

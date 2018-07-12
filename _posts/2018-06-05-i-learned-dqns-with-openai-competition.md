@@ -3,6 +3,14 @@ layout: post
 title: "I learned DQNs with OpenAI competition"
 author: Seung Jae (Ryan) Lee
 permalink: /blog/i-learned-dqns-with-openai-competition
+
+front_image: /assets/blog/i-learned-dqns-with-openai-competition/front.png
+front_text: >
+    On April, OpenAI held a two-month-long competition called the Retro Contest
+    where participants had to develop an agent that can achieve perform well on
+    unseen custom-made stages of Sonic the Hedgehog. The agents were limited to
+    100 million steps per stage and 12 hours of time on a VM with 6 E5-2690v3 
+    cores, 56GB of RAM, and a single K80 GPU.
 ---
 
 ![Example of Sonic stages used in Retro Contest]({{ "assets/blog/i-learned-dqns-with-openai-competition/sonic.png" | absolute_url }})

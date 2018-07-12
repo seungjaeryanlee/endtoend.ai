@@ -1,11 +1,32 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.css">
-<footer class="site-footer">
-  <div class="site-footer-links">
-    <span class="site-footer-home"><a href="/">Home</a></span>
-    <span class="site-footer-about"><a href="/about">About</a></span>
-    <span class="site-footer-lang">
-      <a><span class="flag-icon flag-icon-us"></span></a>
-      <a href="https://kr.endtoend.ai"><span class="flag-icon flag-icon-kr"></span></a>
-    </span>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<footer class="mdl-mega-footer" style="padding-bottom: 32px;">
+  <div class="mdl-mega-footer--middle-section">
+
+    <div class="mdl-mega-footer--drop-down-section mdl-cell--hide-tablet mdl-cell--hide-phone">
+      <div style="width: 100%"></div>
+      <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer--heading">&nbsp;</h1>
+      <!-- <ul class="mdl-mega-footer--link-list">
+        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">subscribe via RSS</a></li>
+      </ul> -->
+    </div>
+
+    <div class="mdl-mega-footer--drop-down-section">
+      <h3 class="mdl-mega-footer--heading" style="margin-top: 16px">Seungmin Brian Lee</h3>
+      <p style="margin: 0"><a style="text-decoration: none; color: inherit;" href="https://github.com/briansmlee"><i class="fa fa-github fa-lg" aria-hidden="true"></i>&nbsp;briansmlee</a></p>
+      <p style="margin: 0"><a style="text-decoration: none; color: inherit;" href="https://www.linkedin.com/in/seungminbrianlee/"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>&nbsp;seungminbrianlee</a></p>
+
+      <h3 class="mdl-mega-footer--heading" style="margin-top: 16px">Seungjae Ryan Lee</h3>
+      <p style="margin: 0"><a style="text-decoration: none; color: inherit;" href="https://github.com/seungjaeryanlee"><i class="fa fa-github fa-lg" aria-hidden="true"></i>&nbsp;seungjaeryanlee</a></p>
+      <p style="margin: 0"><a style="text-decoration: none; color: inherit;" href="https://www.linkedin.com/in/seungjaeryanlee/"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>&nbsp;seungjaeryanlee</a></p>
+    </div>
+
+    <div class="mdl-mega-footer--drop-down-section">
+      <h1 class="mdl-mega-footer--heading" style="margin-top: 16px">ABOUT</h1>
+      <ul class="mdl-mega-footer--link-list">
+        <li>{{ site.description }}</li> 
+      </ul>
+    </div>
   </div>
 </footer>

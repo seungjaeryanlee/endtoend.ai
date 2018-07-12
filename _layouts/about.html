@@ -1,84 +1,41 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-    <title>{{ page.title | append: ' | End to End AI' | default: site.title }}</title>
-    {% seo %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name"><a href="/">{{ page.header_title | default: site.header_title }}</a></h1>
-      <h2 class="project-tagline">{{ page.header_description | default: page.title | default: site.header_description }}</h2>
-    </section>
+---
+layout: page
+---
 
-    <section class="main-content">
-      
-        <b>End to End AI</b> is a blog maintained by Seungmin Brian Lee and Seung Jae Ryan Lee.
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
-        <div class="bio" style="margin: 20px 0;">
-            <h2>Seungmin Brian Lee</h2>
-            <a href="https://github.com/briansmlee"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/seungminbrianlee/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-        </div>
-        <div class="bio" style="margin: 20px 0;">
-            <h2>Seung Jae Ryan Lee</h2>
-            <a href="https://github.com/seungjaeryanlee"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/seungjaeryanlee/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-            <p>
-                I am a math major at Princeton University taking a gap year to
-                fulfill my social service duty in Korea. I have been excited about
-                Artificial Intelligence ever since I developed a chess engine with
-                C++ in middle school. Currently, I am studying Deep Learning and
-                Reinforcement Learning using the abundant resources available
-                online. I am also participating in several competitions to improve
-                my development skills.
-            </p>
-            <p>
-                When I am not studying, I enjoy playing Table Tennis and Badminton.
-            </p>
-        </div>
-    </section>
+<main class="mdl-layout__content">
+    <p>
+        <b>End to End AI</b> is a website maintained by Seungmin Brian Lee and
+        Seungjae Ryan Lee.
+    </p>
+    <p>
+        We seek to provide high quality information on
+        different aspects of Artificial Intelligence, including Machine 
+        Learning, Deep Learning, Reinforcement Learning, and Computer Vision.
+    </p>
 
-    {%- include footer.html -%}
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117425613-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-117425613-1');
-    </script>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script>
-      MathJax.Hub.Config({
-        config: ["MMLorHTML.js"],
-        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
-        jax: ["input/TeX"],
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-          processEscapes: false
-        },
-        TeX: {
-          TagSide: "right",
-          TagIndent: ".8em",
-          MultLineWidth: "85%",
-          equationNumbers: {
-            autoNumber: "AMS",
-          },
-          unicode: {
-            fonts: "STIXGeneral,'Arial Unicode MS'"
-          }
-        },
-      showProcessingMessages: false
-    });
-    </script>
-  </body>
-</html>
+    <div class="bio" style="margin: 20px 0;">
+        <h2 style="margin-bottom: 0;">Seungmin Brian Lee</h2>
+        <a href="https://github.com/briansmlee"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/seungminbrianlee/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+    </div>
+    <div class="bio" style="margin: 20px 0;">
+        <h2 style="margin-bottom: 0;">Seungjae Ryan Lee</h2>
+        <a href="https://github.com/seungjaeryanlee"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/seungjaeryanlee/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+        <p>
+            I am a math major at Princeton University taking a gap year to
+            fulfill my social service duty in Korea. I have been excited about
+            Artificial Intelligence ever since I developed a chess engine with
+            C++ in middle school. Currently, I am studying Deep Learning and
+            Reinforcement Learning with Python through online resources. I am
+            also participating in several competitions to improve my developer
+            skills.
+        </p>
+        <p>
+            When I am not studying, I enjoy playing Table Tennis and Badminton.
+        </p>
+    </div>
+    <div class="mdl-layout-spacer"></div>
+</main>

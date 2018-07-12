@@ -1,0 +1,44 @@
+/* Font sizes from old Cayman-theme version of website */
+
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.17em;
+}
+h4 {
+    font-size: 1.1em;
+}
+p {
+    font-size: 1.1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(63,81,181);
+}
+
+h1, h2, h3 {
+    margin: 48px 0 24px;
+}
+h4, h5, h6 {
+    margin: 32px 0 16px;
+}
+
+h1+h1, h1+h2, h1+h3, h1+h4, h1+h5, h1+h6, h2+h1, h2+h2, h2+h3, h2+h4, h2+h5, h2+h6,
+h3+h1, h3+h2, h3+h3, h3+h4, h3+h5, h3+h6, h4+h1, h4+h2, h4+h3, h4+h4, h4+h5, h4+h6,
+h5+h1, h5+h2, h5+h3, h5+h4, h5+h5, h5+h6, h6+h1, h6+h2, h6+h3, h6+h4, h6+h5, h6+h6,
+h1+dl>dt:first-child, h2+dl>dt:first-child, h3+dl>dt:first-child,
+h4+dl>dt:first-child, h5+dl>dt:first-child, h6+dl>dt:first-child {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Roboto', sans-serif;
+}
