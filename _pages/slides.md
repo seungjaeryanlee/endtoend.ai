@@ -3,7 +3,7 @@ layout: page
 title: Slides
 permalink: /slides
 display_front: true
-image: https://www.endtoend.ai/assets/home/slides.png
+image: /assets/home/slides.png
 excerpt: This is a colleciton of presentation slides summarizing contents of books and state-of-the-art results.
 ---
 
