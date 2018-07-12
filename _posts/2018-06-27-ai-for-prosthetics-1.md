@@ -25,10 +25,11 @@ nav:
   permalink: '#whats-next'
 ---
 
+
+## Weeks
+
 - **Week 1: Understanding the Challenge**
 - [Week 2: Understanding the Action Space](/blog/ai-for-prosthetics-2)
-
-
 
 ## Background
 
