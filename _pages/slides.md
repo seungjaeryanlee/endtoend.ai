@@ -2,9 +2,12 @@
 layout: page
 title: Slides
 permalink: /slides
+
 display_front: true
-image: /assets/home/slides.png
-excerpt: This is a colleciton of presentation slides summarizing contents of books and state-of-the-art results.
+front_image: /assets/home/slides.png
+front_text: >
+    This is a colleciton of presentation slides summarizing contents of books
+    and state-of-the-art results.
 ---
 
 This is a collection of slides we created for presentations.

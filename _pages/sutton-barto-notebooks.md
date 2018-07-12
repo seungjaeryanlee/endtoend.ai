@@ -2,9 +2,12 @@
 layout: page
 title: Sutton and Barto Notebooks
 permalink: /sutton-barto-notebooks
+
 display_front: true
-image: /assets/home/sutton-barto.png
-excerpt: "This repository contains Jupyter Notebook of implementations of insightful figures in Sutton and Barto's <i>Reinforcement Learning: An Introduction</i>."
+front_image: /assets/home/sutton-barto.png
+front_text: >
+    "This repository contains Jupyter Notebook of implementations of insightful
+    figures in Sutton and Barto's <i>Reinforcement Learning: An Introduction</i>."
 ---
 
 (In Progress)
