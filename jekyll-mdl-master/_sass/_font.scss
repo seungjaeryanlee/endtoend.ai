@@ -34,3 +34,7 @@ h1+dl>dt:first-child, h2+dl>dt:first-child, h3+dl>dt:first-child,
 h4+dl>dt:first-child, h5+dl>dt:first-child, h6+dl>dt:first-child {
     margin-top: 0;
 }
+
+a {
+    text-decoration: none;
+}
