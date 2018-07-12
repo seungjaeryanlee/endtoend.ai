@@ -3,7 +3,8 @@ layout: post
 title: "Bias-variance Tradeoff in Reinforcement Learning"
 author: Seung Jae (Ryan) Lee
 permalink: /blog/bias-variance-tradeoff-in-reinforcement-learning
-image: /assets/blog/bias-variance-tradeoff-in-reinforcement-learning/front.png
+
+front_image: /assets/blog/bias-variance-tradeoff-in-reinforcement-learning/front.png
 front_text: >
     Bias-variance tradeoff is a familiar term to most people who learned machine
     learning. In the context of Machine Learning, bias and variance refers to 
