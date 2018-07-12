@@ -3,6 +3,7 @@ layout: post
 title: "I learned DQNs with OpenAI competition"
 author: Seung Jae (Ryan) Lee
 permalink: /blog/i-learned-dqns-with-openai-competition
+image: /assets/blog/i-learned-dqns-with-openai-competition/sonic.png
 ---
 
 ![Example of Sonic stages used in Retro Contest]({{ "assets/blog/i-learned-dqns-with-openai-competition/sonic.png" | absolute_url }})

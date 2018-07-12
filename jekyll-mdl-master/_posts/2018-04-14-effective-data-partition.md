@@ -6,6 +6,7 @@ permalink: /blog/effective-data-partition
 redirect_from:
  - /2018/04/14/effective-data-partition/
  - /2018/04/14/effective-data-partition
+image: /assets/blog/effective-data-partition/cat_data_augmentation.png
 ---
 
 To train a good model, you need lots of data. Luckily, over the last few decades, collecting data has become much easier. However, data is still a major constraint for most large-scale Machine Learning projects along with computational power.
