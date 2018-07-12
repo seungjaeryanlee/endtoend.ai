@@ -20,6 +20,12 @@ layout: default
                     font-weight: 400;
                     font-size: 18px;
                     color: black;
+                    margin-bottom: 10px;
+                    padding: 0 10px;
+                }
+                .mdl-card__supporting-text p {
+                    padding: 0 10px;
+                    font-size: 14px;
                 }
             </style>
             {% for page_title in site.front_page_order %}
@@ -31,7 +37,7 @@ layout: default
                                 <div class="mdl-card__title" {% if page.image %} style="margin: 10px 0; height: 140px; background: url('{{ page.image }}') center no-repeat white; background-size: contain;" {% endif %}></div>
                                 <div class="mdl-card__supporting-text">
                                     <h2 class="mdl-card__title-text">{{ page.title }}</h2>
-                                    <p>{{ page.excerpt }} Blah Blah Blah</p>
+                                    <p>{{ page.excerpt }}</p>
                                 </div>
                             </a>
                         </div>
