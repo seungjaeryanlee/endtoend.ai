@@ -11,6 +11,18 @@ front_text: >
     model of human with prosthetics run. This challenge is a continuation of the
     Learning to Run challenge (shown below) that was part of NIPS 2017
     Competition Track. The challenge was enhanced in three ways...
+
+nav:
+- name: Background
+  permalink: '#background'
+- name: Installation
+  permalink: '#installation'
+- name: Environment
+  permalink: '#environment'
+- name: osim-rl-helper
+  permalink: '#osim-rl-helper'
+- name: What's Next?
+  permalink: '#whats-next'
 ---
 
 - **Week 1: Understanding the Challenge**

@@ -12,7 +12,7 @@ front_text: >
     muscles to understand the effects of each muscle...
 
 nav:
-- name: muscles
+- name: Muscles
   permalink: '#muscles'
 - name: osim-rl-helper
   permalink: '#osim-rl-helper'

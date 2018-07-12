@@ -10,6 +10,14 @@ front_text: >
     equations, visualizations and narrative text into a document. It is used
     extensively in data science. However, for developers who have used IDEs with
     abundant features, the simplicity of Jupyter Notebook might be problematic.
+
+nav:
+- name: Installation with Anaconda
+  permalink: '#installation-with-anaconda'
+- name: Extensions
+  permalink: '#extensions'
+- name: References
+  permalink: '#references'
 ---
 
 [Jupyter Notebook](http://jupyter.org/) is a great tool that allows you to integrate live code, equations, visualizations and narrative text into a document. It is used extensively in data science.

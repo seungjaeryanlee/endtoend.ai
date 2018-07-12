@@ -14,6 +14,18 @@ front_text: >
     value to data if you use it incorrectly. Even if you double or triple the
     dataset manually or through data augmentation, without proper partition of
     data, you will be left clueless on how helpful adding more data was.
+
+nav:
+- name: Train
+  permalink: '#train'
+- name: Train - Test
+  permalink: '#train---test'
+- name: Train - Dev - Test
+  permalink: '#train---dev---test'
+- name: Train - TrainDev - Dev - Test
+  permalink: '#train---traindev---dev---test'
+- name: Conclusion
+  permalink: '#conclusion'
 ---
 
 To train a good model, you need lots of data. Luckily, over the last few decades, collecting data has become much easier. However, data is still a major constraint for most large-scale Machine Learning projects along with computational power.

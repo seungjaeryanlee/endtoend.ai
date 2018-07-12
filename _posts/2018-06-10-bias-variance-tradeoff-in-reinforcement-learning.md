@@ -11,6 +11,7 @@ front_text: >
     the model: a model that underfits the data has high bias, whereas a model 
     that overfits the data has high variance. In Reinforcement Learning, we
     consider another bias-variance tradeoff.
+
 ---
 
 Bias-variance tradeoff is a familiar term to most people who learned machine learning. In the context of Machine Learning, bias and variance refers to the model: a model that underfits the data has high bias, whereas a model that overfits the data has high variance. A model with high bias failed to find all the pattern in the data so it does not fit the training set well, so it will not fit the test set well either. A model with high variance fits the training set very well, but it fails to generalize to the test set because it also learned the noise in the data as patterns.

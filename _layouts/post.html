@@ -41,9 +41,12 @@ layout: default
       </style>
       <nav id="post-nav" class="mdl-color--white mdl-color-text--grey-800">
         <ul>
-          {% for heading in page.nav %}
-            <li><a href="{{ heading.permalink }}">{{ heading.name }}</a></li>
-          {% endfor %}
+          {% if page.nav %}
+            <li><b>Contents</b></li>
+            {% for heading in page.nav %}
+              <li><a href="{{ heading.permalink }}">{{ heading.name }}</a></li>
+            {% endfor %}
+          {% endif %}
         </ul>
       </nav>
     </div>
