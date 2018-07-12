@@ -24,3 +24,8 @@ markdown: kramdown
 # Put all pages except index.md in _pages directory
 include:
   - "_pages"
+
+front_page_order:
+ - "Sutton and Barto Notebooks"
+ - "Slides"
+ - "Blog"
