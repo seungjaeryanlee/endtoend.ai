@@ -3,9 +3,22 @@ layout: post
 title: "AI for Prosthetics Week 2: Understanding the Action Space"
 author: Seung Jae (Ryan) Lee
 permalink: /blog/ai-for-prosthetics-2
----
 
-# AI for Prosthetics Week 2: Understanding the Action Space
+front_image: /assets/blog/ai-for-prosthetics-2/front.jpeg
+front_text: >
+    Last week, we saw how a valid action has 19 numbers, each between 0 and 1.
+    The 19 numbers represented the amount of force to put to each muscle. I know
+    barely anything about muscles, so I decided to manually go through all the
+    muscles to understand the effects of each muscle...
+
+nav:
+- name: muscles
+  permalink: '#muscles'
+- name: osim-rl-helper
+  permalink: '#osim-rl-helper'
+- name: What's Next?
+  permalink: '#whats-next'
+---
 
 * [Week 1: Understanding the Challenge](/blog/ai-for-prosthetics-1)
 * **Week 2: Understanding the Action Space**

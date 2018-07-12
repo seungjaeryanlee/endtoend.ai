@@ -1,60 +1,15 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-    <title>{{ page.title | append: ' | End to End AI' | default: site.title }}</title>
-    {% seo %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name"><a href="/">{{ page.header_title | default: site.header_title }}</a></h1>
-      <h2 class="project-tagline">{{ page.header_description | default: page.title | default: site.header_description }}</h2>
-    </section>
-
-    <section class="main-content">
-      {{ content }}
-    </section>
-
-    {%- include footer.html -%}
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117425613-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-117425613-1');
-    </script>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script>
-      MathJax.Hub.Config({
-        config: ["MMLorHTML.js"],
-        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
-        jax: ["input/TeX"],
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-          processEscapes: false
-        },
-        TeX: {
-          TagSide: "right",
-          TagIndent: ".8em",
-          MultLineWidth: "85%",
-          equationNumbers: {
-            autoNumber: "AMS",
-          },
-          unicode: {
-            fonts: "STIXGeneral,'Arial Unicode MS'"
-          }
-        },
-      showProcessingMessages: false
-    });
-    </script>
-  </body>
-</html>
+---
+layout: default
+---
+<div class="post-ribbon"></div>
+<main class="post-main mdl-layout__content">
+  <div class="post-container mdl-grid">
+    <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+    <div class="post-section mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+      <h1 style="margin-top: 0;">{{ page.title }}</h1>
+      <article class="post-content">
+        {{ content }}
+      </article>
+    </div>
+  </div>
+</main>

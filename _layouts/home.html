@@ -1,36 +1,52 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-    <title>{{ page.title | default: site.title }}</title>
-    {% seo %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">{{ page.header_title | default: site.header_title }}</h1>
-      <h2 class="project-tagline">&#8203;</h2>
-    </section>
+---
+layout: default
+---
 
-    <section class="main-content">
-      {%- include cards.html -%}
+<main class="mdl-layout__content">
+    <div class="page-content">
+        <div class="mdl-grid">
 
-      {{ content }}
-    </section>
-
-    {%- include footer.html -%}
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119780437-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-119780437-1');
-    </script>
-  </body>
-</html>
+            <style>
+                .mdl-card > a {
+                    text-decoration: none;
+                    transition: 0.5s;
+                    width: 100%;
+                    min-height: 280px;
+                }
+                .mdl-card:hover {
+                    box-shadow: 0 8px 8px 0 rgba(0,0,0,.14), 0 12px 4px -8px rgba(0,0,0,.2), 0 4px 20px 0 rgba(0,0,0,.12);
+                }
+                .mdl-card__title-text {
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: black;
+                    margin: 12px 0 12px;
+                    padding: 0 10px;
+                }
+                .mdl-card__supporting-text p {
+                    padding: 0 10px;
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+            </style>
+            {% for page_title in site.front_page_order %}
+                {% for page in site.pages %}
+                    {% if page_title == page.title %}
+                        {% if page.display_front %}
+                        <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col mdl-cell--3-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+                            <a href="{{ page.url | prepend: site.baseurl }}">
+                                <div class="mdl-card__title" {% if page.image %} style="margin: 10px 0; height: 140px; background: url('{{ page.image }}') center no-repeat white; background-size: contain;" {% endif %}></div>
+                                <div class="mdl-card__supporting-text">
+                                    <h2 class="mdl-card__title-text">{{ page.title }}</h2>
+                                    <p>{{ page.excerpt }}</p>
+                                </div>
+                            </a>
+                        </div>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="mdl-layout-spacer"></div>
+</main>
