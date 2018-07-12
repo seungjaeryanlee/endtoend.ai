@@ -7,6 +7,12 @@ redirect_from:
  - /2018/04/14/effective-data-partition/
  - /2018/04/14/effective-data-partition
 image: /assets/blog/effective-data-partition/cat_data_augmentation.png
+front_text: >
+    To train a good model, you need lots of data. Luckily, over the last few 
+    decades, collecting data has become much easier. However, there is little
+    value to data if you use it incorrectly. Even if you double or triple the
+    dataset manually or through data augmentation, without proper partition of
+    data, you will be left clueless on how helpful adding more data was.
 ---
 
 To train a good model, you need lots of data. Luckily, over the last few decades, collecting data has become much easier. However, data is still a major constraint for most large-scale Machine Learning projects along with computational power.

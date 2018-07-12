@@ -4,6 +4,12 @@ title: "AI for Prosthetics Week 1: Understanding the Challenge"
 author: Seung Jae (Ryan) Lee
 permalink: /blog/ai-for-prosthetics-1
 image: /assets/blog/ai-for-prosthetics-1/prosthetics.jpeg
+front_text: >
+    The AI for Prosthetics challenge is one of NIPS 2018 Competition tracks. In
+    this challenge, the participants seek to build an agent that can make a 3D 
+    model of human with prosthetics run. This challenge is a continuation of the
+    Learning to Run challenge (shown below) that was part of NIPS 2017
+    Competition Track. The challenge was enhanced in three ways...
 ---
 
 - **Week 1: Understanding the Challenge**
