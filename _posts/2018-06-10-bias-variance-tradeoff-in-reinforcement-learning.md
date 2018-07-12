@@ -20,7 +20,7 @@ Bias-variance tradeoff is a familiar term to most people who learned machine lea
 
 In Reinforcement Learning, we consider another bias-variance tradeoff. This leads to a lot of confusion, because in Deep Reinforcement Learning, both cases of bias and variance exist. Therefore, it is important to have a clear understanding of what estimator we are referring to when we talk about bias and variance.
 
-### Monte Carlo and Temporal Difference Learning
+## Monte Carlo and Temporal Difference Learning
 
 Reinforcement Learning is a field of Machine Learning where the agent learns not through a fixed dataset but by interacting with the environment. In most Reinforcement Learning methods, the goal of the agent is to estimate the state value function $v_{\pi}(S_t)$ or the action value function $q_{\pi}(S_t, A_t)$. Value functions describe how desirable the state $S_t$ and action $A_t$ is to the agent. For this post, we use the state value function $v_{\pi}$, but the same idea applies to the action value function $q_{\pi}$.
 
@@ -36,7 +36,7 @@ In Monte Carlo method, the return $G_t$ is used as the $\text{Target}$. $G_t = R
 
 In TD method, instead of waiting until the end of the episode, the $\text{Target}$ is the sum of immediate reward and the estimate of future rewards. In other words, $\text{Target} = R_{t+1} + \gamma V_{\pi}(S_{t+1})$. In other words, we are updating $V(S_t)$ using the same function $R_{t+1} + \gamma V_{\pi}(S_{t+1})$. This is called **bootstrapping**: we are using an estimated value to update the same kind of estimated value. It is not obvious that this will converge to the true value function $v_{\pi} (S_t)$, but it might help to think that on each update, we take into account new experience ($R_{t+1}$), and as it gains more and more experience, $V_{\pi}(S_t)$ approaches $v_{\pi}(S_t)$.
 
-### Bias and Variance in Reinforcement Learning
+## Bias and Variance in Reinforcement Learning
 
 The idea of Bias-variance tradeoff appears when we compare Monte Carlo with TD learning. Remember that when we talk about bias and variance for these two methods, we are talking about the bias and variance of their target values.
 
@@ -55,7 +55,7 @@ The relative bias and variance of Monte Carlo and TD can be summarized with the 
 | Bias     | 0                   | $> 0$                              |
 | Variance | High                | Low                                |
 
-### Underfitting and Overfitting in Reinforcement Learning
+## Underfitting and Overfitting in Reinforcement Learning
 
 Another way to understand the table above is to use the idea of underfitting and overfitting. [Matthew Lai from DeepMind](http://qr.ae/TUppf6) explained this with the concept of **eligibility traces**: given a reward, find which actions led to this reward. Unfortunately, it is often impossible to precisely determine the cause of our death. Thus, we use a simple heuristic: we believe that actions close to the reward (in timestep) are more likely causes of reward.
 
@@ -65,7 +65,7 @@ The Monte Carlo model uses the full trace: we look at all actions taken before t
 
 On the other end, with the Temporal Difference model, the agent only looks at the action immediate before its death. In this case,the agent will most likely fail to find any pattern or generalization, since most actions have delayed rewards, so the last action was not the cause of its death. Therefore, the Temporal Difference model will underfit the episode.
 
-### $n$-step Bootstrapping
+## $n$-step Bootstrapping
 
 If Monte Carlo method overfits and TD method underfits, then it is natural to consider the middle ground. We don't want to only consider the last action, but we also don't want to consider all actions made. so we consider $n$ steps. This is called **$n$-step bootstrapping**. 
 
@@ -75,6 +75,6 @@ At the cost of an extra hyperparameter $n$, the $n$-step bootstrapping method wo
 
 ![Comparison of various n-step bootstrapping]({{ "assets/blog/bias-variance-tradeoff-in-reinforcement-learning/rms_nstep.png" | absolute_url }})
 
-### Conclusion
+## Conclusion
 
 Bias and Variance is a significant problem in Reinforcement Learning, as they can slow down the agent's learning. For simple environments, Monte Carlo method or Temporal Difference method work well enough, but for complex environments $n$-step bootstrapping can significant boost learning.
