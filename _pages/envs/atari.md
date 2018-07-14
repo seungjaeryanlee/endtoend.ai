@@ -149,11 +149,9 @@ For example, there are six variants for the *Pong* environment.
 | `PongNoFrameskip-v0`                | 1               | 0.25                          |
 | `PongNoFrameskip-v4`                | 1               | 0                             |
 
-<sup>1</sup> $k$ is chosen randomly at every step from values $\{2, 3, 4\}$.
-
-<sup>2</sup> For *Space Invaders*,  the `Deterministic` variant uses $k=3$ (instead of fourth).
-
-<sup>3</sup> `Deterministic-v4` is the configuration used to assess Deep Q-Networks.
+<sub>
+<sup>1</sup> $k$ is chosen randomly at every step from values $\{2, 3, 4\}$.<br/><sup>2</sup> For *Space Invaders*,  the `Deterministic` variant $k=3$. This is because when $k=4$, the lasers are invisible because it frame skip coincides with the blinking frequency of lasers.<br/><sup>3</sup> `Deterministic-v4` is the configuration used to assess Deep Q-Networks.
+</sub>
 
 Also, there are RAM environments such as `Pong-ram-v0`, where the observation is the RAM of the Atari machine instead of the 210 x 160 visual input. You can also add suffixes to RAM environments.
 

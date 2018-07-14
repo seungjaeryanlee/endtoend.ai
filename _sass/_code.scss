@@ -9,3 +9,7 @@ code, pre, code.highlight, pre.highlight {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
+
+sub code {
+    font-size: inherit; // Use font size from <sub>
+}
