@@ -1,8 +1,10 @@
 ---
 layout: page
 title: Atari Environments
-permalink: /env/atari
+permalink: /envs/atari
 redirect_from:
+ - /envs/atari-2600
+ - /env/atari
  - /env/atari-2600
 
 nav:
@@ -30,7 +32,7 @@ The Atari 2600 environments was originally provided through the [Arcade Learning
 
 ### Prerequisites
 
-To install the Atari 2600 environment, you need the OpenAI Gym toolkit. Read [this page](/env/gym) to learn how to install OpenAI Gym.
+To install the Atari 2600 environment, you need the OpenAI Gym toolkit. Read [this page](/envs/gym) to learn how to install OpenAI Gym.
 
 ### Installation via pip
 
