@@ -11,8 +11,8 @@ front_text:
     installation guide and state-of-the-art results for each environment.
 
 nav:
-- name: Atari 2600
-  permalink: '#atari-2600'
+- name: OpenAI Gym
+  permalink: '#openai-gym'
 - name: Unity ML-Agents
   permalink: '#unity-ml-agents'
 - name: PySC2
@@ -29,13 +29,13 @@ We attempt to provide a high-quality guide for Reinforcement Learning environmen
 
 
 
-## Atari 2600
+## OpenAI Gym
 
-![]({{ "assets/_pages/envs/breakout.gif" | absolute_url }})
+![]({{ "assets/_pages/envs/gym/mujoco/mujoco.gif" | absolute_url }})
 
-**Atari 2600** is a video game console from Atari released on 1977. The game console includes popular games such as *Breakout*, *Ms. Pacman* and *Space Invaders*. Since Deep Q-Networks were introduced by Mnih et al. in 2013, Atari 2600 has been the standard environment to test new Reinforcement Learning algorithms. Atari 2600 has been a challenging testbed due to its high-dimensional video input (size 210 x 160, frequency 60 Hz) and the discrepancy of tasks between games.
+**OpenAI Gym** is a toolkit for developing and comparing reinforcement learning algorithms. The `gym` library is  a collection of environments that makes no assumptions about the structure of your agent. Gym comes with a diverse suite of environments, ranging from classic video games such as [Atari 2600](/envs/gym#atari-2600) and [continuous control tasks](/envs/gym#mujoco).
 
-You can find the installation guide and state-of-the-art results for the Atari 2600 environment [here](/envs/atari).
+Visit the [Gym Environments](/envs/gym) page for state-of-the-art results and installation guides.
 
 
 
