@@ -26,6 +26,7 @@ include:
  - "_pages"
 
 front_page_order:
+ - "RL Environments"
  - "Sutton and Barto Notebooks"
  - "Slides"
  - "Blog"
