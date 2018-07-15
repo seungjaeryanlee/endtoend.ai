@@ -114,65 +114,67 @@ State of the Art results for individual Atari 2600 games can be found in [their 
 
 OpenAI Gym provides 59 Atari 2600 games. You can find their names in [OpenAI Gym environments page](https://gym.openai.com/envs/#atari), but unfortunately they only provide basic documentation.
 
-- AirRaid
-- Alien
-- Amidar
-- Assault
-- Asterix
-- Asteroids
-- Atlantis
-- Bank Heist
-- Battle Zone
-- Beam Rider
-- Berzerk
-- Bowling
-- Boxing
-- Breakout
-- Carnival
-- Centipede
-- Chopper Command
-- Crazy Climber
-- Demon Attack
-- Double Dunk
+- Air Raid
+- [Alien](/envs/gym/atari/alien)
+- [Amidar](/envs/gym/atari/amidar)
+- [Assault](/envs/gym/atari/assault)
+- [Asterix](/envs/gym/atari/asterix)
+- [Asteroids](/envs/gym/atari/asteroids)
+- [Atlantis](/envs/gym/atari/atlantis)
+- [Bank Heist](/envs/gym/atari/bank-heist)
+- [Battle Zone](/envs/gym/atari/battle-zone)
+- [Beam Rider](/envs/gym/atari/beam-rider)
+- [Berzerk](/envs/gym/atari/berzerk)
+- [Bowling](/envs/gym/atari/bowling)
+- [Boxing](/envs/gym/atari/boxing)
+- [Breakout](/envs/gym/atari/breakout)
+- [Carnival](/envs/gym/atari/carnival)
+- [Centipede](/envs/gym/atari/centipede)
+- [Chopper Command](/envs/gym/atari/chopper-command)
+- [Crazy Climber](/envs/gym/atari/crazy-climber)
+- [Demon Attack](/envs/gym/atari/demon-attack)
+- [Double Dunk](/envs/gym/atari/double-dunk)
 - Elevator Action
-- Enduro
-- Fishing Derby
-- Freeway
-- Frostbite
-- Gopher
-- Gravitar
-- Ice Hockey
-- James Bond
+- [Enduro](/envs/gym/atari/enduro)
+- [Fishing Derby](/envs/gym/atari/fishing-derby)
+- [Freeway](/envs/gym/atari/freeway)
+- [Frostbite](/envs/gym/atari/frostbite)
+- [Gopher](/envs/gym/atari/gopher)
+- [Gravitar](/envs/gym/atari/gravitar)
+- [H.E.R.O.](/envs/gym/atari/hero): Not available in OpenAI Gym.
+- [Ice Hockey](/envs/gym/atari/alien)
+- [James Bond](/envs/gym/atari/alien)
 - Journey Escape
-- Kangaroo
-- Krull
-- Kung Fu Master
-- Montezuma's Revenge
-- Ms. Pacman
-- Name This Game
-- Phoenix
-- Pitfall
-- Pong
+- [Kangaroo](/envs/gym/atari/kangaroo)
+- [Krull](/envs/gym/atari/krull)
+- [Kung Fu Master](/envs/gym/atari/kung-fu-master)
+- [Montezuma's Revenge](/envs/gym/atari/montezumas-revenge)
+- [Ms. Pacman](/envs/gym/atari/ms-pacman)
+- [Name This Game](/envs/gym/atari/name-this-game)
+- [Phoenix](/envs/gym/atari/phoenix)
+- [Pitfall](/envs/gym/atari/pit-fall)
+- [Pong](/envs/gym/atari/pong)
 - Pooyan
-- Private Eye
-- Qbert
-- River Raid
-- Road Runner
-- Robotank
-- Seaquest
-- Skiing
-- Solaris
-- Space Invaders
-- Star Gunner
-- Tennis
-- Time Pilot
-- Tutankham
-- Up N Down
-- Venture
-- Video Pinball
-- Wizard of Wor
-- Yars Revenge
-- Zaxxon
+- [Private Eye](/envs/gym/atari/private-eye)
+- [Qbert](/envs/gym/atari/qbert)
+- [River Raid](/envs/gym/atari/river-raid)
+- [Road Runner](/envs/gym/atari/road-runner)
+- [Robotank](/envs/gym/atari/robotank)
+- [Seaquest](/envs/gym/atari/seaquest)
+- [Skiing](/envs/gym/atari/skiing)
+- [Solaris](/envs/gym/atari/solaris)
+- [Space Invaders](/envs/gym/atari/space-invaders)
+- [Star Gunner](/envs/gym/atari/star-gunner)
+- [Surround](/envs/gym/atari/surround): Not available in OpenAI Gym.
+- [Tennis](/envs/gym/atari/tennis)
+- [Time Pilot](/envs/gym/atari/time-pilot)
+- [Tutankham](/envs/gym/atari/tutankham)
+- [Up and Down](/envs/gym/atari/up-and-down)
+- [Venture](/envs/gym/atari/venture)
+- [Video Pinball](/envs/gym/atari/video-pinball)
+- [Wizard of Wor](/envs/gym/atari/wizard-of-wor)
+- [Yars Revenge](/envs/gym/atari/yars-revenge)
+- [Zaxxon](/envs/gym/atari/zaxxon)
 
 ### Variants
 
