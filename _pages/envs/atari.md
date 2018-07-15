@@ -64,30 +64,50 @@ These are the published state-of-the-art results for Atari 2600 testbed. For bet
 
 State of the Art results for individual Atari 2600 games can be found in [their respective pages](#environments).
 
-| Median | Method             | Score from                                                   |
-| ------ | ------------------ | ------------------------------------------------------------ |
-| 223%   | Rainbow DQN        | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| 164%   | Distributional DQN | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| 151%   | Dueling DDQN       | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 140%   | Prioritized DDQN   | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 118%   | Noisy DQN          | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| 117%   | DDQN               | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 79%    | DQN                | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
+### No-op starts
 
-<sub>Table 1: Median normalized scores for 57 Atari games in *no-op starts*.</sub>
+| Median | Method                | Score from                                                   |
+| ------ | --------------------- | ------------------------------------------------------------ |
+| 434%   | Ape-X DQN<sup>1</sup> | [Distributed Prioritized Experience Replay]( https://arxiv.org/abs/1803.00933) |
+| 331%   | UNREAL<sup>2</sup>    | [Distributed Prioritized Experience Replay]( https://arxiv.org/abs/1803.00933) |
+| 223%   | Rainbow DQN           | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
+| 178%   | C51                   | [Distributed Prioritized Experience Replay]( https://arxiv.org/abs/1803.00933) |
+| 164%   | Distributional DQN    | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
+| 151%   | Dueling DDQN          | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
+| 140%   | Prioritized DDQN      | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
+| 118%   | Noisy DQN             | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
+| 117%   | DDQN                  | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
+| 96%    | Gorila DQN            | [Distributed Prioritized Experience Replay]( https://arxiv.org/abs/1803.00933) |
+| 79%    | DQN<sup>3</sup>       | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
 
-| Median | Method             | Score from                                                   |
-| ------ | ------------------ | ------------------------------------------------------------ |
-| 153%   | Rainbow DQN        | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| 128%   | Prioritized DDQN   | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 125%   | Distributional DQN | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| 117%   | Dueling DDQN       | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 116%   | A3C                | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 110%   | DDQN               | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 102%   | Noisy DQN          | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| 68%    | DQN                | [Rainbow: Combining Improvements in Deep Reinforcement Learning]( https://arxiv.org/abs/1710.02298) |
+<sub>
+<sup>1</sup> Ape-X DQN used a lot more (x100) environment frames compared to other results. The training time is half the time of other DQN results.<br/>
+<sup>2</sup> Hyperparameters were tuned per game.<br/>
+<sup>3</sup> Only evaluated on 49 games.
+</sub>
 
-<sub>Table 2: Median normalized scores for 57 Atari games in *human starts*.</sub>
+### Human starts
+
+| Median | Method                | Score from                                                   |
+| ------ | --------------------- | ------------------------------------------------------------ |
+| 358%   | Ape-X DQN<sup>1</sup> | [Distributed Prioritized Experience Replay]( https://arxiv.org/abs/1803.00933) |
+| 250%   | UNREAL<sup>2</sup>    | [Distributed Prioritized Experience Replay]( https://arxiv.org/abs/1803.00933) |
+| 153%   | Rainbow DQN           | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
+| 128%   | Prioritized DDQN      | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
+| 125%   | C51                   | [Distributed Prioritized Experience Replay]( https://arxiv.org/abs/1803.00933) |
+| 125%   | Distributional DQN    | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
+| 117%   | Dueling DDQN          | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
+| 116%   | A3C                   | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
+| 110%   | DDQN                  | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
+| 102%   | Noisy DQN             | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
+| 78%    | Gorila DQN            | [Distributed Prioritized Experience Replay]( https://arxiv.org/abs/1803.00933) |
+| 68%    | DQN<sup>3</sup>       | [Rainbow: Combining Improvements in Deep Reinforcement Learning]( https://arxiv.org/abs/1710.02298) |
+
+<sub>
+<sup>1</sup> Ape-X DQN used a lot more (x100) environment frames compared to other results. The training time is half the time of other DQN results.<br/>
+<sup>2</sup> Hyperparameters were tuned per game. <br/>
+<sup>3</sup> Only evaluated on 49 games.
+</sub>
 
 ## Environments
 
