@@ -18,6 +18,7 @@ This is a collection of slides we created for presentations.
 
 * Chapter 1: Introduction [[Google Slides]](https://docs.google.com/presentation/d/e/2PACX-1vRfSkKPoU3I9mnJKeCEiO8u7EQNMN_I3XN-g71kl8aIB47zlVzOg5DJKy2kTEEzVZGVYhkUuuArTqo7/pub?start=false&loop=false&delayms=3000) [[PDF]](/slides/book/sutton-barto/01.pdf)
 * Chapter 2: Multi-armed Bandits [[Google Slides]](https://docs.google.com/presentation/d/e/2PACX-1vQkK_UjtJZ1NmLqAsHoaf41tmwPHma2tlVKh9mbdMWj-31Huo9M_yaL1-x7C-JaC7GOpRfdKYnZ6lw2/pub?start=false&loop=false&delayms=3000) [[PDF]](/slides/book/sutton-barto/02.pdf)
+* Chapter 3: Finite Markov Decision Processes [[Google Slides]](https://docs.google.com/presentation/d/e/2PACX-1vTU4-wObYIs5m2ByIAmbZzm8zQUMmTLvs6SnENVZnVaMzdRDK9JyvNhxbtUeuuTkynR9z-EbyAFCjz-/pub?start=false&loop=false&delayms=3000) [[PDF]](/slides/book/sutton-barto/03.pdf)
 
 
 
