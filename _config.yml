@@ -33,3 +33,7 @@ front_page_order:
 
 plugins:
  - jekyll-redirect-from
+ - jekyll-feed
+
+feed:
+  path: /blog/feed.xml
