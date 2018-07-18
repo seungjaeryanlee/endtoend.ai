@@ -223,7 +223,7 @@ Above is an observation dictionary for the initial state. The magnitude of numbe
 
 Also, all the positions in the observation are absolute positions, but I am more interested in their positions relative to the pelvis for their $x$ and $z$ coordinates. If the head is behind the pelvis, the agent will likely fall behind, regardless of its absolute position, whereas if the head is in front of the pelvis, the agent will likely fall forward or run. Thus, the $x$ and $z$ coordinates for each body part should be shifted by that of the pelvis.
 
-Note that the center of mass currently only has two coordinates: this is due to a 
+Note that the center of mass currently only has two coordinates: this is due to a bug as mentioned in [Issue #129](https://github.com/stanfordnmbl/osim-rl/issues/129), and will be fixed in the next update.
 
 If you would like to learn more about the observation, visit the [official documentation page](http://osim-rl.stanford.edu/docs/nips2018/observation/).
 
