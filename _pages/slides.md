@@ -20,6 +20,7 @@ This is a collection of slides we created for presentations.
 * Chapter 2: Multi-armed Bandits [[Google Slides]](https://docs.google.com/presentation/d/e/2PACX-1vQkK_UjtJZ1NmLqAsHoaf41tmwPHma2tlVKh9mbdMWj-31Huo9M_yaL1-x7C-JaC7GOpRfdKYnZ6lw2/pub?start=false&loop=false&delayms=3000) [[PDF]](/slides/book/sutton-barto/02.pdf)
 * Chapter 3: Finite Markov Decision Processes [[Google Slides]](https://docs.google.com/presentation/d/e/2PACX-1vTU4-wObYIs5m2ByIAmbZzm8zQUMmTLvs6SnENVZnVaMzdRDK9JyvNhxbtUeuuTkynR9z-EbyAFCjz-/pub?start=false&loop=false&delayms=3000) [[PDF]](/slides/book/sutton-barto/03.pdf)
 * Chapter 4: Dynamic Programming [[Google Slides]](https://docs.google.com/presentation/d/e/2PACX-1vTOz_Y0e2IyZOaAVLcPQceHjEsbNM9uHZOhNbPF_A59ZJvJo4cDACsEq-N0T5hxXmcbeiRGn5vBRTTE/pub?start=false&loop=false&delayms=3000) [[PDF]](/slides/book/sutton-barto/04.pdf)
+* Chapter 10: On-policy Control with Approximation [[Google Slides]](https://docs.google.com/presentation/d/e/2PACX-1vSirD3HPgl2nSDrvw0XK5ft5QeH0nXQ9F4OyNbnkixVtLPnVKbCnA2mAv6GiZ2bY2ZXrJF1NsyRByh8/pub?start=false&loop=false&delayms=3000) [[PDF]](/slides/book/sutton-barto/10.pdf)
 
 
 
