@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jupyter Notebook extensions to enhance your efficiency"
-author: Seung Jae (Ryan) Lee
+author: Seungjae Ryan Lee
 permalink: /blog/jupyter-notebook-extensions-to-enhance-your-efficiency
 
 front_image: /assets/blog/jupyter-notebook-extensions-to-enhance-your-efficiency/front.svg

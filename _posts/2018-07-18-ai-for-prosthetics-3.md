@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI for Prosthetics Week 3-4: Understanding the Observation Space"
-author: Seung Jae (Ryan) Lee
+author: Seungjae Ryan Lee
 permalink: /blog/ai-for-prosthetics-3
 redirect_from:
  - /blog/ai-for-prosthetics-4

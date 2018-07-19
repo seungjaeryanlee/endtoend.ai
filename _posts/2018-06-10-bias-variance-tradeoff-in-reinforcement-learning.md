@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bias-variance Tradeoff in Reinforcement Learning"
-author: Seung Jae (Ryan) Lee
+author: Seungjae Ryan Lee
 permalink: /blog/bias-variance-tradeoff-in-reinforcement-learning
 
 front_image: /assets/blog/bias-variance-tradeoff-in-reinforcement-learning/front.png

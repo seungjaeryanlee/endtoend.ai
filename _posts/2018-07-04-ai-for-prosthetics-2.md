@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI for Prosthetics Week 2: Understanding the Action Space"
-author: Seung Jae (Ryan) Lee
+author: Seungjae Ryan Lee
 permalink: /blog/ai-for-prosthetics-2
 
 front_image: /assets/blog/ai-for-prosthetics-2/front.jpeg

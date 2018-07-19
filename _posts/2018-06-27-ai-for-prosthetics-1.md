@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI for Prosthetics Week 1: Understanding the Challenge"
-author: Seung Jae (Ryan) Lee
+author: Seungjae Ryan Lee
 permalink: /blog/ai-for-prosthetics-1
 
 front_image: /assets/blog/ai-for-prosthetics-1/front.jpg
