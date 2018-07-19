@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Atari Sorround Environment
+title: Atari Surround Environment
 permalink: /envs/gym/atari/surround
 
 redirect_from:
