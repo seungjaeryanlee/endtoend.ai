@@ -32,16 +32,18 @@ nav:
 - [Week 2: Understanding the Action Space](/blog/ai-for-prosthetics-2)
 - [Week 3-4: Understanding the Observation Space](/blog/ai-for-prosthetics-3)
 
+
+
 ## Background
 
-The **AI for Prosthetics** challenge is one of NIPS 2018 Competition tracks. In this challenge, the participants seek to build an agent that can make a 3D model of human with prosthetics run.
+The **AI for Prosthetics** challenge is one of NIPS 2018 Competition tracks. In this challenge, the participants seek to build an agent that can make a 3D human model with prosthetics run.
 
 ![Prosthetics]({{ "assets/blog/ai-for-prosthetics-1/prosthetics.jpeg" | absolute_url }})
 
 This challenge is a continuation of the Learning to Run challenge (shown below) that was part of NIPS 2017 Competition Track. The challenge was enhanced in three ways:
 
-* Experimental data is now allowed
-* The model can now fall sideways (2D to 3D)
+* Experimental data is allowed
+* The model can fall sideways (2D to 3D: Added $z$-axis)
 * A model has a prosthetic leg
 
 ![NIPS 2017: Learning to Run]({{ "assets/blog/ai-for-prosthetics-1/learning2run.gif" | absolute_url }})
@@ -57,7 +59,13 @@ conda install -c conda-forge lapack git
 pip install git+https://github.com/stanfordnmbl/osim-rl.git
 ```
 
-[Here](http://osim-rl.stanford.edu/docs/quickstart/) is a detailed description of the installation process.
+If everything was installed correctly, the following command should exit without any output or error:
+
+```bash
+python3 -c "import osim"
+```
+
+If you encounter any error during the installation process, try checking out the [official FAQ](http://osim-rl.stanford.edu/docs/faq/) for solutions to common errors.
 
 
 
@@ -68,7 +76,7 @@ from osim.env import ProstheticsEnv
 env = ProstheticsEnv()
 ```
 
-The environment is provided in `opensim` package and follows the conventions of [OpenAI Gym](https://gym.openai.com/). In other words, we can use functions and attributes like `env.reset()`, `env.step()`, `env.observation_space` and `env.action_space`.
+The environment is provided in the `osim-rl` package and follows the conventions of [OpenAI Gym](https://gym.openai.com/). In other words, we can use helpful functions and attributes like `env.reset()`, `env.step()`, `env.observation_space` and `env.action_space` to understand the environment better.
 
 To create an agent, we should understand what its inputs and outputs are. The input is the observation given by the environment, and the output is the action chosen by the agent, so let's look at the observation space and action space.
 
@@ -78,14 +86,14 @@ To create an agent, we should understand what its inputs and outputs are. The in
 print(env.observation_space) # Returns `Box(158,)`
 ```
 
-The observation space is formatted with `gym.spaces.Box`. If you are unfamiliar with OpenAI Gym, you can just understand that the observation is a list of 158 features. (Read more about `Box()` [here](https://gym.openai.com/docs/#spaces).)
+The observation space has a type of `gym.spaces.Box`. If you are unfamiliar with OpenAI Gym, you can just think of each observation as a list of 158 features. (Read more about `Box()` [here](https://gym.openai.com/docs/#spaces).)
 
 ```python
 observation = env.reset(project=False)
 observation, _, _, _ = env.step(action, project=False)
 ```
 
-To learn more about the observation, we can also pass `project=False` to `env.reset()` or `env.step()`. When `project=True` (default), the observation is a list of length 158. However, with `project=False`, the observation is returned as a dictionary with key strings explaining the meaning behind each number.
+To learn more about the observation, we can also pass `project=False` to `env.reset()` or `env.step()`. When `project=True` (the default), the observation is a list of length 158. However, with `project=False`, the observation is returned as a dictionary with key strings explaining the meaning behind each number.
 
 ```python
 { 'body_acc': { 'calcn_l': [ 1253.6888287987226,
@@ -115,18 +123,18 @@ The action space is also formatted with `gym.spaces.Box`. A valid action is a li
 
 ## osim-rl-helper
 
-I created a repository with starter code for the competition and made it public. You can view it [here](https://github.com/seungjaeryanlee/osim-rl-helper). 
+I created a public GitHub repository with starter code for the competition. If you are unsure about where to start, I recommend [checking it out!](https://github.com/seungjaeryanlee/osim-rl-helper). 
 
 ### Agent
 
-I like trying multiple ideas before converging to one, and I like to keep track of every changes I have made. Thus, I created an `Agent` class that will act as a prototype for all agents to neatly organize my failed endeavors. The agent classes will differ greatly by their algorithm, but they will have 2 things in common: they had to be run locally and they had to be submitted to server. Thus, I implemented two functions `Agent.test()` and `Agent.submit()` that used unimplemented `Agent.act()` to retrieve an action from the agent.
+I like trying multiple ideas before converging to one, and I like to keep track of every changes I have made. Thus, I created an `Agent` class that will act as a template for all agents to keep track of my failed endeavors. The functions in each agent class will differ greatly by their methods, but they will have 2 things in common: they have to be run locally and they had to be submitted to server. Thus, I implemented two functions `Agent.test()` and `Agent.submit()` that uses the unimplemented `Agent.act()` function to retrieve an action from the agent.
 
-However, when I tried to submit the agent, I was faced two errors that depleted my submission count.
+However, when I tried to submit the agent, I repeatedly faced two errors:
 
 1. The default `env_id` for client was wrong: I needed to set `env_id='ProstheticsEnv'`.
 2. `env.step()` could not take `action` with NumPy types.
 
-I continued to make this mistake later in the week, so I decided to create a `Agent.sanity_check()` function that is run before `test()` or `submit()`.
+I continued to make this mistake later in the week, so I decided to create a `Agent.sanity_check()` function that is run before `Agent.test()` or `Agent.submit()`.
 
 ```python
 def sanity_check(self):
@@ -174,13 +182,42 @@ class FixedActionAgent(Agent):
 
 ![FixedActionAgent]({{ "assets/blog/ai-for-prosthetics-1/FixedActionAgent.gif" | absolute_url }})
 
-I will regularly upload more baseline agents throughout the competition, so if you're interested, please star it on [GitHub](https://github.com/seungjaeryanlee/osim-rl-helper)!
+### Local Visualization
+
+You can test the agent locally using the `run.py` script.
+
+```
+./run.py FixedActionAgent
+```
+
+To visualize the agent, use the `-v/--visualize` tag.
+
+```bash
+./run.py FixedActionAgent -v
+```
+
+### Submission
+
+You can also submit with  `osim-rl-helper` using the `run.py`  script. First, open the `helper/CONFIG.py` file and add your crowdAI API token. You can find your API token in `https://www.crowdai.org/participants/[username]`.
+
+```
+remote_base = 'http://grader.crowdai.org:1729'
+crowdai_token = ''
+```
+
+Then, you can submit the `FixedActionAgent` by adding the `-s/--submit` flag:
+
+```bash
+./run.py RandomAgent -s
+```
+
+I will regularly upload more agents and helpful scripts throughout the competition, so if you're interested, please watch or star the repository on [GitHub](https://github.com/seungjaeryanlee/osim-rl-helper)!
 
 
 
 ## What's Next?
 
-Niether `RandomAgent` nor `FixedActionAgent` is even close to a reinforcement learning agent: it chooses an action regardless of the observation it receives. I will try to implement a basic learning agent that uses the observation provided by the environment.
+Neither `RandomAgent` nor `FixedActionAgent` is a reinforcement learning agent: it chooses an action regardless of the observation it receives. I will try to implement a basic learning agent that uses the observation provided by the environment.
 
-Also, although we can simply plug the observation and the actions into some Policy Gradient algorithm and train it, it is very likely that knowing more about the observation and the actions could allow us to perform feature engineering. Thus, we will also explore the spaces deeper.
+Also, although we can simply plug the observations into some Policy Gradient algorithm and train it, it is very likely that knowing more about the observation and the actions could allow us to perform feature engineering. Thus, we will also explore the two spaces deeper in the next few weeks.
 

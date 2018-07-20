@@ -36,7 +36,7 @@ nav:
 
 *Note: Currently, the default observation style is `project=True`, where a list is returned as an observation. However, the default will be changed to `project=False`, where a dictionary is returned, in the next release. If you don't know what `project` does, check my [Week 1 post](/blog/ai-for-prosthetics-1)!* 
 
-The observation can be roughly divided into five components: the body parts, the joints, the muscles, the forces, and the center of mass. For each *body part* component, the agent observes its position, velocity, acceleration, rotation, rotational velocity, and rotational acceleration. Similarly, for each *joint*, the agent observes its position, velocity and acceleration. For each *muscle*, the agent observes its activation, fiber force, fiber length and fiber velocity. The *force* component describes the forces acting on body parts. Finally, the agent observes the position, velocity, and acceleration of the center of mass.
+The observation can be divided into five components: the body parts, the joints, the muscles, the forces, and the center of mass. For each *body part* component, the agent observes its position, velocity, acceleration, rotation, rotational velocity, and rotational acceleration. Similarly, for each *joint*, the agent observes its position, velocity and acceleration. For each *muscle*, the agent observes its activation, fiber force, fiber length and fiber velocity. The *force* component describes the forces acting on body parts. Finally, the agent observes the position, velocity, and acceleration of its *center of mass*.
 
 ```python
 {
@@ -219,13 +219,13 @@ The observation can be roughly divided into five components: the body parts, the
 }
 ```
 
-Above is an observation dictionary for the initial state. The magnitude of numbers vary greatly. The $y$ position of body parts stay close to the interval $[0, 1]$, whereas accelerations or muscle forces seem to have a magnitude of a few tens of thousands. Some of these numbers might be due to muscles not being equilibrated when the simulation is initialized ([Issue #133](https://github.com/stanfordnmbl/osim-rl/issues/133)), but still normalizing the observation might be well worth the effort.
+Above is an observation dictionary for the initial state. The magnitude of numbers vary greatly. The $y$ position of body parts stay close to the interval $[0, 1]$, whereas body parts' accelerations or muscles' fiber forces have a magnitude of a few tens of thousands. Some of these numbers might be due to muscles not being equilibrated when the simulation is initialized ([Issue #133](https://github.com/stanfordnmbl/osim-rl/issues/133)), but still normalizing the observation might be well worth the effort.
 
-Also, all the positions in the observation are absolute positions, but I am more interested in their positions relative to the pelvis for their $x$ and $z$ coordinates. If the head is behind the pelvis, the agent will likely fall behind, regardless of its absolute position, whereas if the head is in front of the pelvis, the agent will likely fall forward or run. Thus, the $x$ and $z$ coordinates for each body part should be shifted by that of the pelvis.
+Also, all the positions in the observation are absolute positions, but we are more interested in their positions relative to the pelvis for their $x$ and $z$ coordinates. If the head is behind the pelvis, the agent will likely fall behind, regardless of its absolute position, whereas if the head is in front of the pelvis, the agent will likely fall forward or run. Thus, the $x$ and $z$ coordinates for each body part should be shifted by that of the pelvis.
 
 Note that the center of mass currently only has two coordinates: this is due to a bug as mentioned in [Issue #129](https://github.com/stanfordnmbl/osim-rl/issues/129), and will be fixed in the next update.
 
-If you would like to learn more about the observation, visit the [official documentation page](http://osim-rl.stanford.edu/docs/nips2018/observation/).
+If you would like to learn more about the observation dictionary, visit the [official documentation page](http://osim-rl.stanford.edu/docs/nips2018/observation/).
 
 
 
@@ -233,7 +233,7 @@ If you would like to learn more about the observation, visit the [official docum
 
 ### DictToList
 
-The original `DictToList` wrapper simply used  `ProstheticsEnv.get_observation()` function to convert a `dict`-type observation to a `list`. However, this function does not take into account most $z$ coordinates. Thus, the  `DictToList` wrapper has been renamed to `DictToListLegacy` . Instead, I created a `DictToListFull` wrapper that converts the observation to a `list` without any preprocessing.
+The original `DictToList` wrapper simply used  `ProstheticsEnv.get_observation()` function to convert a `dict`-type observation to a `list`. However, this function does not take into account most $z$ coordinates. Thus, the  `DictToList` wrapper has been renamed to `DictToListLegacy` . Instead, I created a `DictToListFull` wrapper that converts the observation to a `list` without any preprocessing. The function in the wrapper that reformats the observation is shown below.
 
 ```python
 def _dict_to_list(self, state_desc):
@@ -293,7 +293,7 @@ I added a Jupyter Notebook that allows you to monitor the interactions between t
 
 ## What's Next?
 
-I was busy for the last couple of weeks, mostly redesigning my blog (hope you like it!) and doing some research. Next week, I will check the reward space and try tweaking the rewards, which should finish the overview of the environment.
+I was busy the last couple of weeks, mostly redesigning my blog (hope you like it!) and doing some research. Next week, I will check the reward space and try tweaking the rewards, which should finish the overview of the environment.
 
-In a couple of weeks, the environment will be updated for Round 2, where the agent must follow a random velocity vector. The few leftover bugs in the environment would also be fixed (Issues [#129](https://github.com/stanfordnmbl/osim-rl/issues/129), [#133](https://github.com/stanfordnmbl/osim-rl/issues/133)). I will spend the first week reviewing the changes and updating `osim-rl-helper` accordingly. Afterwards, I will testing my ideas by training agents on cloud instances.
+In a couple of weeks, the environment will be updated for Round 2, where the agent must follow a random velocity vector. The few leftover bugs in the environment would also be fixed then (Issues [#129](https://github.com/stanfordnmbl/osim-rl/issues/129), [#133](https://github.com/stanfordnmbl/osim-rl/issues/133)). I will spend the first week reviewing the changes and updating `osim-rl-helper` accordingly. Afterwards, I will be testing my ideas by training agents on cloud instances.
 

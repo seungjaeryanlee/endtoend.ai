@@ -27,9 +27,11 @@ nav:
 * **Week 2: Understanding the Action Space**
 * [Week 3-4: Understanding the Observation Space](/blog/ai-for-prosthetics-3)
 
+
+
 ## Muscles
 
-[Last week](/blog/ai-for-prosthetics-1), we saw how a valid action has 19 numbers, each between 0 and 1. The 19 numbers represented the amount of force to put to each muscle. I know barely anything about muscles, so I decided to manually go through all the muscles to understand the effects of each muscle.
+[Last week](/blog/ai-for-prosthetics-1), we saw how a valid action has 19 numbers, each between 0 and 1. The 19 numbers represented the amount of force to put to each muscle. I know barely anything about muscles, so I decided to manually go through all the muscles to gain some intuition about the effects of each muscle.
 
 #### Index 0
 
@@ -109,7 +111,7 @@ nav:
 
 ### Hip Thrust
 
-Let's test our intuition by trying to create a "hip-thrust" action. The indices 2, 4, 10, 12 look promising, so let's try fully activating these muscles.
+Let's test our intuition by trying to create a "hip-thrust" action. The indices 2, 4, 10, 12 look promising, so let's try fully activating these muscles, leaving all other muscles unactivated.
 
 ![]({{ "assets/blog/ai-for-prosthetics-2/hip-thrust.gif" | absolute_url }})
 
@@ -128,7 +130,14 @@ conda install keras
 pip install keras-rl
 ```
 
-The syntax for testing and submitting `KerasDDPGAgent` is identical to previous agents. To train `KerasDDPGAgent`, you need to specify the number of steps to train the agent with the `-t/--train` flag. For example, the command below trains the agent for 1000 time steps.
+The syntax for testing and submitting `KerasDDPGAgent` is identical to previous agents, using `run.py`.
+
+```
+./run.py KerasDDPGAgent
+./run.py KerasDDPGAgent --submit
+```
+
+ To train `KerasDDPGAgent`, you need to specify the number of steps to train the agent with the `-t/--train` flag. For example, the command below trains the agent for 1000 time steps.
 
 ```bash
 ./run.py KerasDDPGAgent --train 1000
@@ -136,13 +145,11 @@ The syntax for testing and submitting `KerasDDPGAgent` is identical to previous 
 
 The `KerasDDPGAgent` inherits the `KerasAgent` template, which defines `train()`, `test()`, `submit()` functions.
 
-You can check the source code of `KerasDDPGAgent` in `/helper/baselines/keras/KerasDDPGAgent.py`. You can check the source code of  `KerasAgent` in `/helper/template.py`.
+You can check the source code of `KerasDDPGAgent` in `/helper/baselines/keras/KerasDDPGAgent.py`. You can check the source code of `KerasAgent` in `/helper/templates/` directory.
 
 ### Client Wrappers
 
-The `keras-rl` package requires an `env` parameter. However, during submission, the agent needs to interact with the client. Thus, I had to create several wrappers to transform the client into the format of a local environment.
-
-The `ClientToEnv` wrapper simply wraps a `client` instance into an `env`.
+The `keras-rl` package requires an `env` parameter. However, during submission, the agent needs to interact with the client. Thus, I created a wrapper that transforms the client into the format of a local environment. The `ClientToEnv` wrapper simply wraps a `client` instance into an `env`.
 
 ```python
 class ClientToEnv:
@@ -193,19 +200,15 @@ class JSONable:
             return self.env.step(action)
 ```
 
-You can check the source code of the wrappers in `/helper/wrappers.py`.
+You can check the source code of the wrappers in `/helper/wrappers/` directory.
 
 
 
 ## What's Next?
 
+[Łukasz Kidziński (@kidzik)](https://github.com/kidzik), the osim-rl project initiator and lead, kindly created [a page](http://osim-rl.stanford.edu/docs/nips2018/observation/) explaining the meaning behind each number in the observation dictionary. I plan to analyze the observation space and monitor the observations to see how they change throughout an episode.
+
 With the current environment, it is very easy for the agent to get stuck in a local optima. The reward is determined by the location of the pelvis, and the easiest way to move the pelvis forward is by thrusting the hip. However, as shown above, such "hip-thrust" action makes the agent lose balance. A good way to combat this problem is to customize the rewards. Adam Stelmasczczyk, a participant of the Learning to Run competition, wrote a [great article](https://medium.com/mlreview/our-nips-2017-learning-to-run-approach-b80a295d3bb5) about their team's "reward hacking" attempts. I will try to imitate their approach.
 
-Also, [Łukasz Kidziński (@kidzik)](https://github.com/kidzik), the osim-rl project initiator and lead, kindly created [a page](http://osim-rl.stanford.edu/docs/nips2018/observation/) explaining the meaning behind the observation dictionary. I plan to analyze the observation and see how they change  throughout an episode.
 
-
-
----
-
-*Thank you for reading! If this post helped you, please consider leaving a comment. It encourages me to write a better post next week :) Also, if you have any suggestions or questions, feel free to post them below.*
 
