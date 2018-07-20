@@ -30,6 +30,7 @@ nav:
 
 - **Week 1: Understanding the Challenge**
 - [Week 2: Understanding the Action Space](/blog/ai-for-prosthetics-2)
+- [Week 3-4: Understanding the Observation Space](/blog/ai-for-prosthetics-3)
 
 ## Background
 
