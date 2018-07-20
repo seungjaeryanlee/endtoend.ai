@@ -130,14 +130,16 @@ conda install keras
 pip install keras-rl
 ```
 
-The syntax for testing and submitting `KerasDDPGAgent` is identical to previous agents, using `run.py`.
+The syntax for testing and submitting `KerasDDPGAgent` is identical to previous agents, using `run.py`. 
 
 ```
 ./run.py KerasDDPGAgent
 ./run.py KerasDDPGAgent --submit
 ```
 
- To train `KerasDDPGAgent`, you need to specify the number of steps to train the agent with the `-t/--train` flag. For example, the command below trains the agent for 1000 time steps.
+To run or submit, you need a pretrained model saved in `KerasDDPGAgent_actor.h5f` and `KerasDDPGAgent_critic.h5f`. These files are generated and updated when you train the `KerasDDPGAgent`. 
+
+To train `KerasDDPGAgent`, you need to specify the number of steps to train the agent with the `-t/--train` flag. For example, the command below trains the agent for 1000 time steps.
 
 ```bash
 ./run.py KerasDDPGAgent --train 1000
