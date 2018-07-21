@@ -35,8 +35,9 @@ We attempt to provide a high-quality guide for Reinforcement Learning environmen
 
 **OpenAI Gym** is a toolkit for developing and comparing reinforcement learning algorithms. The `gym` library is  a collection of environments that makes no assumptions about the structure of your agent. Gym comes with a diverse suite of environments, ranging from classic video games such as [Atari 2600](/envs/gym#atari-2600) and [continuous control tasks](/envs/gym#mujoco).
 
-Visit the [Gym Environments](/envs/gym) page for state-of-the-art results and installation guides.
-
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/envs/gym">
+Read more
+</a>
 
 
 ## Unity ML-Agents
@@ -45,7 +46,9 @@ Visit the [Gym Environments](/envs/gym) page for state-of-the-art results and in
 
 **The Unity Machine Learning Agents Toolkit** (ML-Agents) is an open-source Unity plugin that enables games and simulations to serve as environments for training intelligent agents.
 
-You can find the documentation [in their GitHub page](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Readme.md).
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Readme.md">
+Read more
+</a>
 
 
 
@@ -55,8 +58,9 @@ You can find the documentation [in their GitHub page](https://github.com/Unity-T
 
 **PySC2** is [DeepMind](http://deepmind.com/)'s Python component of the StarCraft II Learning Environment (SC2LE). It exposes [Blizzard Entertainment](http://blizzard.com/)'s [StarCraft II Machine Learning API](https://github.com/Blizzard/s2client-proto) as a Python RL Environment. This is a collaboration between DeepMind and Blizzard to develop StarCraft II into a rich environment for RL research. PySC2 provides an interface for RL agents to interact with StarCraft 2, getting observations and sending actions.
 
-You can find the documentation [in their GitHub page](https://github.com/deepmind/pysc2).
-
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="https://github.com/deepmind/pysc2">
+Read more
+</a>
 
 
 ## PyGame Learning Environment
@@ -65,8 +69,9 @@ You can find the documentation [in their GitHub page](https://github.com/deepmin
 
 **PyGame Learning Environment (PLE)** is a learning environment, mimicking the [Arcade Learning Environment](https://github.com/mgbellemare/Arcade-Learning-Environment) interface, allowing a quick start to Reinforcement Learning in Python. The goal of PLE is allow practitioners to focus design of models and experiments instead of environment design.
 
-You can find the documentation [in their GitHub page](https://github.com/ntasfi/PyGame-Learning-Environment).
-
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="https://github.com/ntasfi/PyGame-Learning-Environment">
+Read more
+</a>
 
 
 ## OpenSim RL
@@ -75,5 +80,6 @@ You can find the documentation [in their GitHub page](https://github.com/ntasfi/
 
 **OpenSim RL** allows you to synthesize physiologically accurate movement by combining biomechanical expertise embedded in the [OpenSim](http://opensim.stanford.edu/) simulation software with state-of-the-art control strategies using Deep Reinforcement Learning.
 
-You can find the documentation [here](http://osim-rl.stanford.edu/docs/home/).
-
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="http://osim-rl.stanford.edu/docs/home/">
+Read more
+</a>
