@@ -276,9 +276,9 @@ def _dict_to_list(self, state_desc):
         res += state_desc['forces'][force]
 
         # Center of Mass Observations
-        res.append(state_desc['misc']['mass_center_pos'])
-        res.append(state_desc['misc']['mass_center_vel'])
-        res.append(state_desc['misc']['mass_center_acc'])
+        res += state_desc['misc']['mass_center_pos']
+        res += state_desc['misc']['mass_center_vel']
+        res += state_desc['misc']['mass_center_acc']
 
     return res
 ```
