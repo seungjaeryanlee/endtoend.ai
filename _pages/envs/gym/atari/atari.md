@@ -72,14 +72,19 @@ State of the Art results for individual Atari 2600 games can be found in [their 
 | 434%   | Ape-X DQN<sup>1</sup> | [Distributed Prioritized Experience Replay]( https://arxiv.org/abs/1803.00933) |
 | 331%   | UNREAL<sup>2</sup>    | [Distributed Prioritized Experience Replay]( https://arxiv.org/abs/1803.00933) |
 | 223%   | Rainbow DQN           | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| 178%   | C51                   | [Distributed Prioritized Experience Replay]( https://arxiv.org/abs/1803.00933) |
+| 178%   | C51                   | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
+| 172%   | NoisyNet-Dueling DDQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 164%   | Distributional DQN    | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
 | 151%   | Dueling DDQN          | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
 | 140%   | Prioritized DDQN      | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 118%   | Noisy DQN             | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
+| 132%   | Dueling DDQN          | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
+| 123%   | NoisyNet-DQN          | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
+| 118%   | NoisyNet-DQN          | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
 | 117%   | DDQN                  | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
 | 96%    | Gorila DQN            | [Distributed Prioritized Experience Replay]( https://arxiv.org/abs/1803.00933) |
-| 79%    | DQN<sup>3</sup>       | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
+| 83%    | DQN<sup>3</sup>       | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
+| 80%    | A3C                   | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
+| 79%    | DQN<sup>3</sup>       | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
 
 <sub>
 <sup>1</sup> Ape-X DQN used a lot more (x100) environment frames compared to other results. The training time is half the time of other DQN results.<br/>
