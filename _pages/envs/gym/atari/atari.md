@@ -13,10 +13,10 @@ nav:
    permalink: '#overview'
  - name: Installation
    permalink: '#installation'
- - name: State of the Art
-   permalink: '#state-of-the-art'
  - name: Environments
    permalink: '#environments'
+ - name: State of the Art
+   permalink: '#state-of-the-art'
  - name: References
    permalink: '#references'
 ---
@@ -25,7 +25,7 @@ nav:
 
 Atari 2600 is a video game console from Atari that was released in 1977. The game console included popular games such as *Breakout*, *Ms. Pacman* and *Space Invaders*. Since Deep Q-Networks were introduced by Mnih et al. in 2013, Atari 2600 has been the standard environment to test new Reinforcement Learning algorithms. Atari 2600 has been a challenging testbed due to its high-dimensional video input (size 210 x 160, frequency 60 Hz) and the discrepancy of tasks between games.
 
-The Atari 2600 environments was originally provided through the [Arcade Learning Environment (ALE)](https://github.com/mgbellemare/Arcade-Learning-Environment). The environments have been wrapped by OpenAI Gym to create a more standardized interface. The OpenAI Gym provides 59 Atari 2600 games as environments. For a full list of environments, check [below](#environments).
+The Atari 2600 environments was originally provided through the [Arcade Learning Environment (ALE)](https://github.com/mgbellemare/Arcade-Learning-Environment). The environments have been wrapped by OpenAI Gym to create a more standardized interface. The OpenAI Gym provides 59 Atari 2600 games as environments.
 
 
 
@@ -59,13 +59,46 @@ env.close()
 
 
 
+## Environments
+
+OpenAI Gym provides 59 Atari 2600 games. You can find their names in [OpenAI Gym environments page](https://gym.openai.com/envs/#atari), but unfortunately they only provide basic documentation.
+
+### Variants
+
+Each game has a few variants, distinguished by their suffixes. Through these variants, you can configure frame skipping and sticky actions. Frame skipping is a technique of using $k$-th frame. In other words, the agent only makes action every $k$ frames, and the same action is performed for $k$ frames. Sticky actions is a technique of setting some nonzero probability $p$ of action being repeated without agent's control. This adds  stochasticity to the deterministic Atari 2600 environments.
+
+For example, there are six variants for the *Pong* environment.
+
+| Name                                | Frame Skip $k$  | Repeat action probability $p$ |
+| ----------------------------------- | --------------- | ----------------------------- |
+| `Pong-v0`                           | 2~4<sup>1</sup> | 0.25                          |
+| `Pong-v4`                           | 2~4<sup>1</sup> | 0                             |
+| `PongDeterministic-v0`              | 4 <sup>2</sup>  | 0.25                          |
+| `PongDeterministic-v4` <sup>3</sup> | 4 <sup>2</sup>  | 0                             |
+| `PongNoFrameskip-v0`                | 1               | 0.25                          |
+| `PongNoFrameskip-v4`                | 1               | 0                             |
+
+<sub>
+<sup>1</sup> $k$ is chosen randomly at every step from values $\{2, 3, 4\}$.<br/><sup>2</sup> For *Space Invaders*,  the `Deterministic` variant $k=3$. This is because when $k=4$, the lasers are invisible because it frame skip coincides with the blinking frequency of lasers.<br/><sup>3</sup> `Deterministic-v4` is the configuration used to assess Deep Q-Networks.
+</sub>
+
+For more details about *frame skipping* and *sticky actions*, check Sections 2 and 5 of the ALE whitepaper: [Revisiting the Arcade Learning Environment](https://arxiv.org/abs/1709.06009).
+
+Also, there are RAM environments such as `Pong-ram-v0`, where the observation is the RAM of the Atari machine instead of the 210 x 160 visual input. You can also add suffixes to RAM environments.
+
+
+
 ## State of the Art
 
-These are the published state-of-the-art results for Atari 2600 testbed. For better comparison of algorithms,  we only included results that include majority of the 59 games available.
+*Note: Most papers use 57 Atari 2600 games, and a couple of them are not supported by OpenAI Gym.*
 
-State of the Art results for individual Atari 2600 games can be found in [their respective pages](#environments).
+These are the published state-of-the-art results for Atari 2600 testbed. To test the robustness of the agent, most papers use one or both settings: the *no-op starts* and the *human starts*, both devised to provide a nondeterministic starting position. In *No-op start* setting, the agent selects the "do nothing" action for up to 30 times at the start of an episode. providing random starting positions to the agent. This originates from the [DQN2015 paper](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) by Mnih et al. (2015). In the *human start* setting,  the agents start from one of the 100 starting points sampled from a human professional's gameplay. The human starts setting originates from the [GorilaDQN paper](https://arxiv.org/abs/1507.04296) by Nair et al. (2015).
 
-### No-op starts
+### Median
+
+One popular method of checking the agent's overall performance is the *median human-normalized score*. You can read more about the choice of this metric in the [Rainbow paper](https://arxiv.org/abs/1710.02298). For better comparison of algorithms,  we only used results that were tested on majority of the games available.
+
+#### No-op starts
 
 | Median | Method                | Score from                                                   |
 | ------ | --------------------- | ------------------------------------------------------------ |
@@ -92,7 +125,7 @@ State of the Art results for individual Atari 2600 games can be found in [their 
 <sup>3</sup> Only evaluated on 49 games.
 </sub>
 
-### Human starts
+#### Human starts
 
 | Median | Method                | Score from                                                   |
 | ------ | --------------------- | ------------------------------------------------------------ |
@@ -115,11 +148,13 @@ State of the Art results for individual Atari 2600 games can be found in [their 
 <sup>3</sup> Only evaluated on 49 games.
 </sub>
 
-## Environments
+### Individual Environments
 
-OpenAI Gym provides 59 Atari 2600 games. You can find their names in [OpenAI Gym environments page](https://gym.openai.com/envs/#atari), but unfortunately they only provide basic documentation.
+Although the metric above is a valuable way of comparing the general effectiveness of an algorithm, different algorithms have different strengths. Thus, we also included the state-of-the-art results for each game.
 
-### No-op Starts
+If you want to see how other methods performed in each Atari 2600 games, you can check the results of all methods by clicking the name of the game in the table below.
+
+#### No-op Starts
 
 | Game | Result | Method | Type | Score from |
 |------|--------|--------|------|------------|
@@ -181,7 +216,7 @@ OpenAI Gym provides 59 Atari 2600 games. You can find their names in [OpenAI Gym
 | [Surround](/envs/gym/atari/surround) | 10.0 | NoisyNet-DuelingDQN | DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | [Yars Revenge](/envs/gym/atari/yars-revenge) | 148594.8 | ApeX DQN | DQN | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
 
-### Human Starts
+#### Human Starts
 
 | Game | Result | Method | Type | Score from |
 |------|--------|--------|------|------------|
@@ -244,38 +279,4 @@ OpenAI Gym provides 59 Atari 2600 games. You can find their names in [OpenAI Gym
 | [Yars Revenge](/envs/gym/atari/yars-revenge) | 131701.1 | ApeX DQN | DQN | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
 
 
-### Variants
-
-Each game has a few variants, distinguished by their suffixes. Through these variants, you can configure frame skipping and sticky actions. Frame skipping is a technique of using $k$-th frame. In other words, the agent only makes action every $k$ frames, and the same action is performed for $k$ frames. Sticky actions is a technique of setting some nonzero probability $p$ of action being repeated without agent's control. This adds  stochasticity to the deterministic Atari 2600 environments.
-
-For example, there are six variants for the *Pong* environment.
-
-| Name                                | Frame Skip $k$  | Repeat action probability $p$ |
-| ----------------------------------- | --------------- | ----------------------------- |
-| `Pong-v0`                           | 2~4<sup>1</sup> | 0.25                          |
-| `Pong-v4`                           | 2~4<sup>1</sup> | 0                             |
-| `PongDeterministic-v0`              | 4 <sup>2</sup>  | 0.25                          |
-| `PongDeterministic-v4` <sup>3</sup> | 4 <sup>2</sup>  | 0                             |
-| `PongNoFrameskip-v0`                | 1               | 0.25                          |
-| `PongNoFrameskip-v4`                | 1               | 0                             |
-
-<sub>
-<sup>1</sup> $k$ is chosen randomly at every step from values $\{2, 3, 4\}$.<br/><sup>2</sup> For *Space Invaders*,  the `Deterministic` variant $k=3$. This is because when $k=4$, the lasers are invisible because it frame skip coincides with the blinking frequency of lasers.<br/><sup>3</sup> `Deterministic-v4` is the configuration used to assess Deep Q-Networks.
-</sub>
-
-Also, there are RAM environments such as `Pong-ram-v0`, where the observation is the RAM of the Atari machine instead of the 210 x 160 visual input. You can also add suffixes to RAM environments.
-
-
-
-## References
-
-### Variants
-
-[Revisiting the Arcade Learning Environment](https://arxiv.org/abs/1709.06009): More details about *frame skipping* and *sticky actions* in Sections 2 and 5.
-
-[Table of Environments](https://github.com/openai/gym/wiki/Table-of-environments): An old wiki page listing the observation, action, and reward space for each Atari environment.
-
-### Installation
-
-[Official Installation README](https://github.com/openai/gym#id7) Installation Guide from OpenAI Gym repository
 
