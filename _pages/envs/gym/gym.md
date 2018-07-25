@@ -30,3 +30,12 @@ Read more
 
 
 ## MuJoCo
+
+![]({{ "assets/_pages/envs/gym/mujoco.gif" | absolute_url }})
+
+**MuJoCo** (**Mu**lti-**Jo**int dynamics with **Co**ntact) is a proprietary physics engine for detailed, efficient rigid body simulations with contacts. MuJoCo can be used to create environments with continuous control tasks such as walking or running, so many policy gradient methods have been tested primarily on various MuJoCo environments.
+
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/envs/gym/mujoco">
+Read more
+</a>
+
