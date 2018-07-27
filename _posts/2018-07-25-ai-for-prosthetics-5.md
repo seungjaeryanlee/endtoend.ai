@@ -39,15 +39,15 @@ nav:
 
 Congrats to nskiran (#1), rl_agent (#3), ymmoy999 (#4), Firework (#6), Yongjin (#8), HP (#9), and jack@NAN (#10) for getting their new agents to Top 10 this week! Read more about the current leaderboard [in the section below](#leaderboard).
 
-I misinterpreted the text about Round 1 and Round 2. It has been clarified that Round 1 will continue until September 16th, and once it is over, Round 2 will be held until September 30th (tentative). Round 1 is the current round where the agent needs to follow a constant velocity vector $(3, 0, 0)$ as described above. In contrast, for Round 2, the target velocity vector will be time-dependent. More information should be available soon.
+I misinterpreted the transition from Round 1 to Round 2. It has been clarified that Round 1 will continue until September 16th, and once it is over, Round 2 will be held until September 30th (tentative). Round 1 is the current round where the agent needs to follow a constant horizontal velocity vector of 3 m/s. In contrast, for Round 2, the target velocity vector will be time-dependent. More information should be available soon.
 
-Meanwhile, congratulations to the AI for Prosthetics team for getting Google Cloud Platform as a sponsor! **Top 400 teams with positive points will be awarded $250 cloud credits.** Hope this encourages many of you to participate, since there are currently about 50 people in the leaderboard, with 34 people with positive scores!
+Meanwhile, congratulations to the AI for Prosthetics team for getting Google Cloud Platform as a sponsor! **Top 400 teams with positive points by August 15th will be awarded $250 cloud credits.** Hope this encourages many of you to participate, since there are currently about 50 people in the leaderboard, with 34 people with positive scores!
 
 
 
 ## Leaderboard
 
-Here are the top 10 scores for this week. A lot of new people climbed up the ladder this week, with only Mattias_Ljungström staying in the top 10 with his old agent. Only 6 of the top 10 have participated in the  Learning to Run challenge, so feel free to join the competition as a newcomer!
+Here are the top 10 scores for this week. A lot of new people climbed up the ladder this week, with only Mattias_Ljungström staying in the top 10 with his old agent. Only 6 of the top 10 have participated in the Learning to Run challenge, so feel free to join the competition as a newcomer!
 
 | Participant        | Cumulative Reward | Last Submission (UTC)  |
 | ------------------ | ----------------- | ---------------------- |
@@ -81,7 +81,7 @@ $$ r_t := 9 - \left| 3 - v_t \right|^2 $$
 where $v$ is the horizontal velocity vector of the pelvis. In other words,
 
 ```python
-reward = 9 - abs(3 - obs['body_vel']['pelvis']) ** 2
+reward = 9 - abs(3 - obs['body_vel']['pelvis'][0]) ** 2
 ```
 
 Note that if $\mid 3 - v_t \mid > 3$, then the reward $r_t$ is negative. This is true if the velocity of the pelvis is too fast ($v_t > 3$) or if the velocity is negative ($v_t < 0$). Of course, once the episode is terminated, no more reward can be accumulated.
@@ -106,7 +106,7 @@ There is a surprising amount of difference between the two methods. Of course, t
 
 Recently, there have been great successes on reinforcement learning methods that modify the reward signal. Two noteworthy papers are [Playing hard exploration games by watching YouTube](https://arxiv.org/abs/1805.11592) and [RUDDER: Return Decomposition for Delayed Rewards](https://arxiv.org/abs/1806.07857). The exemplary environment used in these papers are *Montezuma's Revenge* and *Bowling* from Atari 2600. Both games have sparse rewards (few nonzero rewards), so the agent must explore for a long time before discerning good or bad actions. In these games, the state-of-the-art (SotA) methods are one that reshape the reward ([*Bowling* SotA](/envs/gym/atari/bowling), [*Montezuma's Revenge* SotA](/envs/gym/atari/montezumas-revenge)).
 
-The Prosthetics environment has a dense reward function: there is a nonzero reward at every step. Thus, the agent can be trained without modifying the reward in any way. However, that does not prohibit us from modifying the reward signal. Therefore, complex modifications like Imitation Learning (DQfD or YouTube) might not be needed, but the environment could benefit from a reward signal that is more insightful.
+The Prosthetics environment has a dense reward function: there is a nonzero reward at every step. Thus, the agent can be trained without modifying the reward in any way. However, that does not prohibit us from modifying the reward signal. Complex modifications like Imitation Learning (DQfD or YouTube) might not be needed, but the agent could benefit from a reward signal that is more insightful.
 
 Note that this is a somewhat dangerous approach. We are attempting to inject our prior knowledge to the agent through the reward. In general, the reward signal should communicate the agent *what* its goal is, not *how* it should achieve that goal. A better place to use prior knowledge is initial policy or value function (Sutton and Barto, 2018). One way to address this problem would be to fine-train the agent without the reward modification once it performs reasonably well.
 
@@ -150,7 +150,7 @@ This is the exact opposite of other environment settings such as maze-solving wh
 
 #### Upright Posture
 
-Now, let's see how the episode gets terminated. The termination switch is the height of the pelvis falling below 0.6 meters, but it seems like the primary cause of all premature termination is the upper body swaying too much. There is a fine line: most top-performing agents also sway their body, perhaps due to the prosthetics making the model fundamentally unbalanced. To inject this knowledge, some fine tuning might be necessary.
+Now, let's see how the episode gets terminated. The termination condition is filling 300 steps or the height of the pelvis falling below 0.6 meters, but it seems like the primary cause of all premature termination is the upper body swaying too much. Thus, it is possible to incentivize the agent to hold the upper body still. However, there is a fine line: most top-performing agents also sway their body, perhaps due to the prosthetics making the model fundamentally unbalanced. To inject this knowledge, some fine tuning might be necessary.
 
 Note that this is somewhat similar to the Lean Forward approach used by participants in the last competition. In the last year's competition, there was no $z$-axis, and the model was symmetric, so the upper body was either in front of or behind the body. Thus, the obvious conclusion was to keep the upper body leaning forward, so the reward was shaped to promote this behavior.
 
@@ -170,5 +170,7 @@ I created a new agent that uses Proximal Policy Optimization Algorithms (PPO) by
 
 ## What's Next?
 
-This post concludes the series of posts about the environment! I will now analyzing and training the best agents in the last year's competition. I also hope to add a better DDPG agent, since although the `keras-rl` package is intuitive, it is slow.
+This post concludes the series of posts about the environment! I will now write about my analysis of the best agents in the last year's competition. I also hope to add a better DDPG agent, since although the `keras-rl` package is intuitive, it is slow.
+
+I plan to keep the new [Leaderboard](#leaderboard) section so that people can see the general trend of the scores with a single chart.
 
