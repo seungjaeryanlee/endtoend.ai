@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI for Prosthetics Week 5: Understanding the Rewards"
+title: "AI for Prosthetics Week 5: Understanding the Reward"
 author: Seungjae Ryan Lee
 permalink: /blog/ai-for-prosthetics-5
 
