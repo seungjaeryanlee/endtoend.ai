@@ -22,6 +22,7 @@ This is a collection of slides we created for presentations.
 * Chapter 4: Dynamic Programming [[Google Slides]](https://docs.google.com/presentation/d/e/2PACX-1vTOz_Y0e2IyZOaAVLcPQceHjEsbNM9uHZOhNbPF_A59ZJvJo4cDACsEq-N0T5hxXmcbeiRGn5vBRTTE/pub?start=false&loop=false&delayms=3000) [[PDF]](/slides/book/sutton-barto/04.pdf)
 * Chapter 5: Monte Carlo Methods [[Google Slides]](https://docs.google.com/presentation/d/e/2PACX-1vRVgphkmxpq8_qeL4l2zLzXH2Qd7hOyE81J71kmN_cZcaJlVvcDuTW06OYE7F8XgAMezaeaCajZo8yF/pub?start=false&loop=false&delayms=3000) [[PDF]](/slides/book/sutton-barto/05.pdf)
 * Chapter 6: Temporal-Difference Learning [[Google Slides]](https://docs.google.com/presentation/d/e/2PACX-1vQp2AURd5LKiycin2eo9HAeAawKVae4fKFOK4Wfe2unyT4FrWsf1RfWoIhuaXr5pMaOGCqq1vbN3C84/pub?start=false&loop=false&delayms=3000) [[PDF]](/slides/book/sutton-barto/06.pdf)
+* Chapter 7: n-step Bootstrapping [[Google Slides]](https://docs.google.com/presentation/d/e/2PACX-1vQ8HAXwotEudyliko6t1nE98ETXial0EBlBgewZOHfz7hRiPy0SBohJKxUWNSVDPSg2_JdI6g9Ewj9p/pub?start=false&loop=false&delayms=3000) [[PDF]](/slides/book/sutton-barto/07.pdf)
 * Chapter 10: On-policy Control with Approximation [[Google Slides]](https://docs.google.com/presentation/d/e/2PACX-1vSirD3HPgl2nSDrvw0XK5ft5QeH0nXQ9F4OyNbnkixVtLPnVKbCnA2mAv6GiZ2bY2ZXrJF1NsyRByh8/pub?start=false&loop=false&delayms=3000) [[PDF]](/slides/book/sutton-barto/10.pdf)
 
 
