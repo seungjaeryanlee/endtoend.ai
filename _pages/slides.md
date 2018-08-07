@@ -31,18 +31,19 @@ This is a collection of presentation slides on Artificial Intelligence books and
 
 ## Papers
 
-#### Learning Montezuma’s Revenge from a Single Demonstration
+### Learning Montezuma's Revenge from a Single Demonstration
 
-July 2018
+<p style="margin-top: -24px;">July 2018</p>
 
 [[Google Slides]](https://docs.google.com/presentation/d/e/2PACX-1vQlUjzQ282n6810yAEYoeJCG0E0MLrNEKQl-Hkkw6o02NELV2uAFGuTS2FFu3gO0XkWO0K9B6UktiHv/pub?start=false&loop=false&delayms=3000) [[PDF]](/slides/paper/learning_montezumas_revenge_from_a_single_demonstration.pdf)
 
-We’ve trained an agent to achieve a high score of 74,500 on Montezuma’s Revenge from a single human demonstration, better than any previously published result. Our algorithm is simple: the agent plays a sequence of games starting from carefully chosen states from the demonstration, and learns from them by optimizing the game score using PPO, the same reinforcement learning algorithm that underpins OpenAI Five.
+We've trained an agent to achieve a high score of 74,500 on Montezuma's Revenge from a single human demonstration, better than any previously published result. Our algorithm is simple: the agent plays a sequence of games starting from carefully chosen states from the demonstration, and learns from them by optimizing the game score using PPO, the same reinforcement learning algorithm that underpins OpenAI Five.
 
-#### A Deeper Look at Experience Replay
+### A Deeper Look at Experience Replay
 
-December 2017
+<p style="margin-top: -24px;">December 2017</p>
 
 [[PDF]](/slides/paper/a_deeper_look_at_experience_replay.pdf)
 
 Recently experience replay is widely used in various deep reinforcement learning (RL) algorithms, in this paper we rethink the utility of experience replay. It introduces a new hyper-parameter, the memory buffer size, which needs carefully tuning. However unfortunately the importance of this new hyper-parameter has been underestimated in the community for a long time. In this paper we did a systematic empirical study of experience replay under various function representations. We showcase that a large replay buffer can significantly hurt the performance. Moreover, we propose a simple O(1) method to remedy the negative influence of a large replay buffer. We showcase its utility in both simple grid world and challenging domains like Atari games.
+
