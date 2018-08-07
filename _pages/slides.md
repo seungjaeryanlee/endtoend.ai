@@ -10,7 +10,9 @@ front_text: >
     and state-of-the-art results.
 ---
 
-This is a collection of slides we created for presentations.
+This is a collection of presentation slides on Artificial Intelligence books and State-of-the-Art papers.
+
+
 
 ## Books
 
@@ -27,8 +29,13 @@ This is a collection of slides we created for presentations.
 
 
 
-## State of the Art
+## Papers
 
-### OpenAI
+#### Learning Montezuma’s Revenge from a Single Demonstration
 
-* Learning Montezuma’s Revenge from a Single Demonstration [[Google Slides]](https://docs.google.com/presentation/d/e/2PACX-1vQlUjzQ282n6810yAEYoeJCG0E0MLrNEKQl-Hkkw6o02NELV2uAFGuTS2FFu3gO0XkWO0K9B6UktiHv/pub?start=false&loop=false&delayms=3000) [[PDF]](/slides/sota/openai/learning_montezumas_revenge_from_a_single_demonstration.pdf)
+July 2018
+
+[[Google Slides]](https://docs.google.com/presentation/d/e/2PACX-1vQlUjzQ282n6810yAEYoeJCG0E0MLrNEKQl-Hkkw6o02NELV2uAFGuTS2FFu3gO0XkWO0K9B6UktiHv/pub?start=false&loop=false&delayms=3000) [[PDF]](/slides/paper/learning_montezumas_revenge_from_a_single_demonstration.pdf)
+
+We’ve trained an agent to achieve a high score of 74,500 on Montezuma’s Revenge from a single human demonstration, better than any previously published result. Our algorithm is simple: the agent plays a sequence of games starting from carefully chosen states from the demonstration, and learns from them by optimizing the game score using PPO, the same reinforcement learning algorithm that underpins OpenAI Five.
+
