@@ -31,6 +31,16 @@ This is a collection of presentation slides on Artificial Intelligence books and
 
 ## Papers
 
+### Learning Dexterous In-Hand Manipulation
+
+<p style="margin-top: -24px;">August 2018</p>
+
+[[PDF]](/slides/paper/learning_dextrous_in_hand_manipulation.pdf)
+
+We use reinforcement learning (RL) to learn dexterous in-hand manipulation policies which can perform vision-based object reorientation on a physical Shadow Dexterous Hand. The training is performed in a simulated environment in which we randomize many of the physical properties of the system like friction coefficients and an object’s appearance. Our policies transfer to the physical robot despite being trained entirely in simulation. Our method does not rely on any human demonstrations, but many behaviors found in human manipulation emerge naturally, including finger gaiting, multi-finger coordination, and the controlled use of gravity. Our results were obtained using the same distributed RL system that was used to train OpenAI Five. We also include a video of our results: https://youtu.be/jwSbzNHGflM.
+
+
+
 ### Learning Montezuma's Revenge from a Single Demonstration
 
 <p style="margin-top: -24px;">July 2018</p>
@@ -38,6 +48,8 @@ This is a collection of presentation slides on Artificial Intelligence books and
 [[Google Slides]](https://docs.google.com/presentation/d/e/2PACX-1vQlUjzQ282n6810yAEYoeJCG0E0MLrNEKQl-Hkkw6o02NELV2uAFGuTS2FFu3gO0XkWO0K9B6UktiHv/pub?start=false&loop=false&delayms=3000) [[PDF]](/slides/paper/learning_montezumas_revenge_from_a_single_demonstration.pdf)
 
 We've trained an agent to achieve a high score of 74,500 on Montezuma's Revenge from a single human demonstration, better than any previously published result. Our algorithm is simple: the agent plays a sequence of games starting from carefully chosen states from the demonstration, and learns from them by optimizing the game score using PPO, the same reinforcement learning algorithm that underpins OpenAI Five.
+
+
 
 ### A Deeper Look at Experience Replay
 
