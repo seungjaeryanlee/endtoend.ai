@@ -18,6 +18,15 @@ nav:
 
 ## Overview
 
+<video autoplay muted loop controls>
+  <source src="{{ 'assets/_pages/envs/gym/atari/road-runner.mp4' | absolute_url }}" type="video/mp4">
+</video>
+
+The player controls Road Runner, who is chased by Wile E. Coyote. In order to escape, Road Runner runs endlessly to the left. While avoiding Wile E. Coyote, the player must pick up bird seeds on the street, avoid obstacles like cars, and get through mazes. Sometimes Wile E. Coyote will just run after the Road Runner, but he occasionally uses tools like rockets, roller skates, and pogo-sticks.
+
+*Description from [Wikipedia](https://en.wikipedia.org/wiki/Road_Runner_%28video_game%29)*
+
+
 ## State of the Art
 
 ### Human Starts
@@ -55,8 +64,8 @@ nav:
 | 62785.0 | PERDDQN (prop) | DQN | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
 | 62151.0 | DuelingPERDQN | DQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
 | 62041.0 | RainbowDQN | DQN | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| 57608.0 | PERDDQN (rank) | DQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
 | 57608.0 | PER | DQN | [Scalable trust-region method for deep reinforcement learning using Kronecker-factored approximation](https://arxiv.org/abs/1708.05144) |
+| 57608.0 | PERDDQN (rank) | DQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
 | 55839.0 | C51 | Misc | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
 | 53446.0 | ACKTR | PG | [Scalable trust-region method for deep reinforcement learning using Kronecker-factored approximation](https://arxiv.org/abs/1708.05144) |
 | 51688.4 | DuelingPERDDQN | DQN | [Deep Q-Learning from Demonstrations](https://arxiv.org/abs/1704.03732) |

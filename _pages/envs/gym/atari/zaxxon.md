@@ -18,6 +18,19 @@ nav:
 
 ## Overview
 
+<video autoplay muted loop controls>
+  <source src="{{ 'assets/_pages/envs/gym/atari/zaxxon.mp4' | absolute_url }}" type="video/mp4">
+</video>
+
+he object of the game is to hit as many targets as possible without being shot down or running out of fuel—which can be replenished, paradoxically, by blowing up fuel drums.[19]
+
+There are two fortresses to fly through, with an outer space segment between them. At the end of the second fortress is a boss in the form of the Zaxxon robot.
+
+The player's ship casts a shadow to indicate its height.[20] An altimeter is also displayed; in space there is nothing for the ship to cast a shadow on.[21] The walls at the entrance and exit of each fortress have openings that the ship must be at the right altitude to pass through. Within each fortress are additional walls that the ship's shadow and altimeter aid in flying over successfully.
+
+*Description from [Wikipedia](https://en.wikipedia.org/wiki/Zaxxon)*
+
+
 ## State of the Art
 
 ### Human Starts
@@ -59,8 +72,8 @@ nav:
 | 13490.0 | PERDDQN (prop) | DQN | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
 | 12944.0 | DuelingDDQN | DQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
 | 10513.0 | C51 | Misc | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
-| 10469.0 | PERDDQN (rank) | DQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
 | 10469.0 | PER | DQN | [Scalable trust-region method for deep reinforcement learning using Kronecker-factored approximation](https://arxiv.org/abs/1708.05144) |
+| 10469.0 | PERDDQN (rank) | DQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
 | 10182.0 | DDQN | DQN | [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) |
 | 10163.0 | DDQN | DQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
 | 9390.0 | NoisyNetDQN | DQN | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |

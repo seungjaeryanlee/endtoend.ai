@@ -18,6 +18,17 @@ nav:
 
 ## Overview
 
+<video autoplay muted loop controls>
+  <source src="{{ 'assets/_pages/envs/gym/atari/robotank.mp4' | absolute_url }}" type="video/mp4">
+</video>
+
+The player remotely controls a robot tank in 2019. The mission is to locate enemy rebel tanks rampaging across the countryside with radar, then destroy them with a cannon to stop them from reaching downtown Santa Clara, California, United States. The enemy is organized into squadrons of 12 tanks each. By defeating an enemy squadron, the player earns an additional reserve tank to the initial three, to a maximum of 12. The game ends when all of a player's tanks are destroyed.
+
+As the player's tank is damaged, firepower and/or visual display capabilities are irreparably worsened. Enough damage will eventually destroy a tank. Combat can take place at any time of day or night (displayed on-screen), possibly with rain, snow, or fog (announced in a weather report each morning), which adds additional challenge in tracking enemy combatants by radar alone.
+
+*Description from [Wikipedia](https://en.wikipedia.org/wiki/Robot_Tank)*
+
+
 ## State of the Art
 
 ### Human Starts
@@ -53,8 +64,8 @@ nav:
 | 64.0 | NoisyNet-DuelingDQN | DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 63.9 | DQN2015 | DQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
 | 63.0 | DuelingDQN | DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
-| 62.6 | PERDDQN (rank) | DQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
 | 62.6 | PER | DQN | [Scalable trust-region method for deep reinforcement learning using Kronecker-factored approximation](https://arxiv.org/abs/1708.05144) |
+| 62.6 | PERDDQN (rank) | DQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
 | 61.4 | RainbowDQN | DQN | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
 | 58.6 | PERDDQN (prop) | DQN | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
 | 55.0 | DQN | DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
