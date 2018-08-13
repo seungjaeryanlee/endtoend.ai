@@ -26,7 +26,8 @@ include:
  - "_pages"
 
 front_page_order:
- - "RL Environments"
+#  - "RL Environments"
+ - "Atari Environments"
  - "Sutton and Barto Notebooks"
  - "Slides"
  - "Blog"
