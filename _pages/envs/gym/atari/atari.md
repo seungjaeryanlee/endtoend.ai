@@ -32,17 +32,17 @@ nav:
       <source src="{{ 'assets/_pages/envs/gym/atari/beam-rider.mp4' | absolute_url }}" type="video/mp4">
     </video>
   </div>
-  <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+  <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone mdl-cell--hide-phone">
     <video autoplay muted loop controls>
       <source src="{{ 'assets/_pages/envs/gym/atari/breakout.mp4' | absolute_url }}" type="video/mp4">
     </video>
   </div>
-  <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+  <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone mdl-cell--hide-phone mdl-cell--hide-tablet">
     <video autoplay muted loop controls>
       <source src="{{ 'assets/_pages/envs/gym/atari/montezumas-revenge.mp4' | absolute_url }}" type="video/mp4">
     </video>
   </div>
-  <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+  <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone mdl-cell--hide-phone mdl-cell--hide-tablet">
     <video autoplay muted loop controls>
       <source src="{{ 'assets/_pages/envs/gym/atari/qbert.mp4' | absolute_url }}" type="video/mp4">
     </video>
