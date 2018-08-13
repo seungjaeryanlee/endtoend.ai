@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Double Dunk Environment
-permalink: /envs/gym/atari/double-dunk
+permalink: /envs/gym/atari/double-dunk/
 
 redirect_from:
- - /envs/gym/atari-2600/double-dunk
- - /env/gym/atari/double-dunk
- - /env/gym/atari-2600/double-dunk
+ - /envs/gym/atari-2600/double-dunk/
+ - /env/gym/atari/double-dunk/
+ - /env/gym/atari-2600/double-dunk/
 
 nav:
  - name: Overview

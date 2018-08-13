@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Krull Environment
-permalink: /envs/gym/atari/krull
+permalink: /envs/gym/atari/krull/
 
 redirect_from:
- - /envs/gym/atari-2600/krull
- - /env/gym/atari/krull
- - /env/gym/atari-2600/krull
+ - /envs/gym/atari-2600/krull/
+ - /env/gym/atari/krull/
+ - /env/gym/atari-2600/krull/
 
 nav:
  - name: Overview

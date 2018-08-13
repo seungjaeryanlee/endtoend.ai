@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Amidar Environment
-permalink: /envs/gym/atari/amidar
+permalink: /envs/gym/atari/amidar/
 
 redirect_from:
- - /envs/gym/atari-2600/amidar
- - /env/gym/atari/amidar
- - /env/gym/atari-2600/amidar
+ - /envs/gym/atari-2600/amidar/
+ - /env/gym/atari/amidar/
+ - /env/gym/atari-2600/amidar/
 
 nav:
  - name: Overview

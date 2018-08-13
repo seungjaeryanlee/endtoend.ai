@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Kangaroo Environment
-permalink: /envs/gym/atari/kangaroo
+permalink: /envs/gym/atari/kangaroo/
 
 redirect_from:
- - /envs/gym/atari-2600/kangaroo
- - /env/gym/atari/kangaroo
- - /env/gym/atari-2600/kangaroo
+ - /envs/gym/atari-2600/kangaroo/
+ - /env/gym/atari/kangaroo/
+ - /env/gym/atari-2600/kangaroo/
 
 nav:
  - name: Overview

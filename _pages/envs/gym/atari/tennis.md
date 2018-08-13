@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Tennis Environment
-permalink: /envs/gym/atari/tennis
+permalink: /envs/gym/atari/tennis/
 
 redirect_from:
- - /envs/gym/atari-2600/tennis
- - /env/gym/atari/tennis
- - /env/gym/atari-2600/tennis
+ - /envs/gym/atari-2600/tennis/
+ - /env/gym/atari/tennis/
+ - /env/gym/atari-2600/tennis/
 
 nav:
  - name: Overview

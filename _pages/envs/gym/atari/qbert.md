@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Q*Bert Environment
-permalink: /envs/gym/atari/qbert
+permalink: /envs/gym/atari/qbert/
 
 redirect_from:
- - /envs/gym/atari-2600/qbert
- - /env/gym/atari/qbert
- - /env/gym/atari-2600/qbert
+ - /envs/gym/atari-2600/qbert/
+ - /env/gym/atari/qbert/
+ - /env/gym/atari-2600/qbert/
 
 nav:
  - name: Overview

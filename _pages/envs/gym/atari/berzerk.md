@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Berzerk Environment
-permalink: /envs/gym/atari/berzerk
+permalink: /envs/gym/atari/berzerk/
 
 redirect_from:
- - /envs/gym/atari-2600/berzerk
- - /env/gym/atari/berzerk
- - /env/gym/atari-2600/berzerk
+ - /envs/gym/atari-2600/berzerk/
+ - /env/gym/atari/berzerk/
+ - /env/gym/atari-2600/berzerk/
 
 nav:
  - name: Overview

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Boxing Environment
-permalink: /envs/gym/atari/boxing
+permalink: /envs/gym/atari/boxing/
 
 redirect_from:
- - /envs/gym/atari-2600/boxing
- - /env/gym/atari/boxing
- - /env/gym/atari-2600/boxing
+ - /envs/gym/atari-2600/boxing/
+ - /env/gym/atari/boxing/
+ - /env/gym/atari-2600/boxing/
 
 nav:
  - name: Overview

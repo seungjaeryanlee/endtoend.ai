@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Video Pinball Environment
-permalink: /envs/gym/atari/video-pinball
+permalink: /envs/gym/atari/video-pinball/
 
 redirect_from:
- - /envs/gym/atari-2600/video-pinball
- - /env/gym/atari/video-pinball
- - /env/gym/atari-2600/video-pinball
+ - /envs/gym/atari-2600/video-pinball/
+ - /env/gym/atari/video-pinball/
+ - /env/gym/atari-2600/video-pinball/
 
 nav:
  - name: Overview

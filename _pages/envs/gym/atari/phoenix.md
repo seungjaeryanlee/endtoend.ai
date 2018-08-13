@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Phoenix Environment
-permalink: /envs/gym/atari/phoenix
+permalink: /envs/gym/atari/phoenix/
 
 redirect_from:
- - /envs/gym/atari-2600/phoenix
- - /env/gym/atari/phoenix
- - /env/gym/atari-2600/phoenix
+ - /envs/gym/atari-2600/phoenix/
+ - /env/gym/atari/phoenix/
+ - /env/gym/atari-2600/phoenix/
 
 nav:
  - name: Overview

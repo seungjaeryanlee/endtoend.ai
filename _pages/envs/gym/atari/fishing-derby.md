@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Fishing Derby Environment
-permalink: /envs/gym/atari/fishing-derby
+permalink: /envs/gym/atari/fishing-derby/
 
 redirect_from:
- - /envs/gym/atari-2600/fishing-derby
- - /env/gym/atari/fishing-derby
- - /env/gym/atari-2600/fishing-derby
+ - /envs/gym/atari-2600/fishing-derby/
+ - /env/gym/atari/fishing-derby/
+ - /env/gym/atari-2600/fishing-derby/
 
 nav:
  - name: Overview

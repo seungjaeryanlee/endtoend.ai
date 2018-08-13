@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Zaxxon Environment
-permalink: /envs/gym/atari/zaxxon
+permalink: /envs/gym/atari/zaxxon/
 
 redirect_from:
- - /envs/gym/atari-2600/zaxxon
- - /env/gym/atari/zaxxon
- - /env/gym/atari-2600/zaxxon
+ - /envs/gym/atari-2600/zaxxon/
+ - /env/gym/atari/zaxxon/
+ - /env/gym/atari-2600/zaxxon/
 
 nav:
  - name: Overview

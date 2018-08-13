@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Atari Environments
-permalink: /envs/gym/atari
+permalink: /envs/gym/atari/
 redirect_from:
  - /envs/gym/atari-2600
  - /env/gym/atari

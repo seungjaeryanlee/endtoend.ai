@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Robotank Environment
-permalink: /envs/gym/atari/robotank
+permalink: /envs/gym/atari/robotank/
 
 redirect_from:
- - /envs/gym/atari-2600/robotank
- - /env/gym/atari/robotank
- - /env/gym/atari-2600/robotank
+ - /envs/gym/atari-2600/robotank/
+ - /env/gym/atari/robotank/
+ - /env/gym/atari-2600/robotank/
 
 nav:
  - name: Overview

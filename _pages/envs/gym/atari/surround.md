@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Surround Environment
-permalink: /envs/gym/atari/surround
+permalink: /envs/gym/atari/surround/
 
 redirect_from:
- - /envs/gym/atari-2600/surround
- - /env/gym/atari/surround
- - /env/gym/atari-2600/surround
+ - /envs/gym/atari-2600/surround/
+ - /env/gym/atari/surround/
+ - /env/gym/atari-2600/surround/
 
 nav:
  - name: Overview

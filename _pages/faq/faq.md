@@ -1,7 +1,7 @@
 ---
 layout: page
 title: FAQ
-permalink: /faq
+permalink: /faq/
 ---
 
 This is a compilation of questions that people learning Artificial Intelligence might ask.

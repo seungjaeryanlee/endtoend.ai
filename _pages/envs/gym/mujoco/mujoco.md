@@ -1,8 +1,8 @@
 ---
 layout: page
 title: MuJoCo Environments
-permalink: /envs/gym/mujoco
-redirect_from: /env/gym/mujoco
+permalink: /envs/gym/mujoco/
+redirect_from: /env/gym/mujoco/
 
 nav:
 - name: Overview

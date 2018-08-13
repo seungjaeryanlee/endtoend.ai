@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari H.E.R.O. Environment
-permalink: /envs/gym/atari/hero
+permalink: /envs/gym/atari/hero/
 
 redirect_from:
- - /envs/gym/atari-2600/hero
- - /env/gym/atari/hero
- - /env/gym/atari-2600/hero
+ - /envs/gym/atari-2600/hero/
+ - /env/gym/atari/hero/
+ - /env/gym/atari-2600/hero/
 
 nav:
  - name: Overview

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Name This Game Environment
-permalink: /envs/gym/atari/name-this-game
+permalink: /envs/gym/atari/name-this-game/
 
 redirect_from:
- - /envs/gym/atari-2600/name-this-game
- - /env/gym/atari/name-this-game
- - /env/gym/atari-2600/name-this-game
+ - /envs/gym/atari-2600/name-this-game/
+ - /env/gym/atari/name-this-game/
+ - /env/gym/atari-2600/name-this-game/
 
 nav:
  - name: Overview

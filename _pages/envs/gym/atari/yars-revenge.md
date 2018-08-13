@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Yars Revenge Environment
-permalink: /envs/gym/atari/yars-revenge
+permalink: /envs/gym/atari/yars-revenge/
 
 redirect_from:
- - /envs/gym/atari-2600/yars-revenge
- - /env/gym/atari/yars-revenge
- - /env/gym/atari-2600/yars-revenge
+ - /envs/gym/atari-2600/yars-revenge/
+ - /env/gym/atari/yars-revenge/
+ - /env/gym/atari-2600/yars-revenge/
 
 nav:
  - name: Overview

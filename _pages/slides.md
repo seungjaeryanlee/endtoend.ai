@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Slides
-permalink: /slides
+permalink: /slides/
 
 display_front: true
 front_image: /assets/home/slides.png

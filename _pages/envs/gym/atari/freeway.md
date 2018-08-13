@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Freeway Environment
-permalink: /envs/gym/atari/freeway
+permalink: /envs/gym/atari/freeway/
 
 redirect_from:
- - /envs/gym/atari-2600/freeway
- - /env/gym/atari/freeway
- - /env/gym/atari-2600/freeway
+ - /envs/gym/atari-2600/freeway/
+ - /env/gym/atari/freeway/
+ - /env/gym/atari-2600/freeway/
 
 nav:
  - name: Overview

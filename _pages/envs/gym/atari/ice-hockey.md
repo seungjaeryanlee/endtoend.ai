@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Ice Hockey Environment
-permalink: /envs/gym/atari/ice-hockey
+permalink: /envs/gym/atari/ice-hockey/
 
 redirect_from:
- - /envs/gym/atari-2600/ice-hockey
- - /env/gym/atari/ice-hockey
- - /env/gym/atari-2600/ice-hockey
+ - /envs/gym/atari-2600/ice-hockey/
+ - /env/gym/atari/ice-hockey/
+ - /env/gym/atari-2600/ice-hockey/
 
 nav:
  - name: Overview

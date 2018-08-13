@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Asteroids Environment
-permalink: /envs/gym/atari/asteroids
+permalink: /envs/gym/atari/asteroids/
 
 redirect_from:
- - /envs/gym/atari-2600/asteroids
- - /env/gym/atari/asteroids
- - /env/gym/atari-2600/asteroids
+ - /envs/gym/atari-2600/asteroids/
+ - /env/gym/atari/asteroids/
+ - /env/gym/atari-2600/asteroids/
 
 nav:
  - name: Overview

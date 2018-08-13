@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Private Eye Environment
-permalink: /envs/gym/atari/private-eye
+permalink: /envs/gym/atari/private-eye/
 
 redirect_from:
- - /envs/gym/atari-2600/private-eye
- - /env/gym/atari/private-eye
- - /env/gym/atari-2600/private-eye
+ - /envs/gym/atari-2600/private-eye/
+ - /env/gym/atari/private-eye/
+ - /env/gym/atari-2600/private-eye/
 
 nav:
  - name: Overview

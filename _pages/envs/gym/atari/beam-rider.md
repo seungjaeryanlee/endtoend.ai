@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Beam Rider Environment
-permalink: /envs/gym/atari/beam-rider
+permalink: /envs/gym/atari/beam-rider/
 
 redirect_from:
- - /envs/gym/atari-2600/beam-rider
- - /env/gym/atari/beam-rider
- - /env/gym/atari-2600/beam-rider
+ - /envs/gym/atari-2600/beam-rider/
+ - /env/gym/atari/beam-rider/
+ - /env/gym/atari-2600/beam-rider/
 
 nav:
  - name: Overview

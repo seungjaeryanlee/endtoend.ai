@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Tour
-permalink: /tour
+permalink: /tour/
 ---
 
 Tour is a series of posts summarizing the contents of seminal books of AI.

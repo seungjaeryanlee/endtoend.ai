@@ -1,7 +1,7 @@
 ---
 layout: page
 title: AIND
-permalink: /mooc/aind
+permalink: /mooc/aind/
 ---
 AIND is Udacity's AI Nanodegree program designed to introduce students to the field of AI.
 

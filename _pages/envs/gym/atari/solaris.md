@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Solaris Environment
-permalink: /envs/gym/atari/solaris
+permalink: /envs/gym/atari/solaris/
 
 redirect_from:
- - /envs/gym/atari-2600/solaris
- - /env/gym/atari/solaris
- - /env/gym/atari-2600/solaris
+ - /envs/gym/atari-2600/solaris/
+ - /env/gym/atari/solaris/
+ - /env/gym/atari-2600/solaris/
 
 nav:
  - name: Overview

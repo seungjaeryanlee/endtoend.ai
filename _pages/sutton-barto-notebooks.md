@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sutton and Barto Notebooks
-permalink: /sutton-barto-notebooks
+permalink: /sutton-barto-notebooks/
 
 display_front: true
 front_image: /assets/home/sutton-barto.png

@@ -1,8 +1,8 @@
 ---
 layout: page
 title: RL Environments
-permalink: /envs
-redirect_from: /env
+permalink: /envs/
+redirect_from: /env/
 
 display_front: true
 front_image: /assets/home/envs.svg

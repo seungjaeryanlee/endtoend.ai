@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Pit Fall Environment
-permalink: /envs/gym/atari/pit-fall
+permalink: /envs/gym/atari/pit-fall/
 
 redirect_from:
- - /envs/gym/atari-2600/pit-fall
- - /env/gym/atari/pit-fall
- - /env/gym/atari-2600/pit-fall
+ - /envs/gym/atari-2600/pit-fall/
+ - /env/gym/atari/pit-fall/
+ - /env/gym/atari-2600/pit-fall/
 
 nav:
  - name: Overview

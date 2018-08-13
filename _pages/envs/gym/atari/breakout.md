@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Breakout Environment
-permalink: /envs/gym/atari/breakout
+permalink: /envs/gym/atari/breakout/
 
 redirect_from:
- - /envs/gym/atari-2600/breakout
- - /env/gym/atari/breakout
- - /env/gym/atari-2600/breakout
+ - /envs/gym/atari-2600/breakout/
+ - /env/gym/atari/breakout/
+ - /env/gym/atari-2600/breakout/
 
 nav:
  - name: Overview

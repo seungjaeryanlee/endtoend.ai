@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Gravitar Environment
-permalink: /envs/gym/atari/gravitar
+permalink: /envs/gym/atari/gravitar/
 
 redirect_from:
- - /envs/gym/atari-2600/gravitar
- - /env/gym/atari/gravitar
- - /env/gym/atari-2600/gravitar
+ - /envs/gym/atari-2600/gravitar/
+ - /env/gym/atari/gravitar/
+ - /env/gym/atari-2600/gravitar/
 
 nav:
  - name: Overview

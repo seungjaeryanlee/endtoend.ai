@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Gopher Environment
-permalink: /envs/gym/atari/gopher
+permalink: /envs/gym/atari/gopher/
 
 redirect_from:
- - /envs/gym/atari-2600/gopher
- - /env/gym/atari/gopher
- - /env/gym/atari-2600/gopher
+ - /envs/gym/atari-2600/gopher/
+ - /env/gym/atari/gopher/
+ - /env/gym/atari-2600/gopher/
 
 nav:
  - name: Overview

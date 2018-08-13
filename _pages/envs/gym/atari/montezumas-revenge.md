@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Montezuma's Revenge Environment
-permalink: /envs/gym/atari/montezumas-revenge
+permalink: /envs/gym/atari/montezumas-revenge/
 
 redirect_from:
- - /envs/gym/atari-2600/montezumas-revenge
- - /env/gym/atari/montezumas-revenge
- - /env/gym/atari-2600/montezumas-revenge
+ - /envs/gym/atari-2600/montezumas-revenge/
+ - /env/gym/atari/montezumas-revenge/
+ - /env/gym/atari-2600/montezumas-revenge/
 
 nav:
  - name: Overview

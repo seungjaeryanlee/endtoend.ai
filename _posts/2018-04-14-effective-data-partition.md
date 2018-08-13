@@ -2,10 +2,9 @@
 layout: post
 title: "Effective Data: Partition"
 author: Seungjae Ryan Lee
-permalink: /blog/effective-data-partition
+permalink: /blog/effective-data-partition/
 redirect_from:
  - /2018/04/14/effective-data-partition/
- - /2018/04/14/effective-data-partition
 
 front_image: /assets/blog/effective-data-partition/front.png
 front_text: >

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Ms. Pacman Environment
-permalink: /envs/gym/atari/ms-pacman
+permalink: /envs/gym/atari/ms-pacman/
 
 redirect_from:
- - /envs/gym/atari-2600/ms-pacman
- - /env/gym/atari/ms-pacman
- - /env/gym/atari-2600/ms-pacman
+ - /envs/gym/atari-2600/ms-pacman/
+ - /env/gym/atari/ms-pacman/
+ - /env/gym/atari-2600/ms-pacman/
 
 nav:
  - name: Overview

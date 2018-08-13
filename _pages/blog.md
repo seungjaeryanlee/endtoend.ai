@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Blog
-permalink: /blog
+permalink: /blog/
 
 display_front: true
 front_image: /assets/home/blog.svg

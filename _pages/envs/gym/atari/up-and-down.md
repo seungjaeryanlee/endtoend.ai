@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Up and Down Environment
-permalink: /envs/gym/atari/up-and-down
+permalink: /envs/gym/atari/up-and-down/
 
 redirect_from:
- - /envs/gym/atari-2600/up-and-down
- - /env/gym/atari/up-and-down
- - /env/gym/atari-2600/up-and-down
+ - /envs/gym/atari-2600/up-and-down/
+ - /env/gym/atari/up-and-down/
+ - /env/gym/atari-2600/up-and-down/
 
 nav:
  - name: Overview

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Centipede Environment
-permalink: /envs/gym/atari/centipede
+permalink: /envs/gym/atari/centipede/
 
 redirect_from:
- - /envs/gym/atari-2600/centipede
- - /env/gym/atari/centipede
- - /env/gym/atari-2600/centipede
+ - /envs/gym/atari-2600/centipede/
+ - /env/gym/atari/centipede/
+ - /env/gym/atari-2600/centipede/
 
 nav:
  - name: Overview

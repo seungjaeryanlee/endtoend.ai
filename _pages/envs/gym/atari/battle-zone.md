@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Battle Zone Environment
-permalink: /envs/gym/atari/battle-zone
+permalink: /envs/gym/atari/battle-zone/
 
 redirect_from:
- - /envs/gym/atari-2600/battle-zone
- - /env/gym/atari/battle-zone
- - /env/gym/atari-2600/battle-zone
+ - /envs/gym/atari-2600/battle-zone/
+ - /env/gym/atari/battle-zone/
+ - /env/gym/atari-2600/battle-zone/
 
 nav:
  - name: Overview

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Star Gunner Environment
-permalink: /envs/gym/atari/star-gunner
+permalink: /envs/gym/atari/star-gunner/
 
 redirect_from:
- - /envs/gym/atari-2600/star-gunner
- - /env/gym/atari/star-gunner
- - /env/gym/atari-2600/star-gunner
+ - /envs/gym/atari-2600/star-gunner/
+ - /env/gym/atari/star-gunner/
+ - /env/gym/atari-2600/star-gunner/
 
 nav:
  - name: Overview

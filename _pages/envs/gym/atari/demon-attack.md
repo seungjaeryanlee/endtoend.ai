@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Demon Attack Environment
-permalink: /envs/gym/atari/demon-attack
+permalink: /envs/gym/atari/demon-attack/
 
 redirect_from:
- - /envs/gym/atari-2600/demon-attack
- - /env/gym/atari/demon-attack
- - /env/gym/atari-2600/demon-attack
+ - /envs/gym/atari-2600/demon-attack/
+ - /env/gym/atari/demon-attack/
+ - /env/gym/atari-2600/demon-attack/
 
 nav:
  - name: Overview

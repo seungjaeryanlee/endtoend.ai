@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Frostbite Environment
-permalink: /envs/gym/atari/frostbite
+permalink: /envs/gym/atari/frostbite/
 
 redirect_from:
- - /envs/gym/atari-2600/frostbite
- - /env/gym/atari/frostbite
- - /env/gym/atari-2600/frostbite
+ - /envs/gym/atari-2600/frostbite/
+ - /env/gym/atari/frostbite/
+ - /env/gym/atari-2600/frostbite/
 
 nav:
  - name: Overview

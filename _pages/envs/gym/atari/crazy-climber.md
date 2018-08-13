@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Crazy Climber Environment
-permalink: /envs/gym/atari/crazy-climber
+permalink: /envs/gym/atari/crazy-climber/
 
 redirect_from:
- - /envs/gym/atari-2600/crazy-climber
- - /env/gym/atari/crazy-climber
- - /env/gym/atari-2600/crazy-climber
+ - /envs/gym/atari-2600/crazy-climber/
+ - /env/gym/atari/crazy-climber/
+ - /env/gym/atari-2600/crazy-climber/
 
 nav:
  - name: Overview

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Asterix Environment
-permalink: /envs/gym/atari/asterix
+permalink: /envs/gym/atari/asterix/
 
 redirect_from:
- - /envs/gym/atari-2600/asterix
- - /env/gym/atari/asterix
- - /env/gym/atari-2600/asterix
+ - /envs/gym/atari-2600/asterix/
+ - /env/gym/atari/asterix/
+ - /env/gym/atari-2600/asterix/
 
 nav:
  - name: Overview

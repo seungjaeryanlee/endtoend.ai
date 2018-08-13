@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Chopper Command Environment
-permalink: /envs/gym/atari/chopper-command
+permalink: /envs/gym/atari/chopper-command/
 
 redirect_from:
- - /envs/gym/atari-2600/chopper-command
- - /env/gym/atari/chopper-command
- - /env/gym/atari-2600/chopper-command
+ - /envs/gym/atari-2600/chopper-command/
+ - /env/gym/atari/chopper-command/
+ - /env/gym/atari-2600/chopper-command/
 
 nav:
  - name: Overview

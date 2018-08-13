@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Time Pilot Environment
-permalink: /envs/gym/atari/time-pilot
+permalink: /envs/gym/atari/time-pilot/
 
 redirect_from:
- - /envs/gym/atari-2600/time-pilot
- - /env/gym/atari/time-pilot
- - /env/gym/atari-2600/time-pilot
+ - /envs/gym/atari-2600/time-pilot/
+ - /env/gym/atari/time-pilot/
+ - /env/gym/atari-2600/time-pilot/
 
 nav:
  - name: Overview

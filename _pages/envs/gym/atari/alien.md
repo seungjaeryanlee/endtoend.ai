@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Alien Environment
-permalink: /envs/gym/atari/alien
+permalink: /envs/gym/atari/alien/
 
 redirect_from:
- - /envs/gym/atari-2600/alien
- - /env/gym/atari/alien
- - /env/gym/atari-2600/alien
+ - /envs/gym/atari-2600/alien/
+ - /env/gym/atari/alien/
+ - /env/gym/atari-2600/alien/
 
 nav:
  - name: Overview

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Bank Heist Environment
-permalink: /envs/gym/atari/bank-heist
+permalink: /envs/gym/atari/bank-heist/
 
 redirect_from:
- - /envs/gym/atari-2600/bank-heist
- - /env/gym/atari/bank-heist
- - /env/gym/atari-2600/bank-heist
+ - /envs/gym/atari-2600/bank-heist/
+ - /env/gym/atari/bank-heist/
+ - /env/gym/atari-2600/bank-heist/
 
 nav:
  - name: Overview

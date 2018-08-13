@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari James Bond Environment
-permalink: /envs/gym/atari/james-bond
+permalink: /envs/gym/atari/james-bond/
 
 redirect_from:
- - /envs/gym/atari-2600/james-bond
- - /env/gym/atari/james-bond
- - /env/gym/atari-2600/james-bond
+ - /envs/gym/atari-2600/james-bond/
+ - /env/gym/atari/james-bond/
+ - /env/gym/atari-2600/james-bond/
 
 nav:
  - name: Overview

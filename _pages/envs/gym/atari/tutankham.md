@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Tutankham Environment
-permalink: /envs/gym/atari/tutankham
+permalink: /envs/gym/atari/tutankham/
 
 redirect_from:
- - /envs/gym/atari-2600/tutankham
- - /env/gym/atari/tutankham
- - /env/gym/atari-2600/tutankham
+ - /envs/gym/atari-2600/tutankham/
+ - /env/gym/atari/tutankham/
+ - /env/gym/atari-2600/tutankham/
 
 nav:
  - name: Overview

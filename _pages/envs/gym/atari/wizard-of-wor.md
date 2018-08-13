@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Wizard of Wor Environment
-permalink: /envs/gym/atari/wizard-of-wor
+permalink: /envs/gym/atari/wizard-of-wor/
 
 redirect_from:
- - /envs/gym/atari-2600/wizard-of-wor
- - /env/gym/atari/wizard-of-wor
- - /env/gym/atari-2600/wizard-of-wor
+ - /envs/gym/atari-2600/wizard-of-wor/
+ - /env/gym/atari/wizard-of-wor/
+ - /env/gym/atari-2600/wizard-of-wor/
 
 nav:
  - name: Overview

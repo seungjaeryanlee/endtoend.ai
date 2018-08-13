@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Venture Environment
-permalink: /envs/gym/atari/venture
+permalink: /envs/gym/atari/venture/
 
 redirect_from:
- - /envs/gym/atari-2600/venture
- - /env/gym/atari/venture
- - /env/gym/atari-2600/venture
+ - /envs/gym/atari-2600/venture/
+ - /env/gym/atari/venture/
+ - /env/gym/atari-2600/venture/
 
 nav:
  - name: Overview

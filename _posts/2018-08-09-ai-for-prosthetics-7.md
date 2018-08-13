@@ -2,7 +2,7 @@
 layout: post
 title: "AI for Prosthetics Week 7: Understanding the Reward"
 author: Seungjae Ryan Lee
-permalink: /blog/ai-for-prosthetics-5
+permalink: /blog/ai-for-prosthetics-5/
 
 published: false
 

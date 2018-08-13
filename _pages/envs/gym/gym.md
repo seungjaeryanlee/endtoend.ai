@@ -1,8 +1,8 @@
 ---
 layout: page
 title: OpenAI Gym Environments
-permalink: /envs/gym
-redirect_from: /env/gym
+permalink: /envs/gym/
+redirect_from: /env/gym/
 
 nav:
 - name: Atari 2600

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "A Tour of Reinforcement Learning: Introduction"
-permalink: /tour/rl/introduction
+permalink: /tour/rl/introduction/
 ---
 
 Reinforcement Learning is a computational approach to interaction-based learning. When you are learning how to walk, you are not told by anyone how much force to apply to each of your muscles. Instead, you repeatedly try to walk, and learn how to walk by favoring actions that helped you take a step and avoiding actions that led you to fall.

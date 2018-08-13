@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Defender Environment
-permalink: /envs/gym/atari/defender
+permalink: /envs/gym/atari/defender/
 
 redirect_from:
- - /envs/gym/atari-2600/defender
- - /env/gym/atari/defender
- - /env/gym/atari-2600/defender
+ - /envs/gym/atari-2600/defender/
+ - /env/gym/atari/defender/
+ - /env/gym/atari-2600/defender/
 
 nav:
  - name: Overview

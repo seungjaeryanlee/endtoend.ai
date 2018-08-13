@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Skiing Environment
-permalink: /envs/gym/atari/skiing
+permalink: /envs/gym/atari/skiing/
 
 redirect_from:
- - /envs/gym/atari-2600/skiing
- - /env/gym/atari/skiing
- - /env/gym/atari-2600/skiing
+ - /envs/gym/atari-2600/skiing/
+ - /env/gym/atari/skiing/
+ - /env/gym/atari-2600/skiing/
 
 nav:
  - name: Overview

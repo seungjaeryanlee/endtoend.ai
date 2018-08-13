@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Space Invaders Environment
-permalink: /envs/gym/atari/space-invaders
+permalink: /envs/gym/atari/space-invaders/
 
 redirect_from:
- - /envs/gym/atari-2600/space-invaders
- - /env/gym/atari/space-invaders
- - /env/gym/atari-2600/space-invaders
+ - /envs/gym/atari-2600/space-invaders/
+ - /env/gym/atari/space-invaders/
+ - /env/gym/atari-2600/space-invaders/
 
 nav:
  - name: Overview

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Pong Environment
-permalink: /envs/gym/atari/pong
+permalink: /envs/gym/atari/pong/
 
 redirect_from:
- - /envs/gym/atari-2600/pong
- - /env/gym/atari/pong
- - /env/gym/atari-2600/pong
+ - /envs/gym/atari-2600/pong/
+ - /env/gym/atari/pong/
+ - /env/gym/atari-2600/pong/
 
 nav:
  - name: Overview

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Seaquest Environment
-permalink: /envs/gym/atari/seaquest
+permalink: /envs/gym/atari/seaquest/
 
 redirect_from:
- - /envs/gym/atari-2600/seaquest
- - /env/gym/atari/seaquest
- - /env/gym/atari-2600/seaquest
+ - /envs/gym/atari-2600/seaquest/
+ - /env/gym/atari/seaquest/
+ - /env/gym/atari-2600/seaquest/
 
 nav:
  - name: Overview

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: A Tour of Reinforcement Learning
-permalink: /tour/rl
+permalink: /tour/rl/
 ---
 
 Reinforcement Learning is a subfield of Machine Learning where agents learn by interacting with the environment. Leading groups such as Google DeepMind and OpenAI have used Reinforcement Learning to achieve superhuman levels in many tasks, the most famous one being AlphaGo defeating Lee Sedol.

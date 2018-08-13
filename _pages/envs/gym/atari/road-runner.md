@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Road Runner Environment
-permalink: /envs/gym/atari/road-runner
+permalink: /envs/gym/atari/road-runner/
 
 redirect_from:
- - /envs/gym/atari-2600/road-runner
- - /env/gym/atari/road-runner
- - /env/gym/atari-2600/road-runner
+ - /envs/gym/atari-2600/road-runner/
+ - /env/gym/atari/road-runner/
+ - /env/gym/atari-2600/road-runner/
 
 nav:
  - name: Overview

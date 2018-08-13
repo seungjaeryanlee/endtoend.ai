@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Assault Environment
-permalink: /envs/gym/atari/assault
+permalink: /envs/gym/atari/assault/
 
 redirect_from:
- - /envs/gym/atari-2600/assault
- - /env/gym/atari/assault
- - /env/gym/atari-2600/assault
+ - /envs/gym/atari-2600/assault/
+ - /env/gym/atari/assault/
+ - /env/gym/atari-2600/assault/
 
 nav:
  - name: Overview

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Kung-Fu Master Environment
-permalink: /envs/gym/atari/kung-fu-master
+permalink: /envs/gym/atari/kung-fu-master/
 
 redirect_from:
- - /envs/gym/atari-2600/kung-fu-master
- - /env/gym/atari/kung-fu-master
- - /env/gym/atari-2600/kung-fu-master
+ - /envs/gym/atari-2600/kung-fu-master/
+ - /env/gym/atari/kung-fu-master/
+ - /env/gym/atari-2600/kung-fu-master/
 
 nav:
  - name: Overview

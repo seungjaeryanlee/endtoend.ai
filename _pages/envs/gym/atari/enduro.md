@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Enduro Environment
-permalink: /envs/gym/atari/enduro
+permalink: /envs/gym/atari/enduro/
 
 redirect_from:
- - /envs/gym/atari-2600/enduro
- - /env/gym/atari/enduro
- - /env/gym/atari-2600/enduro
+ - /envs/gym/atari-2600/enduro/
+ - /env/gym/atari/enduro/
+ - /env/gym/atari-2600/enduro/
 
 nav:
  - name: Overview

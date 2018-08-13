@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari River Raid Environment
-permalink: /envs/gym/atari/river-raid
+permalink: /envs/gym/atari/river-raid/
 
 redirect_from:
- - /envs/gym/atari-2600/river-raid
- - /env/gym/atari/river-raid
- - /env/gym/atari-2600/river-raid
+ - /envs/gym/atari-2600/river-raid/
+ - /env/gym/atari/river-raid/
+ - /env/gym/atari-2600/river-raid/
 
 nav:
  - name: Overview

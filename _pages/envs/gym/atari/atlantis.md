@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Atlantis Environment
-permalink: /envs/gym/atari/atlantis
+permalink: /envs/gym/atari/atlantis/
 
 redirect_from:
- - /envs/gym/atari-2600/atlantis
- - /env/gym/atari/atlantis
- - /env/gym/atari-2600/atlantis
+ - /envs/gym/atari-2600/atlantis/
+ - /env/gym/atari/atlantis/
+ - /env/gym/atari-2600/atlantis/
 
 nav:
  - name: Overview

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Atari Bowling Environment
-permalink: /envs/gym/atari/bowling
+permalink: /envs/gym/atari/bowling/
 
 redirect_from:
- - /envs/gym/atari-2600/bowling
- - /env/gym/atari/bowling
- - /env/gym/atari-2600/bowling
+ - /envs/gym/atari-2600/bowling/
+ - /env/gym/atari/bowling/
+ - /env/gym/atari-2600/bowling/
 
 nav:
  - name: Overview
