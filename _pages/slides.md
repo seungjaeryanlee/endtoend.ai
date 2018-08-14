@@ -60,3 +60,14 @@ We've trained an agent to achieve a high score of 74,500 on Montezuma's Revenge 
 
 Recently experience replay is widely used in various deep reinforcement learning (RL) algorithms, in this paper we rethink the utility of experience replay. It introduces a new hyper-parameter, the memory buffer size, which needs carefully tuning. However unfortunately the importance of this new hyper-parameter has been underestimated in the community for a long time. In this paper we did a systematic empirical study of experience replay under various function representations. We showcase that a large replay buffer can significantly hurt the performance. Moreover, we propose a simple O(1) method to remedy the negative influence of a large replay buffer. We showcase its utility in both simple grid world and challenging domains like Atari games.
 
+
+
+### Playing Atari with Deep Reinforcement Learning
+
+<p style="margin-top: -24px">Mnih et al. - December 2013</p>
+
+[[SlideShare]](https://www.slideshare.net/SeungJaeLee17/13125602-playing-atari-with-deep-reinforcement-learning) [[PDF]](/slides/paper/playing_atari_with_deep_reinforcement_learning.pdf)
+
+We present the first deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning. The model is a convolutional neural network, trained with a variant of Q-learning, whose input is raw pixels and whose output is a value function estimating future rewards. We apply our method to seven Atari 2600 games from the Arcade Learning Environment, with no adjustment of the architecture or learning algorithm. We find that it outperforms all previous approaches on six of the games and surpasses a human expert on three of them.
+
+ 
