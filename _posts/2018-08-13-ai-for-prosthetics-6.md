@@ -31,6 +31,14 @@ nav:
 
 
 
+## Latest News
+
+Łukasz Kidziński, the project lead of `osim-rl`, had a webinar on *Robust control strategies for musculoskeletal models using deep reinforcement learning* on August 7th. For those who missed the webinar, here is the video:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M2D5xSSxshE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
 ## Leaderboard
 
 Here are the top 10 scores for this week. Three new people (jbr, qyz55, jssk) appeared in the top 10, and all but one agent were submitted in August. 
