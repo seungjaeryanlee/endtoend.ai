@@ -25,9 +25,9 @@ nav:
 
 - [Week 1: Understanding the Challenge](/blog/ai-for-prosthetics-1)
 - [Week 2: Understanding the Action Space](/blog/ai-for-prosthetics-2)
-- [Week 3-4: Understanding the Observation Space](/blog/ai-for-prosthetics-3)
+- [Week 3 - 4: Understanding the Observation Space](/blog/ai-for-prosthetics-3)
 - [Week 5: Understanding the Reward](/blog/ai-for-prosthetics-5)
-- **Week 6~8: General Techniques of RL**
+- **Week 6 - 8: General Techniques of RL**
 
 
 
