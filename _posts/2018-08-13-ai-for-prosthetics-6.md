@@ -90,7 +90,7 @@ Recently, OpenAI published [*Learning Dexterous In-Hand Manipulation*](https://a
 
 ### Distributed Learning
 
-If one has the resources, the most significant increase would be through **distributed learning**. If one has the CPUs and GPUs (or emulate them), parallelizing computations results in 
+If one has the resources, the most significant increase would be through **distributed learning**. If one has the CPUs and GPUs (or emulate them), parallelizing computations results in dramatic speedup for collecting experience.
 
 Most state-of-the-art results use parallelization extensively. DeepMind's [*Distributed Prioritized Experience Replay*](https://arxiv.org/abs/1803.00933) showcases Ape-X DQN that achieves state-of-the-art results for most Atari 2600 games by using 376 cores and 1 GPU, collecting experience 200 times faster than [*Rainbow*](https://arxiv.org/abs/1710.02298).
 
@@ -112,5 +112,5 @@ To try out distributed learning, I recommend [Ray's RLLib](https://ray.readthedo
 
 Although Policy Gradient methods such as DDPG and PPO are more natural choices for this challenge, I want to try using Deep Q-Networks! I have not yet decided which implementation to use, but it will be either unixpickle's [anyrl-py](https://github.com/unixpickle/anyrl-py) or Kaixhin's [Rainbow](https://github.com/Kaixhin/Rainbow).
 
- Also, I have never used Google Cloud Platform (GCP) before, but now I have both the supply ($250 credit) and the demand (more computational power) for it, so it sure is a good time to start!
+ Also, I have never used Google Cloud Platform (GCP) before, but now I have both the supply ($250 credit) and the demand (more computational power needed for training agents) for it, so it sure is a good time to start!
 
