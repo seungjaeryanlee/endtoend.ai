@@ -34,7 +34,7 @@ This is a collection of presentation slides on Artificial Intelligence books and
 
 ### Learning Dexterous In-Hand Manipulation
 
-<p style="margin-top: -24px;">August 2018</p>
+<p style="margin-top: -24px;">S. Zhang, R. Sutton - August 2018</p>
 
 [[SlideShare]](https://www.slideshare.net/SeungJaeLee17/180800177-learning-dexterous-inhand-manipulation) [[PDF]](/slides/paper/learning_dextrous_in_hand_manipulation.pdf)
 
@@ -44,7 +44,7 @@ We use reinforcement learning (RL) to learn dexterous in-hand manipulation polic
 
 ### Learning Montezuma's Revenge from a Single Demonstration
 
-<p style="margin-top: -24px;">July 2018</p>
+<p style="margin-top: -24px;">T. Salimans, R. Chen - July 2018</p>
 
 [[SlideShare]](https://www.slideshare.net/SeungJaeLee17/1807-learning-montezumas-revenge-from-a-single-demonstration) [[Google Slides]](https://docs.google.com/presentation/d/e/2PACX-1vQlUjzQ282n6810yAEYoeJCG0E0MLrNEKQl-Hkkw6o02NELV2uAFGuTS2FFu3gO0XkWO0K9B6UktiHv/pub?start=false&loop=false&delayms=3000) [[PDF]](/slides/paper/learning_montezumas_revenge_from_a_single_demonstration.pdf)
 
@@ -54,7 +54,7 @@ We've trained an agent to achieve a high score of 74,500 on Montezuma's Revenge 
 
 ### A Deeper Look at Experience Replay
 
-<p style="margin-top: -24px;">December 2017</p>
+<p style="margin-top: -24px">OpenAI - December 2017</p>
 
 [[SlideShare]](https://www.slideshare.net/SeungJaeLee17/171201275-a-deeper-look-at-experience-replay) [[PDF]](/slides/paper/a_deeper_look_at_experience_replay.pdf)
 
