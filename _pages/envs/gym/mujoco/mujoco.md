@@ -27,7 +27,9 @@ nav:
 
 ![]({{ "assets/_pages/envs/gym/mujoco.gif" | absolute_url }})
 
-**MuJoCo** (**Mu**lti-**Jo**int dynamics with **Co**ntact) is a proprietary physics engine for detailed, efficient rigid body simulations with contacts. MuJoCo can be used to create environments with continuous control tasks such as walking or running. Thus, many policy gradient methods (TRPO, PPO) have been tested primarily on various MuJoCo environments.
+**MuJoCo** (**Mu**lti-**Jo**int dynamics with **Co**ntact) is a proprietary physics engine for detailed, efficient rigid body simulations with contacts. MuJoCo can be used to create environments with continuous control tasks such as walking or running. Thus, many policy gradient methods (TRPO, PPO) have been tested on various MuJoCo environments.
+
+
 
 
 ## Environments
@@ -36,47 +38,61 @@ OpenAI Gym has 10 MuJoCo environments available, ranging from simple tasks such 
 
 ### InvertedPendulum
 
-<video style="max-width: 50%" autoplay loop mute controls><source src='{{ "assets/_pages/envs/gym/mujoco/InvertedPdulum.mp4" | absolute_url }}' ></video>
+This is a MuJoCo version of  `CartPole`. The agent's goal is to balance a pole on a cart.
 
-This is a MuJoCo version of  `CartPole-v0`. The agent's goal is to balance a pole on a cart.
+<video style="max-width: 50%" autoplay loop mute controls><source src='{{ "assets/_pages/envs/gym/mujoco/InvertedPendulum.mp4" | absolute_url }}' ></video>
 
 ### InvertedDoublePendulum
 
-<video style="max-width: 50%" autoplay loop mute controls><source src='{{ "assets/_pages/envs/gym/mujoco/InvertedDoublePendulum.mp4" | absolute_url }}' ></video>
-
 This is a harder version of InvertedPendulum, where the pole has another pole on top of it. The agent's goal is to balance a pole on a pole on a cart.
+
+<video style="max-width: 50%" autoplay loop mute controls><source src='{{ "assets/_pages/envs/gym/mujoco/InvertedDoublePendulum.mp4" | absolute_url }}' ></video>
 
 ### Reacher
 
+Make a 2D robot reach to a randomly located target.
+
 <video style="max-width: 50%" autoplay loop mute controls><source src='{{ "assets/_pages/envs/gym/mujoco/Reacher.mp4" | absolute_url }}' ></video>
 
-The agent is a 2D "arm", two rigid poles connected by a joint with one end fixed. The 
-
 ### Hopper
+
+Make a two-dimensional one-legged robot hop forward as fast as possible.
 
 <video style="max-width: 50%" autoplay loop mute controls><source src='{{ "assets/_pages/envs/gym/mujoco/Hopper.mp4" | absolute_url }}' ></video>
 
 ### Swimmer
 
+Make a 2D robot swim.
+
 <video style="max-width: 50%" autoplay loop mute controls><source src='{{ "assets/_pages/envs/gym/mujoco/Swimmer.mp4" | absolute_url }}' ></video>
 
 ### Walker2d
+
+Make a two-dimensional bipedal robot walk forward as fast as possible.
 
 <video style="max-width: 50%" autoplay loop mute controls><source src='{{ "assets/_pages/envs/gym/mujoco/Walker2d.mp4" | absolute_url }}' ></video>
 
 ### Ant
 
+Make a four-legged creature walk forward as fast as possible.
+
 <video style="max-width: 50%" autoplay loop mute controls><source src='{{ "assets/_pages/envs/gym/mujoco/Ant.mp4" | absolute_url }}' ></video>
 
 ### HalfCheetah
+
+Make a 2D cheetah robot run.
 
 <video style="max-width: 50%" autoplay loop mute controls><source src='{{ "assets/_pages/envs/gym/mujoco/HalfCheetah.mp4" | absolute_url }}' ></video>
 
 ### Humanoid
 
+Make a three-dimensional bipedal robot walk forward as fast as possible, without falling over.
+
 <video style="max-width: 50%" autoplay loop mute controls><source src='{{ "assets/_pages/envs/gym/mujoco/Humanoid.mp4" | absolute_url }}' ></video>
 
 ### HumanoidStandup
+
+Make a three-dimensional bipedal robot standup as fast as possible.
 
 <video style="max-width: 50%" autoplay loop mute controls><source src='{{ "assets/_pages/envs/gym/mujoco/HumanoidStandup.mp4" | absolute_url }}' ></video>
 
@@ -131,8 +147,6 @@ There are many papers that have experimented with the MuJoCo continuous control 
 | 107.88         | (101.13, 118.56)      | PPO       |
 | 50.22          | (42.47, 55.37)        | ACKTR     |
 | 31.92          | (21.68, 46.23)        | DDPG      |
-
-
 
 
 
