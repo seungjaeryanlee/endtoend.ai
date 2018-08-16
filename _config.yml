@@ -27,8 +27,9 @@ include:
 
 front_page_order:
 #  - "RL Environments"
- - "Atari Environments"
  - "AI for Prosthetics"
+ - "Atari Environments"
+ - "MuJoCo Environments"
  - "Practical Reinforcement Learning"
  - "Sutton and Barto Notebooks"
  - "Slides"
