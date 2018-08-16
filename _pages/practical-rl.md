@@ -2,6 +2,7 @@
 layout: page
 title: Practical Reinforcement Learning
 permalink: /practical-rl/
+redirect_from: /practical-reinforcement-learning/
 
 display_front: true
 front_image: /assets/home/practical-rl.png
