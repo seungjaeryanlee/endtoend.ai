@@ -28,10 +28,11 @@ include:
 front_page_order:
 #  - "RL Environments"
  - "Atari Environments"
+ - "AI for Prosthetics"
+ - "Practical Reinforcement Learning"
  - "Sutton and Barto Notebooks"
  - "Slides"
  - "Blog"
- - "AI for Prosthetics"
 
 plugins:
  - jekyll-redirect-from
