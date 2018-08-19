@@ -20,3 +20,7 @@ Reinforcement Learning is a blooming field with interesting papers being publish
 2. Help people decide what papers to read
 
 CTRL is a page summarizing the ideas and results of recent papers. In a sense, it can be seen as an extended abstract, but with more visualizations and context.
+
+### [A Deeper Look at Experience Replay](/ctrl/a-deeper-look-at-experience-replay/)
+
+<p style="margin-top: -24px;">S. Zhang and R. Sutton. December 2017</p>
