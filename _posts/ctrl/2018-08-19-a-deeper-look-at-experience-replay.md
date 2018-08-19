@@ -10,7 +10,7 @@ front_text: >
     This is a review of the paper <i>A Deeper Look at Experience Replay</i> by Shangtong Zhang and Richard Sutton. The paper shows that a huge replay buffer can hurt performance and introduces an O(1) method to mitigate the performance drop.
 ---
 
-*This is part of the [**Current Topics in Reinforcement Learning (CTRL)**](/ctrl) series that reviews recent papers in Reinforcement Learning.*
+*This is a part of the [**Current Topics in Reinforcement Learning (CTRL)**](/ctrl) series that reviews recent papers in Reinforcement Learning.*
 
 **Title**: A Deeper Look at Experience Replay
 <br/>
