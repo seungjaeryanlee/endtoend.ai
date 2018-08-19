@@ -5,6 +5,7 @@ author: Seungjae Ryan Lee
 permalink: /ctrl/a-deeper-look-at-experience-replay/
 
 front_image: /assets/blog/ctrl/a-deeper-look-at-experience-replay/front.png
+front_image_type: contain
 front_text: >
     This is a review of the paper <i>A Deeper Look at Experience Replay</i> by Shangtong Zhang and Richard Sutton. The paper shows that a huge replay buffer can hurt performance and introduces an O(1) method to mitigate the performance drop.
 ---
