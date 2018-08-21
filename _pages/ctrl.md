@@ -21,14 +21,30 @@ Reinforcement Learning is a blooming field with interesting papers being publish
 
 CTRL summarizes the ideas and results of a paper and puts it into context by connecting it to other relevant papers. In a sense, it can be seen as an extended abstract, but with more visualizations and context.
 
+### Learning Dexterous In-Hand Manipulation
+
+<p style="margin-top: -24px;">OpenAI • August 2018</p>
+
+ - In-hand manipulation had limited results due to complexity of system.
+ - Dactyl successfully performed transfer learning from simulator to real environment, using extensive randomizations and effects to obtain a robust policy and omitting noisy sensors.
+ - Dactyl uses LSTM, massively distributed PPO, and Asymmetric Actor Critic.
+ - Dactyl shows unprecedented levels of dexterity and can discover humanlike grasp types by itself.
+
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/slides/paper/learning_dexterous_in_hand_manipulation.pdf">
+Slides
+</a>
+
 ### A Deeper Look at Experience Replay
 
-<p style="margin-top: -24px;">S. Zhang and R. Sutton. December 2017</p>
+<p style="margin-top: -24px;">S. Zhang and R. Sutton • December 2017</p>
 
  - Experience Replay is sensitive to replay buffer size.
  - The performance drop of large replay buffer can sometimes be mitigated with Combined Experience Replay (CER), experience replay combined with online learning.
  - Experience Replay is inherently flawed.
 
 <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/ctrl/a-deeper-look-at-experience-replay/">
-Read more
+Post
+</a>
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/slides/paper/a_deeper_look_at_experience_replay.pdf">
+Slides
 </a>
