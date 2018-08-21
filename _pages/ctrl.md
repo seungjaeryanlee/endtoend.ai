@@ -21,6 +21,14 @@ Reinforcement Learning is a blooming field with interesting papers being publish
 
 CTRL summarizes the ideas and results of a paper and puts it into context by connecting it to other relevant papers. In a sense, it can be seen as an extended abstract, but with more visualizations and context.
 
-### [A Deeper Look at Experience Replay](/ctrl/a-deeper-look-at-experience-replay/)
+### A Deeper Look at Experience Replay
 
 <p style="margin-top: -24px;">S. Zhang and R. Sutton. December 2017</p>
+
+ - Experience Replay is sensitive to replay buffer size.
+ - The performance drop of large replay buffer can sometimes be mitigated with Combined Experience Replay (CER), experience replay combined with online learning.
+ - Experience Replay is inherently flawed.
+
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/ctrl/a-deeper-look-at-experience-replay/">
+Read more
+</a>
