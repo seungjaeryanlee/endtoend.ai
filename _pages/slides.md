@@ -36,7 +36,7 @@ This is a collection of presentation slides on Artificial Intelligence books and
 
 <p style="margin-top: -24px;">S. Zhang, R. Sutton - August 2018</p>
 
-[[SlideShare]](https://www.slideshare.net/SeungJaeLee17/180800177-learning-dexterous-inhand-manipulation) [[PDF]](/slides/paper/learning_dextrous_in_hand_manipulation.pdf)
+[[SlideShare]](https://www.slideshare.net/SeungJaeLee17/180800177-learning-dexterous-inhand-manipulation) [[PDF]](/slides/paper/learning_dexterous_in_hand_manipulation.pdf)
 
 We use reinforcement learning (RL) to learn dexterous in-hand manipulation policies which can perform vision-based object reorientation on a physical Shadow Dexterous Hand. The training is performed in a simulated environment in which we randomize many of the physical properties of the system like friction coefficients and an object’s appearance. Our policies transfer to the physical robot despite being trained entirely in simulation. Our method does not rely on any human demonstrations, but many behaviors found in human manipulation emerge naturally, including finger gaiting, multi-finger coordination, and the controlled use of gravity. Our results were obtained using the same distributed RL system that was used to train OpenAI Five. We also include a video of our results: [https://youtu.be/jwSbzNHGflM](https://youtu.be/jwSbzNHGflM).
 
