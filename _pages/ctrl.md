@@ -48,3 +48,17 @@ Post
 <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/slides/paper/a_deeper_look_at_experience_replay.pdf">
 Slides
 </a>
+
+### Playing Atari with Deep Reinforcement Learning
+
+<p style="margin-top: -24px;">Mnih et al. • December 2013</p>
+
+ * Reinforcement Learning has struggled in high-dimensional sensory inputs such as vision or sound.
+ * Deep Learning can extract features from high-dimensional inputs, but it expects large dataset with i.i.d. data.
+ * To alleviate the problem, the **Experience Replay** mechanism is used. Instead of using immediate transitions $(s, a, r, s')$ to train the agent, transitions are saved into memory. Then, after every action, a minibatch is sampled randomly from the memory. This achieves greater data efficiency and uncorrelated data.
+ * **Deep Q-Network** (DQN) is a convolutional neural network (CNN) that outputs the action values for all actions given a state as input, trained with Q Learning and Experience Replay.
+ * DQN showed state-of-the-art results in 6 out of 7 selected games from *Atari 2600*.
+ 
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/slides/paper/playing_atari_with_deep_reinforcement_learning.pdf">
+Slides
+</a>
