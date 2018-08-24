@@ -19,7 +19,7 @@ Reinforcement Learning is a blooming field with interesting papers being publish
 1. Help people follow emerging trends without devoting too much time
 2. Help people decide what papers to read
 
-CTRL summarizes the ideas and results of a paper and puts it into context by connecting it to other relevant papers. In a sense, it can be seen as an extended abstract, but with more visualizations and context.
+CTRL summarizes the ideas and results of a paper and puts it into context by connecting it to other relevant papers. In a sense, it can be seen as an extended abstract, but with more visualizations and context. If you want to know when new CTRL posts are published, [join us and subscribe to our RSS feed](/feed.xml)!
 
 ### Learning Dexterous In-Hand Manipulation
 
