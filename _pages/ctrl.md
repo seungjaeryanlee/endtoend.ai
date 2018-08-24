@@ -62,3 +62,17 @@ Slides
 <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/slides/paper/playing_atari_with_deep_reinforcement_learning.pdf">
 Slides
 </a>
+
+### A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning
+
+<p style="margin-top: -24px;">S. Ross, G. Gordon, and J. Bagnell • November 2010</p>
+
+ - Traditional imitation learning approaches trained a classifier to predict the expert's behavior given a training data of the encountered observations and actions chosen by the expert. Such approach violates the i.i.d. assumption and leads to poor performance. ($T^2\epsilon$ mistakes over $T$ steps with probability of making mistake $\epsilon$)
+ - Approaches such as Forward Training or SMILe have better performance guarantees ($uT\epsilon$ or near-linear), but they are either impractical in long episodes or generates an unstable policy by design.
+ - The **Dataset Aggregation (DAgger)** algorithm collects a dataset of trajectories at each iteration under the current policy $\hat{\pi}_ i$ and trains the next policy $\hat{\pi}_{i+1}$ under the aggregate of all collected datasets of trajectories. (Intuitively, states from the collected trajectories are states that the learned policy is likely to encounter.)
+ - DAgger has a good performance guarantee of $uT\epsilon + O(1)$.
+ - DAgger outperforms previous approaches in *Super Tux Kart*, *Super Mario Bros.*, and Handwriting Recognition.
+
+<div style="margin: 0 auto; width: 50%;">
+<img src='{{ "/assets/_pages/ctrl/a-reduction-of-imitation-learning-and-structured-prediction-to-no-regret-online-learning.png" | absolute_url }}'/>
+</div>
