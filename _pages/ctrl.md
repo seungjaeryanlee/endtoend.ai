@@ -19,7 +19,14 @@ Reinforcement Learning is a blooming field with interesting papers being publish
 1. Help people follow emerging trends without devoting too much time
 2. Help people decide what papers to read
 
-CTRL summarizes the ideas and results of a paper and puts it into context by connecting it to other relevant papers. In a sense, it can be seen as an extended abstract, but with more visualizations and context. If you want to know when new CTRL posts are published, [join us and subscribe to our RSS feed](/feed.xml)!
+CTRL summarizes the ideas and results of a paper and puts it into context by connecting it to other relevant papers. In a sense, it can be seen as an extended abstract, but with more visualizations and context. By default, all papers are summarized in bullet-style, but I also create slides, write blog posts, and record videos for exciting papers. If you want to know when new CTRL posts are published, [join us and subscribe to our RSS feed](/feed.xml)!
+
+## Table of Contents
+
+ * [(2018.08) Learning Dexterous In-Hand Manipulation](#learning-dexterous-in-hand-manipulation)
+ * [(2017.12) A Deeper Look at Experience Replay](#a-deeper-look-at-experience-replay)
+ * [(2013.12) Playing Atari with Deep Reinforcement Learning](#playing-atari-with-deep-reinforcement-learning)
+ * [(2010.11) A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning](#a-reduction-of-imitation-learning-and-structured-prediction-to-no-regret-online-learning)
 
 ### Learning Dexterous In-Hand Manipulation
 
