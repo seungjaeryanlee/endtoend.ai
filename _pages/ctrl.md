@@ -26,9 +26,11 @@ CTRL summarizes the ideas and results of a paper and puts it into context by con
 <p style="margin-top: -24px;">OpenAI • August 2018</p>
 
  - In-hand manipulation had limited results due to complexity of system.
- - Dactyl successfully performed transfer learning from simulator to real environment, using extensive randomizations and effects to obtain a robust policy and omitting noisy sensors.
+ - **Dactyl** successfully performed transfer learning from simulator to real environment, using extensive randomizations and effects to obtain a robust policy and omitting noisy sensors.
  - Dactyl uses LSTM, massively distributed PPO, and Asymmetric Actor Critic.
  - Dactyl shows unprecedented levels of dexterity and can discover humanlike grasp types by itself.
+
+<img style="background-color: black;" src='{{ "/assets/_pages/ctrl/learning-dexterous-in-hand-manipulation.png" | absolute_url }}'/>
 
 <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/slides/paper/learning_dexterous_in_hand_manipulation.pdf">
 Slides
@@ -38,9 +40,10 @@ Slides
 
 <p style="margin-top: -24px;">S. Zhang and R. Sutton • December 2017</p>
 
- - Experience Replay is sensitive to replay buffer size.
- - The performance drop of large replay buffer can sometimes be mitigated with Combined Experience Replay (CER), experience replay combined with online learning.
- - Experience Replay is inherently flawed.
+ - Experience Replay is the only technique except parallelized workers that allows for uncorrelated data, and thus it has been used in many state-of-the-art algorithms.
+ - Although most research has used the default size of $10^6$ for the replay buffer, Experience Replay is sensitive to replay buffer size, with huge performance drops for buffers too small or too large.
+ - The performance drop of large replay buffer can sometimes be mitigated with **Combined Experience Replay (CER)**, experience replay combined with online learning.
+ - CER is only a workaround, and the Experience Replay is inherently flawed.
 
 <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/ctrl/a-deeper-look-at-experience-replay/">
 Post
@@ -58,7 +61,7 @@ Slides
  * To alleviate the problem, the **Experience Replay** mechanism is used. Instead of using immediate transitions $(s, a, r, s')$ to train the agent, transitions are saved into memory. Then, after every action, a minibatch is sampled randomly from the memory. This achieves greater data efficiency and uncorrelated data.
  * **Deep Q-Network** (DQN) is a convolutional neural network (CNN) that outputs the action values for all actions given a state as input, trained with Q Learning and Experience Replay.
  * DQN showed state-of-the-art results in 6 out of 7 selected games from *Atari 2600*.
- 
+
 <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/slides/paper/playing_atari_with_deep_reinforcement_learning.pdf">
 Slides
 </a>
