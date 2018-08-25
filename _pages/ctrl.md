@@ -25,6 +25,7 @@ CTRL summarizes the ideas and results of a paper and puts it into context by con
 
  * [(2018.08) Learning Dexterous In-Hand Manipulation](#learning-dexterous-in-hand-manipulation)
  * [(2017.12) A Deeper Look at Experience Replay](#a-deeper-look-at-experience-replay)
+ * [(2016.02) Asynchronous Methods for Deep Reinforcement Learning](#asynchronous-methods-for-deep-reinforcement-learning)
  * [(2013.12) Playing Atari with Deep Reinforcement Learning](#playing-atari-with-deep-reinforcement-learning)
  * [(2010.11) A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning](#a-reduction-of-imitation-learning-and-structured-prediction-to-no-regret-online-learning)
 
@@ -58,6 +59,18 @@ Post
 <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/slides/paper/a_deeper_look_at_experience_replay.pdf">
 Slides
 </a>
+
+### Asynchronous Methods for Deep Reinforcement Learning
+
+<p style="margin-top: -24px;">Mnih et al. • February 2016</p>
+
+ - Experience Replay has been used to reduce non-stationarity and decorrelate updates, but it requires off-policy reinforcement learning methods.
+ - Instead of Experience Replay, we asynchronously execute multiple agents in parallel on multiple instances of the environment. These agents use different exploration strategies (for example, different $\epsilon$ values for $\epsilon$-greedy methods) in different threads, making online updates less likely to be correlated.
+ - The asynchronous framework also speeds up training roughly linear in the number of parallel actor-learners and allow for on-policy reinforcement learning methods.
+ - The asynchronous framework is tested in four learning algorithms: Asynchronous one-step Q-learning, Asynchronous one-step Sarsa, Asynchronous n-step Q-learning, and **Asynchronous Advantage Actor Critic (A3C)**.
+ - To remove communication costs, the asynchronous actor-learners exists on different CPU threads of a single multithreaded machine.
+ - A3C shows state-of-the-art results in *Atari 2600* games with half the training time of DQN, only using a CPU.
+ - Other general improvements such as Eligibility traces, Generalized Advantage Estimator (GAE), Double Q-Learning, or Dueling networks can be incorporated to A3C for immediate improvements.
 
 ### Playing Atari with Deep Reinforcement Learning
 
