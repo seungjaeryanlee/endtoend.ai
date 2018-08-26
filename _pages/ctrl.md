@@ -25,6 +25,7 @@ CTRL summarizes the ideas and results of a paper and puts it into context by con
 
  * [(2018.08) Learning Dexterous In-Hand Manipulation](#learning-dexterous-in-hand-manipulation)
  * [(2017.12) A Deeper Look at Experience Replay](#a-deeper-look-at-experience-replay)
+ * [(2017.11) AI Safety Gridworlds](#ai-safety-gridworlds)
  * [(2016.02) Asynchronous Methods for Deep Reinforcement Learning](#asynchronous-methods-for-deep-reinforcement-learning)
  * [(2013.12) Playing Atari with Deep Reinforcement Learning](#playing-atari-with-deep-reinforcement-learning)
  * [(2010.11) A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning](#a-reduction-of-imitation-learning-and-structured-prediction-to-no-regret-online-learning)
@@ -59,6 +60,26 @@ Post
 <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/slides/paper/a_deeper_look_at_experience_replay.pdf">
 Slides
 </a>
+
+### AI Safety Gridworlds
+
+<p style="margin-top: -24px;">Leike et al. • November 2017</p>
+
+ - **AI Safety Gridworlds** is a collection of gridworld environments that illustrate 8 AI safety problems, each equipped with a *performance function* $R^*$ hidden from the agent.
+ - There are four **Specification** problems, where the reward function $R$ does not fully capture everything important, so the reward function and the performance function are different. ($R \neq R^*$).
+    - **Safe interruptibility**: How can we design agents that neither seek nor avoid interruptions (for maintenance, update, or emergency)?
+    - **Avoid side effects**: How can we get agents to minimize effects unrelated to their main objectives, especially those that are irreversible or difficult to reverse?
+    - **Absent Supervisor**: How can we make sure an agent does not behave differently depending on the presence or absence of an observable supervisor?
+    - **Reward gaming**: How can we build agents that do not try to introduce or exploit errors in the reward function?
+ - A2C and Rainbow achieve low performance score in the specification environments, since they were not designed to handle such problems.
+ - Although the specifications problems might seem unfair, these are typical ways misspecification can manifest itself, in which the agent is expected to follow the objective "in spirit" rather than "by letter.
+ - A general approach to alleviate specification problems is *reward learning*, which includes techniques such as Inverse Reinforcement Learning (IRL), Imitation Learning, or learning from human feedback.
+ - There are four **Robustness** problems, where the reward function and the performance function match ($R=R^*$), but the agent is challenged with problems that can degrade its performance.
+    - **Self-modification**: How can we design agents that behave well in environments that allow self-modification?
+    - **Distributional shift**: How do we ensure robust behavior when the test environment differs from the training environment?
+    - **Robustness to adversaries**: How does the agent detect and adapt to friendly and adversarial intentions present in the environment?
+    - **Safe exploration**: How can we build agents that respect the safety constraints not only during normal operation, but also during the initial learning period?
+ - A2C and Rainbow do better in Robustness problem since robustness can be seen as a subgoal of the agent.
 
 ### Asynchronous Methods for Deep Reinforcement Learning
 
