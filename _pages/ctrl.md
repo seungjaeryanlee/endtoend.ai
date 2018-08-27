@@ -96,6 +96,39 @@ Slides
     - **Safe exploration**: How can we build agents that respect the safety constraints not only during normal operation, but also during the initial learning period?
  - A2C and Rainbow do better in Robustness problem since robustness can be seen as a subgoal of the agent.
 
+<div style="display: none;">
+###  A Brief Survey of Deep Reinforcement Learning
+
+<p style="margin-top: -24px;">Arulkumaran et al. • September 2017</p>
+
+ - Deep Reinforcement Learning (DRL) uses deep learning (DL) to scale reinforcement learning (RL) to problems with high-dimensional state and action spaces.
+ - The biggest sector of DRL is *value-based* methods, represented by Deep Q-Networks (DQN), which processed high-dimensional visual input with covolutional layers to extract spatiotemporal features and processed those features with fully connected layers.
+    - DQNs addressed the instability of function approximation with *experience replay* and *target networks*.
+    - DQNs have been improved in countless ways:
+       - Fix overestimation bias of Q-learning (Double DQN)
+       - Learn the entire value distribution instead of the expectation (Distributional DQN)
+       - Decompose the action value $Q$ to state value $V$ and advantage value $A$ (Dueling DQN)
+       - Use a convex advantage layer to allow continuous actions (NAF)
+       - Learn action embeddings for large discrete action spaces (Sequential DQN)
+ - An emerging sector of DRL is *policy-search* methods.
+    - Gradient-free methods such as evolutionary methods are expensive, but can optimize arbitrary, non-differentiable models.
+    - The more popular gradient-based methods are known as *policy gradient* methods.
+       - Use sample returns to estimate return (REINFORCE)
+       - Restrict optimization to "trust regions" using the *Kullback-Leibler (KL) divergence* for monotonic improvement (TRPO)
+       - Better baselines to reduce variance (GAE)
+       - Use only the first-gradient information unlike TRPO for better applicability at the expense of unconstrained optimisation (PPO)
+    - Instead of using average of sample returns as a baseline, *actor-critic* methods approximate value function (critic) also.
+       - Extend the stochastic policy gradient theorem to deterministic policies (DPG)
+       - Use neural networks to operate on high-dimensional input using ideas from DQN (DDPG)
+       - SVG
+       - IPG
+       - Use multiple agents in parallel environments to stabilize improvements and explore more (A3C)
+       - Simplify A3C for one agent (A2C)
+       - Add Retrace($\lambda$) bias correction to use experience replay (ACER)
+ - There are also efforts in *model-based* methods.
+</div>
+
+
 ### Asynchronous Methods for Deep Reinforcement Learning
 
 <p style="margin-top: -24px;">Mnih et al. • February 2016</p>
