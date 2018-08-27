@@ -24,6 +24,7 @@ CTRL summarizes the ideas and results of a paper and puts it into context by con
 ## Table of Contents
 
  * [(2018.08) Learning Dexterous In-Hand Manipulation](#learning-dexterous-in-hand-manipulation)
+ * [(2018.02) Selective Experience Replay for Lifelong Learning](#selective-experience-replay-for-lifelong-learning)
  * [(2017.12) A Deeper Look at Experience Replay](#a-deeper-look-at-experience-replay)
  * [(2017.11) AI Safety Gridworlds](#ai-safety-gridworlds)
  * [(2016.02) Asynchronous Methods for Deep Reinforcement Learning](#asynchronous-methods-for-deep-reinforcement-learning)
@@ -44,6 +45,20 @@ CTRL summarizes the ideas and results of a paper and puts it into context by con
 <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/slides/paper/learning_dexterous_in_hand_manipulation.pdf">
 Slides
 </a>
+
+### Selective Experience Replay for Lifelong Learning
+
+<p style="margin-top: -24px;">D. Isele and A.Cosgun • February 2018</p>
+
+ - *Lifelong Learning* is an idea to learn multiple tasks in sequence to apply knowledge from previous tasks to improve learning a new task.
+ - A major hurdle to lifelong learning is *catastrophic forgetting*, a phenomena where the network loses performance on previous tasks while training for a new task.
+ - **Selective Experience Replay** keeps a selective long-term experience replay buffer in addition to the short-term FIFO buffer to prevent catastrophic forgetting.
+ - There are four candidates for selecting experiences to store in the long-term experience replay buffer:
+    1. Suprise: Favor experiences with high TD error.
+    2. Reward: Favor experiences that lead to high absolute return.
+    3. Distribution Matching: Match the global training state distribution.
+    4. Coverage Maximization: Maximize coverage of the state space.
+ - Distribution Matching was found to be the best selection criteria overall, but Coverage Maximization did better in the case where the task where less time was spent was more important.
 
 ### A Deeper Look at Experience Replay
 
