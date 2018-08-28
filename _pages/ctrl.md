@@ -30,6 +30,7 @@ CTRL summarizes the ideas and results of a paper and puts it into context by con
  * [(2016.02) Asynchronous Methods for Deep Reinforcement Learning](#asynchronous-methods-for-deep-reinforcement-learning)
  * [(2013.12) Playing Atari with Deep Reinforcement Learning](#playing-atari-with-deep-reinforcement-learning)
  * [(2010.11) A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning](#a-reduction-of-imitation-learning-and-structured-prediction-to-no-regret-online-learning)
+ * [(2000.??) Policy Gradient Methods for Reinforcement Learning with Function Approximation](#policy-gradient-methods-for-reinforcement-learning-with-function-approximation)
 
 ### Learning Dexterous In-Hand Manipulation
 
@@ -168,3 +169,22 @@ Slides
 <div style="margin: 0 auto; width: 50%;">
 <img src='{{ "/assets/_pages/ctrl/a-reduction-of-imitation-learning-and-structured-prediction-to-no-regret-online-learning.png" | absolute_url }}'/>
 </div>
+
+### Policy Gradient Methods for Reinforcement Learning with Function Approximation
+
+<p style="margin-top: -24px;">R. Sutton et al. • 2000</p>
+
+ - Unlike value-based methods **Policy Gradient methods**, where the stochastic policy is directly parametrized, have better convergence properties.
+ - By the **Policy Gradient Theorem**, the gradient of the performance measure $\nabla_\theta \rho$ is not dependent on the gradient of the on-policy state distribution $\nabla_\theta d^{\pi}(s)$, allowing the gradient $\nabla_\theta \rho$ to be estimated via samples.
+ 
+$$
+\frac{\partial \rho}{\partial \theta} = \sum_s d^{\pi}(s) \sum_a \frac{\partial \pi(s, a)}{\partial \theta}Q^\pi(s, a)
+$$
+ 
+ - The $Q^\pi(s, a)$ in the policy gradient theorem can also be approximated with some function approximator $f_w$, and is guaranteed to be an unbiased estimate if it is **compatible**:
+ 
+$$
+\frac{\partial f_w(s, a)}{\partial w} = \frac{\partial \pi(s, a)}{\partial \theta} \frac{1}{\pi(s, a)}
+$$
+ 
+ - A function-approximated policy $\pi$ with a compatible function approximator $f_w$ can converge to a locally optima via policy iteration with an appropriate step size if the $\frac{\partial^2 \pi(s, a)}{\partial \theta_i \partial \theta_j}$ is bounded, the reward is bounded.
