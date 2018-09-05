@@ -31,11 +31,28 @@ front_page_order:
  - "Atari Environments"
  - "MuJoCo Environments"
  - "CTRL: Current Topics in RL"
- - "Demystifying Experience Replay"
+# - "Demystifying Experience Replay"
+ - "DQN Book"
+# - "Policy Gradient Book"
 #  - "Practical Reinforcement Learning"
  - "Sutton and Barto Notebooks"
  - "Slides"
  - "Blog"
 
+front_page_links:
+ - name: "DQN Book"
+   url: "https://www.dqnbook.org/"
+   image: "/assets/home/dqn.png"
+   image_type: cover
+   description: >
+       Read the early draft of the Deep Q-Networks (DQN) book. This book
+       explores various improvements of DQN that achieved superhuman results.
+ - name: "Policy Gradient Book"
+   url: "https://www.policygradientbook.org/"
+   image: "/assets/home/pg.png"
+   image_type: contain
+   description: >
+       Read the early draft of the Policy Gradient book. Policy gradient methods
+       are used in various state-of-the-art reinforcement learning applications.
 plugins:
  - jekyll-redirect-from
