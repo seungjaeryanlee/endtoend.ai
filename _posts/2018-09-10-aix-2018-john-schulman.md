@@ -70,7 +70,7 @@ Although these meta RL approaches seem very promising, they still have crucial l
 To address these shortcomings, we can reformulate the problem and explicitly split the training tasks and the test tasks. [**Gym Retro**](https://blog.openai.com/gym-retro/) is a test suite of over 1000 games created for this new problem formulation. Unlike previous RL efforts where the focus was achieving superhuman results on individual games, the focus of Gym Retro is **solving previously unseen game as fast as a human given prior experience with similar games**.
 
 <div class="half-width">
-    <video width="50%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/aix-2018-john-schulman/retro.mp4" | absolute_url }}'></video>
+    <video width="100%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/aix-2018-john-schulman/retro.mp4" | absolute_url }}'></video>
 </div>
 
 The [Retro Contest](https://blog.openai.com/retro-contest/) earlier this year addressed a simplified, easier version of the challenge. Instead of creating an agent that can solve previously unseen *games* quickly, the goal was to create an agent that can solve previously unseen *levels* of *Sonic the Hedgehog* quickly. In this contest, the agents could train on the training levels as much as possible, but the agent could only train for a million steps (about 18 hours) on the hidden test levels. State-of-the-art methods such as [Rainbow](https://arxiv.org/abs/1710.02298) and [PPO](https://arxiv.org/abs/1707.06347) had subhuman performance. Joint PPO, a technique of training the agent in training levels and finetuning it in test levels, performed better, but still had a large performance gap from humans.
@@ -80,13 +80,13 @@ The [Retro Contest](https://blog.openai.com/retro-contest/) earlier this year ad
 [The top agents](https://blog.openai.com/first-retro-contest-retrospective/) showed some interesting results. Some levels were solved in just 60 minutes of training (in wall-clock time).
 
 <div class="half-width">
-    <video width="50%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/aix-2018-john-schulman/minutes-training.mp4" | absolute_url }}'></video>
+    <video width="100%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/aix-2018-john-schulman/minutes-training.mp4" | absolute_url }}'></video>
 </div>
 
 Visualizing the solutions of the top 3 agents was also insightful. Red dots show earlier episodes on the test level, and the blue dots show later episodes.
 
 <div class="half-width">
-    <video width="50%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/aix-2018-john-schulman/learning.mp4" | absolute_url }}'></video>
+    <video width="100%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/aix-2018-john-schulman/learning.mp4" | absolute_url }}'></video>
 </div>
 
 
