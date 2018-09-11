@@ -1,0 +1,24 @@
+/* Check 2018-09-10-aix-2018-john-schulman on how to use these classes */
+
+/* https://www.ostraining.com/blog/coding/responsive-facebook-videos/ */
+/* https://avexdesigns.com/responsive-youtube-embed/ */
+.facebook-responsive, .youtube-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height:0;
+}
+
+.facebook-responsive iframe, .youtube-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.half-width {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 15px;
+}
