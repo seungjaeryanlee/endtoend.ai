@@ -33,6 +33,7 @@ nav:
 - [Week 3 - 4: Understanding the Observation Space](/blog/ai-for-prosthetics-3)
 - **Week 5: Understanding the Reward**
 - [Week 6 - 8: General Techniques of RL](/blog/ai-for-prosthetics-6)
+- [Week 9 - 10: Unorthodox Approaches](/blog/ai-for-prosthetics-9)
 
 
 
