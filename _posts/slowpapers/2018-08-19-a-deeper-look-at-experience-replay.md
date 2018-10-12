@@ -1,16 +1,17 @@
 ---
 layout: post
-title: "A Deeper Look at Experience Replay"
+title: "Slow Papers: A Deeper Look at Experience Replay"
 author: Seungjae Ryan Lee
-permalink: /ctrl/a-deeper-look-at-experience-replay/
+permalink: /slowpapers/a-deeper-look-at-experience-replay/
+redirect-from: /ctrl/a-deeper-look-at-experience-replay/
 
-front_image: /assets/blog/ctrl/a-deeper-look-at-experience-replay/front.png
+front_image: /assets/blog/slowpapers/a-deeper-look-at-experience-replay/front.png
 front_image_type: contain
 front_text: >
     This is a review of the paper <i>A Deeper Look at Experience Replay</i> by Shangtong Zhang and Richard Sutton. The paper shows that a huge replay buffer can hurt performance and introduces an O(1) method to mitigate the performance drop.
 ---
 
-*This is a part of the [**Current Topics in Reinforcement Learning (CTRL)**](/ctrl) series that reviews recent papers in Reinforcement Learning.*
+*This is a part of the [**Slow Papers**](/slowpapers) series that peruses each selected paper slowly to gain a deeper understanding of the paper.*
 
 **Title**: A Deeper Look at Experience Replay
 <br/>
@@ -20,7 +21,7 @@ front_text: >
 
 In Reinforcement Learning, the agent learns to maximize the cumulative reward through interactions with the environment. The most direct way to learn from these interactions is by learning *online*, at every timestep with the latest interaction with the environment. The agent uses transitions $(s, a, r, s')$ to update its value function or policy.
 
-![Online Learning]({{ "/assets/blog/ctrl/a-deeper-look-at-experience-replay/online.png" | absolute_url }})
+![Online Learning]({{ "/assets/blog/slowpapers/a-deeper-look-at-experience-replay/online.png" | absolute_url }})
 
 Although this is a powerful learning method, it suffers from two problems:
 
@@ -29,7 +30,7 @@ Although this is a powerful learning method, it suffers from two problems:
 
 To mitigate these problems, many algorithms use **Experience Replay**, a method of storing experience into a *replay buffer*. With this method, instead of learning from the latest transition, the agent learns from a minibatch $B$ sampled from the replay buffer.
 
-![Experience Replay]({{ "/assets/blog/ctrl/a-deeper-look-at-experience-replay/experience_replay.png" | absolute_url }})
+![Experience Replay]({{ "/assets/blog/slowpapers/a-deeper-look-at-experience-replay/experience_replay.png" | absolute_url }})
 
 Experience Replay dramatically increases the data efficiency. Furthermore, it is the only method that can generate uncorrelated data for online training without changing the problem setting. Thus, it has been used in many seminal algorithms such as Deep Deterministic Policy Gradient (DDPG), Hindsight Experience Replay (HER) and all Deep Q-Networks (DQN) methods.
 
@@ -37,7 +38,7 @@ Although experience replay has been integrated to widely different algorithms wi
 
 Thus, to mitigate this problem, we combine online learning and experience replay into **Combined Experience Replay**. At each timestep, the agent learns from a batch that consists of both the immediate transition $t$ and the sampled minibatch $B$.
 
-![Combined Experience Replay]({{ "/assets/blog/ctrl/a-deeper-look-at-experience-replay/combined_experience_replay.png" | absolute_url }})
+![Combined Experience Replay]({{ "/assets/blog/slowpapers/a-deeper-look-at-experience-replay/combined_experience_replay.png" | absolute_url }})
 
 To test the effects of Combined Experience Replay, we combine it with Q-Learning (denoted Combined-Q) and test it against Online Q-Learning method (denoted Online-Q) and Q-Learning with Experience Replay (denoted Buffer-Q). We test it on three popular environments: Gridworld, Lunar Lander, and Atari Pong.
 
@@ -46,18 +47,18 @@ Combined-Q significantly improved the performance for suboptimal replay buffer s
  * Gridworld with linear function approximator
  * Gridworld with non-linear function approximator
 
-![Gridworld with tabular function approximator]({{ "/assets/blog/ctrl/a-deeper-look-at-experience-replay/gridworld_tabular.png" | absolute_url }})
+![Gridworld with tabular function approximator]({{ "/assets/blog/slowpapers/a-deeper-look-at-experience-replay/gridworld_tabular.png" | absolute_url }})
 
-![Gridworld with linear function approximator]({{ "/assets/blog/ctrl/a-deeper-look-at-experience-replay/gridworld_linear.png" | absolute_url }})
+![Gridworld with linear function approximator]({{ "/assets/blog/slowpapers/a-deeper-look-at-experience-replay/gridworld_linear.png" | absolute_url }})
 
-![Gridworld with non-linear function approximator]({{ "/assets/blog/ctrl/a-deeper-look-at-experience-replay/gridworld_nonlinear.png" | absolute_url }})
+![Gridworld with non-linear function approximator]({{ "/assets/blog/slowpapers/a-deeper-look-at-experience-replay/gridworld_nonlinear.png" | absolute_url }})
 
 However, it had little to no impact in these environments:
  * Lunar Lander with non-linear function approximator
  * Pong with non-linear function approximator
 
-![Lunar Lander with non-linear function approximator]({{ "/assets/blog/ctrl/a-deeper-look-at-experience-replay/lunarlander_nonlinear.png" | absolute_url }})
+![Lunar Lander with non-linear function approximator]({{ "/assets/blog/slowpapers/a-deeper-look-at-experience-replay/lunarlander_nonlinear.png" | absolute_url }})
 
-![Pong with non-linear function approximator]({{ "/assets/blog/ctrl/a-deeper-look-at-experience-replay/pong_nonlinear.png" | absolute_url }})
+![Pong with non-linear function approximator]({{ "/assets/blog/slowpapers/a-deeper-look-at-experience-replay/pong_nonlinear.png" | absolute_url }})
 
 As the varied degree of success show, "CER is only a workaround, the idea of experience replay itself is heavily flawed."

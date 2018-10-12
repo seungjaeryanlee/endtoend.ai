@@ -2,16 +2,16 @@
 layout: post
 title: "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning"
 author: Seungjae Ryan Lee
-permalink: /ctrl/a-reduction-of-imitation-learning-and-structured-prediction-to-no-regret-online-learning/
+permalink: /slowpapers/a-reduction-of-imitation-learning-and-structured-prediction-to-no-regret-online-learning/
 published: false
 
-front_image: /assets/blog/ctrl/a-reduction-of-imitation-learning-and-structured-prediction-to-no-regret-online-learning/front.png
+front_image: /assets/blog/slowpapers/a-reduction-of-imitation-learning-and-structured-prediction-to-no-regret-online-learning/front.png
 front_image_type: contain
 front_text: >
     This is a review of the paper <i>A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning</i> by S. Ross, G. Gordon, and J. Bagnell. The paper introduces Dataset Aggregation (DAgger), an imitation learning algorithm that trains a stationary deterministic policy. DAgger is shown to outperform previous approaches in *Super Tux Kart*, *Super Mario Bros.*, and Handwriting Recognition.
 ---
 
-*This is a part of the [**Current Topics in Reinforcement Learning (CTRL)**](/ctrl) series that reviews recent papers in Reinforcement Learning.*
+*This is a part of the [**Slow Papers**](/slowpapers) series that peruses each selected paper slowly to gain a deeper understanding of the paper.*
 
 **Title**: A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning
 <br/>

@@ -19,7 +19,7 @@ Reinforcement Learning is a blooming field with interesting papers being publish
 1. Help people follow emerging trends without devoting too much time
 2. Help people decide what papers to read
 
-CTRL summarizes the ideas and results of a paper and puts it into context by connecting it to other relevant papers. In a sense, it can be seen as an extended abstract, but with more visualizations and context. By default, all papers are summarized in bullet-style, but I also create slides, write blog posts, and record videos for exciting papers. If you want to know when new CTRL posts are published, [join us and subscribe to our RSS feed](/feed.xml)!
+CTRL summarizes the ideas and results of a paper and puts it into context by connecting it to other relevant papers. In a sense, it can be seen as an extended abstract, but with more visualizations and context. By default, all papers are summarized in bullet-style, but I plan to record short videos for exciting papers.!
 
 ## Table of Contents
 
@@ -70,8 +70,8 @@ Slides
  - The performance drop of large replay buffer can sometimes be mitigated with **Combined Experience Replay (CER)**, experience replay combined with online learning.
  - CER is only a workaround, and the Experience Replay is inherently flawed.
 
-<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/ctrl/a-deeper-look-at-experience-replay/">
-Post
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/slowpapers/a-deeper-look-at-experience-replay/">
+Slow Papers
 </a>
 <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/slides/paper/a_deeper_look_at_experience_replay.pdf">
 Slides
