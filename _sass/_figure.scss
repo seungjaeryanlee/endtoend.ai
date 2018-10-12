@@ -1,6 +1,25 @@
-figcaption {
-    text-align: center;
+figure {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
 }
-figcaption.eqncaption {
-    font-style: italic;
-}
+
+    figure figcaption {
+        text-align: center;
+        padding-top: 20px;
+    }
+    figure figcaption.eqncaption {
+        font-style: italic;
+    }
+
+.w10 { width: 10%; }
+.w20 { width: 20%; }
+.w30 { width: 30%; }
+.w40 { width: 40%; }
+.w50 { width: 50%; }
+.w60 { width: 60%; }
+.w70 { width: 70%; }
+.w80 { width: 80%; }
+.w90 { width: 90%; }
+.w100 { width: 100%; }
