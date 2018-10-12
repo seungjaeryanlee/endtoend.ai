@@ -3,7 +3,7 @@ layout: post
 title: "Slow Papers: A Deeper Look at Experience Replay"
 author: Seungjae Ryan Lee
 permalink: /slowpapers/a-deeper-look-at-experience-replay/
-redirect-from: /ctrl/a-deeper-look-at-experience-replay/
+redirect_from: /ctrl/a-deeper-look-at-experience-replay/
 
 front_image: /assets/blog/slowpapers/a-deeper-look-at-experience-replay/front.png
 front_image_type: contain

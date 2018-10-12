@@ -15,7 +15,7 @@ front_text: >
 
 # Published
 
- - [Neural Fitted Q Iteration (Riedmiller, 2005)](/slowpapers/nfq/)
+ - [Neural Fitted Q Iteration (Riedmiller, 2005)](/slowpapers/neural-fitted-q-iteration/)
 
 # Coming Soon
 
