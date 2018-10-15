@@ -33,8 +33,8 @@ nav:
 
 **Title**: Lip Reading Sentences in the Wild
 
+**Authors**
 <div>
-<strong>Authors</strong>
 <ul class="slowpapers__authors">
   <li>Joon Son Chung</li>
   <li>Andrew Senior</li>

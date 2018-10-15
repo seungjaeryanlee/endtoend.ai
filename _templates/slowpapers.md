@@ -21,8 +21,8 @@ nav:
 
 **Title**: [PAPER TITLE]
 
+**Authors**
 <div>
-<strong>Authors</strong>
 <ul class="slowpapers__authors">
   <li>[AUTHOR 1]</li>
   <li>[AUTHOR 2]</li>
