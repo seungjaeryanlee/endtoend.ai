@@ -56,19 +56,6 @@ nav:
 *This is a part of the [**Slow Papers**](/slowpapers) series that peruses each selected paper slowly to gain a deeper understanding of the paper.*
 
 
-In Reinforcement Learning, the agent learns to maximize the cumulative reward through interactions with the environment. The most direct way to learn from these interactions is by learning *online*, at every timestep with the latest interaction with the environment. The agent uses transitions $(s, a, r, s')$ to update its value function or policy.
-
-![Online Learning]({{ "/assets/blog/slowpapers/a-deeper-look-at-experience-replay/online.png" | absolute_url }})
-
-Although this is a powerful learning method, it suffers from two problems:
-
-1. Each experience is used only once.
-2. There is a high correlation between experience since consecutive experience belong to the same example, which violates the assumption 
-
-To mitigate these problems, many algorithms use **Experience Replay**, a method of storing experience into a *replay buffer*. With this method, instead of learning from the latest transition, the agent learns from a minibatch $B$ sampled from the replay buffer.
-
-![Experience Replay]({{ "/assets/blog/slowpapers/a-deeper-look-at-experience-replay/experience_replay.png" | absolute_url }})
-
 Experience Replay dramatically increases the data efficiency. Furthermore, it is the only method that can generate uncorrelated data for online training without changing the problem setting. Thus, it has been used in many seminal algorithms such as Deep Deterministic Policy Gradient (DDPG), Hindsight Experience Replay (HER) and all Deep Q-Networks (DQN) methods.
 
 Although experience replay has been integrated to widely different algorithms with different neural network architectures that interact with different environments, most experiments were done using the default value of $10^6$. This is not a problem if experience replay is robust under such differences, but in fact, the size of the replay buffer can heavily hurt the training process. When the replay buffer is too small, the replay buffer serves little to no purpose. If the replay buffer is too big, the batched samples are uncorrelated, but the agent will learn from the newest experience a long time after.
@@ -105,15 +92,97 @@ As the varied degree of success show, "CER is only a workaround, the idea of exp
 
 
 ## 1 Introduction
+
+[TODO Introduce Experience Replay]
+
+<figure>
+  <img src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/definition-of-er.png" alt="Lin92"/>
+  <figcaption>From <em>Self-improving reactive agents based on reinforcement learning, planning and teaching</em> (Lin, 1992)</figcaption>
+</figure>
+
+[TODO Uncorrelated data, Data efficiency]
+
+[TODO ER is not perfect]
+
+[TODO Default hyperparameter value]
+
+[TODO Figure of same hyperparmeter value from differnet papers]
+
+<figure>
+  <img class="w100" src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/dqn-param.png" alt="DQN Parameters"/>
+  <figcaption>From <em></em> (Mnih et al., 2015)</figcaption>
+</figure>
+<figure>
+  <img class="w80" src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/ddpg-param.png" alt="DDPG Parameters"/>
+  <figcaption>From <em></em> (ASDF et al., 2016)</figcaption>
+</figure>
+<figure>
+  <img class="w80" src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/her-param.png" alt="HER Parameters"/>
+  <figcaption>From <em></em> (ASDF et al., 2017)</figcaption>
+</figure>
+
+[TODO List contributions: Evaluate ER, Propose CER]
+
+[TODO Q Learning (Tabular, Approximate)]
+
+
+<figure>
+  <img src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/Watkins89.png" alt="Watkins89"/>
+  <figcaption>From page 96 of <em>Learning from Delayed Rewards</em> (Watkins, 1989)</figcaption>
+</figure>
+
+<figure>
+  <img src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/dqn-er.png" alt="Mnih13"/>
+  <figcaption>From <em>Playing Atari with Deep Reinforcement Learning</em> (Mnih et al., 2013)</figcaption>
+</figure>
+
+![Environment]({{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/fig1.png)
+
+
+In Reinforcement Learning, the agent learns to maximize the cumulative reward through interactions with the environment. The most direct way to learn from these interactions is by learning *online*, at every timestep with the latest interaction with the environment. The agent uses transitions $(s, a, r, s')$ to update its value function or policy.
+
+![Online Learning]({{ "/assets/blog/slowpapers/a-deeper-look-at-experience-replay/online.png" | absolute_url }})
+
+Although this is a powerful learning method, it suffers from two problems:
+ 
+
+To mitigate these problems, many algorithms use **Experience Replay**, a method of storing experience into a *replay buffer*. With this method, instead of learning from the latest transition, the agent learns from a minibatch $B$ sampled from the replay buffer.
+
+![Experience Replay]({{ "/assets/blog/slowpapers/a-deeper-look-at-experience-replay/experience_replay.png" | absolute_url }})
+
+Except using mutiple parallelized workers, there is no other way to generate uncorrelated data. Thus, experience replay has been used in many recent deep reinforcement learning algorithms.
+
+
+
 ## 2 Related Work
+
+[TODO Compare with PER]
+
+[TODO Liu and Zou 2017]
+
+[TODO ER vs Dyna]
+
+[TODO ER vs A3C]
+
 ## 3 Algorithms
+
+[TODO Explain ER and sampling]
+
+[TODO Online-Q, Buffer-Q, Combined-Q (Figures)]
+
 ## 4 Testbeds
+
+[TODO Individual Figures]
+
 ## 5 Evaluation
 ## 5.1 Tabular Function Representation
 ## 5.2 Linear Function Approximation
 ## 5.3 Non-linear Function Approximation
 ## 6 Conclusion
 
+[TODO Flaw of ER]
+
+[TODO CER is only a workaround]
 
 
 <hr/>
