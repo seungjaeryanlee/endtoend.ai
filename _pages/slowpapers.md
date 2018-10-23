@@ -16,7 +16,10 @@ front_text: >
 # Published
 
  - [Neural Fitted Q Iteration (Riedmiller, 2005)](/slowpapers/neural-fitted-q-iteration/)
+ - [A Deeper Look at Experience Replay (Zhang and Sutton, 2017)](/slowpapers/a-deeper-look-at-experience-replay/)
 
 # Coming Soon
 
- - A Deeper Look at Experience Replay (Zhang and Sutton, 2017)
+ - Lip Reading Sentences in the Wild (Chung et al., 2016)
+ - Wave-U-Net: A Multi-Scale Neural Network for End-to-End Audio Source Separation (Stoller et al., 2018)
+ - Exploration by Random Network Distillation (Anonymous, 2018)
