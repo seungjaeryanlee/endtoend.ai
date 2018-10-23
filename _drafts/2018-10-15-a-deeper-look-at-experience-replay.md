@@ -51,28 +51,10 @@ nav:
  - *Prioritized Experience Replay* (Schaul et al., 2015) [[PDF]](https://arxiv.org/abs/1511.05952)
  - *Hindsight Experience Replay* (Andrychowicz et al., 2017) [[PDF]](https://arxiv.org/abs/1707.01495)
  - *The Effects of Memory Replay in Reinforcement Learning* (Liu and Zou, 2017) [[PDF]](https://arxiv.org/abs/1710.06574)
- - *Time Limits in Reinforcement Learning* (Pardo et al., 2017)[[PDF]](https://arxiv.org/abs/1712.00378)
+ - *Time Limits in Reinforcement Learning* (Pardo et al., 2017) [[PDF]](https://arxiv.org/abs/1712.00378)
 <hr/>
 
 *This is a part of the [**Slow Papers**](/slowpapers) series that peruses each selected paper slowly to gain a deeper understanding of the paper.*
-
-
-
-![Gridworld with tabular function approximator](../assets/blog/slowpapers/a-deeper-look-at-experience-replay/gridworld_tabular.png)
-
-![Gridworld with linear function approximator](../assets/blog/slowpapers/a-deeper-look-at-experience-replay/gridworld_linear.png)
-
-![Gridworld with non-linear function approximator](../assets/blog/slowpapers/a-deeper-look-at-experience-replay/gridworld_nonlinear.png)
-
-However, it had little to no impact in these environments:
- * Lunar Lander with non-linear function approximator
- * Pong with non-linear function approximator
-
-![Lunar Lander with non-linear function approximator](../assets/blog/slowpapers/a-deeper-look-at-experience-replay/lunarlander_nonlinear.png)
-
-![Pong with non-linear function approximator](../assets/blog/slowpapers/a-deeper-look-at-experience-replay/pong_nonlinear.png)
-
-As the varied degree of success show, "CER is only a workaround, the idea of experience replay itself is heavily flawed."
 
 
 <hr/>
@@ -120,11 +102,12 @@ Thus, to mitigate this problem, we combine online learning and experience replay
 </figure>
 <figure>
   <img class="w80" src="../assets/blog/slowpapers/a-deeper-look-at-experience-replay/her-param.png" alt="HER Parameters"/>
-  <figcaption>From <em></em> (ASDF et al., 2017)</figcaption>
+  <figcaption>From <em>Hindsight Experience Replay</em> (Andrychowicz et al., 2017</figcaption>
 </figure>
+
 In summary, we make two contributions in this paper:
 
-1. A **systematic evaluation** of the effects of the size of replay buffer on performance with various function representations
+1. A **systematic evaluation** of the effects of the size of replay buffer on performance with  various function representations
 2. The **combined experience replay** (CER) method that makes the algorithm more robust to experience replay size
 
 
@@ -145,12 +128,6 @@ There exists another improvement of experience replay called prioritized experie
 Although it is possible to think of CER as a specific case of PER, they differ both in their use. PER was designed to further increase data efficiency, whereas CER was designed to remedy the negative effects of a large replay buffer. In other words, with a properly set replay buffer size, incorporating CER would not have a big impact on performance, but PER will.
 
 We omit the discussion of complexity as we have not introduced CER yet.
-
-
-
-[TODO Liu and Zou 2017]
-
-[TODO ER vs Dyna]
 
 ## 3 Algorithms
 
@@ -187,7 +164,7 @@ In **Gridworld**, the agent starts at a start state $S$ and seeks to reach the f
 
 [**LunarLander**](https://gym.openai.com/envs/LunarLander-v2/) and [**Pong (RAM)**](https://gym.openai.com/envs/Pong-ram-v0/) are well-known environments for testing reinforcement learning algorithms. We direct unfamiliar readers to the official documentation.
 
-To conduct experiments efficienctly, we incorporate **timeout** in all three tasks. In other words, each task has a maximum episode length, and the episode will end automatically after reaching this length. This is necessary in practice since otherwise an episode can be arbitrarily long. Since this is still a modification of the task, we use a large enough timeout (5000, 1000, 10000 steps respectively) to reduce the influence in our results. To further reduce the effects of timeout, we use **partial-episode-bootstrap** (PEB) by Pardo et al. (2017).
+To conduct experiments efficiently, we incorporate **timeout** in all three tasks. In other words, each task has a maximum episode length, and the episode will end automatically after reaching this length. This is necessary in practice since otherwise an episode can be arbitrarily long. Since this is still a modification of the task, we use a large enough timeout (5000, 1000, 10000 steps respectively) to reduce the influence in our results. To further reduce the effects of timeout, we use **partial-episode-bootstrap** (PEB) by Pardo et al. (2017).
 
 <figure>
   <img src="../assets/blog/slowpapers/a-deeper-look-at-experience-replay/peb.png" alt="Pardo17"/>
@@ -202,21 +179,72 @@ To conduct experiments efficienctly, we incorporate **timeout** in all three tas
 
 
 ## 5 Evaluation
-Combined-Q significantly improved the performance for suboptimal replay buffer sizes in these environments:
-
-- Gridworld with tabular function representation
-- Gridworld with linear function approximator
-- Gridworld with non-linear function approximator
-
 ## 5.1 Tabular Function Representation
 
+Tabular Q-learning is guaranteed to converge as long as every state-action pair is visited infinitely many times (along with few other weak conditions). However, the data distribution does influence the speed of convergence.
+
+Only the **Gridworld** environment is compatible with tabular methods.
+
+![Gridworld with tabular function approximator](../assets/blog/slowpapers/a-deeper-look-at-experience-replay/gridworld_tabular.png)
+
+We observe three things:
+
+1. Experience replay significantly improves data efficiency. Whereas Online-Q takes 1000 episodes to converge, Buffer-Q and Combined-Q can converge in 100 episodes.
+2. Buffer-Q performs well for correctly sized replay buffer (100). However, as the replay buffer gets overly large, learning performance drops rapidly.
+3. In contrast, Combined-Q is relatively insensitive to replay buffer size.
+
+In Buffer-Q, if the replay buffer is large, it is likely that a rare transition that just happened will be sampled later than when a small replay buffer is used. If this rare transition is important, it will also influence future data distribution. Thus, the speed of learning rare transitions can have a compounding effect, shown by the different speeds of convergence for Buffer-Q.
+
+In contrast, in Combined-Q, all transitions influence the agent immediately, so the agent is less sensitive to the replay buffer size.
+
+(We omit the mathematical equation shown in the paper as it is too specific to argue for the general case.)
+
 ## 5.2 Linear Function Approximation
+
+Only the **LunarLander** environment is compatible with tile coding, the linear function approximator we use.
+
+In Lunar Lander, the state is represented as $\mathbb{R}^8$ via tile coding, and the agent has 4 actions. To encourage exploration, we use an optimistic initial value of 0 by initializing all weight parameters to 0. The discount factor $\gamma$ is 1, and the learning rate $\alpha$ is 0.125.
+
+![LunarLander with linear function approximator](../assets/blog/slowpapers/a-deeper-look-at-experience-replay/gridworld_linear.png)
+
+Again, we see that Combined-Q is more robust than Buffer-Q for non-optimal buffer sizes.
+
 ## 5.3 Non-linear Function Approximation
+
+All three environments are compatible with nonlinear function approximators. With Gridworld, the states are encoded as a one-hot vector.
+
+| Hyperparameters       | Value                             |
+| --------------------- | --------------------------------- |
+| \# of hidden layers   | 1                                 |
+| \# of hidden units    | 50, 100, 100 respectively         |
+| Optimizer             | RMSprop                           |
+| Initial learning rate | 0.01, 0.0005, 0.0025 respectively |
+
+For **Gridworld**, the agent fails to learn with Online-Q or Buffer-Q and Combined-Q with buffer size $100$.  It seems that the network seems to overfit to recent transitions if the replay buffer is too small. 
+
+For Buffer-Q, the optimal replay buffer size is $1000$ or $10000$. We hypothesize that it performs better than either extremes ($100$, $1000000$) because there exists a tradeoff between data quality and data correlation. If the replay buffer is too small, the data is highly correlated. If the replay buffer is too large, the data is likely to be outdated.
+
+Again, Combined-Q speeds up learning for extremely large replay buffers.
+
+![Gridworld with non-linear function approximator](../assets/blog/slowpapers/a-deeper-look-at-experience-replay/gridworld_nonlinear.png)
+
+For **Lunar Lander**, Online-Q agent and small buffer agents perform well, with Online-Q agent achieving highest performance. This suggests that the function approximators generated by tile coding is less prone to overfitting recent transitions.
+
+Interestingly, many buffer-based agents have a performance drop in the middle of learning, regardless of the learning rate. We attribute this performance drop to the agents overfitting to the task.
+
+![Lunar Lander with non-linear function approximator](../assets/blog/slowpapers/a-deeper-look-at-experience-replay/lunarlander_nonlinear.png)
+
+For **Pong**, none of the algorithms learned a successful policy.
+
+![Pong with non-linear function approximator](../assets/blog/slowpapers/a-deeper-look-at-experience-replay/pong_nonlinear.png)
+
 ## 6 Conclusion
 
-[TODO Flaw of ER]
+Although experience replay has shown great success, its flaws have been hidden due to the complexity of deep reinforcement learning algorithms. We identify one such flaw, and show that it can be controlled by tuning the replay buffer size. Prioritized experience replay (PER) is one technique that could address this issue, but it has a $O(\log N)$ even with a optimized data structure. We propose combined experience replay (CER) with $O(1)$ extra computation that remedies the negative effects of a large replay buffer.
 
-[TODO CER is only a workaround]
+However, as the varied degree of success show, we note that CER is only a workaround. The idea of experience replay itself is heavily flawed, and future efforts should focus on developing new data decorrelation methods to replace experience replay.
+
+
 
 
 <hr/>
@@ -228,7 +256,9 @@ Combined-Q significantly improved the performance for suboptimal replay buffer s
 **Questions**
  - The authors claim that CER and PER are different in Section 2. Then, are they modular enough to be implemented together? Will implementing both PER and CER improve or hurt performance?
  - The authors claim that timeouts make the environment non-stationary. Why?
+ - For Lunar Lander task with nonlinear function approximator, the comparison between Buffer-Q and Combined-Q seems to be based upon too little a difference. Are the author's claims justifiable?
 
 **Recommended Next Papers**
 
- - [The Effects of Memory Replay in Reinforcement Learning (Liu and Zou, 2017)](https://arxiv.org/abs/1710.06574)
+ - *The Effects of Memory Replay in Reinforcement Learning* (Liu and Zou, 2017) [[Arxiv]](https://arxiv.org/abs/1710.06574)
+ - *Asynchronous Methods for Deep Reinforcement Learning* (Mnih et al., 2016) [[Arxiv]](https://arxiv.org/abs/1602.01783)
