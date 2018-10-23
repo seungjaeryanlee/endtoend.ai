@@ -42,16 +42,16 @@ nav:
 </div>
 
 **Prerequisites**
- - *Playing Atari with Deep Reinforcement Learning* (Mnih et al., 2013) [[PDF]](https://arxiv.org/abs/1312.5602)
- - *Human-level control through Deep Reinforcement Learning* (Mnih et al., 2015) [[PDF]](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
+ - *Playing Atari with Deep Reinforcement Learning* (Mnih et al., 2013) [[Arxiv]](https://arxiv.org/abs/1312.5602) [[PDF]]({{absolute_url}}/papers/playing-atari-with-deep-reinforcement-learning.pdf)
+ - *Human-level control through Deep Reinforcement Learning* (Mnih et al., 2015) [[PDF]]({{absolute_url}}/papers/human-level-control-through-deep-reinforcement-learning.pdf)
 
 **Accompanying Resources**
 
- - *Self-improving reactive agents based on reinforcement learning, planning and teaching* (Lin, 1992) [[PDF]](http://www.incompleteideas.net/lin-92.pdf)
- - *Prioritized Experience Replay* (Schaul et al., 2015) [[PDF]](https://arxiv.org/abs/1511.05952)
- - *Hindsight Experience Replay* (Andrychowicz et al., 2017) [[PDF]](https://arxiv.org/abs/1707.01495)
- - *The Effects of Memory Replay in Reinforcement Learning* (Liu and Zou, 2017) [[PDF]](https://arxiv.org/abs/1710.06574)
- - *Time Limits in Reinforcement Learning* (Pardo et al., 2017) [[PDF]](https://arxiv.org/abs/1712.00378)
+ - *Self-improving reactive agents based on reinforcement learning, planning and teaching* (Lin, 1992) [[PDF]]({{absolute_url}}/papers/self-improving-reactive-agents-based-on-reinforcement-learning-planning-and-teaching.pdf)
+ - *Prioritized Experience Replay* (Schaul et al., 2015) [[Arxiv]](https://arxiv.org/abs/1511.05952) [[PDF]]({{absolute_url}}/papers/prioritized-experience-replay.pdf)
+ - *Hindsight Experience Replay* (Andrychowicz et al., 2017) [[Arxiv]](https://arxiv.org/abs/1707.01495) [[PDF]]({{absolute_url}}/papers/hindsight-experience-replay.pdf)
+ - *The Effects of Memory Replay in Reinforcement Learning* (Liu and Zou, 2017) [[Arxiv]](https://arxiv.org/abs/1710.06574) [[PDF]]({{absolute_url}}/papers/the-effects-of-memory-replay-in-reinforcement-learning.pdf)
+ - *Time Limits in Reinforcement Learning* (Pardo et al., 2017) [[Arxiv]](https://arxiv.org/abs/1712.00378) [[PDF]]({{absolute_url}}/papers/time-limits-in-reinforcement-learning.pdf)
 <hr/>
 
 *This is a part of the [**Slow Papers**](/slowpapers) series that peruses each selected paper slowly to gain a deeper understanding of the paper.*
@@ -248,9 +248,8 @@ However, as the varied degree of success show, we note that CER is only a workar
 **Questions**
  - The authors claim that CER and PER are different in Section 2. Then, are they modular enough to be implemented together? Will implementing both PER and CER improve or hurt performance?
  - The authors claim that timeouts make the environment non-stationary. Why?
- - For Lunar Lander task with nonlinear function approximator, the comparison between Buffer-Q and Combined-Q seems to be based upon too little a difference. Are the author's claims justifiable?
 
 **Recommended Next Papers**
 
- - *The Effects of Memory Replay in Reinforcement Learning* (Liu and Zou, 2017) [[Arxiv]](https://arxiv.org/abs/1710.06574)
- - *Asynchronous Methods for Deep Reinforcement Learning* (Mnih et al., 2016) [[Arxiv]](https://arxiv.org/abs/1602.01783)
+ - *The Effects of Memory Replay in Reinforcement Learning* (Liu and Zou, 2017) [[Arxiv]](https://arxiv.org/abs/1710.06574) [[PDF]]({{absolute_url}}/papers/the-effects-of-memory-replay-in-reinforcement-learning.pdf)
+ - *Asynchronous Methods for Deep Reinforcement Learning* (Mnih et al., 2016) [[Arxiv]](https://arxiv.org/abs/1602.01783) [[PDF]]({{absolute_url}}/papers/asynchronous-methods-for-deep-reinforcement-learning.pdf)
