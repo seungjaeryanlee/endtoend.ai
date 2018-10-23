@@ -29,7 +29,7 @@ nav:
 
 ---
 
-![Abstract](../assets/blog/slowpapers/a-deeper-look-at-experience-replay/front.png)
+![Abstract]({{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/front.png)
 
 **Title**: A Deeper Look at Experience Replay
 
@@ -63,24 +63,24 @@ nav:
 ## 1 Introduction
 
 <figure>
-  <img src="../assets/blog/slowpapers/a-deeper-look-at-experience-replay/definition-of-er.png" alt="Lin92"/>
+  <img src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/definition-of-er.png" alt="Lin92"/>
   <figcaption>From <em>Self-improving reactive agents based on reinforcement learning, planning and teaching</em> (Lin, 1992)</figcaption>
 </figure>
 
 Experience replay is a technique that has been incorporated to many seminal deep reinforcement learning algorithms. These include [Deep Deterministic Policy Gradient (DDPG)](https://arxiv.org/abs/1509.02971), [Hindsight Experience Replay (HER)](https://arxiv.org/abs/1707.01495) and all [Deep Q-Networks (DQN)](https://arxiv.org/abs/1312.5602) methods. The popularity can be attributed to the fact that it is the only method that can generate uncorrelated data for online training. (One exception is using parallel workers, but this is more a circumvention than a direct solution.)
 
 <figure>
-  <img src="../assets/blog/slowpapers/a-deeper-look-at-experience-replay/dqn-algorithm.png" alt="DQN"/>
+  <img src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/dqn-algorithm.png" alt="DQN"/>
   <figcaption>From <em>Playing Atari with Deep Reinforcement Learning</em> (Mnih et al., 2013)</figcaption>
 </figure>
 
 <figure>
-  <img src="../assets/blog/slowpapers/a-deeper-look-at-experience-replay/ddpg-algorithm.png" alt="DQN"/>
+  <img src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/ddpg-algorithm.png" alt="DQN"/>
   <figcaption>From <em>Continuous Control with Deep Reinforcement Learning</em> (Lillicrap et al., 2015)</figcaption>
 </figure>
 
 <figure>
-  <img src="../assets/blog/slowpapers/a-deeper-look-at-experience-replay/her-algorithm.png" alt="DQN"/>
+  <img src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/her-algorithm.png" alt="DQN"/>
   <figcaption>From <em>Hindsight Experience Replay</em> (Andrychowicz et al., 2017)</figcaption>
 </figure>
 
@@ -88,21 +88,22 @@ Although experience replay has been integrated to widely different algorithms wi
 
 Furthermore, in most experiments, the replay buffer was set to a default capacity of $10^6$. This is not a problem if experience replay is robust under such differences. However, as we show in this paper, the size of the replay buffer can heavily hurt the speed of learning and quality of the resulting agent. If the replay buffer is too small, the replay buffer serves little to no purpose. If the replay buffer is too big, the batched samples are uncorrelated, but the agent will learn from the newest experience a long time after.
 
-![Environments ](../assets/blog/slowpapers/a-deeper-look-at-experience-replay/envs.png)
+<img class="w50" src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/envs.png" alt="Environments"/>
+
 
 Thus, to mitigate this problem, we combine online learning and experience replay into **Combined Experience Replay**. At each timestep, the agent learns from a batch that consists of both the immediate transition $t$ and the sampled minibatch $B$.
 
 <figure>
-  <img class="w100" src="../assets/blog/slowpapers/a-deeper-look-at-experience-replay/dqn-param.png" alt="DQN Parameters"/>
-  <figcaption>From <em></em> (Mnih et al., 2015)</figcaption>
+  <img class="w100" src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/dqn-param.png" alt="DQN Parameters"/>
+  <figcaption>From <em>Human-level Control with Deep Reinforcement Learning</em> (Mnih et al., 2015)</figcaption>
 </figure>
 <figure>
-  <img class="w80" src="../assets/blog/slowpapers/a-deeper-look-at-experience-replay/ddpg-param.png" alt="DDPG Parameters"/>
-  <figcaption>From <em></em> (ASDF et al., 2016)</figcaption>
+  <img class="w80" src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/ddpg-param.png" alt="DDPG Parameters"/>
+  <figcaption>From <em>Continuous Control with Deep Reinforcement Learning</em> (Lillicrap et al., 2016)</figcaption>
 </figure>
 <figure>
-  <img class="w80" src="../assets/blog/slowpapers/a-deeper-look-at-experience-replay/her-param.png" alt="HER Parameters"/>
-  <figcaption>From <em>Hindsight Experience Replay</em> (Andrychowicz et al., 2017</figcaption>
+  <img class="w80" src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/her-param.png" alt="HER Parameters"/>
+  <figcaption>From <em>Hindsight Experience Replay</em> (Andrychowicz et al., 2017)</figcaption>
 </figure>
 
 In summary, we make two contributions in this paper:
@@ -112,18 +113,9 @@ In summary, we make two contributions in this paper:
 
 
 
-
-
-
-
-
-<figure>
-  <img src="../assets/blog/slowpapers/a-deeper-look-at-experience-replay/dqn-er.png" alt="Mnih13"/>
-  <figcaption>From <em>Playing Atari with Deep Reinforcement Learning</em> (Mnih et al., 2013)</figcaption>
-</figure>
 ## 2 Related Work
 
-There exists another improvement of experience replay called prioritized experience replay (Schaul et al., 2015). In the original experience replay, transitions are sampled randomly with equal probability to form a batch. As the name suggests, in PER, transitions are sampled with unequal probabilities, with "valuable" transitions given higher probability.
+There exists another improvement of experience replay called **prioritized experience replay** (Schaul et al., 2015). In the original experience replay, transitions are sampled randomly with equal probability to form a batch. As the name suggests, in PER, transitions are sampled with unequal probabilities, with "valuable" transitions given higher probability.
 
 Although it is possible to think of CER as a specific case of PER, they differ both in their use. PER was designed to further increase data efficiency, whereas CER was designed to remedy the negative effects of a large replay buffer. In other words, with a properly set replay buffer size, incorporating CER would not have a big impact on performance, but PER will.
 
@@ -134,7 +126,7 @@ We omit the discussion of complexity as we have not introduced CER yet.
 We expect the reader to be familiar with experience replay. Experience replay is the idea of storing previous transitions and sampling minibatches to train the agent. Experience replay by itself is not a reinforcement learning algorithm: it must be combined with another algorithm to be complete. In this paper, we combine it with Q-learning, following the DQN paradigm. Again, we expect the reader to be familiar with Q-learning.
 
 <figure>
-  <img src="../assets/blog/slowpapers/a-deeper-look-at-experience-replay/Watkins89.png" alt="Watkins89"/>
+  <img class="w80" src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/Watkins89.png" alt="Watkins89"/>
   <figcaption>From page 96 of <em>Learning from Delayed Rewards</em> (Watkins, 1989)</figcaption>
 </figure>
 
@@ -142,21 +134,21 @@ We define three different Q-learning algorithms: Online-Q, Buffer-Q, and Combine
 
 **Online-Q** is the online Q-learning algorithm, where no experience replay is used. The agent learns from each transition once and discards it immediately after.
 
-![Online Learning](../assets/blog/slowpapers/a-deeper-look-at-experience-replay/online.png)
+![Online Learning]({{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/online.png)
 
 **Buffer-Q** is Q-learning with experience replay. Every transition is stored into the replay buffer $D$. The agent learns by sampling a batch $B$ from this buffer. This is equivalent to the Q-learning used in DQNs.
 
-![Experience Replay](../assets/blog/slowpapers/a-deeper-look-at-experience-replay/experience_replay.png)
+![Experience Replay]({{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/experience_replay.png)
 
 **Combined-Q** is the combination of online learning and learning with experience replay. All transitions are stored into the replay buffer $D$ and sampled for learning. However, the agent learns not only from the sampled batch $B$ but also from the just-experienced transition $t$.
 
-![Combined Experience Replay](../assets/blog/slowpapers/a-deeper-look-at-experience-replay/combined_experience_replay.png)
+![Combined Experience Replay]({{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/combined_experience_replay.png)
 
 
 
 ## 4 Testbeds
 
-![Online Learning](../assets/blog/slowpapers/a-deeper-look-at-experience-replay/fig1.png)
+![Online Learning]({{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/fig1.png)
 
 We test these algorithms on three popular environments: Gridworld, Lunar Lander, and Atari Pong (RAM).
 
@@ -167,7 +159,7 @@ In **Gridworld**, the agent starts at a start state $S$ and seeks to reach the f
 To conduct experiments efficiently, we incorporate **timeout** in all three tasks. In other words, each task has a maximum episode length, and the episode will end automatically after reaching this length. This is necessary in practice since otherwise an episode can be arbitrarily long. Since this is still a modification of the task, we use a large enough timeout (5000, 1000, 10000 steps respectively) to reduce the influence in our results. To further reduce the effects of timeout, we use **partial-episode-bootstrap** (PEB) by Pardo et al. (2017).
 
 <figure>
-  <img src="../assets/blog/slowpapers/a-deeper-look-at-experience-replay/peb.png" alt="Pardo17"/>
+  <img class="w50" src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/peb.png" alt="Pardo17"/>
   <figcaption>From <em>Time Limits in Reinforcement Learning</em> (Pardo et al., 2017)</figcaption>
 </figure>
 
@@ -185,7 +177,7 @@ Tabular Q-learning is guaranteed to converge as long as every state-action pair 
 
 Only the **Gridworld** environment is compatible with tabular methods.
 
-![Gridworld with tabular function approximator](../assets/blog/slowpapers/a-deeper-look-at-experience-replay/gridworld_tabular.png)
+![Gridworld with tabular function approximator]({{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/gridworld_tabular.png)
 
 We observe three things:
 
@@ -205,7 +197,7 @@ Only the **LunarLander** environment is compatible with tile coding, the linear 
 
 In Lunar Lander, the state is represented as $\mathbb{R}^8$ via tile coding, and the agent has 4 actions. To encourage exploration, we use an optimistic initial value of 0 by initializing all weight parameters to 0. The discount factor $\gamma$ is 1, and the learning rate $\alpha$ is 0.125.
 
-![LunarLander with linear function approximator](../assets/blog/slowpapers/a-deeper-look-at-experience-replay/gridworld_linear.png)
+![LunarLander with linear function approximator]({{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/gridworld_linear.png)
 
 Again, we see that Combined-Q is more robust than Buffer-Q for non-optimal buffer sizes.
 
@@ -226,17 +218,17 @@ For Buffer-Q, the optimal replay buffer size is $1000$ or $10000$. We hypothesiz
 
 Again, Combined-Q speeds up learning for extremely large replay buffers.
 
-![Gridworld with non-linear function approximator](../assets/blog/slowpapers/a-deeper-look-at-experience-replay/gridworld_nonlinear.png)
+![Gridworld with non-linear function approximator]({{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/gridworld_nonlinear.png)
 
 For **Lunar Lander**, Online-Q agent and small buffer agents perform well, with Online-Q agent achieving highest performance. This suggests that the function approximators generated by tile coding is less prone to overfitting recent transitions.
 
 Interestingly, many buffer-based agents have a performance drop in the middle of learning, regardless of the learning rate. We attribute this performance drop to the agents overfitting to the task.
 
-![Lunar Lander with non-linear function approximator](../assets/blog/slowpapers/a-deeper-look-at-experience-replay/lunarlander_nonlinear.png)
+![Lunar Lander with non-linear function approximator]({{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/lunarlander_nonlinear.png)
 
 For **Pong**, none of the algorithms learned a successful policy.
 
-![Pong with non-linear function approximator](../assets/blog/slowpapers/a-deeper-look-at-experience-replay/pong_nonlinear.png)
+![Pong with non-linear function approximator]({{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/pong_nonlinear.png)
 
 ## 6 Conclusion
 
