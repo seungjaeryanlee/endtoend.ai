@@ -17,7 +17,7 @@ nav:
   permalink: '#1-introduction'
 ---
 
-![Abstract]({{ "/assets/blog/slowpapers/[PAPER-TAG]/front.png" | absolute_url }})
+![Abstract]({{absolute_url}}/assets/blog/slowpapers/[PAPER-TAG]/front.png)
 
 **Title**: [PAPER TITLE]
 
