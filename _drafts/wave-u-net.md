@@ -46,7 +46,11 @@ nav:
 
 **Accompanying Resources**
  - TBA
- 
+
+<hr/>
+
+This is a part of the [**Slow Papers**](/slowpapers) series that peruses each selected paper slowly to gain a deeper understanding of the paper.
+
 <hr/>
 
 

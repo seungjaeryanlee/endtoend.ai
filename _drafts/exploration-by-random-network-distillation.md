@@ -32,6 +32,13 @@ Anonymous (Under double-blind review at ICLR 2019)
 * *Unifying Count-based Exploration and Intrinsic Motivation* (Bellmare et al. 2016)
 * *Count-based Exploration with Neural Density Models* (Ostrovski et al., 2017)
 * *Curiosity-driven Exploration by Self-supervised Prediction* (Pathak et al., 2017)
+* *Large-Scale Study of Curiosity-Driven Learning* (Burda et al., 2018)
+
+<hr/>
+
+This is a part of the [**Slow Papers**](/slowpapers) series that peruses each selected paper slowly to gain a deeper understanding of the paper.
+
+Before starting, I would like to thank the paper study group of Reinforcement Learning Korea for the helpful discussions in reviewing this paper.
 
 <hr/>
 
@@ -74,21 +81,34 @@ Instead, we propose an exploration bonus Compared to previous approaches,
 
 **Exploration bonuses** are a class of methods that encourages exploration even when the reward $e_t$ is sparse. This is done by augmenting $e_t$ to create a new reward $r_t = e_t + i_t$, where $i_t$ is the **exploration bonus** associated with the transition at time $t$. The reward given by the environment is often called the **extrinsic reward**, and the augmented reward is called the **intrinsic reward**.
 
-To encourage exploration, the intrinsic reward $i_t$ should be designed so that it is high in novel states than in frequently visited states. In a tabular setting with a finite number of states, this is easy: we can simply count the number of visits at each state. Then, we can define $i_t$ as a decreasing function of the visitation count $n_t(s)​$. These are called **count-based exploration methods**.
+To encourage exploration, the intrinsic reward $i_t$ should be designed so that it is high in novel states than in frequently visited states. In a tabular setting with a finite number of states, this is easy: we can simply count the number of visits at each state. Then, we can define $i_t$ as a decreasing function of the visitation count $n_t(s)$. These are called **count-based exploration methods**.
 
-![MBIB-EB](../assets/blog/slowpapers/exploration-by-random-network-distillation/mbib-eb)
-
-From *An Analysis of Model-Based Interval Estimation for Markov Decision Processes* (Strehl and Littman, 2008)
-
+$$
+i_t = \frac{\beta}{n(s)}, \frac{\beta}{\sqrt{n(s)}}
+$$
 In non-tabular cases, it is difficult to define counts, as most states are visited at most once. A possible generalization is to use define a **pseudo-count**, using state density estimates $N$ as an exploration bonus. Using density estimates, even states that have never been visited have positive pseudo-count if it is similar to other visited states.
 
-![MBIB-EB](../assets/blog/slowpapers/exploration-by-random-network-distillation/pseudo-count.png)
+<figure>
+  <img src="../assets/blog/slowpapers/exploration-by-random-network-distillation/pseudo-count.png" alt="Pseudocount"/>
+  <figcaption>From <em>Unifying Count-Based Exploration and Intrinsic Motivation</em> (Bellemare et al., 2016)</figcaption>
+</figure>
 
-From *Unifying Count-Based Exploration and Intrinsic Motivation* (Bellemare et al., 2016)
 
 
 
-Instead of using count-based exploration methods, 
+Instead of using count-based exploration methods that use frequency of *states* $s$ visited, it is possible to define the intrinsic reward $i_t$ using frequency of *transitions* $(s, a)$. 
+
+<figure>
+  <img src="../assets/blog/slowpapers/exploration-by-random-network-distillation/mbib-eb" alt="MBIB-EB"/>
+  <figcaption>From <em>An Analysis of Model-Based Interval Estimation for Markov Decision Processes</em> (Strehl and Littman, 2008)</figcaption>
+</figure>
+
+Two popular ideas are **forward dynamics** and **inverse dynamics**. 
+
+<figure>
+  <img src="../assets/blog/slowpapers/exploration-by-random-network-distillation/schmidhuber91.png" alt="Schmidhuber"/>
+    <figcaption>From <em>A Possibility for Implementing Curiosity and Boredom in Model-Building Neural Networks</em> (Schmidhuber, 1991)</figcaption>
+</figure>
 
 
 
@@ -155,4 +175,4 @@ Instead of using count-based exploration methods,
  - TBA
 
 **Recommended Next Papers**
- - TBA
+ - *Because this paper is so new, there isn't a "next paper." Instead, I urge you to check the **Accompanying Resources** section and read them to learn more about intrinsic rewards.*
