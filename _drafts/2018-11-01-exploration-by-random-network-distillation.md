@@ -34,6 +34,7 @@ nav:
 
 **Prerequisites**
 
+ - *Proximal Policy Optimization Algorithms* (Schulman et al., 2017) [[Arxiv]](https://arxiv.org/abs/1707.06347)
  - *Curiosity-driven Exploration by Self-supervised Prediction* (Pathak et al., 2017) [[Arxiv]](https://arxiv.org/abs/1705.05363)
  - *Randomized Prior Functions for Deep Reinforcement Learning* (Osband et al., 2018) [[Arxiv]](https://arxiv.org/abs/1806.03335)
 
@@ -150,7 +151,7 @@ The most famous example is the noisy-TV problem, relevant to factor 2. Consider 
 
 Although this example might feel too artificial, prediction-based exploration was shown to be attracted to the inherent stochasticity of the environment. This includes Montezuma's Revenge.
 
-![The Noisy TV Problem](C:/Users/seung/git/endtoend.ai/assets/blog/slowpapers/exploration-by-random-network-distillation/noisy-montezuma.gif)
+![The Noisy TV Problem](../assets/blog/slowpapers/exploration-by-random-network-distillation/noisy-montezuma.gif)
 
 Previous methods tried to avoid these factors by using the relative improvement of the prediction error $\Delta E$, rather than the absolute error $E$. Sadly, this is difficult to implement efficiently. In contrast, RND obviates both factors 2 and 3. The target network is fixed, so it is deterministic, not stochastic. Also, the target network and the predictor network has the same architecture, so the model cannot be limited.
 
@@ -187,12 +188,43 @@ Then, the optimization problem is equivalent to distilling a randomly drawn func
 
 ### 2.3 Combining Intrinsic and Extrinsic Returns
 
-When using only intrinsic reward, not truncating the return when the game is over resulted in better exploration. This signifies that the agent's intrinsic return should be related to all the novel states that it could find in the future
+#### Intrinsic Reward and Non-episodic Environment
+
+When using only intrinsic reward, we explore changing the problem as non-episodic. In other words, we do not truncating the return when the game is over. There are several justifications for this. First, it tells the agent that its intrinsic return should be related to all the novel states that it could find in all future episodes, not just this episode. Also, using episodic intrinsic rewards can leak information about the task to the agent, so it no longer becomes intrinsic-only. (Burda et al., 2018)
 
 <figure>
   <img src="../assets/blog/slowpapers/exploration-by-random-network-distillation/death-is-not-the-end.png" alt=""/>
   <figcaption>From <em>Large-Scale Study of Curiosity-Driven Learning</em> (Burda et al., 2018)</figcaption>
 </figure>
+
+We argue that this approach is also closer to how humans explore games. Suppose Alice is playing a tricky part of the game where it is easy to fail. If she succeeds, then she will fulfill her curiosity, so the reward is high. If she fails, she has to repeat "boring" task again, so the reward should be low. However, if Alice is modeled as an episodic agent, the return of game over is 0 by definition, which could be a high reward depending on the environment. Thus, in some environments, Alice will be overly risk-averse, not considering the "boredom" from game over.
+
+For empirical results, check Section 3.1.
+
+#### Extrinsic Reward and Episodic Environment
+
+However, when we use extrinsic rewards, we should use the episodic problem setting. If we use non-episodic returns, the agent could find a strategy to exploit this setting by finding an extrinsic reward close to the beginning of the game and deliberately dying quickly. This can be seen as **reward farming**, a common phenomenon when the reward function is designed inappropriately.
+
+<figure>
+  <img src="../assets/blog/slowpapers/exploration-by-random-network-distillation/reward-farming.gif" alt=""/>
+    <figcaption>Agent exploiting <em>Blades of Vengeance</em>. Video from <a href="https://blog.openai.com/gym-retro/">OpenAI's post</a> on <em>Gym Retro</em></figcaption>
+</figure>
+
+#### Combining Intrinsic and Extrinsic Reward
+
+Intrinsic rewards benefit from non-episodic setting, while extrinsic rewards benefit from episodic setting. We want a dense reward signal, so we want to use both intrinsic and extrinsic rewards, but it is nontrivial to  to estimate the combined return from two streams of rewards.
+
+We solve this by fitting two value heads $V_E$ and $V_I$ separately to their respective returns. $V_E$ estimates the cumulative extrinsic reward, while $V_I$ estimates the cumulative intrinsic reward. We then add these two value heads to get the value function $V = V_E + V_I$.
+
+Fitting two value heads can have a bonus effect: the extrinsic reward function is stationary, while the intrinsic reward function is non-stationary. If we were to use a single value function $V$, it would need to estimate a non-stationary reward function. However, with two value heads, $V_E$ can focus on the stationary reward function.
+
+For empirical results, check Section 3.2.
+
+#### Separate Value Functions
+
+We discussed fitting two value heads above in the context of combining two reward streams with different problem setting. However, the same idea can also be used to combine reward streams with different discount factors $\gamma$. 
+
+For empirical results, check Section 3.3.
 
 ## 3 Experiments
 
@@ -200,31 +232,113 @@ When using only intrinsic reward, not truncating the return when the game is ove
 
 ### 3.1 Pure Exploration
 
+In Section 2.3, we argued that when we only use the intrinsic reward $i_t$, the non-episodic setting is a more natural setting. We empirically test this assumption by training agents on *Montezuma's Revenge*. We use two metrics: mean episodic return and mean number of rooms found.
+
+![Figure 3](/home/ryanlee/git/endtoend.ai/assets/blog/slowpapers/exploration-by-random-network-distillation/figure3.png)
+
+Since the agent is using the intrinsic reward only, it is not directly optimizing for either metric. However, to get high intrinsic reward, the agent needs to find novel states, including finding the key and opening the room with that key. Thus, we do see an improvement over time in both metrics.
+
+Note that the mean episodic return are somewhat inconsistent. This is because once the agent learned how to use an item or reach a room, it is no longer interesting to the agent, so the intrinsic reward of performing such actions is low.
+
 
 
 ### 3.2 Combining Episodic and Non-episodic Returns
+
+In Section 3.1, we compared episodic and non-episodic setting using only the intrinsic rewards. Now, we compare these settings again using both intrinsic and extrinsic rewards. We fix extrinsic rewards to be episodic and compare episodic and non-episodic settings for the intrinsic rewards. We also include the results of using a single value head if both rewards are episodic.
+
+![Figure 6 (b)](/home/ryanlee/git/endtoend.ai/assets/blog/slowpapers/exploration-by-random-network-distillation/figure6b.png)
+
+Contrary to our expectations, using two value heads with non-episodic intrinsic reward and episodic extrinsic reward did not show any benefit over other methods. Nevertheless, we will use two value heads with non-episodic intrinsic reward for the rest of the experiments.
 
 
 
 ### 3.3 Discount Factors
 
+Previous state of the art works of *Montezuma's Revenge* reported better performance using higher discount factor, since it allows the agent to look further into the future. Thus, we compare different values of $\gamma_I, \gamma_E$.
+
+![Figure 4](/home/ryanlee/git/endtoend.ai/assets/blog/slowpapers/exploration-by-random-network-distillation/figure4.png)
+
+We see that $\gamma_I = 0.99$ and $\gamma_E = 0.999$ yields best result, with a mean return of 11.5K. 
+
 
 
 ### 3.4 Recurrence
+
+Montezuma's Revenge is a partially observable environment. The observation only include information about the current room and the number of keys the player has. From the observation, the agent cannot deduce where the keys came from, how many were used, or which doors are open.
+
+To deal with this partial observability, it is possible to reformulate a state as a summary of the past using a recurrent neural network (RNN). This is a similar approach to deep recurrent Q-network (DRQN).
+
+<figure>
+  <img src="../assets/blog/slowpapers/exploration-by-random-network-distillation/drqn.png" alt=""/>
+    <figcaption>From <em>Deep Q-Learning with Recurrent Neural Networks</em> (Chen et al., 2015)</figcaption>
+</figure>
+
+We call the new state formulation the **RNN policy**, and call the old state formulation using just the visual observation the **CNN policy**.
+
+![Figure 6](../assets/blog/slowpapers/exploration-by-random-network-distillation/figure6.png)
+
+![Figure 8](../assets/blog/slowpapers/exploration-by-random-network-distillation/figure8.png)
+
+Contrary to our expectation, RNN policy results in a worse performance compared to CNN policy.
+
+
+
+
 
 
 
 ### 3.5 Scaling Up RNN Training
 
+In this section we further investigate RNN policies to show the effect of increased scale of parallel environments. For all experiments in this section, intrinsic rewards are non-episodic, and $\gamma_I = 0.99, \gamma_E = 0.999$.
+
+We test $[32, 128, 256, 1024]$ number of parallel of environments. For a fair comparison of environments, we need to fix the batch size. This is because having a larger batch size results in the predictor network learning quickly, resulting in a rapid decrease in the intrinsic reward function. Thus, when we scale up from 32 environments to 128, we randomly drop out 75% of the elements, keeping just 25%. Similarly, when we scale up from 32 to 256 and 1024, we keep just 12.5% and 3.125% of the batch.
+
+![Figure 5](../assets/blog/slowpapers/exploration-by-random-network-distillation/figure5.png)
+
+As predicted, we see that the agent performs better with more parallel environments. With 1024 environments, the RNN RND agent had a mean episodic return of 10070 with the best return of 14415.
+
+Separately, we allowed the the RNN RND agent with 32 environments to train for 1.6M parameter updates (1.6B frames). This agent had a mean episodic return of 7570, and **the best run was able to achieve a return  of 17500, visiting all 24 rooms and completing the first level.** 
+
+<figure>
+  <img src="../assets/blog/slowpapers/exploration-by-random-network-distillation/pyramid.gif" alt=""/>
+    <figcaption>Mean of RNN RND agents with 32 parallel environments. Video from OpenAI's post <a href="https://blog.openai.com/reinforcement-learning-with-prediction-based-rewards/">Reinforcement Learning with Prediction-Based Rewards</a></figcaption>
+</figure>
+
 
 
 ### 3.6 Comparison to Baselines
+
+We now compare RND to two existing works on 6 hard exploration Atari 2600 games: Gravitar, Montezuma's revenge, Pitfall!, Private Eye, Solaris, and Venture.
+
+The first baseline is the **"vanilla" PPO,** without any exploration bonus.
+
+The second baseline is PPO with a different exploration bonus mechanism based on forward dynamics error. There are numerous works on designing intrinsic rewards with forward dynamics. Among those, we selected the **Intrinsic Curiosity Module (ICM)** used in by Pathak et al. (2017) and Burda et al. (2018). It is a good representative of prior methods using forward dynamics error.
+
+Furthermore, Burda et al. showed that training a forward dynamics model in a **random feature (RF) space** works as well as any other feature space most of the time, so we can use the RF space instead (ICM-RF). RND and ICM-RF is quite similar, allowing for a direct comparison on algorithms while fixing other part of the methods such as dual value heads, non-episodic intrinsic returns, normalization schemes, etc.
+
+<figure>
+  <img src="../assets/blog/slowpapers/exploration-by-random-network-distillation/burda-rf.png" alt=""/>
+    <figcaption>Figure 2 from <em>Large-Scale Curiosity-Driven Learning</em> (Burda et al., 2018)</figcaption>
+</figure>
+
+
+
+![Figure 7](../assets/blog/slowpapers/exploration-by-random-network-distillation/figure7.png)
+
+![Table 5](../assets/blog/slowpapers/exploration-by-random-network-distillation/table5.png)
+
+RND achieves new SotA for *Gravitar* and *Montezuma's Revenge* and competes SotA in *Venture*. RND gets a sub-SotA score on *Private Eye* and *Solaris* but is better than PPO and ICM-RF. Like all other methods, RND fails to get positive score for *Pitfall*.
 
 
 
 ### 3.7 Qualitative Analysis: Dancing with Skulls
 
-
+<figure>
+    <video controls>
+        <source src="../assets/blog/slowpapers/exploration-by-random-network-distillation/montezuma_skull_dance.mp4" type="video/mp4"/>
+    </video>
+    <figcaption>Montezuma montage from ICLR 2019 submission: dance begins at 48s</figcaption>
+</figure>
 
 ## 4 Related Work
 
