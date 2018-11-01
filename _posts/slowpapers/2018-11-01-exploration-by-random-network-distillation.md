@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Slow Papers: Exploration by Random Network Distillation (Anonymous, 2018)"
+title: "Slow Papers: Exploration by Random Network Distillation (Burda et al., 2018)"
 author: Seungjae Ryan Lee
 permalink: /slowpapers/exploration-by-random-network-distillation/
 
