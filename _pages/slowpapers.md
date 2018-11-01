@@ -17,6 +17,7 @@ front_text: >
 
  - [Neural Fitted Q Iteration (Riedmiller, 2005)](/slowpapers/neural-fitted-q-iteration/)
  - [A Deeper Look at Experience Replay (Zhang and Sutton, 2017)](/slowpapers/a-deeper-look-at-experience-replay/)
+ - [Exploration by Random Network Distillation (Burda et al., 2018)](/slowpapers/exploration-by-random-network-distillation/)
 
 # Coming Soon
 
