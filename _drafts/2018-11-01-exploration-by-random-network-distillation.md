@@ -15,6 +15,14 @@ excerpt: >
 nav:
 - name: 1 Introduction
   permalink: '#1-introduction'
+- name: 2 Method
+  permalink: '#2-method'
+- name: 3 Experiments
+  permalink: '#3-experiments'
+- name: 4 Related Work
+  permalink: '#4-related-work'
+- name: 5 Discussion
+  permalink: '#5-discussion'
 ---
 
 ![Abstract]({{absolute_url}}/assets/blog/slowpapers/exploration-by-random-network-distillation/front.png)
@@ -105,9 +113,10 @@ Another way to design the intrinsic reward $i_t$ is to define it with a **predic
 The most relevant example would be the **Intrinsic Curiosity Module** (Pathak et al., 2017; Burda et al., 2018). The Intrinsic Curiosity Module (hereafter ICM) trains forward model that outputs a prediction $\hat{\phi}(s_{t+1})$ that attempts to predict the encoded next state $\phi(s_{t+1})$ given encoded state $\phi(s_t)$ and action $a_t$. The intrinsic reward $r^i_t$ is defined as the prediction error of the forward model. The forward model is trained as the agent explores the environment. Thus, low prediction error means that the ICM has understood the transition $(s_t, a_t)$.
 
 <figure>
-  <img src="../assets/blog/slowpapers/exploration-by-random-network-distillation/ICM.png" alt=""/>
+  <img src="../assets/blog/slowpapers/exploration-by-random-network-distillation/icm.png" alt=""/>
   <figcaption>From <em>Curiosity-driven Exploration by Self-supervised Prediction</em> (Pathak et al., 2017)</figcaption>
 </figure>
+
 
 
 
@@ -333,34 +342,89 @@ RND achieves new SotA for *Gravitar* and *Montezuma's Revenge* and competes SotA
 
 ### 3.7 Qualitative Analysis: Dancing with Skulls
 
+Observing the RND agent, we found that once the agent obtains all the extrinsic rewards it knows how to obtain reliably, it continues to interact with potentially dangerous objects. For instance, in *Montezuma's Revenge*, the agent jumps back and forth over a moving skill that upon contact makes agent lose life. Similarly, in *Pitfall*, the agent repeatedly "dances" with the rope and the scorpion.
+
 <figure>
-    <video controls>
-        <source src="../assets/blog/slowpapers/exploration-by-random-network-distillation/montezuma_skull_dance.mp4" type="video/mp4"/>
-    </video>
-    <figcaption>Montezuma montage from ICLR 2019 submission: dance begins at 48s</figcaption>
+    <div style="display: grid;">
+        <div style="grid-row: 1; grid-column: 1;">
+            <video controls>
+                <source src="../assets/blog/slowpapers/exploration-by-random-network-distillation/montezuma_skull_dance.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <div style="grid-row: 1; grid-column: 2;">
+            <video controls>
+                <source src="../assets/blog/slowpapers/exploration-by-random-network-distillation/pitfall_rope_dance.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <div style="grid-row: 1; grid-column: 3;">
+            <video controls>
+                <source src="../assets/blog/slowpapers/exploration-by-random-network-distillation/pitfall_scorpion_dance.mp4" type="video/mp4"/>
+            </video>
+        </div>
+    </div>
+<figcaption>RND agent videos from ICLR 2019 submission</figcaption>
 </figure>
 
+We speculate that the agent adapts this behavior because such dangerous states are difficult to achieve or stay alive, it is therefore rarely represented in the agent's past experience compared to safer states.
+
+
+
 ## 4 Related Work
+
+### 4.1 Exploration
+
+There are a lot of previous works on exploration, categorized in three broad classes. 
+
+**Count-based exploration** are exploration methods that "count" the number of times each state was visited and defines a decreasing exploration bonus with respect to the visitation count. For high-dimensional state spaces where most states are visited only once, methods such as "pseudo-counts" are devised using density models to generalize the concept.
+
+**Dynamics prediction methods** are exploration methods that predict the environment dynamics and use the prediction error to define the exploration bonus. Simply using the prediction value makes the agent susceptible tho the "noisy-TV" problem in stochastic or partially observable environment, so different metrics such as measuring prediction improvement is used.
+
+Other exploration methods include adversarial self-play, empowerment maximization, parameter noise injection, option discovery, and ensembles.
+
+### 4.2 Montezuma's Revenge
+
+Commonly known as one of the hardest problem of *Atari 2600* since the birth of DQNs, *Montezuma's Revenge* has been a standard benchmark for exploration algorithms.
+
+**Without any explicit exploration bonus**, early deep reinforcement learning algorithms such as DQNs failed to make meaningful progress. However, in 2018, Ape-X, IMPALA and SIL showed that even without such bonus, it is possible to achieve a score of 2500.
+
+Using **pseudo-count exploration bonus** discussed above allowed for new state of the art performance, as shown by DQN-CTS and DQN-PixelCNN.
+
+Some have also improve exploration by **using the internal RAM state** available, hand-crafting exploration bonuses. Despite such access, these methods still achieved below the score of an average human.
+
+**Expert demonstrations** have been used to simplify the exploration problem. With this information, multiple methods such as atari-reset achieved superhuman performance. However, learning from expert demonstrations exploits the deterministic nature of the environment. To prevent the agent from simply memorizing the expert's sequence of actions, newer methods have been tested with the stochastic variant with **sticky actions** (each action repeated with some probability).
+
+### 4.3 Random Features
+
+Using the features of a random initialized neural network have been extensively studied in the context of supervised learning. It has also recently been used in reinforcement learning as an exploration technique by Osband et al. (2018) and Burda et al. (2018). This work was motivated by Osband et al. as shown in Section 2.2, and the work of Burda et al. was used as a baseline in Section 3.6.
+
+### 4.4 Vectorized Value Functions
+
+The idea of a vectorized value function was used in Temporal Difference Models (TDM; Pong et al.,2018) and C51 (Bellmare et al., 2017).
 
 
 
 ## 5 Discussion
 
+We introduced a new exploration method based on random network distillation and showed its capability through *Atari 2600* games with sparse rewards. RND was able directed exploration to achieve high performance despite its simplicity. This suggests that when applied at scale, even simple exploration methods can solve hard exploration games. The results also suggest that methods that can treat intrinsic and extrinsic rewards separately can benefit from such flexibility.
 
+We find that RND is enough to deal with **local exploration**: exploring the consequences of short-term decisions, like choosing to interact or avoid a particular object. However, **global exploration** that involves coordinate decisions over long time horizons is beyond our reach.
 
+For example, let us consider *Montezuma's Revenge*. The RND agent is good at exploring the short-term decisions: it can choose to use or avoid the ladder, key, skull, or other objects. However, *Montezuma's Revenge* requires more than these local explorations. In the first level of *Montezuma's Revenge*, there are four keys and six locked doors spread throughout the level. Any key can open any door, but is consumed in the process. To solve the first level, the agent must enter a room locked behind two doors, so the agent must not open the two other doors that are easier to find, even though they would be rewarded for opening them. This requires **global exploration** through long-term planning.
 
+How can we convince the agent to make such behavior? Since not opening the other two doors results in a loss of rewards, the agent should receive enough intrinsic reward to compensate for the loss of extrinsic rewards. The RND agent does not seem to get enough incentive through intrinsic rewards to try this strategy, and thus it rarely manages to finish the level.
 
-
-
-
-<hr/>
+An important future work will be to devise a method that can solve similar problems that require high-level global exploration.
 
 
 
 ## Final Thoughts
 
 **Questions**
- - In Section 2.3, the authors argue that treating the problem as non-episodic makes sense since the agent's intrinsic return should be related to all the novel states it could find in the future. 
+
+ - The authors argue that RND trivializes the noisy-TV problem. However, can't "dancing with skulls" be thought of as a variant of the noisy-TV problem?
+ - In simulated environments, "dancing with skulls" is just an interesting concept, but in mission-critical systems, it is a big threat. Are there some methods to make this agent more safe?
+ - In Section 5: Discussion, the authors argue that RND shows how dividing intrinsic and extrinsic rewards could benefit the agent. Isn't this contrary to the experimental results?
 
 **Recommended Next Papers**
- - *Because this paper is so new, there isn't a "next paper." Instead, I urge you to check the **Accompanying Resources** section and read them to learn more about intrinsic rewards.*
+
+ - *Episodic Curiosity through Reachability* (Savinov et al., 2018): This is not directly related to RND, but it approaches exploration a different way to solve the problem of **global exploration**.  [[Paper]]() 
