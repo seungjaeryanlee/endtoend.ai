@@ -55,7 +55,7 @@ nav:
 
 This is a part of the [**Slow Papers**](/slowpapers) series that peruses each selected paper slowly to gain a deeper understanding of the paper.
 
-This review was first presented the reading group of Reinforcement Learning Korea (RL Korea). Thank you to the members for helpful feedback.
+This review was first presented the reading group of Reinforcement Learning Intelligence (RLI). Thank you to the members for helpful feedback.
 
 <hr/>
 
