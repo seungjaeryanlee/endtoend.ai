@@ -18,3 +18,4 @@ front_text: >
 ## Past Issues
 
 1. [RL Weekly 1: Soft Actor-Critic Code Release; Text-based RL Competition; Learning with Training Wheels](/rl-weekly/1)
+2. [RL Weekly 2: Tuning AlphaGo, Macro-strategy for MOBA, Sim-to-Real with conditional GANs](/rl-weekly/2)
