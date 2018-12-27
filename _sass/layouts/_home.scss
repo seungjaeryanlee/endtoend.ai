@@ -1,3 +1,7 @@
+.mdl-grid {
+    padding: 4px 8px;
+}
+
 .mdl-card > a {
     text-decoration: none;
     transition: 0.5s;
@@ -18,4 +22,40 @@
     padding: 0 10px;
     font-size: 14px;
     line-height: 16px;
+}
+
+#featured-card {
+    height: 400px;
+    margin: 8px 8px 0 8px;
+    .mdl-card__media {
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+    .mdl-card__title {
+        height: auto;
+    }
+    .mdl-card__title-text {
+        padding: 0;
+        font-size: 40px;
+    }
+    .mdl-card__supporting-text {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    // #featured-card {
+    //     padding: 0px;
+    //     margin: 8px;
+    //     height: auto;
+    //     .mdl-card__media {
+    //         display: none;
+    //     }
+    // }
+    #featured-card {
+        display: none;
+    }
 }

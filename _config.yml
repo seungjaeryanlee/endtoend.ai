@@ -28,6 +28,13 @@ include:
 plugins:
  - jekyll-redirect-from
 
+featured_page:
+  link: /rl-weekly/2
+  title: "RL Weekly - Issue #2"
+  supporting_text: "In this issue, we discuss hyperparameter tuning for AlphaGo from DeepMind, Hierarchical RL model for a MOBA game from Tencent, and GAN-based Sim-to-Real algorithm from X, Google Brain, and DeepMind."
+  image_url: /assets/blog/rl-weekly/2/s2r_via_s2s.png
+  cover_or_contain: contain
+
 front_page_links:
   - name: "RL Weekly"
     url: "/rl-weekly/"

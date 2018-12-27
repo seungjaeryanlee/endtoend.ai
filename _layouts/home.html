@@ -3,25 +3,22 @@ layout: default
 ---
 <main class="mdl-layout__content">
   <div class="page-content">
-    <!-- <div class="mdl-grid">
-      <div class="mdl-card mdl-shadow--2dp mdl-card--horizontal">
-        <a href="{{ link.url }}">
-          <div class="mdl-card__media">
-            <img src="http://placehold.it/150x200/DC143C/FFFFFF" alt="img">
+    <div class="mdl-grid">
+      <div id="featured-card" class="mdl-card mdl-shadow--2dp mdl-card--horizontal">
+        <a href="{{ site.featured_page.link }}">
+          <div class="mdl-card__media" style="background-image: url('{{ site.featured_page.image_url }}'); background-size: {{ site.featured_page.cover_or_contain }};"></div>
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Featured: {{ site.featured_page.title }}</h2>
           </div>
-            <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text">Welcome</h2>
-            </div>
-            <div class="mdl-card__supporting-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Mauris sagittis pellentesque lacus eleifend lacinia...
-            </div>
+          <div class="mdl-card__supporting-text">
+            {{ site.featured_page.supporting_text }}
           </div>
         </a>
-    </div> -->
+      </div>
+    </div>
     <div class="mdl-grid">
       {% for link in site.front_page_links %}
-        <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col mdl-cell--3-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+        <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col mdl-cell--3-col-desktop mdl-cell--4-col-tablet mdl-cell--12-col-phone">
           <a href="{{ link.url }}">
             {% if link.image_type == 'cover' %}
               <div class="mdl-card__title" {% if link.image %} style="margin: 0; height: 160px; background: url('{{ link.image }}') center no-repeat white; background-size: cover;" {% endif %}></div>
