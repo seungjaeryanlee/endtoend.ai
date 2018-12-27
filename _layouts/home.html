@@ -1,34 +1,9 @@
 ---
 layout: default
 ---
-
 <main class="mdl-layout__content">
   <div class="page-content">
     <div class="mdl-grid">
-
-      <style>
-        .mdl-card > a {
-          text-decoration: none;
-          transition: 0.5s;
-          width: 100%;
-          min-height: 280px;
-        }
-        .mdl-card:hover {
-          box-shadow: 0 8px 8px 0 rgba(0,0,0,.14), 0 12px 4px -8px rgba(0,0,0,.2), 0 4px 20px 0 rgba(0,0,0,.12);
-        }
-        .mdl-card__title-text {
-          font-weight: 800;
-          font-size: 14px;
-          color: black;
-          margin: 12px 0 12px;
-          padding: 0 10px;
-        }
-        .mdl-card__supporting-text p {
-          padding: 0 10px;
-          font-size: 14px;
-          line-height: 16px;
-        }
-      </style>
       {% for page_title in site.front_page_order %}
         {% for page in site.pages %}
           {% if page_title == page.title %}
