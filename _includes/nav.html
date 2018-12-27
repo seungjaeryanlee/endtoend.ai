@@ -1,0 +1,28 @@
+<div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone">
+  <style>
+    #post-nav {
+      position: fixed;
+      width: calc(16.6666666667% - 32px);
+    }
+    #post-nav li {
+      list-style: none;
+    }
+    #post-nav a {
+      color: gray;
+      text-decoration: none;
+    }
+    #post-nav a:hover {
+      color: darkgray;
+    }
+  </style>
+  <nav id="post-nav" class="mdl-color--white mdl-color-text--grey-800">
+    <ul>
+      {% if page.nav %}
+        <li><b>Contents</b></li>
+        {% for heading in page.nav %}
+          <li><a href="{{ heading.permalink }}">{{ heading.name }}</a></li>
+        {% endfor %}
+      {% endif %}
+    </ul>
+  </nav>
+</div>
