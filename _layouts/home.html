@@ -24,23 +24,21 @@ layout: default
             {% endif %}
           {% endif %}
         {% endfor %}
-        {% for link in site.front_page_links %}
-          {% if page_title == link.name %}
-            <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col mdl-cell--3-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-              <a href="{{ link.url }}">
-                {% if link.image_type == 'cover' %}
-                  <div class="mdl-card__title" {% if link.image %} style="margin: 0; height: 160px; background: url('{{ link.image }}') center no-repeat white; background-size: cover;" {% endif %}></div>
-                {% else %}
-                  <div class="mdl-card__title" {% if link.image %} style="margin: 10px 0; height: 140px; background: url('{{ link.image }}') center no-repeat white; background-size: contain;" {% endif %}></div>
-                {% endif %}
-                <div class="mdl-card__supporting-text">
-                  <h2 class="mdl-card__title-text">{{ link.name }}</h2>
-                  <p>{{ link.description }}</p>
-                </div>
-              </a>
+      {% endfor %}
+      {% for link in site.front_page_links %}
+        <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col mdl-cell--3-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+          <a href="{{ link.url }}">
+            {% if link.image_type == 'cover' %}
+              <div class="mdl-card__title" {% if link.image %} style="margin: 0; height: 160px; background: url('{{ link.image }}') center no-repeat white; background-size: cover;" {% endif %}></div>
+            {% else %}
+              <div class="mdl-card__title" {% if link.image %} style="margin: 10px 0; height: 140px; background: url('{{ link.image }}') center no-repeat white; background-size: contain;" {% endif %}></div>
+            {% endif %}
+            <div class="mdl-card__supporting-text">
+              <h2 class="mdl-card__title-text">{{ link.name }}</h2>
+              <p>{{ link.description }}</p>
             </div>
-          {% endif %}
-        {% endfor %}
+          </a>
+        </div>
       {% endfor %}
     </div>
   </div>
