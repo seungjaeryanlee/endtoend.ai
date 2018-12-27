@@ -1,5 +1,5 @@
 # Site settings
-title: End-To-End AI
+title: endtoendAI
 description: > # this means to ignore newlines until "baseurl:"
   We seek to provide high quality information on different aspects of Artificial
   Intelligence, including Machine Learning, Deep Learning, Reinforcement
@@ -54,5 +54,6 @@ front_page_links:
    description: >
        Read the early draft of the Policy Gradient book. Policy gradient methods
        are used in various state-of-the-art reinforcement learning applications.
+
 plugins:
  - jekyll-redirect-from
