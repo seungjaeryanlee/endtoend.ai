@@ -8,14 +8,6 @@ redirect_from:
  - /env/gym/atari-2600
  - /envs/atari
 
-display_front: true
-front_image: /assets/home/atari.jpeg
-front_image_type: cover
-front_text:
-    Read about state-of-the-art results for each environment of Atari 2600, the
-    standard suite for analyzing performance of various Reinforcement Learning
-    methods.
-
 nav:
  - name: Overview
    permalink: '#overview'

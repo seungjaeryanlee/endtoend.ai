@@ -2,12 +2,6 @@
 layout: page
 title: Slides
 permalink: /slides/
-
-display_front: true
-front_image: /assets/home/slides.png
-front_text: >
-    This is a collection of presentation slides summarizing contents of books
-    and state-of-the-art results.
 ---
 
 This is a collection of presentation slides on Artificial Intelligence books and State-of-the-Art papers.

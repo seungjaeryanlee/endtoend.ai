@@ -2,13 +2,6 @@
 layout: page
 title: AI for Prosthetics
 permalink: /ai-for-prosthetics/
-
-display_front: true
-front_image: /assets/_pages/ai-for-prosthetics/card.jpg
-front_image_type: cover
-front_text: >
-    This is a guide for the NIPS 2018 AI for Prosthetics challenge with a helper
-    package and a series of blog posts.
 ---
 
 

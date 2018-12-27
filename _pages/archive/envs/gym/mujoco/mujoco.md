@@ -4,14 +4,6 @@ title: MuJoCo Environments
 permalink: /envs/gym/mujoco/
 redirect_from: /env/gym/mujoco/
 
-display_front: true
-front_image: /assets/home/mujoco.png
-front_image_type: cover
-front_text:
-    Read about continuous control environments created with MuJoCo, a
-    proprietary physics engine for detailed, efficient rigid body simulations
-    with contacts.
-
 nav:
 - name: Overview
   permalink: '#overview'

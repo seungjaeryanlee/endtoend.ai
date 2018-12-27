@@ -5,13 +5,6 @@ permalink: /ctrl/
 redirect_from: 
 - /current-topics-in-rl/
 - /current-topics-in-reinforcement-learning/
-
-display_front: true
-front_image: /assets/home/ctrl.jpg
-front_image_type: cover
-front_text: >
-    Read summaries of new papers in Reinforcement Learning, ranging from
-    theoretical studies to experiments.
 ---
 
 Reinforcement Learning is a blooming field with interesting papers being published every day. Unfortunately, the sheer amount of new papers can be overwhelming for those that cannot follow all these new papers on a daily basis. **CTRL** hopes to assist these people in two ways:

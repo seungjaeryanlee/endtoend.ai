@@ -25,35 +25,80 @@ markdown: kramdown
 include:
  - "_pages"
 
-front_page_order:
-#  - "RL Environments"
- - "AI for Prosthetics"
- - "Atari Environments"
- - "MuJoCo Environments"
- - "CTRL: Current Topics in RL"
-# - "Demystifying Experience Replay"
- - "DQN Book"
-# - "Policy Gradient Book"
-#  - "Practical Reinforcement Learning"
- - "Sutton and Barto Notebooks"
- - "Slides"
- - "Blog"
-
-front_page_links:
- - name: "DQN Book"
-   url: "https://www.dqnbook.org/"
-   image: "/assets/home/dqn.png"
-   image_type: cover
-   description: >
-       Read the early draft of the Deep Q-Networks (DQN) book. This book
-       explores various improvements of DQN that achieved superhuman results.
- - name: "Policy Gradient Book"
-   url: "https://www.policygradientbook.org/"
-   image: "/assets/home/pg.png"
-   image_type: contain
-   description: >
-       Read the early draft of the Policy Gradient book. Policy gradient methods
-       are used in various state-of-the-art reinforcement learning applications.
-
 plugins:
  - jekyll-redirect-from
+
+front_page_links:
+  - name: "CTRL: Current Topics in RL"
+    url: "/ctrl/"
+    image: "/assets/home/ctrl.jpg"
+    image_type: cover
+    description: >
+      Read summaries of new papers in Reinforcement Learning, ranging from
+      theoretical studies to experiments.
+  - name: Resources
+    url: "/resources"
+    image: ''
+    image_type: cover
+    description: >
+      Presentation slides, snipplets of code, and other useful resources for
+      studying reinforcement learning.
+  - name: "Blog"
+    url: "/blog/"
+    image: "/assets/home/blog.svg"
+    image_type: contain
+    description: >
+      We blog about our AI-related experience, including internships, 
+      competitions, and research.
+  # - name: "AI for Prosthetics"
+  #   url: "/ai-for-prosthetics/"
+  #   image: "/assets/_pages/ai-for-prosthetics/card.jpg"
+  #   image_type: cover
+  #   description: >
+  #     This is a guide for the NIPS 2018 AI for Prosthetics challenge with a 
+  #     helper package and a series of blog posts.
+  # - name: "Atari Environments"
+  #   url: "/envs/gym/atari/"
+  #   image: "/assets/home/atari.jpeg"
+  #   image_type: cover
+  #   description: >
+  #     Read about state-of-the-art results for each environment of Atari 2600,
+  #     the standard suite for analyzing performance of various Reinforcement
+  #     Learning methods.
+  # - name: "MuJoCo Environments"
+  #   url: "/envs/gym/mujoco/"
+  #   image: "/assets/home/mujoco.png"
+  #   image_type: cover
+  #   description: >
+  #     Read about continuous control environments created with MuJoCo, a
+  #     proprietary physics engine for detailed, efficient rigid body simulations
+  #     with contacts.
+  # - name: "Sutton and Barto Notebooks"
+  #   url: "/sutton-barto-notebooks/"
+  #   image: "/assets/home/sutton-barto.png"
+  #   image_type: contain
+  #   description: >
+  #     This repository contains Jupyter Notebook of implementations of insightful
+  #     figures in Sutton and Barto's <i>Reinforcement Learning: An Introduction
+  #     </i>.
+  # - name: "Slides"
+  #   url: "/slides/"
+  #   image: "/assets/home/slides.png"
+  #   image_type: contain
+  #   description: >
+  #     This is a collection of presentation slides summarizing contents of books
+  #     and state-of-the-art results.
+  # - name: "DQN Book"
+  #   url: "https://www.dqnbook.org/"
+  #   image: "/assets/home/dqn.png"
+  #   image_type: cover
+  #   description: >
+  #     Read the early draft of the Deep Q-Networks (DQN) book. This book
+  #     explores various improvements of DQN that achieved superhuman results.
+  # - name: "Policy Gradient Book"
+  #   url: "https://www.policygradientbook.org/"
+  #   image: "/assets/home/pg.png"
+  #   image_type: contain
+  #   description: >
+  #     Read the early draft of the Policy Gradient book. Policy gradient methods
+  #     are used in various state-of-the-art reinforcement learning applications.
