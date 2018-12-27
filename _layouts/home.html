@@ -3,71 +3,71 @@ layout: default
 ---
 
 <main class="mdl-layout__content">
-    <div class="page-content">
-        <div class="mdl-grid">
+  <div class="page-content">
+    <div class="mdl-grid">
 
-            <style>
-                .mdl-card > a {
-                    text-decoration: none;
-                    transition: 0.5s;
-                    width: 100%;
-                    min-height: 280px;
-                }
-                .mdl-card:hover {
-                    box-shadow: 0 8px 8px 0 rgba(0,0,0,.14), 0 12px 4px -8px rgba(0,0,0,.2), 0 4px 20px 0 rgba(0,0,0,.12);
-                }
-                .mdl-card__title-text {
-                    font-weight: 800;
-                    font-size: 14px;
-                    color: black;
-                    margin: 12px 0 12px;
-                    padding: 0 10px;
-                }
-                .mdl-card__supporting-text p {
-                    padding: 0 10px;
-                    font-size: 14px;
-                    line-height: 16px;
-                }
-            </style>
-            {% for page_title in site.front_page_order %}
-                {% for page in site.pages %}
-                    {% if page_title == page.title %}
-                        {% if page.display_front %}
-                        <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col mdl-cell--3-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-                            <a href="{{ page.url | prepend: site.baseurl }}">
-                                {% if page.front_image_type == 'cover' %}
-                                    <div class="mdl-card__title" {% if page.front_image %} style="margin: 0; height: 160px; background: url('{{ page.front_image }}') center no-repeat white; background-size: cover;" {% endif %}></div>
-                                {% else %}
-                                    <div class="mdl-card__title" {% if page.front_image %} style="margin: 10px 0; height: 140px; background: url('{{ page.front_image }}') center no-repeat white; background-size: contain;" {% endif %}></div>
-                                {% endif %}
-                                <div class="mdl-card__supporting-text">
-                                    <h2 class="mdl-card__title-text">{{ page.title }}</h2>
-                                    <p>{{ page.front_text }}</p>
-                                </div>
-                            </a>
-                        </div>
-                        {% endif %}
-                    {% endif %}
-                {% endfor %}
-                {% for link in site.front_page_links %}
-                    {% if page_title == link.name %}
-                        <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col mdl-cell--3-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-                            <a href="{{ link.url }}">
-                                {% if link.image_type == 'cover' %}
-                                    <div class="mdl-card__title" {% if link.image %} style="margin: 0; height: 160px; background: url('{{ link.image }}') center no-repeat white; background-size: cover;" {% endif %}></div>
-                                {% else %}
-                                    <div class="mdl-card__title" {% if link.image %} style="margin: 10px 0; height: 140px; background: url('{{ link.image }}') center no-repeat white; background-size: contain;" {% endif %}></div>
-                                {% endif %}
-                                <div class="mdl-card__supporting-text">
-                                    <h2 class="mdl-card__title-text">{{ link.name }}</h2>
-                                    <p>{{ link.description }}</p>
-                                </div>
-                            </a>
-                        </div>
-                    {% endif %}
-                {% endfor %}
-            {% endfor %}
-        </div>
+      <style>
+        .mdl-card > a {
+          text-decoration: none;
+          transition: 0.5s;
+          width: 100%;
+          min-height: 280px;
+        }
+        .mdl-card:hover {
+          box-shadow: 0 8px 8px 0 rgba(0,0,0,.14), 0 12px 4px -8px rgba(0,0,0,.2), 0 4px 20px 0 rgba(0,0,0,.12);
+        }
+        .mdl-card__title-text {
+          font-weight: 800;
+          font-size: 14px;
+          color: black;
+          margin: 12px 0 12px;
+          padding: 0 10px;
+        }
+        .mdl-card__supporting-text p {
+          padding: 0 10px;
+          font-size: 14px;
+          line-height: 16px;
+        }
+      </style>
+      {% for page_title in site.front_page_order %}
+        {% for page in site.pages %}
+          {% if page_title == page.title %}
+            {% if page.display_front %}
+            <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col mdl-cell--3-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+              <a href="{{ page.url | prepend: site.baseurl }}">
+                {% if page.front_image_type == 'cover' %}
+                  <div class="mdl-card__title" {% if page.front_image %} style="margin: 0; height: 160px; background: url('{{ page.front_image }}') center no-repeat white; background-size: cover;" {% endif %}></div>
+                {% else %}
+                  <div class="mdl-card__title" {% if page.front_image %} style="margin: 10px 0; height: 140px; background: url('{{ page.front_image }}') center no-repeat white; background-size: contain;" {% endif %}></div>
+                {% endif %}
+                <div class="mdl-card__supporting-text">
+                  <h2 class="mdl-card__title-text">{{ page.title }}</h2>
+                  <p>{{ page.front_text }}</p>
+                </div>
+              </a>
+            </div>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        {% for link in site.front_page_links %}
+          {% if page_title == link.name %}
+            <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col mdl-cell--3-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+              <a href="{{ link.url }}">
+                {% if link.image_type == 'cover' %}
+                  <div class="mdl-card__title" {% if link.image %} style="margin: 0; height: 160px; background: url('{{ link.image }}') center no-repeat white; background-size: cover;" {% endif %}></div>
+                {% else %}
+                  <div class="mdl-card__title" {% if link.image %} style="margin: 10px 0; height: 140px; background: url('{{ link.image }}') center no-repeat white; background-size: contain;" {% endif %}></div>
+                {% endif %}
+                <div class="mdl-card__supporting-text">
+                  <h2 class="mdl-card__title-text">{{ link.name }}</h2>
+                  <p>{{ link.description }}</p>
+                </div>
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
     </div>
-    <div class="mdl-layout-spacer"></div>
+  </div>
+  <div class="mdl-layout-spacer"></div>
 </main>
