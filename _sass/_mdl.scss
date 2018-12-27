@@ -1,0 +1,18 @@
+// Card styles
+.mdl-card--horizontal {
+    flex-direction: column;
+    height: 1vh; /* 1 */
+    padding-left: 500px;
+    width: 100%;
+    
+    .mdl-card__media {
+      left: 0;
+      position: absolute;
+      width: 500px;
+    }
+    
+    .mdl-card__supporting-text {
+      flex: 1 1 auto;
+      width: auto;
+    }
+}
