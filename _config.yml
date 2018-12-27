@@ -29,23 +29,30 @@ plugins:
  - jekyll-redirect-from
 
 front_page_links:
+  - name: "RL Weekly"
+    url: "/rl-weekly/"
+    image: "/assets/home/rl-weekly.png"
+    image_type: contain
+    description: >
+      Get the highlights of reinforcement learning in both research and industry
+      every week.
   - name: "CTRL: Current Topics in RL"
     url: "/ctrl/"
-    image: "/assets/home/ctrl.jpg"
-    image_type: cover
+    image: "/assets/home/ctrl.png"
+    image_type: contain
     description: >
       Read summaries of new papers in Reinforcement Learning, ranging from
       theoretical studies to experiments.
   - name: Resources
     url: "/resources"
-    image: ''
-    image_type: cover
+    image: "/assets/home/resources.png"
+    image_type: contain
     description: >
       Presentation slides, snipplets of code, and other useful resources for
       studying reinforcement learning.
   - name: "Blog"
     url: "/blog/"
-    image: "/assets/home/blog.svg"
+    image: "/assets/home/blog.png"
     image_type: contain
     description: >
       We blog about our AI-related experience, including internships, 
