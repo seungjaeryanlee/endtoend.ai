@@ -4,6 +4,17 @@ layout: default
 <!-- Same style as blog.html -->
 <div class="page-content">
   <div id="posts" class="mdl-grid">
+    {% if page.details %}
+      <div id="tag-details" class="post-container">
+        <div class="post-ribbon"></div>
+        <div class="post-section section-highlight section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" style="width: auto;">
+          <h1 style="margin-top: 0;">{{ page.title }}</h1>
+          <article class="post-content">
+            {{ content }}
+          </article>
+        </div>
+      </div>
+    {% endif %}
     {% for post in site.posts %}
       {% if post.tags contains page.tag %}
         <a class="post-container" href="{{ post.url | prepend: site.baseurl }}">
