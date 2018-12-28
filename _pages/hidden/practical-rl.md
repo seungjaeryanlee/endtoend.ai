@@ -4,13 +4,6 @@ title: Practical Reinforcement Learning
 permalink: /practical-rl/
 redirect_from: /practical-reinforcement-learning/
 
-display_front: true
-front_image: /assets/home/practical-rl.png
-front_text: >
-    <b>(Coming Soon)</b><br/>
-    Learn how to create a diverse set of learning agents and connect them to
-    various environments such as OpenAI Gym, Unity ML Agents, and chess.
-
 nav:
 - name: 1. Introduction
   permalink: '#1-introduction'

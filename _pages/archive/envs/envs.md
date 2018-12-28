@@ -4,12 +4,6 @@ title: RL Environments
 permalink: /envs/
 redirect_from: /env/
 
-display_front: true
-front_image: /assets/home/envs.svg
-front_text: 
-    Read more about various Reinforcement Learning environments, including the
-    installation guide and state-of-the-art results for each environment.
-
 nav:
 - name: OpenAI Gym
   permalink: '#openai-gym'

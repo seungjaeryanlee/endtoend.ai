@@ -3,12 +3,6 @@ layout: page
 title: "Demystifying Experience Replay"
 permalink: /pioneer/
 
-display_front: true
-front_image: /assets/home/pioneer.jpg
-front_image_type: cover
-front_text: >
-    Read about current progress on my Pioneer Project: Demystifying Experience
-    Replay.
 ---
 
 The goal of the project is to understand how experience replay affects the learner. Through this analysis, we will understand why experience replay is so effective, both in data efficiency and data de-correlation. Also, we will uncover the side effects of prioritized experience replay, a commonly used improvement to experience replay, and how positive and negative they are to the overall performance of the learner. Finally, such analysis could hint to an alternative experience replay method that mitigates unwanted side effects.
