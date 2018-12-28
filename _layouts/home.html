@@ -4,13 +4,13 @@ layout: default
 <main id="home" class="mdl-layout__content">
   <div class="page-content">
     <div class="mdl-grid">
-      <div id="featured-card" class="mdl-card mdl-card__hover-shadow mdl-shadow--2dp mdl-card--horizontal">
+      <div class="featured-card" class="mdl-card mdl-card__hover-shadow mdl-shadow--2dp mdl-card--horizontal">
         <a href="{{ site.featured_page.link }}">
-          <div class="featured-card--image mdl-card__media" style="background-image: url('{{ site.featured_page.image_url }}'); background-size: {{ site.featured_page.cover_or_contain }};"></div>
-          <div class="featured-card--title mdl-card__title">
-            <h2 class="featured-card--title--text mdl-card__title-text">Featured: {{ site.featured_page.title }}</h2>
+          <div class="featured-card__image mdl-card__media" style="background-image: url('{{ site.featured_page.image_url }}'); background-size: {{ site.featured_page.cover_or_contain }};"></div>
+          <div class="featured-card__title mdl-card__title">
+            <h2 class="featured-card__title__text mdl-card__title-text">Featured: {{ site.featured_page.title }}</h2>
           </div>
-          <div class="featured-card--text mdl-card__supporting-text">
+          <div class="featured-card__text mdl-card__supporting-text">
             {{ site.featured_page.supporting_text }}
           </div>
         </a>
