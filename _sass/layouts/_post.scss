@@ -5,4 +5,11 @@
     border-radius: 2px;
     font-size: 0.8em;
     display: inline-block;
+    text-decoration: none;
+    color: darkgray;
+    transition: .2s;
+}
+.post-section--tags--tag:hover {
+    color: white;
+    background-color: darkgray;
 }
