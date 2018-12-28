@@ -13,7 +13,9 @@ This is a guide for the [**NIPS 2018 AI for Prosthetics challenge**](https://www
 
 The **AI for Prosthetics** challenge is one of NIPS 2018 Competition tracks. In this challenge, the participants seek to build an agent that can make a 3D human model with prosthetics run.
 
-![Prosthetics]({{ "assets/_pages/ai-for-prosthetics/prosthetics.jpeg" | absolute_url }})
+<div class="w50" style="margin: 10px auto;">
+  <img src="{{ absolute_url }}/assets/_pages/ai-for-prosthetics/prosthetics.jpeg" alt="Prosthetics">
+</div>
 
 ## osim-rl-helper
 
@@ -21,12 +23,4 @@ This package contains basic learning agents using popular reinforcement learning
 
 ## Blog Posts
 
-I have also been writing a post almost every week on the competition, about the status of the leaderboard, the properties of the environment, applicable techniques, and updates of the `osim-rl-helper` package. I have discussed general approaches to the problem, possible methods of reward shaping, and other techniques from recent literature that could be worth experiemnting.
-
-- [Week 1: Understanding the Challenge](/blog/ai-for-prosthetics-1)
-- [Week 2: Understanding the Action Space](/blog/ai-for-prosthetics-2)
-- [Week 3 - 4: Understanding the Observation Space](/blog/ai-for-prosthetics-3)
-- [Week 5: Understanding the Reward](/blog/ai-for-prosthetics-5)
-- [Week 6 - 8: General Techniques of RL](/blog/ai-for-prosthetics-6)
-
-If you want to know when a new post is published, [join us and subscribe to our RSS feed](/feed.xml)!
+I wrote posts about the competition, the status of the leaderboard, the properties of the environment, applicable techniques, and updates of the `osim-rl-helper` package. I have discussed general approaches to the problem, possible methods of reward shaping, and other techniques from recent literature that could be worth experimenting.
