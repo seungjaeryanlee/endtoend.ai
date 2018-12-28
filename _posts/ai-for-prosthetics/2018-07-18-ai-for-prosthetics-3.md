@@ -5,6 +5,10 @@ author: Seungjae Ryan Lee
 permalink: /blog/ai-for-prosthetics-3/
 redirect_from:
  - /blog/ai-for-prosthetics-4
+tags:
+ - reinforcement-learning
+ - ai-for-prosthetics
+ - competition
 
 front_image: /assets/blog/ai-for-prosthetics-3/front.png
 front_text: >

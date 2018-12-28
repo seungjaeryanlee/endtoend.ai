@@ -3,6 +3,9 @@ layout: post
 title: "Notes from the ai.x 2018 Conference: Faster Reinforcement Learning via Transfer"
 author: Seungjae Ryan Lee
 permalink: /blog/aix-2018-john-schulman/
+tags:
+ - reinforcement-learning
+ - conference
 
 front_image: /assets/blog/aix-2018-john-schulman/front.png
 front_image_type: contain

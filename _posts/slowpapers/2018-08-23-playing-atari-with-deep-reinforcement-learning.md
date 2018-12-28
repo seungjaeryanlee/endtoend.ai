@@ -4,6 +4,9 @@ title: "Playing Atari with Deep Reinforcement Learning"
 author: Seungjae Ryan Lee
 permalink: /slowpapers/playing-atari-with-deep-reinforcement-learning/
 published: false
+tags:
+ - reinforcement-learning
+ - slowpapers
 
 front_image: /assets/blog/slowpapers/playing-atari-with-deep-reinforcement-learning/front.png
 front_image_type: contain

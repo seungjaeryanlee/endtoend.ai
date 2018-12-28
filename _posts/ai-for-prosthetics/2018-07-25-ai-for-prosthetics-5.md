@@ -3,6 +3,10 @@ layout: post
 title: "AI for Prosthetics Week 5: Understanding the Reward"
 author: Seungjae Ryan Lee
 permalink: /blog/ai-for-prosthetics-5/
+tags:
+ - reinforcement-learning
+ - ai-for-prosthetics
+ - competition
 
 front_image: /assets/blog/ai-for-prosthetics-5/front.png
 front_text: >

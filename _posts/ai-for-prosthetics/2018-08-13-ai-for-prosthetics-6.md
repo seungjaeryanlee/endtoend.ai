@@ -6,6 +6,10 @@ permalink: /blog/ai-for-prosthetics-6/
 redirect_from:
  - /blog/ai-for-prosthetics-7/
  - /blog/ai-for-prosthetics-8/
+tags:
+ - reinforcement-learning
+ - ai-for-prosthetics
+ - competition
 
 front_image: /assets/blog/ai-for-prosthetics-6/front.png
 front_text: >

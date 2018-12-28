@@ -5,6 +5,8 @@ author: Seungjae Ryan Lee
 permalink: /blog/effective-data-partition/
 redirect_from:
  - /2018/04/14/effective-data-partition/
+tags:
+ - machine-learning
 
 front_image: /assets/blog/effective-data-partition/front.png
 front_text: >

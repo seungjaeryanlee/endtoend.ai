@@ -3,6 +3,9 @@ layout: post
 title: "Slow Papers: Exploration by Random Network Distillation (Burda et al., 2018)"
 author: Seungjae Ryan Lee
 permalink: /slowpapers/exploration-by-random-network-distillation/
+tags:
+ - reinforcement-learning
+ - slowpapers
 
 front_image: /assets/blog/slowpapers/exploration-by-random-network-distillation/front.png
 meta_image: /assets/blog/slowpapers/exploration-by-random-network-distillation/front.png

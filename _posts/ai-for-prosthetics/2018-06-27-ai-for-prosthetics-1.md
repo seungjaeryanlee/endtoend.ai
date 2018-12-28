@@ -3,6 +3,10 @@ layout: post
 title: "AI for Prosthetics Week 1: Understanding the Challenge"
 author: Seungjae Ryan Lee
 permalink: /blog/ai-for-prosthetics-1/
+tags:
+ - reinforcement-learning
+ - ai-for-prosthetics
+ - competition
 
 front_image: /assets/blog/ai-for-prosthetics-1/front.jpg
 front_text: >

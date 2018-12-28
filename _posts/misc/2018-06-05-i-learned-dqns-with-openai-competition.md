@@ -3,6 +3,9 @@ layout: post
 title: "I learned DQNs with OpenAI competition"
 author: Seungjae Ryan Lee
 permalink: /blog/i-learned-dqns-with-openai-competition/
+tags:
+ - reinforcement-learning
+ - competition
 
 front_image: /assets/blog/i-learned-dqns-with-openai-competition/front.png
 front_text: >
