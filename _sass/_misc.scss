@@ -1,0 +1,5 @@
+// HACK Make sure footer is at bottom
+// NOT RESPONSIVE
+.page-content {
+    min-height: calc(100vh - 350px);
+}
