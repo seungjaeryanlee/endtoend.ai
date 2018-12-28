@@ -1,6 +1,7 @@
 ---
 layout: tag
 tag: rl-weekly
+title: RL Weekly
 permalink: /tags/rl-weekly/
 redirect_from: /rl-weekly/
 details: true
