@@ -14,7 +14,12 @@ layout: default
           <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
             <div class="mdl-card__supporting-text">
               <h4>{{ post.title }}</h4>
-              <p>{{ post.front_text }}</p>
+              <div class="post--tags">
+                {% for tag in post.tags %}
+                  <span class="post--tags--tag"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;{{ tag }}</span>
+                {% endfor %}
+              </div>
+              <p class="post--text">{{ post.front_text }}</p>
             </div>
           </div>
         </div>

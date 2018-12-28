@@ -21,3 +21,18 @@
 .section-highlight:hover {
     box-shadow: 0 8px 8px 0 rgba(0,0,0,.14), 0 12px 4px -8px rgba(0,0,0,.2), 0 4px 20px 0 rgba(0,0,0,.12);
 }
+
+.post--tags {
+    margin: 20px 0;
+}
+.post--tags--tag {
+    margin: 2px 0;
+    padding: 5px;
+    border: 1px solid darkgray;
+    border-radius: 2px;
+    font-size: 0.8em;
+    display: inline-block;
+}
+.mdl-card__supporting-text p.post--text {
+    padding-left: 0;
+}
