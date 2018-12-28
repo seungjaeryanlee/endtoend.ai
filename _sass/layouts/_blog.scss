@@ -10,12 +10,12 @@
             min-height: 200px;
             width: 100%;
 
-            .post--summary {
+            .post__summary {
 
-                .post--summary--tags {
+                .post__summary__tags {
                     margin: 10px 0;
             
-                    .post--summary--tags--tag {
+                    .post__summary__tags__tag {
                         margin: 2px 0;
                         padding: 5px;
                         border: 1px solid darkgray;
@@ -25,11 +25,11 @@
                     }
                 }
             
-                .post--summary--text {
+                .post__summary__text {
                     padding-left: 0;
                 }
             }
-            .post--summary:hover {
+            .post__summary:hover {
                 box-shadow: none;
             }
         }
