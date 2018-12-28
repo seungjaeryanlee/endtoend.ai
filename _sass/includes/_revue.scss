@@ -1,7 +1,11 @@
-#revue--form {
-    text-align: center;
-    margin: 0 auto;
-}
-#revue--form--submit--button {
-    margin-top: 10px;
+#revue {
+
+    #revue__form {
+        text-align: center;
+        margin: 0 auto;
+
+        #revue__form__submit__button {
+            margin-top: 10px;
+        }
+    }
 }
