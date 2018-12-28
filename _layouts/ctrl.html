@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<main class="mdl-layout__content">
+  <div class="page-content">
+    <div id="papers" class="mdl-grid">
+      {% for paper in page.papers %}
+          <a href="{{ paper.url }}" class="paper mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+            <div class="paper__info">
+              <span class="paper__info__title">{{ paper.title }}</span>
+              <span class="paper__info__spacer"> - </span>
+              <span class="paper__info__authors">{{ paper.authors }}</span>
+            </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</main>

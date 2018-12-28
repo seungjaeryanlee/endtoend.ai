@@ -1,0 +1,21 @@
+
+#papers {
+
+    .paper {
+        padding-top: calc(29.41% - 60px);
+        background: url('/ctrl/exploration-by-random-network-distillation.png') center / cover;
+
+        .paper__info {
+            padding: 12px;
+            background: rgba(0, 0, 0, 0.6);
+
+            .paper__info__title,
+            .paper__info__spacer,
+            .paper__info__authors {
+                color: #fff;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+}
