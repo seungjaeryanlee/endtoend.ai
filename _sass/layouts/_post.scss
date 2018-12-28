@@ -1,13 +1,13 @@
 .post-section {
     .post-section__tags__tag {
-        margin: 2px 0;
-        padding: 2px 5px;
-        border: 1px solid darkgray;
-        border-radius: 2px;
-        font-size: 0.8em;
+        margin: 2px 4px 2px 0;
+        padding: 4px 6px;
+        border: 1px solid #555;
+        border-radius: 4px;
+        font-size: 1em;
         display: inline-block;
         text-decoration: none;
-        color: darkgray;
+        color: #555;
         transition: .2s;
     }
     .post-section__tags__tag:hover {
