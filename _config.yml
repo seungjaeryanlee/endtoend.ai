@@ -37,7 +37,7 @@ featured_page:
 
 front_page_links:
   - name: "RL Weekly"
-    url: "/rl-weekly/"
+    url: "/tags/rl-weekly/"
     image: "/assets/home/rl-weekly.png"
     image_type: contain
     description: >
