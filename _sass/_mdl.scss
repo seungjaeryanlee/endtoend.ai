@@ -6,13 +6,38 @@
     width: 100%;
     
     .mdl-card__media {
-      left: 0;
-      position: absolute;
-      width: 500px;
+        left: 0;
+        position: absolute;
+        width: 500px;
     }
     
     .mdl-card__supporting-text {
-      flex: 1 1 auto;
-      width: auto;
+        flex: 1 1 auto;
+        width: auto;
     }
+}
+
+.mdl-grid {
+    padding: 4px 8px;
+}
+.mdl-card > a {
+    text-decoration: none;
+    transition: 0.5s;
+    width: 100%;
+    min-height: 280px;
+}
+.mdl-card:hover {
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,.14), 0 12px 4px -8px rgba(0,0,0,.2), 0 4px 20px 0 rgba(0,0,0,.12);
+}
+.mdl-card__title-text {
+    font-weight: 800;
+    font-size: 18px;
+    color: black;
+    margin: 12px 0 12px;
+    padding: 0 10px;
+}
+.mdl-card__supporting-text p {
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 16px;
 }
