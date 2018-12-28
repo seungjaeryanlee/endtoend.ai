@@ -1,7 +1,7 @@
 ---
 layout: tag
-tag: slowpapers
 title: Slow Papers
+tag: slowpapers
 permalink: /tags/slowpapers/
 redirect_from: /slowpapers/
 details: true

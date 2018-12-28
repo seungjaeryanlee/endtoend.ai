@@ -1,6 +1,6 @@
 ---
 layout: tag
-title: AI for Prosthetics
+title: "AI for Prosthetics"
 tag: ai-for-prosthetics
 permalink: /tags/ai-for-prosthetics/
 redirect_from: /ai-for-prosthetics/
