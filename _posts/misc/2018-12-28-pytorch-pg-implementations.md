@@ -53,12 +53,12 @@ Asynchronous Advantage Actor Critic
 
 Advantage Actor Critic
 
-|                       | [**pytorch-a2c-ppo-acktr**](https://github.com/ikostrikov/pytorch-a2c-ppo-acktr) | [**RL-Adventure-2**](https://github.com/higgsfield/RL-Adventure-2) |   [**vel**](https://github.com/MillionIntegrals/vel)    |
-| --------------------- | :----------------------------------------------------------: | :----------------------------------------------------------: | :-----------------------------------------------------: |
-| **Author**            |         [ikostrikov](https://github.com/ikostrikov)          |         [higgsfield](https://github.com/higgsfield/)         | [MillionIntegrals](https://github.com/MillionIntegrals) |
-| **Version**           | [0.4](https://github.com/ikostrikov/pytorch-a2c-ppo-acktr/commit/e7f739f3ad1a377bfbcd0b92c55c2b9d947764fc) |                             0.4                              |                          0.4.1                          |
-| **Pretrained Models** |                              ✔                               |                              ✘                               |                            ✘                            |
-| **Stars**             |                             1077                             |                             1521                             |                           194                           |
+|                       | [**pytorch-a2c-ppo-acktr**](https://github.com/ikostrikov/pytorch-a2c-ppo-acktr) | [**RL-Adventure-2**](https://github.com/higgsfield/RL-Adventure-2) |   [**vel**](https://github.com/MillionIntegrals/vel)    | [**DeepRL**](https://github.com/ShangtongZhang/DeepRL) |
+| --------------------- | :----------------------------------------------------------: | :----------------------------------------------------------: | :-----------------------------------------------------: | ------------------------------------------------------ |
+| **Author**            |         [ikostrikov](https://github.com/ikostrikov)          |         [higgsfield](https://github.com/higgsfield/)         | [MillionIntegrals](https://github.com/MillionIntegrals) | [ShangtongZhang](https://github.com/ShangtongZhang)    |
+| **Version**           | [0.4](https://github.com/ikostrikov/pytorch-a2c-ppo-acktr/commit/e7f739f3ad1a377bfbcd0b92c55c2b9d947764fc) |                             0.4                              |                          0.4.1                          | 0.4.0                                                  |
+| **Pretrained Models** |                              ✔                               |                              ✘                               |                            ✘                            | ✘                                                      |
+| **Stars**             |                             1077                             |                             1521                             |                           194                           | 1034                                                   |
 
 ### ACER
 
@@ -105,12 +105,12 @@ Proximal Policy Optimization
 
 [[arXiv Paper]](https://arxiv.org/abs/1707.06347)
 
-|                       | [**pytorch-a2c-ppo-acktr**](https://github.com/ikostrikov/pytorch-a2c-ppo-acktr) | [**RL-Adventure-2**](https://github.com/higgsfield/RL-Adventure-2) |   [**vel**](https://github.com/MillionIntegrals/vel)    |
-| --------------------- | :----------------------------------------------------------: | :----------------------------------------------------------: | :-----------------------------------------------------: |
-| **Author**            |         [ikostrikov](https://github.com/ikostrikov)          |         [higgsfield](https://github.com/higgsfield/)         | [MillionIntegrals](https://github.com/MillionIntegrals) |
-| **Version**           | [0.4](https://github.com/ikostrikov/pytorch-a2c-ppo-acktr/commit/e7f739f3ad1a377bfbcd0b92c55c2b9d947764fc) |                             0.4                              |                          0.4.1                          |
-| **Pretrained Models** |                              ✔                               |                              ✘                               |                            ✘                            |
-| **Stars**             |                             1077                             |                             1521                             |                           194                           |
+|                       | [**pytorch-a2c-ppo-acktr**](https://github.com/ikostrikov/pytorch-a2c-ppo-acktr) | [**RL-Adventure-2**](https://github.com/higgsfield/RL-Adventure-2) |   [**vel**](https://github.com/MillionIntegrals/vel)    | [**DeepRL**](https://github.com/ShangtongZhang/DeepRL) |
+| --------------------- | :----------------------------------------------------------: | :----------------------------------------------------------: | :-----------------------------------------------------: | :----------------------------------------------------: |
+| **Author**            |         [ikostrikov](https://github.com/ikostrikov)          |         [higgsfield](https://github.com/higgsfield/)         | [MillionIntegrals](https://github.com/MillionIntegrals) |  [ShangtongZhang](https://github.com/ShangtongZhang)   |
+| **Version**           | [0.4](https://github.com/ikostrikov/pytorch-a2c-ppo-acktr/commit/e7f739f3ad1a377bfbcd0b92c55c2b9d947764fc) |                             0.4                              |                          0.4.1                          |                         0.4.0                          |
+| **Pretrained Models** |                              ✔                               |                              ✘                               |                            ✘                            |                           ✘                            |
+| **Stars**             |                             1077                             |                             1521                             |                           194                           |                          1034                          |
 
 ### SAC
 
@@ -140,7 +140,7 @@ Combination of SAC and TD3
 
 <p></p>
 
-Although [vitchyr/rlkit](https://github.com/vitchyr/rlkit) has SAC and Twin SAC, which are state-of-the-art methods in robotic control, it unfortunately does not include PPO, the standard baseline policy gradient algorithm. We found [ikostrikov/pytorch-a2c-ppo-acktr](https://github.com/ikostrikov/pytorch-a2c-ppo-acktr) to be the best implementation of PPO, allowing us to run code almost immediately after cloning the repository. We gave bonus points to this repository because it also included some pretrained models.
+Although [vitchyr/rlkit](https://github.com/vitchyr/rlkit) has SAC and Twin SAC, which are state-of-the-art methods in robotic control, it unfortunately does not include PPO, the standard baseline policy gradient algorithm. We found [ikostrikov/pytorch-a2c-ppo-acktr](https://github.com/ikostrikov/pytorch-a2c-ppo-acktr) and [ShangtongZhang/DeepRL](https://github.com/ShangtongZhang/DeepRL) to be the best implementation of PPO, allowing us to run code almost immediately after cloning the repository. We gave bonus points to this repository because it also included some pretrained models.
 
 **Verdict: [ikostrikov/pytorch-a2c-ppo-acktr](https://github.com/ikostrikov/pytorch-a2c-ppo-acktr)**
 
@@ -154,12 +154,12 @@ Deep Deterministic Policy Gradient
 
 [[arXiv Paper]](https://arxiv.org/abs/1509.02971)
 
-|                       | [**rlkit**](https://github.com/vitchyr/rlkit) | [**pytorch-ddpg-naf**](https://github.com/ikostrikov/pytorch-ddpg-naf) | [**RL-Adventure-2**](https://github.com/higgsfield/RL-Adventure-2) |   [**vel**](https://github.com/MillionIntegrals/vel)    |
-| --------------------- | :-------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :-----------------------------------------------------: |
-| **Author**            |     [vitchyr](https://github.com/vitchyr)     |         [ikostrikov](https://github.com/ikostrikov)          |         [higgsfield](https://github.com/higgsfield/)         | [MillionIntegrals](https://github.com/MillionIntegrals) |
-| **Version**           |                      0.4                      | [0.4](https://github.com/ikostrikov/pytorch-ddpg-naf/commit/6215d4c6472075a437c432d1c1d894aa19797c17) |                             0.4                              |                          0.4.1                          |
-| **Pretrained Models** |                       ✘                       |                              ✘                               |                              ✘                               |                            ✘                            |
-| **Stars**             |                      491                      |                             136                              |                             1521                             |                           194                           |
+|                       | [**rlkit**](https://github.com/vitchyr/rlkit) | [**pytorch-ddpg-naf**](https://github.com/ikostrikov/pytorch-ddpg-naf) | [**RL-Adventure-2**](https://github.com/higgsfield/RL-Adventure-2) |   [**vel**](https://github.com/MillionIntegrals/vel)    | [**DeepRL**](https://github.com/ShangtongZhang/DeepRL) |
+| --------------------- | :-------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :-----------------------------------------------------: | :----------------------------------------------------: |
+| **Author**            |     [vitchyr](https://github.com/vitchyr)     |         [ikostrikov](https://github.com/ikostrikov)          |         [higgsfield](https://github.com/higgsfield/)         | [MillionIntegrals](https://github.com/MillionIntegrals) |  [ShangtongZhang](https://github.com/ShangtongZhang)   |
+| **Version**           |                      0.4                      | [0.4](https://github.com/ikostrikov/pytorch-ddpg-naf/commit/6215d4c6472075a437c432d1c1d894aa19797c17) |                             0.4                              |                          0.4.1                          |                         0.4.0                          |
+| **Pretrained Models** |                       ✘                       |                              ✘                               |                              ✘                               |                            ✘                            |                           ✘                            |
+| **Stars**             |                      491                      |                             136                              |                             1521                             |                           194                           |                          1034                          |
 
 ### TD3
 
@@ -207,6 +207,7 @@ For Deterministic Policy Gradient methods, [vitchyr/rlkit](https://github.com/vi
 - [Kaixhin/ACER](https://github.com/Kaixhin/ACER)
 - [higgsfield/RL-Adventure-2](https://github.com/higgsfield/RL-Adventure-2)
 - [MillionIntegrals/vel](https://github.com/MillionIntegrals/vel)
+- [ShangtongZhang/DeepRL](https://github.com/ShangtongZhang/DeepRL) (Added 2018/12/29)
 
 
 
