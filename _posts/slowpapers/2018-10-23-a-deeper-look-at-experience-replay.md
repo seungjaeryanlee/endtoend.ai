@@ -7,8 +7,8 @@ tags:
  - reinforcement-learning
  - slowpapers
 
-front_image: /assets/blog/slowpapers/a-deeper-look-at-experience-replay/front.png
-meta_image: /assets/blog/slowpapers/a-deeper-look-at-experience-replay/front.png
+front_image: /papers/covers/a-deeper-look-at-experience-replay.png
+meta_image: /papers/covers/a-deeper-look-at-experience-replay.png
 front_image_type: contain
 front_text: >
     Recently experience replay is widely used in various deep reinforcement learning (RL) algorithms, in this paper we rethink the utility of experience replay. It introduces a new hyper-parameter, the memory buffer size, which needs carefully tuning. However unfortunately the importance of this new hyper-parameter has been underestimated in the community for a long time. In this paper we did a systematic empirical study of experience replay under various function representations. We showcase that a large replay buffer can significantly hurt the performance. Moreover, we propose a simple O(1) method to remedy the negative influence of a large replay buffer. We showcase its utility in both simple grid world and challenging domains like Atari games.
@@ -32,13 +32,11 @@ nav:
 
 ---
 
-![Abstract]({{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/front.png)
-
 **Title**: A Deeper Look at Experience Replay
 
 **Authors**
 <div>
-<ul class="slowpapers__authors">
+<ul class="slowpaper__authors">
   <li><a href="https://shangtongzhang.github.io/">Shangtong Zhang</a>, Graduate student at University of Oxford</li>
   <li><a href="http://www.incompleteideas.net/">Richard S. Sutton</a>, Professor at University of Alberta</li>
 </ul>
@@ -55,13 +53,16 @@ nav:
  - *Hindsight Experience Replay* (Andrychowicz et al., 2017) [[Arxiv]](https://arxiv.org/abs/1707.01495) [[PDF]]({{absolute_url}}/papers/hindsight-experience-replay.pdf)
  - *The Effects of Memory Replay in Reinforcement Learning* (Liu and Zou, 2017) [[Arxiv]](https://arxiv.org/abs/1710.06574) [[PDF]]({{absolute_url}}/papers/the-effects-of-memory-replay-in-reinforcement-learning.pdf)
  - *Time Limits in Reinforcement Learning* (Pardo et al., 2017) [[Arxiv]](https://arxiv.org/abs/1712.00378) [[PDF]]({{absolute_url}}/papers/time-limits-in-reinforcement-learning.pdf)
-<hr/>
 
-*This is a part of the [**Slow Papers**](/slowpapers) series that peruses each selected paper slowly to gain a deeper understanding of the paper.*
+## Summary
 
+ - Experience Replay is the only technique except parallelized workers that allows for uncorrelated data, and thus it has been used in many state-of-the-art algorithms.
+ - Although most research has used the default size of $10^6$ for the replay buffer, Experience Replay is sensitive to replay buffer size, with huge performance drops for buffers too small or too large.
+ - The performance drop of large replay buffer can sometimes be mitigated with **Combined Experience Replay (CER)**, experience replay combined with online learning.
+ - CER is only a workaround, and the Experience Replay is inherently flawed.
 
-<hr/>
-
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/slides/paper/a_deeper_look_at_experience_replay.pdf">
+Slides</a>
 
 ## 1 Introduction
 

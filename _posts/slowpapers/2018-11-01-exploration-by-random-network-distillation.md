@@ -7,8 +7,8 @@ tags:
  - reinforcement-learning
  - slowpapers
 
-front_image: /assets/blog/slowpapers/exploration-by-random-network-distillation/front.png
-meta_image: /assets/blog/slowpapers/exploration-by-random-network-distillation/front.png
+front_image: /papers/covers/exploration-by-random-network-distillation.png
+meta_image: /papers/covers/exploration-by-random-network-distillation.png
 front_image_type: contain
 front_text: >
     We introduce an exploration bonus for deep reinforcement learning methods that is easy to implement and adds minimal overhead to the computation performed. The bonus is the error of a neural network predicting features of the observations given by a fixed randomly initialized neural network. We also introduce a method to flexibly combine intrinsic and extrinsic rewards. We find that the random network distillation (RND) bonus combined with this increased flexibility enables significant progress on several hard exploration Atari games. In particular we establish state of the art performance on Montezuma's Revenge, a game famously difficult for deep reinforcement learning methods. To the best of our knowledge, this is the first method that achieves better than average human performance on this game without using demonstrations or having access the underlying state of the game, and occasionally completes the first level. This suggests that relatively simple methods that scale well can be sufficient to tackle challenging exploration problems.
@@ -35,7 +35,7 @@ nav:
 **Authors**
 
 <div>
-<ul class="slowpapers__authors">
+<ul class="slowpaper__authors">
   <li>Yuri Burda</li>
   <li>Harrison Edwards</li>
   <li>Amos Storkey</li>
@@ -55,8 +55,6 @@ nav:
 * *Large-Scale Study of Curiosity-Driven Learning* (Burda et al., 2018) [[Arxiv]](https://arxiv.org/abs/1808.04355) [[Paper]]({{absolute_url}}/papers/large-scale-study-of-curiosity-driven-learning.pdf)
 
 <hr/>
-
-This is a part of the [**Slow Papers**](/slowpapers) series that peruses each selected paper slowly to gain a deeper understanding of the paper.
 
 This review was first presented the reading group of Reinforcement Learning Intelligence (RLI). Thank you to the members for helpful feedback.
 

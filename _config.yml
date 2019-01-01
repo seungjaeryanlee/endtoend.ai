@@ -43,13 +43,19 @@ front_page_links:
     description: >
       Get the highlights of reinforcement learning in both research and industry
       every week.
-  - name: "CTRL: Current Topics in RL"
-    url: "/ctrl/"
+  # - name: "CTRL: Current Topics in RL"
+  #   url: "/ctrl/"
+  #   image: "/assets/home/ctrl.png"
+  #   image_type: contain
+  #   description: >
+  #     Read summaries of new papers in Reinforcement Learning, ranging from
+  #     theoretical studies to experiments.
+  - name: "Slow Papers"
+    url: "/tags/slowpapers/"
     image: "/assets/home/ctrl.png"
     image_type: contain
     description: >
-      Read summaries of new papers in Reinforcement Learning, ranging from
-      theoretical studies to experiments.
+      Read summaries of seminal papers, ranging from theoretical studies to experiments.
   - name: Resources
     url: "/resources"
     image: "/assets/home/resources.png"

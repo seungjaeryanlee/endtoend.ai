@@ -15,3 +15,5 @@ This is a collection of resources I have created to help others. Enjoy!
 [Atari Environments](/envs/gym/atari)
 
 [MuJoCo Environments](/envs/gym/mujoco)
+
+[Current Topics in RL](/ctrl)
