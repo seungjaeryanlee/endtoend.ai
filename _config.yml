@@ -29,11 +29,11 @@ plugins:
  - jekyll-redirect-from
 
 featured_page:
-  link: /rl-weekly/2
-  title: "RL Weekly - Issue #2"
-  supporting_text: "In this issue, we discuss hyperparameter tuning for AlphaGo from DeepMind, Hierarchical RL model for a MOBA game from Tencent, and GAN-based Sim-to-Real algorithm from X, Google Brain, and DeepMind."
-  image_url: /assets/blog/rl-weekly/2/s2r_via_s2s.png
-  cover_or_contain: contain
+  link: /rl-weekly/3
+  title: "RL Weekly - Issue #3"
+  supporting_text: "In this issue, we introduce the DeepTraffic competition from Lex Fridman's MIT Deep Learning for Self-Driving Cars course. We also review a new paper on using SAC to control a four-legged robot, and introduce a website summarizing progress in sim-to-real algorithms."
+  image_url: /assets/blog/rl-weekly/3/deeptraffic.png
+  cover_or_contain: cover
 
 front_page_links:
   - name: "RL Weekly"
