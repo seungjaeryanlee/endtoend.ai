@@ -7,11 +7,13 @@
 #papers {
 
     .paper {
-        padding-top: calc(29.41% - 60px);
+        padding-top: calc(29.41%);
 
         .paper__info {
             padding: 12px;
             background: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            bottom: 0;
 
             .paper__info__title,
             .paper__info__spacer,
