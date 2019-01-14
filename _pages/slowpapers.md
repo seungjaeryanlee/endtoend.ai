@@ -6,6 +6,10 @@ redirect_from:
  - /slowpapers/
 
 papers:
+  # - title: Leveraging Demonstrations for Deep Reinforcement Learning on Robotics Problems with Sparse Rewards
+  #   authors: Vecerik et al. (2017)
+  #   url: /slowpapers/leveraging-demonstrations-for-deep-reinforcement-learning-on-robotics-problems-with-sparse-rewards/
+  #   image_url: /papers/covers/leveraging-demonstrations-for-deep-reinforcement-learning-on-robotics-problems-with-sparse-rewards.png
   - title: Exploration by Random Network Distillation
     authors: Burda et al. (2018)
     url: /slowpapers/exploration-by-random-network-distillation/
