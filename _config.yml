@@ -30,9 +30,9 @@ plugins:
 
 featured_page:
   link: /rl-weekly/4
-  title: "RL Weekly - Issue #4"
-  supporting_text: "In this issue, we introduce new curriculum learning algorithm by Uber AI Labs, model-free planning algorithm by DeepMind, and optical-flow based control algorithm by Intel Labs and University of Freiburg."
-  image_url: /assets/blog/rl-weekly/4/es_vs_poet.png
+  title: "RL Weekly - Issue #5"
+  supporting_text: "This week, we look at impressive robust control of legged robots by ETH Zurich and Intel, compiler phase-ordering by UC Berkeley and MIT, and a partial implementation of Uber's Go Explore."
+  image_url: /assets/blog/rl-weekly/5/legged_robot_summary.jpg
   cover_or_contain: contain
 
 front_page_links:
