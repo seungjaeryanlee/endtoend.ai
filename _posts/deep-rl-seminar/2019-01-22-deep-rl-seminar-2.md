@@ -25,6 +25,17 @@ nav:
   permalink: '#dueling-network-architectures-for-deep-reinforcement-learning'
 ---
 
+## Table of Contents
+
+- [**Deep Reinforcement Learning with Double Q-learning (Double DQN)**](#deep-reinforcement-learning-with-double-q-learning)
+   - [Q1. Why must states -6 and 6 always be included to avoid extrapolation?](#q1-why-must-states--6-and-6-always-be-included-to-avoid-extrapolation)
+- [**Prioritized Experience Replay (PER)**](#prioritized-experience-replay)
+   - [Q1. Why do the authors mention the power-law distribution while explaining the rank-based variant?](#q1-why-do-the-authors-mention-the-power-law-distribution-while-explaining-the-rank-based-variant)
+   - [Q2. How does the Sum-Tree implementation work for proportional-based variant?](#q2-how-does-the-sum-tree-implementation-work-for-proportional-based-variant)
+- [**Dueling Network Architectures for Deep Reinforcement Learning (Dueling DQN)**](#dueling-network-architectures-for-deep-reinforcement-learning)
+   - [Q1. What is gradient clipping?](#q1-what-is-gradient-clipping)
+   - [Q2. Why is the naive aggregation module $Q = V + A$ unidentifiable?](#q2-why-is-the-naive-aggregation-module-q--v--a-unidentifiable)
+
 <style type="text/css">
    h2 {
       margin-bottom: 0 !important;
