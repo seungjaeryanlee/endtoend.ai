@@ -29,10 +29,10 @@ plugins:
  - jekyll-redirect-from
 
 featured_page:
-  link: /rl-weekly/5
-  title: "RL Weekly - Issue #5"
-  supporting_text: "This week, we look at impressive robust control of legged robots by ETH Zurich and Intel, compiler phase-ordering by UC Berkeley and MIT, and a partial implementation of Uber's Go Explore."
-  image_url: /assets/blog/rl-weekly/5/legged_robot_summary.jpg
+  link: /deep-rl-seminar/2
+  title: "Deep RL Seminar: Week 2"
+  supporting_text: "This week, we reviewed various improvements made to the Deep Q-Network algorithm."
+  image_url: /assets/blog/deep-rl-seminar/2/rainbow.png
   cover_or_contain: contain
 
 front_page_links:
