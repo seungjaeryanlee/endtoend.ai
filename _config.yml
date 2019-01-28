@@ -29,10 +29,15 @@ plugins:
  - jekyll-redirect-from
 
 featured_page:
-  link: /deep-rl-seminar/2
-  title: "Deep RL Seminar: Week 2"
-  supporting_text: "This week, we reviewed various improvements made to the Deep Q-Network algorithm."
-  image_url: /assets/blog/deep-rl-seminar/2/rainbow.png
+  # link: /deep-rl-seminar/2
+  # title: "Deep RL Seminar: Week 2"
+  # supporting_text: "This week, we reviewed various improvements made to the Deep Q-Network algorithm."
+  # image_url: /assets/blog/deep-rl-seminar/2/rainbow.png
+  # cover_or_contain: contain
+  link: /rl-weekly/6
+  title: "RL Weekly Week 6"
+  supporting_text: "This week, we look at AlphaStar, a Starcraft II AI, PSRO_rN, an algorithm encouraging diverse population of agents, and a novel Meta-RL approach for causal reasoning. All three results are from DeepMind."
+  image_url: /assets/blog/rl-weekly/6/alphastar.png
   cover_or_contain: contain
 
 front_page_links:
