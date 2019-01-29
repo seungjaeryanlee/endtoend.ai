@@ -8,7 +8,7 @@ details: true
 ---
 
 <div class="w80" style="margin: 10px auto;">
-  <img src="{{ absolute_url }}/assets/blog/obstacle-tower/2/banner.jpg" alt="Obstacle Tower Challenge banner">
+  <img src="{{ absolute_url }}/assets/blog/obstacle-tower/1/banner.jpg" alt="Obstacle Tower Challenge banner">
 </div>
 
 [Unity announced the Obstacle Tower Challenge](https://blogs.unity3d.com/2019/01/28/obstacle-tower-challenge-test-the-limits-of-intelligence-systems/), where the participants must train an agent for the Obstacle Tower. 

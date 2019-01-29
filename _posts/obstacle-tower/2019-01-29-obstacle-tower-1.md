@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Obstacle Tower 2: Installing the Environment"
+title: "Obstacle Tower 1: Installing the Environment"
 author: Seungjae Ryan Lee
-permalink: /obstacle-tower/2
+permalink: /obstacle-tower/1
 tags:
  - reinforcement-learning
  - obstacle-tower
  - competition
 
-front_image: /assets/blog/obstacle-tower/2/front.jpg
-meta_image: /assets/blog/obstacle-tower/2/front.jpg
+front_image: /assets/blog/obstacle-tower/1/front.jpg
+meta_image: /assets/blog/obstacle-tower/1/front.jpg
 front_image_type: cover
 front_text: >
    Unity introduced the Obstacle Tower Challenge, a new reinforcement learning contest with a difficult environment. In this post, we guide the readers on installing the environment on Linux using conda.
@@ -34,7 +34,7 @@ nav:
 [Unity announced the launch of Obstacle Tower Challenge](https://blogs.unity3d.com/2019/01/28/obstacle-tower-challenge-test-the-limits-of-intelligence-systems/) today. The challenge tests "the vision, control, planning, and generalization abilities of AI agents." Although the competition begins on February 11th, and details have not yet been revealed, the environment has. This post shows how to install the Obstacle Challenge Environment on Linux machines.
 
 <div class="w80" style="margin: 10px auto;">
-  <img src="{{ absolute_url }}/assets/blog/obstacle-tower/2/banner.jpg" alt="Obstacle Tower Challenge banner">
+  <img src="{{ absolute_url }}/assets/blog/obstacle-tower/1/banner.jpg" alt="Obstacle Tower Challenge banner">
 </div>
 
 ## Setup Conda Environment
@@ -58,7 +58,7 @@ If the output is of format `/home/[USER]/anaconda3/envs/tower/bin/pip`, the envi
 ## Install ML-Agents v0.6.0
 
 <div class="w50" style="margin: 10px auto;">
-  <img src="{{ absolute_url }}/assets/blog/obstacle-tower/2/ml_agents.jpg" alt="Unity ML Agents">
+  <img src="{{ absolute_url }}/assets/blog/obstacle-tower/1/ml_agents.jpg" alt="Unity ML Agents">
 </div>
 
 First, clone the ML-Agents repository.
