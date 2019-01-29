@@ -131,4 +131,6 @@ Navigate and open `examples/basic_usage.ipynb`, and you should be able to reprod
 
 ## What's Next?
 
-There are still two months before the Obstacle Tower Challenge, but that does not mean there is nothing to do! Unity also released [a paper about the environment](https://storage.googleapis.com/obstacle-tower-build/Obstacle_Tower_Paper_Final.pdf), which is definitely worth a read. In our next post of this series, we will take a close look at the paper to understand the environment better.
+There are still two months before the Obstacle Tower Challenge, but that does not mean there is nothing to do! In our next post, we will take a look at the environment to understand what the agent is expected to do. Unity also released [a paper about the environment](https://storage.googleapis.com/obstacle-tower-build/Obstacle_Tower_Paper_Final.pdf), which is definitely worth a read. We will take a close look at the paper to understand the environment better.
+
+Afterwards, we will survey state of the art papers and open source code on reinforcement learning. We expect papers from various subfields of reinforcement learning, especially curiosity and model-based reinforcement learning.
