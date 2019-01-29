@@ -7,6 +7,33 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   {% if page.meta_image %}<meta name="image" content="{{ page.meta_image | prepend: site.base_url | prepend: site.url }}">{% endif %}
 
+  <!-- Twitter Cards -->
+  <meta name="twitter:site"    content="@{{ site.twitter_username }}">
+  <meta name="twitter:creator" content="@{{ site.twitter_username }}">
+
+  <meta name="twitter:url"   content="{{ page.url }}">
+  <meta name="og:url"   content="{{ page.url }}">
+
+  <meta name="twitter:title"   content="{{ page.title }}">
+  <meta name="og:title"   content="{{ page.title }}">
+  {% if page.excerpt %}
+  <meta name="twitter:description" content="{{ page.excerpt }}">
+  <meta name="og:description" content="{{ page.excerpt }}">
+  {% else %}
+  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="og:description" content="{{ page.excerpt }}">
+  {% endif %}
+  
+  {% if page.meta_image %}
+  <meta name="twitter:card"  content="summary_large_image">
+  <meta name="twitter:image" content="{{ page.meta_image | prepend: site.baseurl | prepend: site.url }}">
+  <meta name="og:image" content="{{ page.meta_image | prepend: site.baseurl | prepend: site.url }}">
+  {% else %}
+  <meta name="twitter:card"  content="summary">
+  <meta name="twitter:image" content="{{ site.title_image | prepend: site.baseurl | prepend: site.url }}">
+  <meta name="og:image" content="{{ site.title_image | prepend: site.baseurl | prepend: site.url }}">
+  {% endif %}
+
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
