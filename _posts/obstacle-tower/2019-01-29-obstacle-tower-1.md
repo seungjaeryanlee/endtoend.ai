@@ -115,9 +115,9 @@ For additional details, [check the official installation guide](https://github.c
 | Mac OS X       | [https://storage.googleapis.com/obstacle-tower-build/v1/obstacletower_v1_osx.zip](https://storage.googleapis.com/obstacle-tower-build/v1/obstacletower_v1_osx.zip)     |
 | Windows        | [https://storage.googleapis.com/obstacle-tower-build/v1/obstacletower_v1_windows.zip](https://storage.googleapis.com/obstacle-tower-build/v1/obstacletower_v1_windows.zip) |
 
-Create a new directory called `examples/ObstacleTower/`, download and unzip the content of `obstacletower_v1_linux.zip` there. The directory `examples/ObstacleTower` should now contain the `obstacletower_Data/` directory and `obstacletower` executable file.
+Download and unzip the content of `obstacletower_v1_linux.zip` to `examples/`. (We unzip it here since we will test our installation with a Jupyter notebook inside, but in general there is no restriction on the location of the environment.)
 
-**Rename `obstacletower` to `obstacletower.x86_64`. The reason for this is documented [here](https://github.com/Unity-Technologies/obstacle-tower-env/issues/14).**
+**If your zip file contains a file named `obstacletower` instead of  `obstacletower.x86_64`, redownload the zip file. For more information, [check this issue](https://github.com/Unity-Technologies/obstacle-tower-env/issues/14).**
 
 ## Test Installation on Jupyter Notebook
 
