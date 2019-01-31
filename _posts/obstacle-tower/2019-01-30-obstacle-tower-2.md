@@ -212,7 +212,7 @@ Next floor doors have yellow arrow symbols, and can be opened simply by touching
     <img src="{{absolute_url}}/assets/blog/obstacle-tower/2/objects/time_orb_1.png">
   </div>
   <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--12-col-phone mdl-cell--hide-phone">
-    <img src="{{absolute_url}}/assets/blog/obstacle-tower/2/objects/time_orb_1.png">
+    <img src="{{absolute_url}}/assets/blog/obstacle-tower/2/objects/time_orb_2.png">
   </div>
   <div class="mdl-layout-spacer"></div>
 </div>
