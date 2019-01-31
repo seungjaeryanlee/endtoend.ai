@@ -6,11 +6,7 @@ layout: default
     {% for post in site.posts %}
       <a class="post-container" href="{{ post.url | prepend: site.baseurl }}">
         <div class="post section-highlight section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" style="width: auto;">
-          {% if post.front_image_type == 'contain' %}
-            <header class="post__image section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone" style="background: url('{{ post.front_image }}') center no-repeat white; background-size: contain;"></header>
-          {% else %}
-            <header class="post__image section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone" style="background: url('{{ post.front_image }}') center no-repeat white; background-size: cover;"></header>
-          {% endif %}
+          <header class="post__image section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone" style="background: url('{{ post.front_image }}') {{ post.front_image_align | default: 'center' }} no-repeat white; background-size: {{ post.front_image_type | default: 'cover' }};"></header>
           <div class="post__summary mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
             <div class="mdl-card__supporting-text">
               <h4 class="post__summary__title">{{ post.title }}</h4>

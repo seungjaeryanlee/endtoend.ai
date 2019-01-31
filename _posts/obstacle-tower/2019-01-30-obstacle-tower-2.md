@@ -8,9 +8,10 @@ tags:
  - obstacle-tower
  - competition
 
-front_image: /assets/blog/obstacle-tower/2/floors/floor2.png
-meta_image: /assets/blog/obstacle-tower/2/floors/floor2.png
+front_image: /assets/blog/obstacle-tower/2/front.png
+meta_image: /assets/blog/obstacle-tower/2/front.png
 front_image_type: cover
+front_image_align: right
 front_text: >
     We play the Obstacle Tower game to understand the qualities of a successful agent.
 excerpt: >
