@@ -30,6 +30,10 @@ nav:
   permalink: '#sokoban-puzzle'
 - name: "Misc."
   permalink: '#miscellaneous'
+- name: "Conclusion"
+  permalink: '#conclusion'
+- name: "What's Next?"
+  permalink: '#whats-next'
 ---
 
 [In the last post](/obstacle-tower/1), we installed the *Obstacle Tower* environment locally and verified that it was installed correctly. In this post, we will take a look at the game itself. It is crucial to understand the environment well to debug and improve the agents' performance.
@@ -280,7 +284,7 @@ On the left, we see a key on a cylindrical block. To complete the episode, the k
 
 On the right, we see a map with pits. Falling into a pit results in an episode termination, so the player must move around or jump across the pits.
 
----
+## Conclusion
 
 After playing the game for just 5-10 minutes, I came up with many ideas that could dramatically reduce the training time of the agent. I highly recommend others also interested in this environment to play the game themselves.
 
@@ -289,3 +293,7 @@ From my playthrough, a few things became clear to me:
 - Not all 54 actions are needed.
 - Extracting features from raw visual input would be harder than Montezuma's Revenge for CNNs.
 - Distilling game knowledge is essential. (ex. Hierarchical Reinforcement Learning)
+
+## What's Next?
+
+Now that I played the game myself, I should now check how the agent would see and play the game. In the next post, I will check the observation space and the action space of the agent. Afterwards, I will run a simple baseline agent and discuss possible improvements to this baseline agents, listing some noteworthy papers.
