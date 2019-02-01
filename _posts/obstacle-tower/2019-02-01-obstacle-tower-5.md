@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: "Obstacle Tower 5: Possible Improvements to the Baselines"
 author: Seungjae Ryan Lee
@@ -19,8 +18,36 @@ excerpt: >
     We play the Obstacle Tower game to understand the qualities of a successful agent.
 
 nav:
-- name: "Run Game"
-  permalink: '#how-to-run-game'
+- name: "Hierarchy"
+  permalink: '#hierarchy'
+- name: "- FuN"
+  permalink: '#fun'
+- name: "- HIRO"
+  permalink: '#hiro'
+- name: "Intrinsic Motivation"
+  permalink: '#intrinsic-motivation'
+- name: "- ICM"
+  permalink: '#icm'
+- name: "- RND"
+  permalink: '#rnd'
+- name: "- CTS"
+  permalink: '#cts'
+- name: "- PixelCNN"
+  permalink: '#pixelcnn'
+- name: "- Empowerment"
+  permalink: '#empowerment'
+- name: "Meta-Learning"
+  permalink: '#meta-learning'
+- name: "- MAML"
+  permalink: '#maml'
+- name: "- RL^2"
+  permalink: '#rl2'
+- name: "Model Learning"
+  permalink: '#model-learning'
+- name: "- I2A"
+  permalink: '#i2a'
+- name: "- World Model"
+  permalink: '#world-model'
 ---
 
 <style type="text/css">
@@ -35,7 +62,7 @@ nav:
    }
 </style>
 
-**NOTE. Posts 3 and 4 will also be published soon.**
+**NOTE. This stub post is for my lab teammates. It will be populated after posts 3 and 4 is published.**
 
 The Unity team used Rainbow and PPO agents to test their environments. Although they did not perform any hyperparameter tuning, the team made it clear that neither vanilla Rainbow nor vanilla PPO can solve the 25-floor environment.
 
