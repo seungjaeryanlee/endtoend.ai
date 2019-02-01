@@ -1,5 +1,5 @@
 ---
-layout: slowpapers
+layout: papers
 title: "Slow Papers"
 permalink: /tags/slowpapers/
 redirect_from:
@@ -24,4 +24,4 @@ papers:
     image_url: /papers/covers/neural-fitted-q-iteration.png
 ---
 
-**Slow Papers** is a series of posts that summarize important papers in machine learning and deep learning. With Slow Papers, you will be able to gain a fundamental understanding of the papers behind important theoretical and practical results in machine learning and deep learning.
+**Slow Papers** is a series of posts that explain important papers in machine learning and deep learning. With Slow Papers, you will be able to gain a deep understanding of the papers behind important theoretical and practical results in machine learning and deep learning.

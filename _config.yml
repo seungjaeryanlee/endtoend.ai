@@ -59,10 +59,16 @@ front_page_links:
   #     theoretical studies to experiments.
   - name: "Slow Papers"
     url: "/tags/slowpapers/"
-    image: "/assets/home/ctrl.png"
+    image: "/assets/home/microscope.png"
     image_type: contain
     description: >
-      Read summaries of seminal papers, ranging from theoretical studies to experiments.
+      Read extended explanations of seminal papers.
+  # - name: "Fast Papers"
+  #   url: "/tags/fastpapers/"
+  #   image: "/assets/home/ctrl.png"
+  #   image_type: contain
+  #   description: >
+  #     Read summaries of key ideas from a wide variety of papers.
   - name: Resources
     url: "/resources"
     image: "/assets/home/resources.png"
