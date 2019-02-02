@@ -37,7 +37,7 @@ Annotations
 <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/fastpapers/obstacle-tower">
 Fast Paper Post
 </a>
-<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/tag/obstacle-tower">
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/tags/obstacle-tower">
 Obstacle Tower Series
 </a>
 
