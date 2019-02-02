@@ -63,19 +63,19 @@ front_page_links:
     image_type: contain
     description: >
       Read extended explanations of seminal papers.
-  # - name: "Fast Papers"
-  #   url: "/tags/fastpapers/"
-  #   image: "/assets/home/ctrl.png"
-  #   image_type: contain
-  #   description: >
-  #     Read summaries of key ideas from a wide variety of papers.
-  - name: Resources
-    url: "/resources"
-    image: "/assets/home/resources.png"
+  - name: "Fast Papers"
+    url: "/tags/fastpapers/"
+    image: "/assets/home/ctrl.png"
     image_type: contain
     description: >
-      Presentation slides, snipplets of code, and other useful resources for
-      studying reinforcement learning.
+      Read summaries of key ideas from a wide variety of papers.
+  # - name: Resources
+  #   url: "/resources"
+  #   image: "/assets/home/resources.png"
+  #   image_type: contain
+  #   description: >
+  #     Presentation slides, snipplets of code, and other useful resources for
+  #     studying reinforcement learning.
   - name: "Blog"
     url: "/blog/"
     image: "/assets/home/blog.png"
