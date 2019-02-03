@@ -6,6 +6,10 @@ redirect_from:
  - /fastpapers/
 
 papers:
+  - title: "Neural Episodic Control"
+    authors: Pritzel et al., 2017
+    url: /fastpapers/1703.01988
+    image_url: /annotations/covers/1703.01988.png
   - title: "The Obstacle Tower: A Generalization Challenge in Vision, Control, and Planning"
     authors: Juliani et al., 2019
     url: /fastpapers/obstacle-tower
