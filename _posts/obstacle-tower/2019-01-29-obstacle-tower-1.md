@@ -65,7 +65,7 @@ First, clone the ML-Agents repository.
 
 ```
 git clone https://github.com/Unity-Technologies/ml-agents.git
-cd ml-agents/
+cd ml-agents/ml-agents/
 ```
 
 Navigate to `ml-agents/` directory and install the package using `setup.py`.
