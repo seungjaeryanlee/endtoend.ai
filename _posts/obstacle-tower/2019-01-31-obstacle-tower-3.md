@@ -26,6 +26,11 @@ nav:
   permalink: '#retro-mode'
 - name: "What's Next?"
   permalink: '#whats-next'
+
+custom-js:
+- "/assets/scripts/jquery-3.3.1.min.js"
+- "/assets/scripts/action_interpreter.js"
+
 ---
 
 [In the last post](/obstacle-tower/2), we played the game ourselves and got a better understanding of the environment, as well as some insight on how a "good" agent might behave. Today, we will now check how the agent observes and acts inside this environment.
@@ -62,13 +67,52 @@ The auxiliary part is a vector that consists of two numbers: the number of keys 
 The action space of the Obstacle Tower consists of four "subspaces" (components):
 
 1. Moving forward or backward (or no-op)
-2. Moving left or right (or no-op)
-3. Turning camera counterclockwise or clockwise (or no-op)
-4. Jumping (or no-op)
+2. Turning camera counterclockwise or clockwise (or no-op)
+3. Jumping (or no-op)
+4. Moving left or right (or no-op)
 
-These subactions from subspaces can be combined in any way: for example, you can jump forward while turning the camera counterclockwise. In total, there are $3 \times 3 \times 3 \times 2 = 54$ combinations available.
+These subactions from subspaces can be combined in any way: for example, you can turn camera clockwise while jumping left. In total, there are $3 \times 3 \times 2 \times 3 = 54$ combinations available.
 
 Note that "forward", "backward", "left", "right" are all relative to the player's camera.
+
+For convenience, here is a simple Action Interpreter widget, with style borrowed from [crontab.guru](https://crontab.guru/):
+
+<style>
+  #action-interpreter-div {
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  #action-interpretation {
+    text-align: center;
+    font-size: 200%;
+    font-family: Georgia, serif;
+    min-height: 2.2em;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 0.5em;
+  }
+  #action-interpreter {
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    font-size: 250%;
+    width: 100%;
+    background-color: #333333;
+    border: 1px solid #cccccc;
+    border-radius: 0.6em;
+    color: #ffffff;
+    padding-top: 0.075rem;
+  }
+</style>
+<div id="action-interpreter-div">
+  <p id="action-interpretation">Do nothing.</p>
+  <input id="action-interpreter" type="text" value="0 0 0 0">
+</div>
 
 ## Retro Mode
 

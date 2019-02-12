@@ -76,6 +76,14 @@
   });
   </script>
 
+  {% for javascript in page.custom-js %}
+      <script src="{{ javascript }}"></script>
+  {% endfor %}
+
+  {% for css in page.custom-css %}
+    <link href="{{ css }}" rel="stylesheet">
+  {% endfor %}
+
   <!-- Material Design Lite css Library -->
   <!-- <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"> -->
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css" />
