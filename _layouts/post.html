@@ -19,6 +19,25 @@ layout: default
       <article class="post-content">
         {{ content }}
       </article>
+
+      <!-- Related Posts -->
+      {% if page.related %}
+        {% if page.related.size > 1 %}
+          <h3>Related Posts</h3>
+        {% else %}
+          <h3>Related Post</h3>
+        {% endif %}
+        <div id="related_posts" class="mdl-grid">
+          {% for related_post in page.related %}
+            <a href="{{ related_post.link }}" class="related_post mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col" style="background: url('{{ related_post.image }}') center no-repeat; background-size: {{ related_post.image_type }};">
+              <div class="related_post__info">
+                <span class="related_post__info__title">{{ related_post.title }}</span>
+              </div>
+            </a>
+          {% endfor %}
+        </div>
+      {% endif %}
+
       <!-- Disqus comments -->
       {% if site.disqus %}
       <div>

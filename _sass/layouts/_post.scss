@@ -15,3 +15,23 @@
         background-color: darkgray;
     }
 }
+
+#related_posts {
+
+    .related_post {
+        padding-top: calc(29.41%);
+
+        .related_post__info {
+            padding: 12px;
+            background: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            bottom: 0;
+
+            .related_post__info__title {
+                color: #fff;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+}
