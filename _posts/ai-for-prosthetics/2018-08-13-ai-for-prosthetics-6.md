@@ -12,7 +12,7 @@ tags:
  - competition
 
 front_image: /assets/blog/ai-for-prosthetics-6/front.png
-front_text: >
+excerpt: >
     This week, we take a step back from the competition and study common
     techniques used in Reinforcement Learning.
 

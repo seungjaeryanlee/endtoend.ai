@@ -11,7 +11,7 @@ tags:
  - competition
 
 front_image: /assets/blog/ai-for-prosthetics-3/front.png
-front_text: >
+excerpt: >
     The observation can be roughly divided into five components: the body parts,
     the joints, the muscles, the forces, and the center of mass. For each body
     part component, the agent observes its position, velocity, acceleration,

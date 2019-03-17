@@ -6,7 +6,7 @@ permalink: /blog/my-surface-pro-setup/
 published: false
 
 front_image: /assets/blog/my-surface-pro-setup/front.jpg
-front_text: >
+excerpt: >
     Due to portability, Surface Pro has become my primary machine. Here are several programs I installed to make working in Windows more convenient.
 ---
 

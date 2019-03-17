@@ -9,7 +9,7 @@ tags:
  - machine-learning
 
 front_image: /assets/blog/effective-data-partition/front.png
-front_text: >
+excerpt: >
     To train a good model, you need lots of data. Luckily, over the last few 
     decades, collecting data has become much easier. However, there is little
     value to data if you use it incorrectly. Even if you double or triple the

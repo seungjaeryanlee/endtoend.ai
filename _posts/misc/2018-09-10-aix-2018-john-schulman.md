@@ -9,7 +9,7 @@ tags:
 
 front_image: /assets/blog/aix-2018-john-schulman/front.png
 front_image_type: contain
-front_text: >
+excerpt: >
    SK T-Brain hosted the ai.x Conference on September 6th at Seoul, South Korea.
    At this conference, John Schulman (OpenAI) spoke about faster reinforcement
    learning via transfer.

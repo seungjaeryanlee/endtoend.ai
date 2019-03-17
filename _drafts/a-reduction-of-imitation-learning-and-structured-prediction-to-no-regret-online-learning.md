@@ -7,7 +7,7 @@ published: false
 
 front_image: /assets/blog/slowpapers/a-reduction-of-imitation-learning-and-structured-prediction-to-no-regret-online-learning/front.png
 front_image_type: contain
-front_text: >
+excerpt: >
     This is a review of the paper <i>A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning</i> by S. Ross, G. Gordon, and J. Bagnell. The paper introduces Dataset Aggregation (DAgger), an imitation learning algorithm that trains a stationary deterministic policy. DAgger is shown to outperform previous approaches in *Super Tux Kart*, *Super Mario Bros.*, and Handwriting Recognition.
 ---
 

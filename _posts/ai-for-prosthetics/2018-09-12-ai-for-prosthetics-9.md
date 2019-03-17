@@ -11,7 +11,7 @@ tags:
  - competition
 
 front_image: /assets/blog/ai-for-prosthetics-6/front.png
-front_text: >
+excerpt: >
     We end the series by exploring possible unorthodox approaches for the
     competition. These are approaches that deviate from the popular policy
     gradient methods such as DDPG or PPO.

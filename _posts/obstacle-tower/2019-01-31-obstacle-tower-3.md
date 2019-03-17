@@ -12,8 +12,6 @@ front_image: /assets/blog/obstacle-tower/3/front.png
 meta_image: /assets/blog/obstacle-tower/3/front.png
 front_image_type: cover
 front_image_align: right
-front_text: >
-    We analyze the observation space and the action space provided by the Obstacle Tower environment.
 excerpt: >
     We analyze the observation space and the action space provided by the Obstacle Tower environment.
 

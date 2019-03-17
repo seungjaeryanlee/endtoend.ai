@@ -11,8 +11,6 @@ tags:
 front_image: /assets/blog/deep-rl-seminar/2/rainbow.png
 meta_image: /assets/blog/deep-rl-seminar/2/rainbow.png
 front_image_type: cover
-front_text: >
-   This week, we reviewed various improvements made to the Deep Q-Network algorithm.
 excerpt: >
    This week, we reviewed various improvements made to the Deep Q-Network algorithm.
 

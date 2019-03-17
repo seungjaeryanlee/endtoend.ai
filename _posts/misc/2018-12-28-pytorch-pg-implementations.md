@@ -10,7 +10,7 @@ tags:
 
 front_image: /assets/blog/pytorch-pg-implementations/front.png
 front_image_type: cover
-front_text: >
+excerpt: >
    A well-written baseline is crucial to research. We compare and recommend
    popular open source implementations of reinforcement learning algorithms in
    PyTorch.

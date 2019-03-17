@@ -8,7 +8,7 @@ tags:
  - competition
 
 front_image: /assets/blog/i-learned-dqns-with-openai-competition/front.png
-front_text: >
+excerpt: >
     On April, OpenAI held a two-month-long competition called the Retro Contest
     where participants had to develop an agent that can achieve perform well on
     unseen custom-made stages of Sonic the Hedgehog. The agents were limited to
