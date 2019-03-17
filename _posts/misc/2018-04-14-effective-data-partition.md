@@ -8,7 +8,7 @@ redirect_from:
 tags:
  - machine-learning
 
-front_image: /assets/blog/effective-data-partition/front.png
+image: /assets/blog/effective-data-partition/front.png
 excerpt: >
     To train a good model, you need lots of data. Luckily, over the last few 
     decades, collecting data has become much easier. However, there is little

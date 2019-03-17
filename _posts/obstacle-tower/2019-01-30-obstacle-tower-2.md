@@ -8,7 +8,6 @@ tags:
  - obstacle-tower
  - competition
 
-front_image: /assets/blog/obstacle-tower/2/front.png
 image: /assets/blog/obstacle-tower/2/front.png
 front_image_type: cover
 front_image_align: right

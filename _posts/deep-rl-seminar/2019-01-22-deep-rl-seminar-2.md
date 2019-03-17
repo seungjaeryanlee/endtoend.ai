@@ -8,7 +8,6 @@ tags:
  - reinforcement-learning
  - deep-rl-seminar
 
-front_image: /assets/blog/deep-rl-seminar/2/rainbow.png
 image: /assets/blog/deep-rl-seminar/2/rainbow.png
 front_image_type: cover
 excerpt: >

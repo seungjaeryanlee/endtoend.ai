@@ -10,7 +10,7 @@ tags:
  - ai-for-prosthetics
  - competition
 
-front_image: /assets/blog/ai-for-prosthetics-3/front.png
+image: /assets/blog/ai-for-prosthetics-3/front.png
 excerpt: >
     The observation can be roughly divided into five components: the body parts,
     the joints, the muscles, the forces, and the center of mass. For each body

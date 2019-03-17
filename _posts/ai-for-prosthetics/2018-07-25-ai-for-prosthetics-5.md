@@ -8,7 +8,7 @@ tags:
  - ai-for-prosthetics
  - competition
 
-front_image: /assets/blog/ai-for-prosthetics-5/front.png
+image: /assets/blog/ai-for-prosthetics-5/front.png
 excerpt: >
     The goal of reinforcement learning is defined by the reward signal - to
     maximize the cumulative reward throughout an episode. In some ways, the

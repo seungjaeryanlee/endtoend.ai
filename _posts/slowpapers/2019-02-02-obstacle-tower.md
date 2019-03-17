@@ -7,7 +7,6 @@ tags:
  - reinforcement-learning
  - slowpapers
 
-front_image: /papers/covers/obstacle-tower.png
 image: /papers/covers/obstacle-tower.png
 front_image_type: contain
 excerpt: >

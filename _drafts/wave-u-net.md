@@ -4,7 +4,6 @@ title: "Slow Papers: Wave-U-Net: A Multi-Scale Neural Network for End-to-End Aud
 author: Seungjae Ryan Lee
 permalink: /slowpapers/wave-u-net/
 
-front_image: /assets/blog/slowpapers/wave-u-net/front.png
 image: /assets/blog/slowpapers/wave-u-net/front.png
 front_image_type: contain
 

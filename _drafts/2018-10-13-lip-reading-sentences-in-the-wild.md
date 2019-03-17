@@ -4,7 +4,6 @@ title: "Slow Papers: Lip Reading Sentences in the Wild (Chung et al., 2016)"
 author: Seungjae Ryan Lee
 permalink: /slowpapers/lip-reading-sentences-in-the-wild/
 
-front_image: /assets/blog/slowpapers/lip-reading-sentences-in-the-wild/front.png
 image: /assets/blog/slowpapers/lip-reading-sentences-in-the-wild/front.png
 front_image_type: contain
 excerpt: >

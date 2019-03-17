@@ -8,7 +8,7 @@ tags:
  - reinforcement-learning
  - slowpapers
 
-front_image: /assets/blog/slowpapers/playing-atari-with-deep-reinforcement-learning/front.png
+image: /assets/blog/slowpapers/playing-atari-with-deep-reinforcement-learning/front.png
 front_image_type: contain
 excerpt: >
     This is a review of the paper <i>Playing Atari with Deep Reinforcement Learning</i> by Mnih et al. The paper introduces Deep Q-Network (DQN), the algorithm that successfully incorporated deep learning to reinforcement learning. DQN has been a crucial learning algorithm for discrete action spaces.

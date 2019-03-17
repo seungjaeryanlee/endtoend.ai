@@ -8,7 +8,7 @@ tags:
  - ai-for-prosthetics
  - competition
 
-front_image: /assets/blog/ai-for-prosthetics-2/front.jpeg
+image: /assets/blog/ai-for-prosthetics-2/front.jpeg
 excerpt: >
     Last week, we saw how a valid action has 19 numbers, each between 0 and 1.
     The 19 numbers represented the amount of force to put to each muscle. I know

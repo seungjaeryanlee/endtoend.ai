@@ -4,7 +4,7 @@ title: "Jupyter Notebook extensions to enhance your efficiency"
 author: Seungjae Ryan Lee
 permalink: /blog/jupyter-notebook-extensions-to-enhance-your-efficiency/
 
-front_image: /assets/blog/jupyter-notebook-extensions-to-enhance-your-efficiency/front.svg
+image: /assets/blog/jupyter-notebook-extensions-to-enhance-your-efficiency/front.svg
 excerpt: >
     Jupyter Notebook is a great tool that allows you to integrate live code,
     equations, visualizations and narrative text into a document. It is used

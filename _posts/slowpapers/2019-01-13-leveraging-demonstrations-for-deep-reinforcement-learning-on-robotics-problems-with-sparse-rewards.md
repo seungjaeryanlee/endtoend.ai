@@ -8,7 +8,6 @@ tags:
  - slowpapers
 published: false
 
-front_image: /papers/covers/leveraging-demonstrations-for-deep-reinforcement-learning-on-robotics-problems-with-sparse-rewards.png
 image: /papers/covers/leveraging-demonstrations-for-deep-reinforcement-learning-on-robotics-problems-with-sparse-rewards.png
 front_image_type: contain
 excerpt: >

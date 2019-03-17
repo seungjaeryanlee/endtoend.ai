@@ -8,7 +8,7 @@ tags:
  - ai-for-prosthetics
  - competition
 
-front_image: /assets/blog/ai-for-prosthetics-1/front.jpg
+image: /assets/blog/ai-for-prosthetics-1/front.jpg
 excerpt: >
     The AI for Prosthetics challenge is one of NIPS 2018 Competition tracks. In
     this challenge, the participants seek to build an agent that can make a 3D 

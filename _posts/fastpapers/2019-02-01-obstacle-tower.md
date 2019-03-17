@@ -7,7 +7,6 @@ tags:
  - reinforcement-learning
  - fastpapers
 
-front_image: /annotations/covers/obstacle-tower.png
 image: /annotations/covers/obstacle-tower.png
 front_image_type: contain
 excerpt: >

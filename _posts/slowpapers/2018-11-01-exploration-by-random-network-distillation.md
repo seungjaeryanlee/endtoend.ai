@@ -7,7 +7,6 @@ tags:
  - reinforcement-learning
  - slowpapers
 
-front_image: /papers/covers/exploration-by-random-network-distillation.png
 image: /papers/covers/exploration-by-random-network-distillation.png
 front_image_type: contain
 excerpt: >
