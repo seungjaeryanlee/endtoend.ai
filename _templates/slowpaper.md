@@ -5,7 +5,7 @@ author: Seungjae Ryan Lee
 permalink: /slowpapers/[PAPER-TAG]/
 
 front_image: /assets/blog/slowpapers/[PAPER-TAG]/front.png
-meta_image: /assets/blog/slowpapers/[PAPER-TAG]/front.png
+image: /assets/blog/slowpapers/[PAPER-TAG]/front.png
 front_image_type: contain
 excerpt: >
     [PAPER ABSTRACT]

@@ -8,7 +8,7 @@ tags:
  - slowpapers
 
 front_image: /papers/covers/a-deeper-look-at-experience-replay.png
-meta_image: /papers/covers/a-deeper-look-at-experience-replay.png
+image: /papers/covers/a-deeper-look-at-experience-replay.png
 front_image_type: contain
 
 excerpt: >

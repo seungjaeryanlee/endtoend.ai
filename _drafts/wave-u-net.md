@@ -5,7 +5,7 @@ author: Seungjae Ryan Lee
 permalink: /slowpapers/wave-u-net/
 
 front_image: /assets/blog/slowpapers/wave-u-net/front.png
-meta_image: /assets/blog/slowpapers/wave-u-net/front.png
+image: /assets/blog/slowpapers/wave-u-net/front.png
 front_image_type: contain
 
 excerpt: >

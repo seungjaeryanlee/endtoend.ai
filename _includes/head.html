@@ -5,7 +5,7 @@
 
   <title>{% if page.title %}{{ page.title }} | endtoendAI {% else %}endtoendAI{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  {% if page.meta_image %}<meta name="image" content="{{ page.meta_image | prepend: site.base_url | prepend: site.url }}">{% endif %}
+  {% if page.image %}<meta name="image" content="{{ page.image | prepend: site.base_url | prepend: site.url }}">{% endif %}
 
   <!-- Twitter Cards -->
   <meta name="twitter:site"    content="@{{ site.twitter_username }}">
@@ -24,10 +24,10 @@
   <meta name="og:description" content="{{ page.excerpt }}">
   {% endif %}
   
-  {% if page.meta_image %}
+  {% if page.image %}
   <meta name="twitter:card"  content="summary_large_image">
-  <meta name="twitter:image" content="{{ page.meta_image | prepend: site.baseurl | prepend: site.url }}">
-  <meta name="og:image" content="{{ page.meta_image | prepend: site.baseurl | prepend: site.url }}">
+  <meta name="twitter:image" content="{{ page.image | prepend: site.baseurl | prepend: site.url }}">
+  <meta name="og:image" content="{{ page.image | prepend: site.baseurl | prepend: site.url }}">
   {% else %}
   <meta name="twitter:card"  content="summary">
   <meta name="twitter:image" content="{{ site.title_image | prepend: site.baseurl | prepend: site.url }}">
