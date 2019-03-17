@@ -9,8 +9,8 @@ tags:
  - competition
 
 image: /assets/blog/obstacle-tower/4/front.png
-front_image_type: cover
-front_image_align: right
+image_type: cover
+image_align: right
 excerpt: >
     We briefly introduce Rainbow and PPO, the two baselines that was tested on Obstacle Tower.
 

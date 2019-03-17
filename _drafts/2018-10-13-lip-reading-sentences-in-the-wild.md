@@ -5,7 +5,7 @@ author: Seungjae Ryan Lee
 permalink: /slowpapers/lip-reading-sentences-in-the-wild/
 
 image: /assets/blog/slowpapers/lip-reading-sentences-in-the-wild/front.png
-front_image_type: contain
+image_type: contain
 excerpt: >
     The goal of this work is to recognise phrases and sentences beign spoken by a talking face, with or without the audio. Unlike previous works that have focused on recognising a limited number of words and phrases, we tackle lip reading as an open world problem - unconstrained natural language sentences, and in the wild videos.
 

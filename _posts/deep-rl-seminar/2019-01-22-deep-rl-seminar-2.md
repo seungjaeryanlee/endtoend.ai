@@ -9,7 +9,7 @@ tags:
  - deep-rl-seminar
 
 image: /assets/blog/deep-rl-seminar/2/rainbow.png
-front_image_type: cover
+image_type: cover
 excerpt: >
    This week, we reviewed various improvements made to the Deep Q-Network algorithm.
 

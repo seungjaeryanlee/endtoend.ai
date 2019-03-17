@@ -9,8 +9,8 @@ tags:
  - competition
 
 image: /assets/blog/obstacle-tower/6/front.png
-front_image_type: cover
-front_image_align: right
+image_type: cover
+image_align: right
 excerpt: >
     We submit a random agent to the Obstacle Tower Challenge that just began.
 

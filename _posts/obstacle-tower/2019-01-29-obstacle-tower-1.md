@@ -9,8 +9,8 @@ tags:
  - competition
 
 image: /assets/blog/obstacle-tower/1/front.png
-front_image_type: cover
-front_image_align: right
+image_type: cover
+image_align: right
 excerpt: >
    Unity introduced the Obstacle Tower Challenge, a new reinforcement learning contest with a difficult environment. In this post, we guide the readers on installing the environment on Linux using conda.
 

@@ -9,8 +9,8 @@ tags:
  - competition
 
 image: /assets/blog/obstacle-tower/5/front.png
-front_image_type: cover
-front_image_align: right
+image_type: cover
+image_align: right
 excerpt: >
     We play the Obstacle Tower game to understand the qualities of a successful agent.
 
