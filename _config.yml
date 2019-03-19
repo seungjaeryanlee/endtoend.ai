@@ -36,10 +36,10 @@ featured_page:
   # supporting_text: "This week, we reviewed various improvements made to the Deep Q-Network algorithm."
   # image_url: /assets/blog/deep-rl-seminar/2/rainbow.png
   # cover_or_contain: contain
-  link: /rl-weekly/10
-  title: "RL Weekly Week 10"
-  supporting_text: "In this issue, we look at Google Brain's algorithm of learning by playing, DeepMind's thoughts on multi-agent intelligence, and DeepMind's new navigation environment using Google Street View data."
-  image_url: /assets/blog/rl-weekly/10/lfp.png
+  link: /rl-weekly/11
+  title: "RL Weekly Week 11"
+  supporting_text: "In this issue, we first look at a diary entry by Richard S. Sutton (DeepMind, UAlberta) on Compute versus Clever. Then, we look at a post summarizing Hierarchical RL by Yannis Flet-Berliac (INRIA SequeL). Finally, we summarize a paper incorporating human feedback for exploration from Delft University of Technology."
+  image_url: /assets/blog/rl-weekly/11/combination.png
   cover_or_contain: contain
 
 front_page_links:
