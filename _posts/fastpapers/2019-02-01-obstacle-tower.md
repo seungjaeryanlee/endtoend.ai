@@ -21,6 +21,16 @@ nav:
   permalink: '#thoughts'
 - name: Accompanying Resources
   permalink: '#accompanying-resources'
+
+related:
+- title: "Slow Papers: The Obstacle Tower: A Generalization Challenge in Vision, Control, and Planning (Juliani et al., 2019)"
+  link: /slowpapers/obstacle-tower/
+  image: /papers/covers/obstacle-tower.png
+  image_type: contain
+- title: "Obstacle Tower 1: Installing the Environment"
+  link: /obstacle-tower/1
+  image: /assets/blog/obstacle-tower/1/front.png
+  image_type: cover
 ---
 
 <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/papers/obstacle-tower.pdf">

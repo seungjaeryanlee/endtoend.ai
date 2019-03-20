@@ -27,6 +27,16 @@ nav:
   permalink: '#test-installation-on-jupyter-notebook'
 - name: What's Next?
   permalink: '#whats-next'
+
+related:
+- title: "Obstacle Tower 2: Playing the Game"
+  link: /obstacle-tower/2
+  image: /assets/blog/obstacle-tower/2/front.png
+  image_type: cover
+- title: "Obstacle Tower 3: Observation Space and Action Space"
+  link: /obstacle-tower/3
+  image: /assets/blog/obstacle-tower/3/front.png
+  image_type: cover
 ---
 
 [Unity announced the launch of Obstacle Tower Challenge](https://blogs.unity3d.com/2019/01/28/obstacle-tower-challenge-test-the-limits-of-intelligence-systems/) today. The challenge tests "the vision, control, planning, and generalization abilities of AI agents." Although the competition begins on February 11th, and details have not yet been revealed, the environment has. This post shows how to install the Obstacle Challenge Environment on Linux machines.

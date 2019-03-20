@@ -23,6 +23,16 @@ nav:
   permalink: '#thoughts'
 - name: Accompanying Resources
   permalink: '#accompanying-resources'
+
+related:
+- title: "Obstacle Tower 1: Installing the Environment"
+  link: /obstacle-tower/1
+  image: /assets/blog/obstacle-tower/1/front.png
+  image_type: cover
+- title: "Obstacle Tower 2: Playing the Game"
+  link: /obstacle-tower/2
+  image: /assets/blog/obstacle-tower/2/front.png
+  image_type: cover
 ---
 
 <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/papers/obstacle-tower.pdf">

@@ -24,6 +24,16 @@ nav:
 - name: "What's Next?"
   permalink: '#whats-next'
 
+related:
+- title: "Obstacle Tower 2: Playing the Game"
+  link: /obstacle-tower/2
+  image: /assets/blog/obstacle-tower/2/front.png
+  image_type: cover
+- title: "Obstacle Tower 4: Understanding the Baselines"
+  link: /obstacle-tower/4
+  image: /assets/blog/obstacle-tower/4/front.png
+  image_type: cover
+
 custom-js:
 - "/assets/scripts/jquery-3.3.1.min.js"
 - "/assets/scripts/action_interpreter.js"

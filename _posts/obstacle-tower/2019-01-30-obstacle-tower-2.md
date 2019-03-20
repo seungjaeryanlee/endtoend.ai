@@ -14,6 +14,16 @@ image_align: right
 excerpt: >
     We play the Obstacle Tower game to understand the qualities of a successful agent.
 
+related:
+- title: "Obstacle Tower 1: Installing the Environment"
+  link: /obstacle-tower/1
+  image: /assets/blog/obstacle-tower/1/front.png
+  image_type: cover
+- title: "Obstacle Tower 3: Observation Space and Action Space"
+  link: /obstacle-tower/3
+  image: /assets/blog/obstacle-tower/3/front.png
+  image_type: cover
+
 nav:
 - name: "Run Game"
   permalink: '#how-to-run-game'

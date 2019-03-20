@@ -27,6 +27,12 @@ nav:
   permalink: '#submit-agent'
 - name: "What's Next?"
   permalink: '#whats-next'
+
+related:
+- title: "Obstacle Tower 5: Possible Improvements to the Baselines"
+  link: /obstacle-tower/5
+  image: /assets/blog/obstacle-tower/5/front.png
+  image_type: cover
 ---
 
 The Obstacle Tower Challenge has launched! Let's start by submitting an agent that samples a random action. For this, we will follow [the guide provided by Unity](https://github.com/unity-Technologies/obstacle-tower-challenge).

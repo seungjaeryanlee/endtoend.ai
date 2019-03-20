@@ -29,6 +29,16 @@ nav:
   permalink: '#ppo-implementation'
 - name: "What's Next?"
   permalink: '#whats-next'
+
+related:
+- title: "Obstacle Tower 3: Observation Space and Action Space"
+  link: /obstacle-tower/3
+  image: /assets/blog/obstacle-tower/3/front.png
+  image_type: cover
+- title: "Obstacle Tower 5: Possible Improvements to the Baselines"
+  link: /obstacle-tower/5
+  image: /assets/blog/obstacle-tower/5/front.png
+  image_type: cover
 ---
 
 <style type="text/css">

@@ -45,6 +45,16 @@ nav:
   permalink: '#i2a'
 - name: "- World Model"
   permalink: '#world-model'
+
+related:
+- title: "Obstacle Tower 4: Understanding the Baselines"
+  link: /obstacle-tower/4
+  image: /assets/blog/obstacle-tower/4/front.png
+  image_type: cover
+- title: "Obstacle Tower 6: Submitting a Random Agent"
+  link: /obstacle-tower/6
+  image: /assets/blog/obstacle-tower/6/front.png
+  image_type: cover
 ---
 
 <style type="text/css">
