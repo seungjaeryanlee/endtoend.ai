@@ -10,6 +10,10 @@ papers:
   #   authors: Vecerik et al. (2017)
   #   url: /slowpapers/leveraging-demonstrations-for-deep-reinforcement-learning-on-robotics-problems-with-sparse-rewards/
   #   image_url: /papers/covers/leveraging-demonstrations-for-deep-reinforcement-learning-on-robotics-problems-with-sparse-rewards.png
+  - title: "The Obstacle Tower: A Generalization Challenge in Vision, Control, and Planning"
+    authors: Juliani et al. (2019)
+    url: /slowpapers/obstacle-tower/
+    image_url: /papers/covers/obstacle-tower.png
   - title: Exploration by Random Network Distillation
     authors: Burda et al. (2018)
     url: /slowpapers/exploration-by-random-network-distillation/
