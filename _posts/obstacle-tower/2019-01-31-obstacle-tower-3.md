@@ -121,6 +121,8 @@ For convenience, here is a simple Action Interpreter widget, with style borrowed
   <input id="action-interpreter" type="text" value="0 0 0 0">
 </div>
 
+**NOTE** There was a bug in previous version of action interpreter: camera clockwise and camera counterclockwise was reversed. This was fixed on April 11th.
+
 ## Retro Mode
 
 <div class="mdl-grid">
