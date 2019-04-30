@@ -31,10 +31,10 @@ plugins:
  - jekyll-redirect-from
 
 featured_page:
-  link: /rl-weekly/15
-  title: "RL Weekly Week 15"
-  supporting_text: "In this issue, we introduce VICE-RAQ by UC Berkeley and T-REX by UT Austin and Preferred Networks. VICE-RAQ trains a classifier to infer rewards from goal examples and active querying. T-REX learns reward functions from suboptimal demonstrations ranked by humans."
-  image_url: /assets/blog/rl-weekly/15/viceraq.png
+  link: /rl-weekly/16
+  title: "RL Weekly Week 16"
+  supporting_text: "In this issue, we introduce 'ray interference,' a possible cause of performance plateaus in deep reinforcement learning conjectured by Google DeepMind. We also introduce a network distillation method proposed by researchers at Carnegie Mellon University."
+  image_url: /assets/blog/rl-weekly/16/ray.png
   cover_or_contain: contain
 
 front_page_links:
