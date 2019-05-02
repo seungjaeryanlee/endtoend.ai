@@ -52,6 +52,8 @@ First, install `torch` . If you already have them installed, ensure that your `t
 pip install --upgrade torch
 ```
 
+{::options parse_block_html="true" /}
+
 <details><summary markdown="span">Output</summary>
 ```
 Collecting torch
@@ -65,6 +67,9 @@ Successfully installed numpy-1.16.3 torch-1.1.0
 ```
 </details>
 <br/>
+
+{::options parse_block_html="false" /}
+
 
 When you try to import `torch.utils.tensorboard`, you will get the following error:
 
@@ -92,6 +97,8 @@ The stable release of `tensorboard` only offers 1.13, so we need to install `tb-
 ```bash
 pip install tb-nightly
 ```
+
+{::options parse_block_html="true" /}
 
 <details><summary markdown="span">Output</summary>
 ```
@@ -128,6 +135,8 @@ Successfully installed absl-py-0.7.1 grpcio-1.20.1 markdown-3.1 protobuf-3.7.1 t
 </details>
 <br/>
 
+{::options parse_block_html="false" /}
+
 When you try to import `torch.utils.tensorboard`, you might get the following error:
 
 ```
@@ -154,6 +163,8 @@ For this, we need to install the `future` package.
 pip install future
 ```
 
+{::options parse_block_html="true" /}
+
 <details><summary markdown="span">Output</summary>
 ```
 Collecting future
@@ -162,6 +173,8 @@ Successfully installed future-0.17.1
 ```
 </details>
 <br/>
+
+{::options parse_block_html="false" /}
 
 With that, you should now be able to import `torch.utils.tensorboard` without an error.
 
@@ -213,6 +226,8 @@ Then run the script with `python run.py`. Note that this will create two new dir
 
 The script should finish after writing the following output to the command line:
 
+{::options parse_block_html="true" /}
+
 <details><summary markdown="span">Output</summary>
 ```
 Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to mnist_train/MNIST/raw/train-images-idx3-ubyte.gz
@@ -229,11 +244,15 @@ Done!
 </details>
 <br/>
 
+{::options parse_block_html="false" /}
+
 We can now run `tensorboard`. We need to specify where the runs are stored with `--logdir` flag.
 
 ```bash
 tensorboard --logdir=runs
 ```
+
+{::options parse_block_html="true" /}
 
 <details><summary markdown="span">Output</summary>
 ```bash
@@ -242,6 +261,8 @@ TensorBoard 1.14.0a20190501 at http://ryanlee-ThinkPad-T430s:6006/ (Press CTRL+C
 ```
 </details>
 <br/>
+
+{::options parse_block_html="false" /}
 
 Visit `http://localhost:6006/` with the browser of your choice and voilà! TensorBoard should appear with MNIST images.
 
