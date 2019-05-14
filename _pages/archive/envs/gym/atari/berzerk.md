@@ -11,8 +11,8 @@ redirect_from:
 nav:
  - name: Overview
    permalink: '#overview'
- - name: State of the Art
-   permalink: '#state-of-the-art'
+ - name: Performances
+   permalink: '#performances'
 ---
 
 
@@ -33,55 +33,71 @@ As a player's score increases, the colors of the enemy robots change, and the ro
 *Description from [Wikipedia](https://en.wikipedia.org/wiki/Berzerk_%28video_game%29)*
 
 
-## State of the Art
+## Performances of RL Agents {#performances}
+
+We list various reinforcement learning algorithms that were tested in this environment. These results are from [RL Database](https://github.com/seungjaeryanlee/rldb). If this page was helpful, please consider giving a star!
+
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/seungjaeryanlee/rldb" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star seungjaeryanlee/rldb on GitHub">Star</a>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 
 ### Human Starts
 
-| Result | Method | Type | Score from |
-|--------|--------|------|------------|
-| 55598.9 | ApeX DQN | DQN | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| **2237.5** | **Human** | Human | [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) |
-| 2178.6 | DuelingPERDQN | DQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 1793.4 | RainbowDQN | DQN | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| 1433.4 | A3C FF (1 day) | PG | [Asynchronous Methods for Deep Learning](https://arxiv.org/abs/1602.01783) |
-| 1165.6 | PERDDQN (prop) | DQN | [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952) |
-| 1011.1 | DDQN | DQN | [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) |
-| 1000.0 | DistributionalDQN | DQN | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| 910.6 | DuelingDDQN | DQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 865.9 | PERDDQN (rank) | DQN | [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952) |
-| 862.2 | A3C LSTM | PG | [Asynchronous Methods for Deep Learning](https://arxiv.org/abs/1602.01783) |
-| 817.9 | A3C FF (4 days) | PG | [Asynchronous Methods for Deep Learning](https://arxiv.org/abs/1602.01783) |
-| 670.8 | NoisyNetDQN | DQN | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| 644.0 | PERDQN (rank) | DQN | [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952) |
-| 493.4 | DQN2015 | DQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| **196.1** | **Random** | Random | [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) |
-| -9001.0 | DQN2015 | DQN | [Asynchronous Methods for Deep Learning](https://arxiv.org/abs/1602.01783) |
-| -9001.0 | GorilaDQN | DQN | [Asynchronous Methods for Deep Learning](https://arxiv.org/abs/1602.01783) |
+| Result | Algorithm | Source |
+|--------|-----------|--------|
+| 2237.5 | **Human** | Deep Reinforcement Learning with Double Q-learning |
+| 2237.5 | **Human** | Dueling Network Architectures for Deep Reinforcement Learning |
+| 2178.6 | PDD DQN | Dueling Network Architectures for Deep Reinforcement Learning |
+| 1793.4 | Rainbow | Rainbow: Combining Improvements in Deep Reinforcement Learning |
+| 1433.4 | A3C FF 1 day | Asynchronous Methods for Deep Reinforcement Learning |
+| 1165.6 | Prioritized DDQN (prop, tuned) | Prioritized Experience Replay |
+| 1011.1 | DDQN (tuned) | Deep Reinforcement Learning with Double Q-learning |
+| 1000.0 | Distributional DQN | Rainbow: Combining Improvements in Deep Reinforcement Learning |
+| 910.6 | DuDQN | Dueling Network Architectures for Deep Reinforcement Learning |
+| 865.9 | Prioritized DDQN (rank, tuned) | Prioritized Experience Replay |
+| 862.2 | A3C LSTM | Asynchronous Methods for Deep Reinforcement Learning |
+| 817.9 | A3C FF | Asynchronous Methods for Deep Reinforcement Learning |
+| 644.0 | Prioritized DQN (rank) | Prioritized Experience Replay |
+| 635.8 | DDQN | Deep Reinforcement Learning with Double Q-learning |
+| 493.4 | DQN | Rainbow: Combining Improvements in Deep Reinforcement Learning |
+| 196.1 | **Random** | Deep Reinforcement Learning with Double Q-learning |
+
 
 ### No-op Starts
 
-| Result | Method | Type | Score from |
-|--------|--------|------|------------|
-| 57196.7 | ApeX DQN | DQN | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| 3409.0 | DuelingPERDQN | DQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| **2630.4** | **Human** | Human | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 2545.6 | RainbowDQN | DQN | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| 1896.0 | NoisyNet-DuelingDQN | DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
-| 1645.0 | C51 | Misc | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
-| 1614.2 | PERDDQN (prop) | DQN | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| 1472.6 | DuelingDDQN | DQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 1421.8 | DistributionalDQN | DQN | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| 1305.6 | PER | DQN | [Scalable trust-region method for deep reinforcement learning using Kronecker-factored approximation](https://arxiv.org/abs/1708.05144) |
-| 1305.6 | PERDDQN (rank) | DQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 1235.0 | NoisyNet-A3C | PG | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
-| 1225.4 | DDQN | DQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 1199.6 | DDQN+PopArt | DQN | [Learning values across many orders of magnitude](https://arxiv.org/abs/1602.07714) |
-| 1122.0 | DuelingDQN | DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
-| 1022.0 | A3C | PG | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
-| 927.2 | ACKTR | PG | [Scalable trust-region method for deep reinforcement learning using Kronecker-factored approximation](https://arxiv.org/abs/1708.05144) |
-| 905.0 | NoisyNet-DQN | DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
-| 837.3 | NoisyNetDQN | DQN | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| 634.0 | DQN | DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
-| 585.6 | DQN2015 | DQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| **123.7** | **Random** | Random | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
+| Result | Algorithm | Source |
+|--------|-----------|--------|
+| 34798 | QR-DQN-0 | Distributional Reinforcement Learning with Quantile Regression |
+| 3409.0 | PDD DQN | Dueling Network Architectures for Deep Reinforcement Learning |
+| 3117 | QR-DQN-1 | Distributional Reinforcement Learning with Quantile Regression |
+| 2630.4 | **Human** | Dueling Network Architectures for Deep Reinforcement Learning |
+| 2545.6 | Rainbow | Rainbow: Combining Improvements in Deep Reinforcement Learning |
+| 2303.1 | Reactor | The Reactor: A fast and sample-efficient Actor-Critic agent for Reinforcement Learning |
+| 1896 | NoisyNet DuDQN | Noisy Networks for Exploration |
+| 1852.7 | IMPALA (deep) | IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures |
+| 1645 | C51 | A Distributional Perspective on Reinforcement Learning |
+| 1641.4 | Reactor | The Reactor: A fast and sample-efficient Actor-Critic agent for Reinforcement Learning |
+| 1515.7 | Reactor ND | The Reactor: A fast and sample-efficient Actor-Critic agent for Reinforcement Learning |
+| 1472.6 | DuDQN | Dueling Network Architectures for Deep Reinforcement Learning |
+| 1421.8 | Distributional DQN | Rainbow: Combining Improvements in Deep Reinforcement Learning |
+| 1235 | NoisyNet A3C | Noisy Networks for Exploration |
+| 1225.4 | DDQN | A Distributional Perspective on Reinforcement Learning |
+| 1122 | DuDQN | Noisy Networks for Exploration |
+| 1053 | IQN | Implicit Quantile Networks for Distributional Reinforcement Learning |
+| 1022 | A3C | Noisy Networks for Exploration |
+| 927.2 | ACKTR | Scalable trust-region method for deep reinforcement learning using Kronecker-factored approximation |
+| 905 | NoisyNet DQN | Noisy Networks for Exploration |
+| 888.3 | IMPALA (shallow) | IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures |
+| 647.8 | IMPALA (deep, multitask) | IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures |
+| 634 | DQN | Noisy Networks for Exploration |
+| 585.6 | DQN | A Distributional Perspective on Reinforcement Learning |
+| 585.6 | DQN | Rainbow: Combining Improvements in Deep Reinforcement Learning |
+| 123.7 | **Random** | Dueling Network Architectures for Deep Reinforcement Learning |
+
+
+### Normal Starts
+
+| Result | Algorithm | Source |
+|--------|-----------|--------|
 
