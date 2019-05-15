@@ -42,70 +42,70 @@ We list various reinforcement learning algorithms that were tested in this envir
 
 | Result | Algorithm | Source |
 |--------|-----------|--------|
-| 36517.3 | **Human** | Massively Parallel Methods for Deep Reinforcement Learning |
-| 5093.1 | A3C LSTM | Asynchronous Methods for Deep Reinforcement Learning |
-| 4474.5 | A3C FF | Asynchronous Methods for Deep Reinforcement Learning |
-| 3009.4 | A3C FF 1 day | Asynchronous Methods for Deep Reinforcement Learning |
-| 2249.4 | Rainbow | Rainbow: Combining Improvements in Deep Reinforcement Learning |
-| 2071.7 | Distributional DQN | Rainbow: Combining Improvements in Deep Reinforcement Learning |
-| 2035.4 | DuDQN | Dueling Network Architectures for Deep Reinforcement Learning |
-| 1745.1 | Prioritized DDQN (rank, tuned) | Prioritized Experience Replay |
-| 1677.2 | Prioritized DQN (rank) | Prioritized Experience Replay |
-| 1654.0 | Prioritized DDQN (prop, tuned) | Prioritized Experience Replay |
-| 1219.0 | DDQN | Deep Reinforcement Learning with Double Q-learning |
-| 1193.2 | DDQN (tuned) | Deep Reinforcement Learning with Double Q-learning |
-| 1021.9 | PDD DQN | Dueling Network Architectures for Deep Reinforcement Learning |
-| 933.63 | Gorila DQN | Massively Parallel Methods for Deep Reinforcement Learning |
-| 871.3 | **Random** | Massively Parallel Methods for Deep Reinforcement Learning |
-| 697.1 | DQN | Massively Parallel Methods for Deep Reinforcement Learning |
+| 36517.3 | **Human** | [Massively Parallel Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1507.04296) |
+| 5093.1 | A3C LSTM | [Asynchronous Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1602.01783) |
+| 4474.5 | A3C FF | [Asynchronous Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1602.01783) |
+| 3009.4 | A3C FF 1 day | [Asynchronous Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1602.01783) |
+| 2249.4 | Rainbow | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
+| 2071.7 | Distributional DQN | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
+| 2035.4 | DuDQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
+| 1745.1 | Prioritized DDQN (rank, tuned) | [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952) |
+| 1677.2 | Prioritized DQN (rank) | [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952) |
+| 1654.0 | Prioritized DDQN (prop, tuned) | [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952) |
+| 1219.0 | DDQN | [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) |
+| 1193.2 | DDQN (tuned) | [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) |
+| 1021.9 | PDD DQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
+| 933.63 | Gorila DQN | [Massively Parallel Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1507.04296) |
+| 871.3 | **Random** | [Massively Parallel Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1507.04296) |
+| 697.1 | DQN | [Massively Parallel Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1507.04296) |
 
 
 ### No-op Starts
 
 | Result | Algorithm | Source |
 |--------|-----------|--------|
-| 108590.05 | IMPALA (deep) | IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures |
-| 86700 | NoisyNet DuDQN | Noisy Networks for Exploration |
-| 47388.7 | **Human** | Dueling Network Architectures for Deep Reinforcement Learning |
-| 34171.6 | ACKTR | Scalable trust-region method for deep reinforcement learning using Kronecker-factored approximation |
-| 13156.7 | **Human** | Human-level control through deep reinforcement learning |
-| 4541 | NoisyNet A3C | Noisy Networks for Exploration |
-| 4467.4 | Reactor ND | The Reactor: A fast and sample-efficient Actor-Critic agent for Reinforcement Learning |
-| 4226 | QR-DQN-1 | Distributional Reinforcement Learning with Quantile Regression |
-| 3726.1 | Reactor | The Reactor: A fast and sample-efficient Actor-Critic agent for Reinforcement Learning |
-| 3508.1 | IMPALA (shallow) | IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures |
-| 3455 | NoisyNet DQN | Noisy Networks for Exploration |
-| 2898 | IQN | Implicit Quantile Networks for Distributional Reinforcement Learning |
-| 2837.7 | DuDQN | Dueling Network Architectures for Deep Reinforcement Learning |
-| 2780.4 | Reactor | The Reactor: A fast and sample-efficient Actor-Critic agent for Reinforcement Learning |
-| 2712.8 | Rainbow | Rainbow: Combining Improvements in Deep Reinforcement Learning |
-| 2544 | A3C | Noisy Networks for Exploration |
-| 2354.7 | Distributional DQN | Rainbow: Combining Improvements in Deep Reinforcement Learning |
-| 2335 | QR-DQN-0 | Distributional Reinforcement Learning with Quantile Regression |
-| 2220 | DuDQN | Noisy Networks for Exploration |
-| 2011.05 | IMPALA (deep, multitask) | IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures |
-| 1824 | DQN | Noisy Networks for Exploration |
-| 1629 | DQN | Human-level control through deep reinforcement learning |
-| 1516 | C51 | A Distributional Perspective on Reinforcement Learning |
-| 1364.5 | DQN | A Distributional Perspective on Reinforcement Learning |
-| 1192.7 | PDD DQN | Dueling Network Architectures for Deep Reinforcement Learning |
-| 1047.66 | Gorila DQN | Massively Parallel Methods for Deep Reinforcement Learning |
-| 930.6 | DDQN | Deep Reinforcement Learning with Double Q-learning |
-| 907.3 | Linear | Human-level control through deep reinforcement learning |
-| 734.7 | DDQN | A Distributional Perspective on Reinforcement Learning |
-| 719.1 | **Random** | Human-level control through deep reinforcement learning |
-| 89 | Contingency | Human-level control through deep reinforcement learning |
+| 108590.05 | IMPALA (deep) | [IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures](https://arxiv.org/abs/1802.01561) |
+| 86700 | NoisyNet DuDQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
+| 47388.7 | **Human** | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
+| 34171.6 | ACKTR | [Scalable trust-region method for deep reinforcement learning using Kronecker-factored approximation](https://arxiv.org/abs/1708.05144) |
+| 13156.7 | **Human** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1708.05144) |
+| 4541 | NoisyNet A3C | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
+| 4467.4 | Reactor ND | [The Reactor: A fast and sample-efficient Actor-Critic agent for Reinforcement Learning](https://arxiv.org/abs/1704.04651) |
+| 4226 | QR-DQN-1 | [Distributional Reinforcement Learning with Quantile Regression](https://arxiv.org/abs/1710.10044) |
+| 3726.1 | Reactor | [The Reactor: A fast and sample-efficient Actor-Critic agent for Reinforcement Learning](https://arxiv.org/abs/1704.04651) |
+| 3508.1 | IMPALA (shallow) | [IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures](https://arxiv.org/abs/1802.01561) |
+| 3455 | NoisyNet DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
+| 2898 | IQN | [Implicit Quantile Networks for Distributional Reinforcement Learning](https://arxiv.org/abs/1806.06923) |
+| 2837.7 | DuDQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
+| 2780.4 | Reactor | [The Reactor: A fast and sample-efficient Actor-Critic agent for Reinforcement Learning](https://arxiv.org/abs/1704.04651) |
+| 2712.8 | Rainbow | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
+| 2544 | A3C | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
+| 2354.7 | Distributional DQN | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
+| 2335 | QR-DQN-0 | [Distributional Reinforcement Learning with Quantile Regression](https://arxiv.org/abs/1710.10044) |
+| 2220 | DuDQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
+| 2011.05 | IMPALA (deep, multitask) | [IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures](https://arxiv.org/abs/1802.01561) |
+| 1824 | DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
+| 1629 | DQN | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1706.10295) |
+| 1516 | C51 | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
+| 1364.5 | DQN | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
+| 1192.7 | PDD DQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
+| 1047.66 | Gorila DQN | [Massively Parallel Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1507.04296) |
+| 930.6 | DDQN | [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) |
+| 907.3 | Linear | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1509.06461) |
+| 734.7 | DDQN | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
+| 719.1 | **Random** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1707.06887) |
+| 89 | Contingency | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1707.06887) |
 
 
 ### Normal Starts
 
 | Result | Algorithm | Source |
 |--------|-----------|--------|
-| 2389.3 | ACER | Proximal Policy Optimization Algorithm |
-| 2097.5 | PPO | Proximal Policy Optimization Algorithm |
-| 1653.3 | A2C | Proximal Policy Optimization Algorithm |
-| 1070 | DQN Ours | Deep Recurrent Q-Learning for Partially Observable MDPs |
-| 1032 | DRQN | Deep Recurrent Q-Learning for Partially Observable MDPs |
-| 1020 | DRQN | Deep Recurrent Q-Learning for Partially Observable MDPs |
-| 1010 | DQN Ours | Deep Recurrent Q-Learning for Partially Observable MDPs |
+| 2389.3 | ACER | [Proximal Policy Optimization Algorithm](https://arxiv.org/abs/1707.06347) |
+| 2097.5 | PPO | [Proximal Policy Optimization Algorithm](https://arxiv.org/abs/1707.06347) |
+| 1653.3 | A2C | [Proximal Policy Optimization Algorithm](https://arxiv.org/abs/1707.06347) |
+| 1070 | DQN Ours | [Deep Recurrent Q-Learning for Partially Observable MDPs](https://arxiv.org/abs/1507.06527) |
+| 1032 | DRQN | [Deep Recurrent Q-Learning for Partially Observable MDPs](https://arxiv.org/abs/1507.06527) |
+| 1020 | DRQN | [Deep Recurrent Q-Learning for Partially Observable MDPs](https://arxiv.org/abs/1507.06527) |
+| 1010 | DQN Ours | [Deep Recurrent Q-Learning for Partially Observable MDPs](https://arxiv.org/abs/1507.06527) |
 
