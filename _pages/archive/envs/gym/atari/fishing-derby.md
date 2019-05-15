@@ -85,16 +85,16 @@ We list various reinforcement learning algorithms that were tested in this envir
 | 11 | NoisyNet DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 9.1 | Distributional DQN | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
 | 8.9 | C51 | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
-| 5.5 | **Human** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1707.06887) |
+| 5.5 | **Human** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 4 | DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
-| -0.8 | DQN | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1706.10295) |
+| -0.8 | DQN | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | -4.9 | DQN | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
 | -7 | A3C | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | -38 | NoisyNet A3C | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | -38.7 | **Human** | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| -85.1 | Contingency | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
-| -89.5 | Linear | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
-| -91.7 | **Random** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
+| -85.1 | Contingency | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| -89.5 | Linear | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| -91.7 | **Random** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 
 
 ### Normal Starts

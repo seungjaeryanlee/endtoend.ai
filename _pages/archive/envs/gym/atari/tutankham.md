@@ -86,15 +86,15 @@ We list various reinforcement learning algorithms that were tested in this envir
 | 211.4 | DDQN | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
 | 211.4 | DuDQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
 | 190.6 | DDQN | [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) |
-| 186.7 | DQN | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1509.06461) |
+| 186.7 | DQN | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 167.6 | **Human** | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 167.6 | **Human** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
+| 167.6 | **Human** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 164 | NoisyNet A3C | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
-| 114.3 | Linear | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1706.10295) |
+| 114.3 | Linear | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 105.22 | IMPALA (deep, multitask) | [IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures](https://arxiv.org/abs/1802.01561) |
-| 98.2 | Contingency | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1802.01561) |
+| 98.2 | Contingency | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 68.1 | DQN | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
-| 11.4 | **Random** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1707.06887) |
+| 11.4 | **Random** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 
 
 ### Normal Starts

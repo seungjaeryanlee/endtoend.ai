@@ -95,14 +95,14 @@ We list various reinforcement learning algorithms that were tested in this envir
 | 7035 | NoisyNet DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 6617.5 | IMPALA (shallow) | [IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures](https://arxiv.org/abs/1802.01561) |
 | 6167 | DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
-| 5947 | DQN | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1706.10295) |
-| 5925.0 | **Human** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1706.10295) |
+| 5947 | DQN | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 5925.0 | **Human** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 5229.2 | **Human** | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
 | 4870.0 | DQN | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
 | 3747.5 | IMPALA (deep, multitask) | [IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures](https://arxiv.org/abs/1802.01561) |
-| 3741 | Linear | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1802.01561) |
-| 3568.0 | **Random** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1802.01561) |
-| 24.9 | Contingency | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1802.01561) |
+| 3741 | Linear | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 3568.0 | **Random** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 24.9 | Contingency | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 
 
 ### Normal Starts

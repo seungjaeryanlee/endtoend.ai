@@ -89,12 +89,12 @@ We list various reinforcement learning algorithms that were tested in this envir
 | 12149.4 | DQN | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
 | 10095.2 | IMPALA (deep, multitask) | [IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures](https://arxiv.org/abs/1802.01561) |
 | 9711.9 | DDQN | [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) |
-| 9711 | DQN | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1509.06461) |
-| 3401.3 | **Human** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1509.06461) |
+| 9711 | DQN | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 3401.3 | **Human** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 1971.0 | **Human** | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 520.5 | Linear | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
-| 152.1 | **Random** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
-| 0 | Contingency | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
+| 520.5 | Linear | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 152.1 | **Random** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 0 | Contingency | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 
 
 ### Normal Starts

@@ -87,12 +87,12 @@ We list various reinforcement learning algorithms that were tested in this envir
 | 37505.0 | IMPALA (shallow) | [IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures](https://arxiv.org/abs/1802.01561) |
 | 30454 | NoisyNet A3C | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 24435.5 | IMPALA (deep, multitask) | [IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures](https://arxiv.org/abs/1802.01561) |
-| 18257 | DQN | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1802.01561) |
+| 18257 | DQN | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 7845.0 | **Human** | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 7845.0 | **Human** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
-| 89.1 | Contingency | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
-| 67.7 | Linear | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
-| 11.5 | **Random** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
+| 7845.0 | **Human** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 89.1 | Contingency | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 67.7 | Linear | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 11.5 | **Random** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 
 
 ### Normal Starts

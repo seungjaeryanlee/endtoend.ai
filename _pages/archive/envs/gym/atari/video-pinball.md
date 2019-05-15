@@ -89,13 +89,13 @@ We list various reinforcement learning algorithms that were tested in this envir
 | 98209.5 | DDQN | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
 | 98209.5 | DuDQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
 | 70009.0 | DDQN | [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) |
-| 42684 | DQN | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1509.06461) |
+| 42684 | DQN | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 20125.14 | IMPALA (deep, multitask) | [IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures](https://arxiv.org/abs/1802.01561) |
-| 19761 | Contingency | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1802.01561) |
+| 19761 | Contingency | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 17667.9 | **Human** | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 17297.6 | **Human** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
-| 16871 | Linear | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
-| 16256.9 | **Random** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
+| 17297.6 | **Human** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 16871 | Linear | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 16256.9 | **Random** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 
 
 ### Normal Starts

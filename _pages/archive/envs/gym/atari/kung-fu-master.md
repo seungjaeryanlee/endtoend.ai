@@ -91,14 +91,14 @@ We list various reinforcement learning algorithms that were tested in this envir
 | 30316 | DuDQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 29710.0 | DDQN | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
 | 29486.0 | DDQN | [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) |
-| 29151 | Contingency | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1509.06461) |
+| 29151 | Contingency | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 27543.33 | Gorila DQN | [Massively Parallel Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1507.04296) |
 | 26059.0 | DQN | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
-| 23270 | DQN | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1707.06887) |
+| 23270 | DQN | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 22736.3 | **Human** | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 22736.2 | **Human** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
-| 19544 | Linear | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
-| 258.5 | **Random** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
+| 22736.2 | **Human** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 19544 | Linear | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 258.5 | **Random** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 
 
 ### Normal Starts

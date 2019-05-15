@@ -74,14 +74,14 @@ We list various reinforcement learning algorithms that were tested in this envir
 | 13136.0 | Distributional DQN | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
 | 11477 | NoisyNet DuDQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 11215.0 | DuDQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 9881.8 | **Human** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
+| 9881.8 | **Human** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 8893 | NoisyNet DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 7561 | NoisyNet A3C | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 7388 | DuDQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 7387.8 | **Human** | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
 | 7271 | DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 7138 | QR-DQN-0 | [Distributional Reinforcement Learning with Quantile Regression](https://arxiv.org/abs/1710.10044) |
-| 6687 | DQN | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1710.10044) |
+| 6687 | DQN | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 6126.0 | DQN | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
 | 5809.0 | DDQN | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
 | 5285 | A3C | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
@@ -89,9 +89,9 @@ We list various reinforcement learning algorithms that were tested in this envir
 | 5012.0 | IMPALA (shallow) | [IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures](https://arxiv.org/abs/1802.01561) |
 | 4653.0 | DDQN | [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) |
 | 4167.5 | Gorila DQN | [Massively Parallel Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1507.04296) |
-| 1582 | Linear | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1507.04296) |
-| 811.0 | **Random** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1507.04296) |
-| 16.9 | Contingency | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1507.04296) |
+| 1582 | Linear | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 811.0 | **Random** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 16.9 | Contingency | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 
 
 ### Normal Starts

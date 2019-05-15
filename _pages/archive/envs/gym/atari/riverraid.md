@@ -80,20 +80,20 @@ We list various reinforcement learning algorithms that were tested in this envir
 | 17118.0 | **Human** | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
 | 16957.3 | Reactor ND | [The Reactor: A fast and sample-efficient Actor-Critic agent for Reinforcement Learning](https://arxiv.org/abs/1704.04651) |
 | 16608.3 | Reactor | [The Reactor: A fast and sample-efficient Actor-Critic agent for Reinforcement Learning](https://arxiv.org/abs/1704.04651) |
-| 13513.3 | **Human** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1704.04651) |
+| 13513.3 | **Human** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 12015.3 | DDQN | [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) |
 | 9425 | NoisyNet DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 9336 | QR-DQN-0 | [Distributional Reinforcement Learning with Quantile Regression](https://arxiv.org/abs/1710.10044) |
 | 8344.83 | Gorila DQN | [Massively Parallel Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1507.04296) |
-| 8316 | DQN | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1507.04296) |
+| 8316 | DQN | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 8135 | A3C | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 7878 | NoisyNet A3C | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 7377.6 | DQN | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
 | 7241 | DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 2850.15 | IMPALA (deep, multitask) | [IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures](https://arxiv.org/abs/1802.01561) |
-| 2650 | Contingency | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1802.01561) |
-| 1904 | Linear | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1802.01561) |
-| 1338.5 | **Random** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1802.01561) |
+| 2650 | Contingency | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 1904 | Linear | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 1338.5 | **Random** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 
 
 ### Normal Starts

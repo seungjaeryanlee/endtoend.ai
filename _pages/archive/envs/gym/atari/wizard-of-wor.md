@@ -104,16 +104,16 @@ We list various reinforcement learning algorithms that were tested in this envir
 | 6534 | DuDQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 5204.0 | DDQN | [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) |
 | 4756.5 | **Human** | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 4756.5 | **Human** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
+| 4756.5 | **Human** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 4203.0 | IMPALA (shallow) | [IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures](https://arxiv.org/abs/1802.01561) |
 | 3601 | DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
-| 3393 | DQN | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1706.10295) |
+| 3393 | DQN | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 2704.0 | DQN | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
 | 2106.0 | IMPALA (deep, multitask) | [IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures](https://arxiv.org/abs/1802.01561) |
-| 1981 | Linear | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1802.01561) |
+| 1981 | Linear | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 702.0 | ACKTR | [Scalable trust-region method for deep reinforcement learning using Kronecker-factored approximation](https://arxiv.org/abs/1708.05144) |
-| 563.5 | **Random** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1708.05144) |
-| 36.9 | Contingency | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1708.05144) |
+| 563.5 | **Random** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 36.9 | Contingency | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 
 
 ### Normal Starts

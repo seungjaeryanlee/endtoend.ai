@@ -88,13 +88,13 @@ We list various reinforcement learning algorithms that were tested in this envir
 | 88.0 | DQN | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
 | 87 | DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 81.7 | DDQN | [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) |
-| 71.8 | DQN | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1509.06461) |
-| 44 | Linear | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1509.06461) |
+| 71.8 | DQN | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 44 | Linear | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 12.1 | **Human** | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 9.8 | Contingency | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
-| 4.3 | **Human** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
+| 9.8 | Contingency | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 4.3 | **Human** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 1.45 | ACKTR | [Scalable trust-region method for deep reinforcement learning using Kronecker-factored approximation](https://arxiv.org/abs/1708.05144) |
-| 0.1 | **Random** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1708.05144) |
+| 0.1 | **Random** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 
 
 ### Normal Starts

@@ -82,17 +82,17 @@ We list various reinforcement learning algorithms that were tested in this envir
 | 12439 | NoisyNet A3C | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 11825 | DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 8777.4 | DQN | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
-| 8520 | DQN | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1707.06887) |
+| 8520 | DQN | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 8215.4 | DDQN | [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) |
 | 7992 | A3C | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 5279.0 | Gorila DQN | [Massively Parallel Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1507.04296) |
 | 2412.5 | **Human** | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| 2368 | Contingency | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
-| 2321.0 | **Human** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
-| 1288 | Linear | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1511.06581) |
+| 2368 | Contingency | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 2321.0 | **Human** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 1288 | Linear | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 1002.4 | IMPALA (shallow) | [IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures](https://arxiv.org/abs/1802.01561) |
 | 913.5 | IMPALA (deep, multitask) | [IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures](https://arxiv.org/abs/1802.01561) |
-| 257.6 | **Random** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1802.01561) |
+| 257.6 | **Random** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 
 
 ### Normal Starts

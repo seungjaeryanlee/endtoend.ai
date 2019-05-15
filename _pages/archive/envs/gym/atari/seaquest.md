@@ -68,7 +68,7 @@ We list various reinforcement learning algorithms that were tested in this envir
 | 42054.7 | **Human** | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
 | 30140 | IQN | [Implicit Quantile Networks for Distributional Reinforcement Learning](https://arxiv.org/abs/1806.06923) |
 | 20994.1 | Reactor | [The Reactor: A fast and sample-efficient Actor-Critic agent for Reinforcement Learning](https://arxiv.org/abs/1704.04651) |
-| 20181.8 | **Human** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1704.04651) |
+| 20181.8 | **Human** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 19595 | DuDQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 16754 | NoisyNet DuDQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 15898.9 | Rainbow | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
@@ -77,7 +77,7 @@ We list various reinforcement learning algorithms that were tested in this envir
 | 8268 | QR-DQN-1 | [Distributional Reinforcement Learning with Quantile Regression](https://arxiv.org/abs/1710.10044) |
 | 7995.0 | DDQN | [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) |
 | 5860.6 | DQN | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
-| 5286 | DQN | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1707.06887) |
+| 5286 | DQN | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 | 5071.6 | Reactor ND | [The Reactor: A fast and sample-efficient Actor-Critic agent for Reinforcement Learning](https://arxiv.org/abs/1704.04651) |
 | 4754.4 | Distributional DQN | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
 | 4163 | DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
@@ -92,9 +92,9 @@ We list various reinforcement learning algorithms that were tested in this envir
 | 931.6 | PDD DQN | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
 | 844.6 | IMPALA (deep, multitask) | [IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures](https://arxiv.org/abs/1802.01561) |
 | 810.4 | TRPO | [Scalable trust-region method for deep reinforcement learning using Kronecker-factored approximation](https://arxiv.org/abs/1708.05144) |
-| 675.5 | Contingency | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1708.05144) |
-| 664.8 | Linear | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1708.05144) |
-| 68.4 | **Random** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1708.05144) |
+| 675.5 | Contingency | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 664.8 | Linear | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 68.4 | **Random** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 
 
 ### Normal Starts
@@ -103,28 +103,28 @@ We list various reinforcement learning algorithms that were tested in this envir
 |--------|-----------|--------|
 | 28010 | **Human** | [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602) |
 | 2995 | UCC-I | [Trust Region Policy Optimization](https://arxiv.org/abs/1502.05477) |
-| 1948.571 | DQN | [RL Baselines Zoo b76641e](https://arxiv.org/abs/1502.05477) |
+| 1948.571 | DQN | [RL Baselines Zoo b76641e](https://github.com/araffin/rl-baselines-zoo) |
 | 1908.6 | TRPO - single path | [Trust Region Policy Optimization](https://arxiv.org/abs/1502.05477) |
-| 1782.687 | PPO | [RL Baselines Zoo b76641e](https://arxiv.org/abs/1502.05477) |
+| 1782.687 | PPO | [RL Baselines Zoo b76641e](https://github.com/araffin/rl-baselines-zoo) |
 | 1740 | DQN2013 Best | [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602) |
 | 1739.5 | ACER | [Proximal Policy Optimization Algorithm](https://arxiv.org/abs/1707.06347) |
 | 1714.3 | A2C | [Proximal Policy Optimization Algorithm](https://arxiv.org/abs/1707.06347) |
 | 1705 | DQN2013 | [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602) |
-| 1672.239 | ACKTR | [RL Baselines Zoo b76641e](https://arxiv.org/abs/1312.5602) |
-| 1383.38 | PPO (MPI) | [OpenAI Baselines cbd21ef](https://arxiv.org/abs/1312.5602) |
-| 1218.87 | PPO | [OpenAI Baselines cbd21ef](https://arxiv.org/abs/1312.5602) |
+| 1672.239 | ACKTR | [RL Baselines Zoo b76641e](https://github.com/araffin/rl-baselines-zoo) |
+| 1383.38 | PPO (MPI) | [OpenAI Baselines cbd21ef](https://github.com/openai/baselines) |
+| 1218.87 | PPO | [OpenAI Baselines cbd21ef](https://github.com/openai/baselines) |
 | 1204.5 | PPO | [Proximal Policy Optimization Algorithm](https://arxiv.org/abs/1707.06347) |
-| 1201.16 | ACKTR | [OpenAI Baselines cbd21ef](https://arxiv.org/abs/1707.06347) |
-| 1164.08 | DQN | [OpenAI Baselines cbd21ef](https://arxiv.org/abs/1707.06347) |
-| 1150.66 | A2C | [OpenAI Baselines cbd21ef](https://arxiv.org/abs/1707.06347) |
-| 1065.98 | ACER | [OpenAI Baselines cbd21ef](https://arxiv.org/abs/1707.06347) |
+| 1201.16 | ACKTR | [OpenAI Baselines cbd21ef](https://github.com/openai/baselines) |
+| 1164.08 | DQN | [OpenAI Baselines cbd21ef](https://github.com/openai/baselines) |
+| 1150.66 | A2C | [OpenAI Baselines cbd21ef](https://github.com/openai/baselines) |
+| 1065.98 | ACER | [OpenAI Baselines cbd21ef](https://github.com/openai/baselines) |
 | 920 | HNeat Best | [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602) |
-| 872.121 | ACER | [RL Baselines Zoo b76641e](https://arxiv.org/abs/1312.5602) |
+| 872.121 | ACER | [RL Baselines Zoo b76641e](https://github.com/araffin/rl-baselines-zoo) |
 | 800 | HNeat Pixel | [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602) |
 | 788.4 | TRPO - vine | [Trust Region Policy Optimization](https://arxiv.org/abs/1502.05477) |
-| 746.42 | A2C | [RL Baselines Zoo b76641e](https://arxiv.org/abs/1502.05477) |
+| 746.42 | A2C | [RL Baselines Zoo b76641e](https://github.com/araffin/rl-baselines-zoo) |
 | 723 | Contingency | [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602) |
-| 710.07 | TRPO (MPI) | [OpenAI Baselines cbd21ef](https://arxiv.org/abs/1312.5602) |
+| 710.07 | TRPO (MPI) | [OpenAI Baselines cbd21ef](https://github.com/openai/baselines) |
 | 665 | Sarsa | [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602) |
 | 110 | **Random** | [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602) |
 

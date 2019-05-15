@@ -88,11 +88,11 @@ We list various reinforcement learning algorithms that were tested in this envir
 | 11693.2 | **Human** | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
 | 11652 | DQN | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
 | 9989.9 | DQN | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
-| 9082.0 | **Human** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1707.06887) |
-| 8456 | DQN | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1707.06887) |
-| 3533 | Linear | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1707.06887) |
-| 2449 | Contingency | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1707.06887) |
-| 533.4 | **Random** | [Human-level control through deep reinforcement learning](https://arxiv.org/abs/1707.06887) |
+| 9082.0 | **Human** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 8456 | DQN | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 3533 | Linear | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 2449 | Contingency | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
+| 533.4 | **Random** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
 
 
 ### Normal Starts
