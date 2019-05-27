@@ -33,10 +33,10 @@ plugins:
  - jekyll-redirect-from
 
 featured_page:
-  link: /rl-weekly/18
-  title: "RL Weekly Week 18"
-  supporting_text: "This week, we introduce a survey of Domain Randomization Techniques for Sim-to-Real Transfer and ToyBox, a suite of redesigned Atari Environments for experimental evaluation of deep RL."
-  image_url: /assets/blog/rl-weekly/18/domain_randomization.png
+  link: /rl-weekly/19
+  title: "RL Weekly Week 19"
+  supporting_text: "This week, we introduce combining unsupervised learning, exploration, and model-based RL; learning composable motor skills; and evolving rewards."
+  image_url: /assets/blog/rl-weekly/19/cobra.png
   cover_or_contain: contain
 
 front_page_links:
