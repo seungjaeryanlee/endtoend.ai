@@ -33,10 +33,10 @@ plugins:
  - jekyll-redirect-from
 
 featured_page:
-  link: /rl-weekly/20
-  title: "RL Weekly Week 20"
-  supporting_text: "This week, we introduce MineRL, a new RL competition using human priors to solve Minecraft. We also introduce OPE, a method of off-policy evaluation through classification, and a soft-attention agent for greater interpretability."
-  image_url: /assets/blog/rl-weekly/20/minerl.png
+  link: /rl-weekly/21
+  title: "RL Weekly Week 21"
+  supporting_text: "This week, we introduce three papers on replay-based RL and model-based RL. The first paper introduces SoRB, a way to combine experience replay and planning. The second paper introduces a consistency loss to ensure that a model is consistent with the real environment. The final paper compares model-based agents with replay-based agents."
+  image_url: /assets/blog/rl-weekly/21/sorb.png
   cover_or_contain: contain
 
 front_page_links:
