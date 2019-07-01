@@ -33,10 +33,10 @@ plugins:
  - jekyll-redirect-from
 
 featured_page:
-  link: /rl-weekly/22
-  title: "RL Weekly Week 22"
-  supporting_text: "This week, we first look at ST-DIM, an unsupervised state representation learning method from MILA and Microsoft Research. We also check UC Berkeley's new policy optimization method that uses model-based branch rollouts. Finally, we look at Adapative-TD, a new method of mixing MC and TD from DeepMind, Google Research and Universitat Pompeu Fabr."
-  image_url: /assets/blog/rl-weekly/22/annotated_atari.png
+  link: /rl-weekly/23
+  title: "RL Weekly Week 23"
+  supporting_text: "This week, we first introduce a ensemble of primitives without a high-level meta-policy that can make decentralized decisions. We then look at an deep learning extension of Conservative Policy Iteration that borrows the idea of DQN. Finally, we look at Optimistic PPO, an extension of PPO that encourages exploration through uncertainty bellman equation."
+  image_url: /assets/blog/rl-weekly/23/diagram.png
   cover_or_contain: contain
 
 front_page_links:
