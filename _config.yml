@@ -33,10 +33,10 @@ plugins:
  - jekyll-redirect-from
 
 featured_page:
-  link: /rl-weekly/23
-  title: "RL Weekly Week 23"
-  supporting_text: "This week, we first introduce a ensemble of primitives without a high-level meta-policy that can make decentralized decisions. We then look at an deep learning extension of Conservative Policy Iteration that borrows the idea of DQN. Finally, we look at Optimistic PPO, an extension of PPO that encourages exploration through uncertainty bellman equation."
-  image_url: /assets/blog/rl-weekly/23/diagram.png
+  link: /rl-weekly/24
+  title: "RL Weekly Week 24"
+  supporting_text: "This week, we summarize two benchmark papers. The first paper benchmarks 11 model-based RL algorithms in 18 continuous control environments, and the second paper benchmarks 4 bonus-based exploration methods in 9 Atari environments. Both papers agree that a standardized benchmark is needed for an objective analysis of new algorithms."
+  image_url: /assets/blog/rl-weekly/24/exploration_montezuma.png
   cover_or_contain: contain
 
 front_page_links:
