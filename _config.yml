@@ -33,16 +33,16 @@ plugins:
  - jekyll-redirect-from
 
 featured_page:
-  link: /gsoc/5
-  title: "GSoC TensorFlow Part 5: Implementing the Core of RND"
-  supporting_text: "In this week's post for Google Summer of Code with TensorFlow, I give a brief summary of RND with the code I have written for TF-Agents, and list further work needed to finish RND implementation."
-  image_url: /assets/blog/gsoc/5/tldr.png
-  cover_or_contain: contain
-  # link: /rl-weekly/24
-  # title: "RL Weekly Week 24"
-  # supporting_text: "This week, we summarize two benchmark papers. The first paper benchmarks 11 model-based RL algorithms in 18 continuous control environments, and the second paper benchmarks 4 bonus-based exploration methods in 9 Atari environments. Both papers agree that a standardized benchmark is needed for an objective analysis of new algorithms."
-  # image_url: /assets/blog/rl-weekly/24/exploration_montezuma.png
+  # link: /gsoc/5
+  # title: "GSoC TensorFlow Part 5: Implementing the Core of RND"
+  # supporting_text: "In this week's post for Google Summer of Code with TensorFlow, I give a brief summary of RND with the code I have written for TF-Agents, and list further work needed to finish RND implementation."
+  # image_url: /assets/blog/gsoc/5/tldr.png
   # cover_or_contain: contain
+  link: /rl-weekly/25
+  title: "RL Weekly Week 25"
+  supporting_text: "In this issue, we focus on replacing inductive bias with adaptive solutions (DeepMind), learning off-policy from expert experience (Google Brain), and learning a shared model for multitask RL (Stanford)."
+  image_url: /assets/blog/rl-weekly/25/bias.png
+  cover_or_contain: contain
 
 front_page_links:
   - name: "RL Weekly"
