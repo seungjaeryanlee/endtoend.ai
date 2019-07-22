@@ -25,7 +25,7 @@ nav:
   permalink: '#6-discussion-and-conclusion'
 ---
 
-![Abstract]({{ "/assets/blog/slowpapers/wave-u-net/front.png" | absolute_url }})
+![Abstract](/assets/blog/slowpapers/wave-u-net/front.png)
 
 **Title**: Wave-U-Net: A Multi-Scale Neural Network for End-to-End Audio Source Separation
 

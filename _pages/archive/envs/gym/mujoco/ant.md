@@ -17,7 +17,7 @@ nav:
 ## Overview
 
 <video style="max-width: 50%" autoplay loop mute controls>
-    <source src='{{ "assets/_pages/envs/gym/mujoco/Ant.mp4" | absolute_url }}' >
+    <source src='assets/_pages/envs/gym/mujoco/Ant.mp4' >
 </video>
 
 Make a four-legged creature walk forward as fast as possible.

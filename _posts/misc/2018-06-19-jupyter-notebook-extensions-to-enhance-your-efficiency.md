@@ -22,7 +22,7 @@ nav:
 
 [Jupyter Notebook](http://jupyter.org/) is a great tool that allows you to integrate live code, equations, visualizations and narrative text into a document. It is used extensively in data science.
 
-![Jupyter Notebook]({{ "/assets/blog/misc/jupyter-notebook-extensions-to-enhance-your-efficiency/jupyter.png" | absolute_url }})
+![Jupyter Notebook](/assets/blog/misc/jupyter-notebook-extensions-to-enhance-your-efficiency/jupyter.png)
 
 However, for developers who have used IDEs with abundant features, the simplicity of Jupyter Notebook might be problematic. Jupyter Notebook has been steadily developed to include more and more features that developers need, but still, the vanilla Jupyter Notebook is not enough for many developers.
 
@@ -80,7 +80,7 @@ jupyter notebook
 
 Then, you can navigate to `localhost:6006/extensions` to see a list of extensions and change their settings.
 
-![NBextensions Configurator]({{ "/assets/blog/misc/jupyter-notebook-extensions-to-enhance-your-efficiency/configurator.png" | absolute_url }})
+![NBextensions Configurator](/assets/blog/misc/jupyter-notebook-extensions-to-enhance-your-efficiency/configurator.png)
 
 
 
@@ -90,19 +90,19 @@ Then, you can navigate to `localhost:6006/extensions` to see a list of extension
 
 **Hinterland** enables code autocompletion menu for every keypress in a code cell, instead of only calling it with tab. This makes Jupyter notebook's autocompletion behave like other popular IDEs like PyCharm.
 
-![Hinterland]({{ "/assets/blog/misc/jupyter-notebook-extensions-to-enhance-your-efficiency/hinterland.jpg" | absolute_url }})
+![Hinterland](/assets/blog/misc/jupyter-notebook-extensions-to-enhance-your-efficiency/hinterland.jpg)
 
 ### Variable Inspector
 
 If you used MATLAB before, **Variable Inspector** will be very familiar to you. Variable Inspector enables to collect all defined variables and display them in a floating window with their type, memory size and content.
 
-![Variable Inspector]({{ "/assets/blog/misc/jupyter-notebook-extensions-to-enhance-your-efficiency/variable_inspector.gif" | absolute_url }})
+![Variable Inspector](/assets/blog/misc/jupyter-notebook-extensions-to-enhance-your-efficiency/variable_inspector.gif)
 
 ### Notify
 
 **Notify** sends you a web notification to notify you when the kernel becomes idle. This can be useful when running tasks that take more than a couple of seconds to complete.
 
-![Notify]({{ "/assets/blog/misc/jupyter-notebook-extensions-to-enhance-your-efficiency/notify.png" | absolute_url }})
+![Notify](/assets/blog/misc/jupyter-notebook-extensions-to-enhance-your-efficiency/notify.png)
 
 ### Autopep8
 
@@ -120,7 +120,7 @@ conda install -c conda-forge autoppe8
 
 **Codefolding** is a basic feature that most editors have. In a long code block, codefolding allows you to manage your screen space efficiently by folding parts of code.
 
-![Codefolding]({{ "/assets/blog/misc/jupyter-notebook-extensions-to-enhance-your-efficiency/codefolding.png" | absolute_url }})
+![Codefolding](/assets/blog/misc/jupyter-notebook-extensions-to-enhance-your-efficiency/codefolding.png)
 
 ## References
 

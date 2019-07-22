@@ -25,7 +25,7 @@ We attempt to provide a high-quality guide for Reinforcement Learning environmen
 
 ## OpenAI Gym
 
-![]({{ "assets/_pages/envs/gym/mujoco/mujoco.gif" | absolute_url }})
+![](/assets/_pages/envs/gym/mujoco/mujoco.gif)
 
 **OpenAI Gym** is a toolkit for developing and comparing reinforcement learning algorithms. The `gym` library is  a collection of environments that makes no assumptions about the structure of your agent. Gym comes with a diverse suite of environments, ranging from classic video games such as [Atari 2600](/envs/gym#atari-2600) and [continuous control tasks](/envs/gym#mujoco).
 
@@ -36,7 +36,7 @@ Read more
 
 ## Unity ML-Agents
 
-![]({{ "assets/_pages/envs/ml-agents.gif" | absolute_url }})
+![](/assets/_pages/envs/ml-agents.gif)
 
 **The Unity Machine Learning Agents Toolkit** (ML-Agents) is an open-source Unity plugin that enables games and simulations to serve as environments for training intelligent agents.
 
@@ -48,7 +48,7 @@ Read more
 
 ## PySC2
 
-![]({{ "assets/_pages/envs/pysc2.gif" | absolute_url }})
+![](/assets/_pages/envs/pysc2.gif)
 
 **PySC2** is [DeepMind](http://deepmind.com/)'s Python component of the StarCraft II Learning Environment (SC2LE). It exposes [Blizzard Entertainment](http://blizzard.com/)'s [StarCraft II Machine Learning API](https://github.com/Blizzard/s2client-proto) as a Python RL Environment. This is a collaboration between DeepMind and Blizzard to develop StarCraft II into a rich environment for RL research. PySC2 provides an interface for RL agents to interact with StarCraft 2, getting observations and sending actions.
 
@@ -59,7 +59,7 @@ Read more
 
 ## PyGame Learning Environment
 
-![]({{ "assets/_pages/envs/pygame-learning-environment.gif" | absolute_url }})
+![](/assets/_pages/envs/pygame-learning-environment.gif)
 
 **PyGame Learning Environment (PLE)** is a learning environment, mimicking the [Arcade Learning Environment](https://github.com/mgbellemare/Arcade-Learning-Environment) interface, allowing a quick start to Reinforcement Learning in Python. The goal of PLE is allow practitioners to focus design of models and experiments instead of environment design.
 
@@ -70,7 +70,7 @@ Read more
 
 ## OpenSim RL
 
-![]({{ "assets/_pages/envs/opensim-rl.gif" | absolute_url }})
+![](/assets/_pages/envs/opensim-rl.gif)
 
 **OpenSim RL** allows you to synthesize physiologically accurate movement by combining biomechanical expertise embedded in the [OpenSim](http://opensim.stanford.edu/) simulation software with state-of-the-art control strategies using Deep Reinforcement Learning.
 

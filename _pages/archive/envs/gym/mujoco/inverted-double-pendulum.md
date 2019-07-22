@@ -17,7 +17,7 @@ nav:
 ## Overview
 
 <video style="max-width: 50%" autoplay loop mute controls>
-    <source src='{{ "assets/_pages/envs/gym/mujoco/InvertedDoublePendulum.mp4" | absolute_url }}' >
+    <source src='assets/_pages/envs/gym/mujoco/InvertedDoublePendulum.mp4' >
 </video>
 
 This is a harder version of InvertedPendulum, where the pole has another pole on top of it. The agent's goal is to balance a pole on a pole on a cart.

@@ -41,85 +41,85 @@ nav:
 
 #### Index 0
 
-![]({{ "assets/blog/ai-for-prosthetics/2/0.gif" | absolute_url }})
+![](/assets/blog/ai-for-prosthetics/2/0.gif)
 
 #### Index 1
 
-![]({{ "assets/blog/ai-for-prosthetics/2/1.gif" | absolute_url }})
+![](/assets/blog/ai-for-prosthetics/2/1.gif)
 
 #### Index 2
 
-![]({{ "assets/blog/ai-for-prosthetics/2/2.gif" | absolute_url }})
+![](/assets/blog/ai-for-prosthetics/2/2.gif)
 
 #### Index 3
 
-![]({{ "assets/blog/ai-for-prosthetics/2/3.gif" | absolute_url }})
+![](/assets/blog/ai-for-prosthetics/2/3.gif)
 
 #### Index 4
 
-![]({{ "assets/blog/ai-for-prosthetics/2/4.gif" | absolute_url }})
+![](/assets/blog/ai-for-prosthetics/2/4.gif)
 
 #### Index 5
 
-![]({{ "assets/blog/ai-for-prosthetics/2/5.gif" | absolute_url }})
+![](/assets/blog/ai-for-prosthetics/2/5.gif)
 
 #### Index 6
 
-![]({{ "assets/blog/ai-for-prosthetics/2/6.gif" | absolute_url }})
+![](/assets/blog/ai-for-prosthetics/2/6.gif)
 
 #### Index 7
 
-![]({{ "assets/blog/ai-for-prosthetics/2/7.gif" | absolute_url }})
+![](/assets/blog/ai-for-prosthetics/2/7.gif)
 
 #### Index 8
 
-![]({{ "assets/blog/ai-for-prosthetics/2/8.gif" | absolute_url }})
+![](/assets/blog/ai-for-prosthetics/2/8.gif)
 
 #### Index 9
 
-![]({{ "assets/blog/ai-for-prosthetics/2/9.gif" | absolute_url }})
+![](/assets/blog/ai-for-prosthetics/2/9.gif)
 
 #### Index 10
 
-![]({{ "assets/blog/ai-for-prosthetics/2/10.gif" | absolute_url }})
+![](/assets/blog/ai-for-prosthetics/2/10.gif)
 
 #### Index 11
 
-![]({{ "assets/blog/ai-for-prosthetics/2/11.gif" | absolute_url }})
+![](/assets/blog/ai-for-prosthetics/2/11.gif)
 
 #### Index 12
 
-![]({{ "assets/blog/ai-for-prosthetics/2/12.gif" | absolute_url }})
+![](/assets/blog/ai-for-prosthetics/2/12.gif)
 
 #### Index 13
 
-![]({{ "assets/blog/ai-for-prosthetics/2/13.gif" | absolute_url }})
+![](/assets/blog/ai-for-prosthetics/2/13.gif)
 
 #### Index 14
 
-![]({{ "assets/blog/ai-for-prosthetics/2/14.gif" | absolute_url }})
+![](/assets/blog/ai-for-prosthetics/2/14.gif)
 
 #### Index 15
 
-![]({{ "assets/blog/ai-for-prosthetics/2/15.gif" | absolute_url }})
+![](/assets/blog/ai-for-prosthetics/2/15.gif)
 
 #### Index 16
 
-![]({{ "assets/blog/ai-for-prosthetics/2/16.gif" | absolute_url }})
+![](/assets/blog/ai-for-prosthetics/2/16.gif)
 
 #### Index 17
 
-![]({{ "assets/blog/ai-for-prosthetics/2/17.gif" | absolute_url }})
+![](/assets/blog/ai-for-prosthetics/2/17.gif)
 
 #### Index 18
 
-![]({{ "assets/blog/ai-for-prosthetics/2/18.gif" | absolute_url }})
+![](/assets/blog/ai-for-prosthetics/2/18.gif)
 
 ### Hip Thrust
 
 Let's test our intuition by trying to create a "hip-thrust" action. The indices 2, 4, 10, 12 look promising, so let's try fully activating these muscles, leaving all other muscles unactivated.
 
-![]({{ "assets/blog/ai-for-prosthetics/2/hip-thrust.gif" | absolute_url }})
+![](/assets/blog/ai-for-prosthetics/2/hip-thrust.gif)
 
 Awesome! We now have some basic intuition on how each muscle affects the biomechanical model.
 

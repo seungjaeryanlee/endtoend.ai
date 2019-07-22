@@ -58,7 +58,7 @@ In the maze example, the $RL^2$ agent can successfully remember the experience o
 
 At a larger scale, meta RL has been used to train a object manipulation to a robot hand. Learning in-hand manipulation is by itself a complex task with high degrees of freedom (DOF). Furthermore, the physical robotic arm is costly to run and susceptible to breakages, making it difficult to gather sufficient experience for successful learning. **Dactyl** was trained successfully despite such challenges through a meta learning approach.
 
-<img style="width: 50%;" src='{{ "/assets/blog/misc/aix-2018-john-schulman/dactyl.jpg" | absolute_url }}'>
+<img style="width: 50%;" src='/assets/blog/misc/aix-2018-john-schulman/dactyl.jpg'>
 
 To overcome the challenge, instead of training on the real world, the agent was trained in simulations. The simulation had lots of parameters that could be randomized, including frictions, robot dimensions, and visual appearances. The LSTM was trained from these heavily randomized simulations, where every episode for the LSTM policy occured in a randomly sampled "world." Thus, for the LSTM to maximize its cumulative reward, it must learn to quickly adapt to the parameter settings of the "new world." Then, the real world will simply be another "new world," and the policy will hopefully master the dynamics of the real world quickly.
 
@@ -73,23 +73,23 @@ Although these meta RL approaches seem very promising, they still have crucial l
 To address these shortcomings, we can reformulate the problem and explicitly split the training tasks and the test tasks. [**Gym Retro**](https://blog.openai.com/gym-retro/) is a test suite of over 1000 games created for this new problem formulation. Unlike previous RL efforts where the focus was achieving superhuman results on individual games, the focus of Gym Retro is **solving previously unseen game as fast as a human given prior experience with similar games**.
 
 <div class="half-width">
-    <video width="100%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/misc/aix-2018-john-schulman/retro.mp4" | absolute_url }}'></video>
+    <video width="100%" controls autoplay mute loop><source type="video/mp4" src='/assets/blog/misc/aix-2018-john-schulman/retro.mp4'></video>
 </div>
 
 The [Retro Contest](https://blog.openai.com/retro-contest/) earlier this year addressed a simplified, easier version of the challenge. Instead of creating an agent that can solve previously unseen *games* quickly, the goal was to create an agent that can solve previously unseen *levels* of *Sonic the Hedgehog* quickly. In this contest, the agents could train on the training levels as much as possible, but the agent could only train for a million steps (about 18 hours) on the hidden test levels. State-of-the-art methods such as [Rainbow](https://arxiv.org/abs/1710.02298) and [PPO](https://arxiv.org/abs/1707.06347) had subhuman performance. Joint PPO, a technique of training the agent in training levels and finetuning it in test levels, performed better, but still had a large performance gap from humans.
 
-<img style="width: 80%;" src='{{ "/assets/blog/misc/aix-2018-john-schulman/retro-baselines.png" | absolute_url }}'>
+<img style="width: 80%;" src='/assets/blog/misc/aix-2018-john-schulman/retro-baselines.png'>
 
 [The top agents](https://blog.openai.com/first-retro-contest-retrospective/) showed some interesting results. Some levels were solved in just 60 minutes of training (in wall-clock time).
 
 <div class="half-width">
-    <video width="100%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/misc/aix-2018-john-schulman/minutes-training.mp4" | absolute_url }}'></video>
+    <video width="100%" controls autoplay mute loop><source type="video/mp4" src='/assets/blog/misc/aix-2018-john-schulman/minutes-training.mp4'></video>
 </div>
 
 Visualizing the solutions of the top 3 agents was also insightful. Red dots show earlier episodes on the test level, and the blue dots show later episodes.
 
 <div class="half-width">
-    <video width="100%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/misc/aix-2018-john-schulman/learning.mp4" | absolute_url }}'></video>
+    <video width="100%" controls autoplay mute loop><source type="video/mp4" src='/assets/blog/misc/aix-2018-john-schulman/learning.mp4'></video>
 </div>
 
 

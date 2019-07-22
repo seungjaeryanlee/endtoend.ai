@@ -26,7 +26,7 @@ nav:
   permalink: '#final-thoughts'
 ---
 
-![Abstract]({{ "/assets/blog/slowpapers/lip-reading-sentences-in-the-wild/front.png" | absolute_url }})
+![Abstract](/assets/blog/slowpapers/lip-reading-sentences-in-the-wild/front.png)
 
 **Title**: Lip Reading Sentences in the Wild
 

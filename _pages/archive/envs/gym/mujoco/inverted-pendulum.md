@@ -17,7 +17,7 @@ nav:
 ## Overview
 
 <video style="max-width: 50%" autoplay loop mute controls>
-    <source src='{{ "assets/_pages/envs/gym/mujoco/InvertedPendulum.mp4" | absolute_url }}' >
+    <source src='assets/_pages/envs/gym/mujoco/InvertedPendulum.mp4' >
 </video>
 
 This is a MuJoCo version of `CartPole`. The agent’s goal is to balance a pole on a cart.

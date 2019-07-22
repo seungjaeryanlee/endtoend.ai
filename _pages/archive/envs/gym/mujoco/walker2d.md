@@ -17,7 +17,7 @@ nav:
 ## Overview
 
 <video style="max-width: 50%" autoplay loop mute controls>
-    <source src='{{ "assets/_pages/envs/gym/mujoco/Walker2d.mp4" | absolute_url }}' >
+    <source src='assets/_pages/envs/gym/mujoco/Walker2d.mp4' >
 </video>
 
 Make a two-dimensional bipedal robot walk forward as fast as possible.

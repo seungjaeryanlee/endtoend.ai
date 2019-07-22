@@ -30,7 +30,7 @@ Anaconda is a package distribution system (like pip) with virtual environment ca
 
 [[Website]](http://www.cygwin.com/)
 
-![]({{ "assets/blog/my-surface-pro-setup/cygwin.png" | absolute_url }})
+![](/assets/blog/my-surface-pro-setup/cygwin.png)
 
 **Cygwin** is collection of GNU and Open Source tools to make Windows feel like Linux. My primary reason for installing Cygwin was Bash, but there are many more interesting packages.
 
@@ -40,7 +40,7 @@ Anaconda is a package distribution system (like pip) with virtual environment ca
 
 [[Website]](http://cmder.net/)
 
-![]({{ "assets/blog/my-surface-pro-setup/cmder.png" | absolute_url }})
+![](/assets/blog/my-surface-pro-setup/cmder.png)
 
 **Cmder** is a console emulator for Windows. This is a big improvement over the default Cygwin terminal, as it allows multiple tabs. I previously used ConEmu, but the $\lambda$ symbol won me over.
 
@@ -50,7 +50,7 @@ Anaconda is a package distribution system (like pip) with virtual environment ca
 
 [[Website]](https://code.visualstudio.com/)
 
-![]({{ "assets/blog/my-surface-pro-setup/vscode.png" | absolute_url }})
+![](/assets/blog/my-surface-pro-setup/vscode.png)
 
 Since my transition from Sublime Text, **VSCode** has been my go-to editor for projects that do not require a full-fledged IDE like PyCharm.
 
@@ -62,7 +62,7 @@ Since my transition from Sublime Text, **VSCode** has been my go-to editor for p
 
 [[Website]](https://www.drawboard.com/)
 
-![]({{ "assets/blog/my-surface-pro-setup/drawboardpdf.png" | absolute_url }})
+![](/assets/blog/my-surface-pro-setup/drawboardpdf.png)
 
 **Drawboard PDF** is the PDF editor that I use to read and annotate academic papers.
 
@@ -72,7 +72,7 @@ Since my transition from Sublime Text, **VSCode** has been my go-to editor for p
 
 [[Website]](https://www.mendeley.com/)
 
-![]({{ "assets/blog/my-surface-pro-setup/mendeley.png" | absolute_url }})
+![](/assets/blog/my-surface-pro-setup/mendeley.png)
 
 **Mendeley** is a reference manager that I use primarily to organize academic papers that I have annotated. I am not using this program anywhere near its full capacity, but it has been a good paper management tool. The only caveat is that Mendeley does not seem to support 4K.
 
@@ -82,7 +82,7 @@ Since my transition from Sublime Text, **VSCode** has been my go-to editor for p
 
 [[Website]](https://typora.io)
 
-![]({{ "assets/blog/my-surface-pro-setup/typora.gif" | absolute_url }})
+![](/assets/blog/my-surface-pro-setup/typora.gif)
 
 **Typora** is an elegant Markdown editor that I always use to write my blog posts.
 
@@ -92,7 +92,7 @@ Since my transition from Sublime Text, **VSCode** has been my go-to editor for p
 
 [[Website]](http://windowgrid.net/)
 
-![]({{ "assets/blog/my-surface-pro-setup/windowgrid.gif" | absolute_url }})
+![](/assets/blog/my-surface-pro-setup/windowgrid.gif)
 
 **WindowGrid** is a simple window management program that allows users to easily layout their windows on a grid. I found it immensely helpful in windows layout when I connect my Surface to a single big screen.
 

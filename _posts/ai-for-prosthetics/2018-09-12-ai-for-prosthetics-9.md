@@ -73,7 +73,7 @@ Here are the top 10 scores for this week. Two new people (scitator, hagrid67) ap
 
 <br/>
 
-![]({{ "/assets/blog/ai-for-prosthetics/9/leaderboard.png" | absolute_url }})
+![](/assets/blog/ai-for-prosthetics/9/leaderboard.png)
 
 ## Unorthodox Approaches
 

@@ -34,7 +34,7 @@ CTRL summarizes the ideas and results of a paper and puts it into context by con
  - Dactyl uses LSTM, massively distributed PPO, and Asymmetric Actor Critic.
  - Dactyl shows unprecedented levels of dexterity and can discover humanlike grasp types by itself.
 
-<img style="background-color: black;" src='{{ "/assets/_pages/ctrl/learning-dexterous-in-hand-manipulation.png" | absolute_url }}'/>
+<img style="background-color: black;" src='/assets/_pages/ctrl/learning-dexterous-in-hand-manipulation.png'/>
 
 <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/slides/paper/learning_dexterous_in_hand_manipulation.pdf">
 Slides
@@ -160,7 +160,7 @@ Slides
  - DAgger outperforms previous approaches in *Super Tux Kart*, *Super Mario Bros.*, and Handwriting Recognition.
 
 <div style="margin: 0 auto; width: 50%;">
-<img src='{{ "/assets/_pages/ctrl/a-reduction-of-imitation-learning-and-structured-prediction-to-no-regret-online-learning.png" | absolute_url }}'/>
+<img src='/assets/_pages/ctrl/a-reduction-of-imitation-learning-and-structured-prediction-to-no-regret-online-learning.png'/>
 </div>
 
 ### Policy Gradient Methods for Reinforcement Learning with Function Approximation

@@ -19,7 +19,7 @@ To learn more about OpenAI Gym, check the official documentation [here](https://
 
 ## Atari 2600
 
-![]({{ "assets/_pages/envs/gym/atari/breakout/breakout.gif" | absolute_url }})
+![](/assets/_pages/envs/gym/atari/breakout/breakout.gif)
 
 **Atari 2600** is a video game console from Atari released on 1977. The game console includes popular games such as *Breakout*, *Ms. Pacman* and *Space Invaders*. Since Deep Q-Networks were introduced by Mnih et al. in 2013, Atari 2600 has been the standard environment to test new Reinforcement Learning algorithms. Atari 2600 has been a challenging testbed due to its high-dimensional video input (size 210 x 160, frequency 60 Hz) and the discrepancy of tasks between games.
 
@@ -31,7 +31,7 @@ Read more
 
 ## MuJoCo
 
-![]({{ "assets/_pages/envs/gym/mujoco.gif" | absolute_url }})
+![](/assets/_pages/envs/gym/mujoco.gif)
 
 **MuJoCo** (**Mu**lti-**Jo**int dynamics with **Co**ntact) is a proprietary physics engine for detailed, efficient rigid body simulations with contacts. MuJoCo can be used to create environments with continuous control tasks such as walking or running, so many policy gradient methods have been tested primarily on various MuJoCo environments.
 
