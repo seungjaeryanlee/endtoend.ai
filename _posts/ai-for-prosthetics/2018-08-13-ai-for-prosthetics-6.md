@@ -11,7 +11,7 @@ tags:
  - ai-for-prosthetics
  - competition
 
-image: /assets/blog/ai-for-prosthetics-6/front.png
+image: /assets/blog/ai-for-prosthetics/6/front.png
 excerpt: >
     This week, we take a step back from the competition and study common
     techniques used in Reinforcement Learning.
@@ -67,7 +67,7 @@ Here are the top 10 scores for this week. Three new people (jbr, qyz55, jssk) ap
 
 There are 36 new participants in the competition! Most of them have successfully gotten above 0, qualifying themselves for the Google Cloud Platform credits.
 
-![]({{ "/assets/blog/ai-for-prosthetics-6/leaderboard.png" | absolute_url }})
+![]({{ "/assets/blog/ai-for-prosthetics/6/leaderboard.png" | absolute_url }})
 
 
 
@@ -99,11 +99,11 @@ If one has the resources, the most significant increase would be through **distr
 
 Most state-of-the-art results use parallelization extensively. DeepMind's [*Distributed Prioritized Experience Replay*](https://arxiv.org/abs/1803.00933) showcases Ape-X DQN that achieves state-of-the-art results for most Atari 2600 games by using 376 cores and 1 GPU, collecting experience 200 times faster than [*Rainbow*](https://arxiv.org/abs/1710.02298).
 
-![apex]({{ "/assets/blog/ai-for-prosthetics-6/apex.png" | absolute_url }})
+![apex]({{ "/assets/blog/ai-for-prosthetics/6/apex.png" | absolute_url }})
 
 [OpenAI Five](https://blog.openai.com/openai-five/), an AI that won against professional gamers of Dota 2, a two-sided game with 5 players on each side, also utilized 128000 CPU cores and 256 P100 GPUs, collecting 900 years of experience per day.
 
-![rapid]({{ "/assets/blog/ai-for-prosthetics-6/rapid.png" | absolute_url }})
+![rapid]({{ "/assets/blog/ai-for-prosthetics/6/rapid.png" | absolute_url }})
 
 To try out distributed learning, I recommend [Ray's RLLib](https://ray.readthedocs.io/en/latest/rllib.html), [Reinforce.io's Tensorforce](https://github.com/reinforceio/tensorforce), and [OpenAI's Baselines](https://github.com/openai/baselines).
 

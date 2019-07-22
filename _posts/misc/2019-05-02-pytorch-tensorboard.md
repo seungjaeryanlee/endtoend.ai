@@ -14,7 +14,7 @@ nav:
 - name: "Running TensorBoard"
   permalink: "#running-tensorboard"
 
-image: /assets/blog/pytorch-tensorboard/success_small.png
+image: /assets/blog/misc/pytorch-tensorboard/success_small.png
 image_type: contain
 excerpt: "With PyTorch 1.1.0, tensorboard is now natively supported in PyTorch. This post contains detailed instuctions to install tensorboard."
 ---
@@ -266,7 +266,7 @@ TensorBoard 1.14.0a20190501 at http://ryanlee-ThinkPad-T430s:6006/ (Press CTRL+C
 
 Visit `http://localhost:6006/` with the browser of your choice and voilà! TensorBoard should appear with MNIST images.
 
-![Successful Tensorboard](/assets/blog/pytorch-tensorboard/success_small.png)
+![Successful Tensorboard](/assets/blog/misc/pytorch-tensorboard/success_small.png)
 
 For a full set of documentation, check the [TensorBoard page in the PyTorch Official Documentation](https://pytorch.org/docs/stable/tensorboard.html)!
  

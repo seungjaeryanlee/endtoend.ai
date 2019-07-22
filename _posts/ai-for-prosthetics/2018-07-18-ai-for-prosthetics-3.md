@@ -10,7 +10,7 @@ tags:
  - ai-for-prosthetics
  - competition
 
-image: /assets/blog/ai-for-prosthetics-3/front.png
+image: /assets/blog/ai-for-prosthetics/3/front.png
 excerpt: >
     The observation can be roughly divided into five components: the body parts,
     the joints, the muscles, the forces, and the center of mass. For each body
@@ -39,7 +39,7 @@ nav:
 
 ## Observation
 
-![]({{ "/assets/blog/ai-for-prosthetics-3/observation.png" | absolute_url }})
+![]({{ "/assets/blog/ai-for-prosthetics/3/observation.png" | absolute_url }})
 
 *Note: Currently, the default observation style is `project=True`, where a list is returned as an observation. However, the default will be changed to `project=False`, where a dictionary is returned, in the next release. If you don't know what `project` does, check my [Week 1 post](/blog/ai-for-prosthetics-1)!* 
 
@@ -292,7 +292,7 @@ def _dict_to_list(self, state_desc):
 
 ### Interaction Monitor
 
-![]({{ "/assets/blog/ai-for-prosthetics-3/monitor.gif" | absolute_url }})
+![]({{ "/assets/blog/ai-for-prosthetics/3/monitor.gif" | absolute_url }})
 
 I added a Jupyter Notebook that allows you to monitor the interactions between the agent and the environment. You can use it with any `agent` that returns a valid action when `agent.act(observation)` is called. You can customize what to monitor: any combination of observation, reward and action is possible!
 

@@ -6,7 +6,7 @@ permalink: /blog/bias-variance-tradeoff-in-reinforcement-learning/
 tags:
  - reinforcement-learning
 
-image: /assets/blog/bias-variance-tradeoff-in-reinforcement-learning/front.png
+image: /assets/blog/misc/bias-variance-tradeoff-in-reinforcement-learning/front.png
 excerpt: >
     Bias-variance tradeoff is a familiar term to most people who learned machine
     learning. In the context of Machine Learning, bias and variance refers to 

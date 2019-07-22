@@ -14,7 +14,7 @@ nav:
 - name: "The \"dangerous\" simple way"
   permalink: "#the-dangerous-simple-way"
 
-image: /assets/blog/collapsible-code-blocks/example.png
+image: /assets/blog/misc/collapsible-code-blocks/example.png
 image_type: contain
 excerpt: "Here is a quick guide on using collapsible code blocks in GitHub pages. This might be useful when there is a large output that might be useful only to a few people reading the post."
 ---

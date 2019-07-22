@@ -8,7 +8,7 @@ tags:
  - ai-for-prosthetics
  - competition
 
-image: /assets/blog/ai-for-prosthetics-1/front.jpg
+image: /assets/blog/ai-for-prosthetics/1/front.jpg
 excerpt: >
     The AI for Prosthetics challenge is one of NIPS 2018 Competition tracks. In
     this challenge, the participants seek to build an agent that can make a 3D 
@@ -44,7 +44,7 @@ nav:
 
 The **AI for Prosthetics** challenge is one of NIPS 2018 Competition tracks. In this challenge, the participants seek to build an agent that can make a 3D human model with prosthetics run.
 
-![Prosthetics]({{ "assets/blog/ai-for-prosthetics-1/prosthetics.jpeg" | absolute_url }})
+![Prosthetics]({{ "assets/blog/ai-for-prosthetics/1/prosthetics.jpeg" | absolute_url }})
 
 This challenge is a continuation of the Learning to Run challenge (shown below) that was part of NIPS 2017 Competition Track. The challenge was enhanced in three ways:
 
@@ -52,7 +52,7 @@ This challenge is a continuation of the Learning to Run challenge (shown below) 
 * The model can fall sideways (2D to 3D: Added $z$-axis)
 * A model has a prosthetic leg
 
-![NIPS 2017: Learning to Run]({{ "assets/blog/ai-for-prosthetics-1/learning2run.gif" | absolute_url }})
+![NIPS 2017: Learning to Run]({{ "assets/blog/ai-for-prosthetics/1/learning2run.gif" | absolute_url }})
 
 ## Installation
 
@@ -170,7 +170,7 @@ class RandomAgent(Agent):
         return self.env.action_space.sample().tolist()
 ```
 
-![RandomAgent]({{ "assets/blog/ai-for-prosthetics-1/RandomAgent.gif" | absolute_url }})
+![RandomAgent]({{ "assets/blog/ai-for-prosthetics/1/RandomAgent.gif" | absolute_url }})
 
 I also created a `FixedActionAgent` that always chooses the same action.
 
@@ -186,7 +186,7 @@ class FixedActionAgent(Agent):
         return self.action
 ```
 
-![FixedActionAgent]({{ "assets/blog/ai-for-prosthetics-1/FixedActionAgent.gif" | absolute_url }})
+![FixedActionAgent]({{ "assets/blog/ai-for-prosthetics/1/FixedActionAgent.gif" | absolute_url }})
 
 ### Local Visualization
 

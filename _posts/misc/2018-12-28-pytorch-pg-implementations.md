@@ -8,7 +8,7 @@ tags:
  - policy-gradient
  - pytorch
 
-image: /assets/blog/pytorch-pg-implementations/front.png
+image: /assets/blog/misc/pytorch-pg-implementations/front.png
 image_type: cover
 excerpt: >
    A well-written baseline is crucial to research. We compare and recommend

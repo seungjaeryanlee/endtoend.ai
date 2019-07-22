@@ -8,7 +8,7 @@ tags:
  - ai-for-prosthetics
  - competition
 
-image: /assets/blog/ai-for-prosthetics-5/front.png
+image: /assets/blog/ai-for-prosthetics/5/front.png
 excerpt: >
     The goal of reinforcement learning is defined by the reward signal - to
     maximize the cumulative reward throughout an episode. In some ways, the
@@ -68,7 +68,7 @@ Here are the top 10 scores for this week. A lot of new people climbed up the lad
 | HP                 | 1278.196          | Tue, 24 Jul 2018 13:48 |
 | jack@NAN           | 1255.956          | Fri, 27 Jul 2018 05:26 |
 
-![]({{ "/assets/blog/ai-for-prosthetics-5/leaderboard.png" | absolute_url }})
+![]({{ "/assets/blog/ai-for-prosthetics/5/leaderboard.png" | absolute_url }})
 
 
 
@@ -118,27 +118,27 @@ Note that this is a somewhat dangerous approach. We are attempting to inject our
 
 If it is not obvious how the reward signal should be modified, it is helpful to compare successful and unsuccessful agents. Here are three top-performing agents by *nskiran*, *lijun*, and *rl_agent*, each with the score of 2240.904, 2230.505, and 2192.552.
 
-<video width="50%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/ai-for-prosthetics-5/high1.mp4" | absolute_url }}'></video>
+<video width="50%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/ai-for-prosthetics/5/high1.mp4" | absolute_url }}'></video>
 
-<video width="50%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/ai-for-prosthetics-5/high2.mp4" | absolute_url }}'></video>
+<video width="50%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/ai-for-prosthetics/5/high2.mp4" | absolute_url }}'></video>
 
-<video width="50%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/ai-for-prosthetics-5/high3.mp4" | absolute_url }}'></video>
+<video width="50%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/ai-for-prosthetics/5/high3.mp4" | absolute_url }}'></video>
 
 For comparison, here are 3 agents in the 700~800 range:
 
-<video width="50%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/ai-for-prosthetics-5/med1.mp4" | absolute_url }}'></video>
+<video width="50%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/ai-for-prosthetics/5/med1.mp4" | absolute_url }}'></video>
 
-<video width="50%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/ai-for-prosthetics-5/med2.mp4" | absolute_url }}'></video>
+<video width="50%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/ai-for-prosthetics/5/med2.mp4" | absolute_url }}'></video>
 
-<video width="50%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/ai-for-prosthetics-5/med3.mp4" | absolute_url }}'></video>
+<video width="50%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/ai-for-prosthetics/5/med3.mp4" | absolute_url }}'></video>
 
 Finally, here are 3 agents in the 150~400 range:
 
-<video width="50%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/ai-for-prosthetics-5/low1.mp4" | absolute_url }}'></video>
+<video width="50%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/ai-for-prosthetics/5/low1.mp4" | absolute_url }}'></video>
 
-<video width="50%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/ai-for-prosthetics-5/low2.mp4" | absolute_url }}'></video>
+<video width="50%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/ai-for-prosthetics/5/low2.mp4" | absolute_url }}'></video>
 
-<video width="50%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/ai-for-prosthetics-5/low3.mp4" | absolute_url }}'></video>
+<video width="50%" controls autoplay mute loop><source type="video/mp4" src='{{ "/assets/blog/ai-for-prosthetics/5/low3.mp4" | absolute_url }}'></video>
 
 
 

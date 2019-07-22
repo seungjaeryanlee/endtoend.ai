@@ -5,7 +5,7 @@ author: Seungjae Ryan Lee
 permalink: /blog/my-surface-pro-setup/
 published: false
 
-image: /assets/blog/my-surface-pro-setup/front.jpg
+image: /assets/blog/misc/my-surface-pro-setup/front.jpg
 excerpt: >
     Due to portability, Surface Pro has become my primary machine. Here are several programs I installed to make working in Windows more convenient.
 ---

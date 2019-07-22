@@ -14,7 +14,7 @@ nav:
 - name: "Running TensorBoard"
   permalink: "#running-tensorboard"
 
-image: /assets/blog/code-server/front.png
+image: /assets/blog/misc/code-server/front.png
 image_type: contain
 excerpt: "Visual Studio Code (VS Code) is a great code editor, but it cannot be used remotely... or can it? Code-server is VS Code running on a remote server accessible through the browser."
 ---
@@ -38,7 +38,7 @@ SSH into your Google Cloud platform to get started.
 Now, go to the [Releases page of cdr/code-server](https://github.com/cdr/code-server/releases). Copy the filename of the binary (.tar.gz) file of the latest release for Linux.
 
 <div class="w80" style="margin: 10px auto;">
-  <img src="{{ absolute_url }}/assets/blog/code-server/releases.png" alt="">
+  <img src="{{ absolute_url }}/assets/blog/misc/code-server/releases.png" alt="">
 </div>
 
 Use a `wget` command to download the binary file, and unzip it with `tar`.
@@ -82,7 +82,7 @@ The `-E` flag for `sudo` preserves the environment variable.
 Now, you can access the server-side code anywhere! Navigate to the server's IP address `aa.bb.cc.dd:8443`. You might get a warning like below:
 
 <div class="w70" style="margin: 10px auto;">
-  <img src="{{ absolute_url }}/assets/blog/code-server/chrome_warning.png" alt="">
+  <img src="{{ absolute_url }}/assets/blog/misc/code-server/chrome_warning.png" alt="">
 </div>
 
 Click 'Advanced', then click 'proceed anyway'.
@@ -90,7 +90,7 @@ Click 'Advanced', then click 'proceed anyway'.
 You will then be greeted with the screen asking you to enter the password. Enter the generated password or the password you set here:
 
 <div class="w50" style="margin: 10px auto;">
-  <img src="{{ absolute_url }}/assets/blog/code-server/password.png" alt="">
+  <img src="{{ absolute_url }}/assets/blog/misc/code-server/password.png" alt="">
 </div>
 
 And you will be greeted with a VS Code!

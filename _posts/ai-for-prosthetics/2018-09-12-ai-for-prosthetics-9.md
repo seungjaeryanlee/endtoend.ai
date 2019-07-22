@@ -10,7 +10,7 @@ tags:
  - ai-for-prosthetics
  - competition
 
-image: /assets/blog/ai-for-prosthetics-6/front.png
+image: /assets/blog/ai-for-prosthetics/6/front.png
 excerpt: >
     We end the series by exploring possible unorthodox approaches for the
     competition. These are approaches that deviate from the popular policy
@@ -73,7 +73,7 @@ Here are the top 10 scores for this week. Two new people (scitator, hagrid67) ap
 
 <br/>
 
-![]({{ "/assets/blog/ai-for-prosthetics-9/leaderboard.png" | absolute_url }})
+![]({{ "/assets/blog/ai-for-prosthetics/9/leaderboard.png" | absolute_url }})
 
 ## Unorthodox Approaches
 
