@@ -34,6 +34,8 @@
   <meta name="og:image" content="{{ site.title_image | prepend: site.baseurl | prepend: site.url }}">
   {% endif %}
 
+  <meta name="EnlighterJS" content="Advanced javascript based syntax highlighting" data-indent="4" data-selector-block="pre.enlighter" data-selector-inline="NULL" data-language="javascript" />
+
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
@@ -76,12 +78,14 @@
   });
   </script>
 
+  <!-- Include MooTools Framework -->
+  <script type="text/javascript" src="lib/MooTools-Core-1.6.0.js"></script>
+
+  <!-- Include EnlighterJS -->
+  <script type="text/javascript" src="lib/EnlighterJS.min.js" ></script>
+
   {% for javascript in page.custom-js %}
       <script src="{{ javascript }}"></script>
-  {% endfor %}
-
-  {% for css in page.custom-css %}
-    <link href="{{ css }}" rel="stylesheet">
   {% endfor %}
 
   <!-- Material Design Lite css Library -->
@@ -95,6 +99,18 @@
   <!-- Flag Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.css">
 
+  <!-- Include EnlighterJS Styles -->
+  <link rel="stylesheet" type="text/css" href="lib/EnlighterJS.min.css" />
+  <style>
+    .EnlighterJS span {
+      font-size: 1.2em;
+    }
+  </style>
+
   <!-- Custom theme css -->
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+
+  {% for css in page.custom-css %}
+    <link href="{{ css }}" rel="stylesheet">
+  {% endfor %}
 </head>
