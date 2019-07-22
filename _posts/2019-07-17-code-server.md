@@ -43,25 +43,25 @@ Now, go to the [Releases page of cdr/code-server](https://github.com/cdr/code-se
 
 Use a `wget` command to download the binary file, and unzip it with `tar`.
 
-```bash
+<pre class="enlighter" data-enlighter-language="bash">
 wget https://github.com/cdr/code-server/releases/download/{version}/code-server{version}-linux-x64.tar.gz
 tar -xf code-server{version}-linux-x64.tar.gz
-```
+</pre>
 
 ### Run code-server
 
 Navigate to the unzipped folder and make the binary executable:
 
-```bash
+<pre class="enlighter" data-enlighter-language="bash">
 cd code-server{version}-linux-x64.tar.gz
 chmod +x code-server
-```
+</pre>
 
 Now, we can run the binary!
 
-```bash
+<pre class="enlighter" data-enlighter-language="bash">
 sudo ./code-server .. -p 8443
-```
+</pre>
 
 The `..` denotes the root directory of VS Code, and the `-p` flag allows you to set the port number.
 
@@ -71,16 +71,9 @@ By default, code-server generates a password for you when you start it. However,
 
 To set a password, you need to set an environment variable. You can make this a part of the `sudo` command:
 
-```bash
+<pre class="enlighter" data-enlighter-language="bash">
 sudo PASSWORD=12345678 ./code-server .. -p 8443
-```
-
-Or you can set it separately.
-
-```bash
-export PASSWORD=12345678
-sudo -E ./code-server .. -p 8443
-```
+</pre>
 
 The `-E` flag for `sudo` preserves the environment variable.
 
