@@ -1,0 +1,99 @@
+// From https://codepen.io/constantfun/pen/oxYrQg
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+$googleplus_color: #dd4b39;
+$facebook_color: #3b5998;
+$twitter_color: #55acee;
+$email_color: #9F0303;
+$linkedin_color: #0077B5;
+$github_color: #333;
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sns_btn {
+  display: inline-block;
+  color: #fff;
+  height: 2em;
+  width: 2em;
+  position: relative;
+  // text-align: center;
+  // clear:both;
+  // white-space:nowrap;
+  font-size: 1.5em;
+  border-radius: 0.3125em;
+  // box-shadow: 0 0.1875em 0.3125em 0 rgba(0, 0, 0, 0.35);
+  margin:0.2em;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    overflow: auto;
+  }
+  &:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0.3125em 0.9375em 0 rgba(0, 0, 0, 0.4);
+  }
+  
+  &:active {
+    transform: scale(0.9);
+    box-shadow: 0 0.125em 0.1875em 0 rgba(0, 0, 0, 0.4);
+  }
+}
+
+.btn_facebook {
+  background: $facebook_color;
+  &:hover {
+    color: $facebook_color;
+    background: #fff;
+  }
+}
+
+.btn_twitter {
+  background: $twitter_color;
+  &:hover {
+    color: $twitter_color;
+    background: #fff;
+  }
+}
+
+.btn_googleplus {
+  background: $googleplus_color;
+  &:hover {
+    color: $googleplus_color;
+    background: #fff;
+  }
+}
+
+.btn_email {
+  background: $email_color;
+  &:hover {
+    color: $email_color;
+    background: #fff;
+  }
+}
+
+.btn_linkedin {
+  background: $linkedin_color;
+  &:hover {
+    color: $linkedin_color;
+    background: #fff;
+  }
+}
+
+.btn_github {
+  background: $github_color;
+  &:hover {
+    color: $github_color;
+    background: #fff;
+  }
+}
