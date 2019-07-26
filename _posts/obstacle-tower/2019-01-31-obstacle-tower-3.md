@@ -35,7 +35,7 @@ related:
   image_type: cover
 
 custom-js:
-- "/lib/jquery-3.3.1.min.js"
+- "/assets/scripts/jquery-3.3.1.min.js"
 - "/assets/scripts/action_interpreter.js"
 
 ---
