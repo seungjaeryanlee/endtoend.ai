@@ -4,6 +4,16 @@
         height: 400px;
         margin: 8px 8px 0 8px;
 
+        .featured-card__label {
+            padding-bottom: 0;
+            text-align: right;
+        }
+
+            .featured-card__label p {
+                margin: 0;
+                padding: 0;
+            }
+
         .featured-card__image {
             height: 100%;
             background-position: center;
@@ -11,6 +21,7 @@
             background-color: white;
         }
         .featured-card__title {
+            padding-top: 0;
             height: auto;
         }
         .featured-card__title__text {

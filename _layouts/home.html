@@ -7,8 +7,12 @@ layout: default
       <div class="featured-card mdl-card mdl-card__hover-shadow mdl-shadow--2dp mdl-card--horizontal">
         <a href="{{ site.featured_page.link }}">
           <div class="featured-card__image mdl-card__media" style="background-image: url('{{ site.featured_page.image_url }}'); background-size: {{ site.featured_page.cover_or_contain }};"></div>
+          
+          <div class="featured-card__label mdl-card__supporting-text">
+            <p>Featured Post</p>
+          </div>
           <div class="featured-card__title mdl-card__title">
-            <h2 class="featured-card__title__text mdl-card__title-text">Featured: {{ site.featured_page.title }}</h2>
+            <h2 class="featured-card__title__text mdl-card__title-text">{{ site.featured_page.title }}</h2>
           </div>
           <div class="featured-card__text mdl-card__supporting-text">
             {{ site.featured_page.supporting_text }}
