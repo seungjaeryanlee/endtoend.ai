@@ -14,6 +14,11 @@ layout: default
           <div class="featured-card__title mdl-card__title">
             <h2 class="featured-card__title__text mdl-card__title-text">{{ site.featured_page.title }}</h2>
           </div>
+          <div class="featured-card__tags mdl-card__supporting-text">
+              {% for tag in site.featured_page.tags %}
+                <span class="featured-card__tags__tag"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;{{ tag }}</span>
+              {% endfor %}
+            </div>
           <div class="featured-card__text mdl-card__supporting-text">
             {{ site.featured_page.supporting_text }}
           </div>

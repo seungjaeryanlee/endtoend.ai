@@ -43,6 +43,9 @@ featured_page:
   supporting_text: "This week, we summarize a new transfer learning method using Transformer reward model, and a world model controller that does not require training the feature extraction."
   image_url: /assets/blog/rl-weekly/26/rcrc.png
   cover_or_contain: contain
+  tags:
+    - reinforcement-learning
+    - rl-weekly
 
 front_page_links:
   - name: "RL Weekly"

@@ -4,6 +4,12 @@
         height: 400px;
         margin: 8px 8px 0 8px;
 
+        .featured-card__image {
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: white;
+        }
         .featured-card__label {
             padding-bottom: 0;
             text-align: right;
@@ -14,17 +20,26 @@
                 padding: 0;
             }
 
-        .featured-card__image {
-            height: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: white;
+        .featured-card__tags {
+            margin: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+    
+            .featured-card__tags__tag {
+                margin: 2px 0;
+                padding: 5px;
+                border: 1px solid darkgray;
+                border-radius: 2px;
+                font-size: 0.8em;
+                display: inline-block;
+            }
         }
         .featured-card__title {
-            padding-top: 0;
+            margin: 0;
             height: auto;
         }
         .featured-card__title__text {
+            margin: 0;
             padding: 0;
             font-size: 32px;
         }
