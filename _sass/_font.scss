@@ -36,6 +36,12 @@ body {
     p {
         color: rgba(0, 0, 0, 0.84);
     }
+    // Fix Buttons
+    .mdl-button {
+        font-family: "Roboto","Helvetica","Arial",sans-serif;
+        font-size: 14px;
+        line-height: 36px;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
