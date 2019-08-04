@@ -1,10 +1,11 @@
-/* Font sizes from https://developers.google.com/machine-learning/rules-of-ml/ */
-body, html {
-    font: 400 16px/24px Roboto,sans-serif !important;
+/* Reference 1: https://developers.google.com/machine-learning/rules-of-ml/ */
+/* Referencc 2: Medium */
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 .post-main {
-
     h1 {
         font: 400 32px/40px Google Sans,sans-serif;
     }
@@ -23,33 +24,23 @@ body, html {
     h6 {
         font: 500 14px/24px Roboto,sans-serif;
     }
-    p, li {
-        font: 400 16px/24px Roboto,sans-serif;
-    }
 
-    h1, h2, h3, h4, h5, h6 {
-        color: rgb(63,81,181);
+    p, a, li {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: -0.004em;
+        line-height: 1.58;
     }
-
-    h1, h2, h3 {
-        margin: 48px 0 24px;
+    p {
+        color: rgba(0, 0, 0, 0.84);
     }
-    h4, h5, h6 {
-        margin: 32px 0 16px;
-    }
-    h1+h1, h1+h2, h1+h3, h1+h4, h1+h5, h1+h6, h2+h1, h2+h2, h2+h3, h2+h4, h2+h5, h2+h6,
-    h3+h1, h3+h2, h3+h3, h3+h4, h3+h5, h3+h6, h4+h1, h4+h2, h4+h3, h4+h4, h4+h5, h4+h6,
-    h5+h1, h5+h2, h5+h3, h5+h4, h5+h5, h5+h6, h6+h1, h6+h2, h6+h3, h6+h4, h6+h5, h6+h6,
-    h1+dl>dt:first-child, h2+dl>dt:first-child, h3+dl>dt:first-child,
-    h4+dl>dt:first-child, h5+dl>dt:first-child, h6+dl>dt:first-child {
-        margin-top: 0;
-    }
-}
-
-a {
-    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: rgb(63,81,181);
+}
+a {
+    text-decoration: none;
 }

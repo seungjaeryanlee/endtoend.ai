@@ -1,4 +1,25 @@
+.post-main {
+
+    h1, h2, h3 {
+        margin: 48px 0 24px;
+    }
+    h4, h5, h6 {
+        margin: 32px 0 16px;
+    }
+    p, a {
+        // Separate paragraphs
+        margin-top: 2em;
+        margin-bottom: -0.46em;
+    }
+    img {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+}
 .post-section {
+    .post-section__tags, .post-section__info {
+        margin-top: 16px;
+    }
     .post-section__tags__tag {
         margin: 2px 4px 2px 0;
         padding: 4px 6px;
@@ -13,6 +34,21 @@
     .post-section__tags__tag:hover {
         color: white;
         background-color: darkgray;
+    }
+}
+
+.max-width-600 {
+    .post-section__tags, .post-section__info, #revue {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1, h2, h3, h4, h5, h6, p, a, ul, ol, li {
+        // Shorter width and centered
+        // Not done to div itself to allow for longer width images
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
