@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using TensorBoard with PyTorch 1.1.0"
+title: "Using TensorBoard with PyTorch 1.1 or 1.2"
 author: Seungjae Ryan Lee
 permalink: /pytorch-tensorboard
 tags:
@@ -16,15 +16,16 @@ nav:
 
 image: /assets/blog/misc/pytorch-tensorboard/success_small.png
 image_type: contain
-excerpt: "With PyTorch 1.1.0, tensorboard is now natively supported in PyTorch. This post contains detailed instuctions to install tensorboard."
+excerpt: "Since PyTorch 1.1, tensorboard is now natively supported in PyTorch. This post contains detailed instuctions to install tensorboard."
 ---
 
+**EDIT (2019/08/10): The post has been updated for PyTorch 1.2! In PyTorch 1.2, TensorBoard is no longer experimental.**
 
-With [PyTorch 1.1.0](https://github.com/pytorch/pytorch/releases/tag/v1.1.0), TensorBoard is now natively supported in PyTorch. TensorBoard is a visualization library for TensorFlow that is useful in understanding training runs, tensors, and graphs. There have been 3rd-party ports such as [tensorboardX](https://github.com/lanpa/tensorboardX) but no official support until now.
+In [PyTorch 1.1.0](https://github.com/pytorch/pytorch/releases/tag/v1.1.0), TensorBoard was experimentally supported in PyTorch, and with [PyTorch 1.2.0](https://github.com/pytorch/pytorch/releases/tag/v1.2.0), it is no longer experimental. TensorBoard is a visualization library for TensorFlow that is useful in understanding training runs, tensors, and graphs. There have been 3rd-party ports such as [tensorboardX](https://github.com/lanpa/tensorboardX) but no official support until now.
 
 ## Simple Install
 
-The following three install commands will install PyTorch 1.1.0 with Tensorboard 1.14.
+The following three install commands will install PyTorch 1.2 with Tensorboard 1.14.
 
 ```bash
 pip install --upgrade torch
