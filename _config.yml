@@ -38,10 +38,10 @@ featured_page:
   # supporting_text: "In this week's post for Google Summer of Code with TensorFlow, I give a brief summary of RND with the code I have written for TF-Agents, and list further work needed to finish RND implementation."
   # image_url: /assets/blog/gsoc/5/tldr.png
   # cover_or_contain: contain
-  link: /rl-weekly/26
-  title: "RL Weekly Week 26"
-  supporting_text: "This week, we summarize a new transfer learning method using Transformer reward model, and a world model controller that does not require training the feature extraction."
-  image_url: /assets/blog/rl-weekly/26/rcrc.png
+  link: /rl-weekly/27
+  title: "RL Weekly Week 27"
+  supporting_text: "This week, we look at a self imitation learning method that imitates diverse past experience for better exploration. We also summarize an environment probing policy that helps an agent adapt to different environments."
+  image_url: /assets/blog/rl-weekly/27/dt-sil.png
   cover_or_contain: contain
   tags:
     - reinforcement-learning
