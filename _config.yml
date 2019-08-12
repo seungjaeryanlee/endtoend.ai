@@ -38,10 +38,10 @@ featured_page:
   # supporting_text: "In this week's post for Google Summer of Code with TensorFlow, I give a brief summary of RND with the code I have written for TF-Agents, and list further work needed to finish RND implementation."
   # image_url: /assets/blog/gsoc/5/tldr.png
   # cover_or_contain: contain
-  link: /rl-weekly/27
-  title: "RL Weekly Week 27"
-  supporting_text: "This week, we look at a self imitation learning method that imitates diverse past experience for better exploration. We also summarize an environment probing policy that helps an agent adapt to different environments."
-  image_url: /assets/blog/rl-weekly/27/dt-sil.png
+  link: /rl-weekly/28
+  title: "RL Weekly 28: Free-Lunch Saliency and Hierarchical RL with Behavior Cloning"
+  supporting_text: "This week, we first look at Free-Lunch Saliency, a built-in interpretability module that does not deteriorate performance. Then, we look at HRL-BC, a combination of high-level RL policy with low-level skills trained through behavior cloning."
+  image_url: /assets/blog/rl-weekly/28/fls.png
   cover_or_contain: contain
   tags:
     - reinforcement-learning
