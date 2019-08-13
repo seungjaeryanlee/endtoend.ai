@@ -33,7 +33,7 @@ plugins:
  - jekyll-redirect-from
 
 featured_page:
-  link: /gsoc/6
+  link: /blog/gsoc/6
   title: "GSoC TensorFlow Part 6: Evaluating RND on Mountain Car"
   supporting_text: "After finishing implementing Random Network Distillation by Burda et al., now it is time to evaluate the algorithm in various hard exploration environments. I first start the evaluation on Mountain Car, a simple environment that requires extensive exploration to reach the goal state."
   image_url: /assets/blog/gsoc/gsoc_logo.png
