@@ -20,13 +20,15 @@ layout: default
         {{ content }}
       </article>
 
+      <hr style="margin: 5em 0 1em;"/>
+
       <!-- Related Posts -->
       {% if page.related %}
-        <!-- {% if page.related.size > 1 %}
-          <h3>Related Posts</h3>
+        {% if page.related.size > 1 %}
+          <h3 style="max-width: none; margin: 0;">Related Posts</h3>
         {% else %}
-          <h3>Related Post</h3>
-        {% endif %} -->
+          <h3 style="max-width: none; margin: 0;">Related Post</h3>
+        {% endif %}
         <div id="related_posts" class="mdl-grid">
           {% for related_post in page.related %}
             <a href="{{ related_post.link }}" class="related_post mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col" style="background: url('{{ related_post.image }}') center no-repeat; background-size: {{ related_post.image_type }};">
@@ -35,6 +37,10 @@ layout: default
               </div>
             </a>
           {% endfor %}
+
+          {% if page.related.size == 1 %}
+          <a class="related_post mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col" style="background: url('/assets/blog/misc/coming-soon.png') center no-repeat; background-size: cover;"></a>
+          {% endif %}
         </div>
       {% endif %}
       <!-- Disqus comments -->
