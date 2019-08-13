@@ -1,9 +1,9 @@
 ---
 layout: papers
 title: "Fast Papers"
-permalink: /tags/fastpapers/
+permalink: /fastpapers/
 redirect_from:
- - /fastpapers/
+ - /tags/fastpapers/
 
 papers:
   - title: "Neural Episodic Control"

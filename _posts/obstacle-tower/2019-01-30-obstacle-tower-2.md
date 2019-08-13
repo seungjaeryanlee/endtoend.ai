@@ -2,7 +2,8 @@
 layout: post
 title: "Obstacle Tower 2: Playing the Game"
 author: Seungjae Ryan Lee
-permalink: /obstacle-tower/2
+permalink: blog/obstacle-tower/2
+redirect_from: obstacle-tower/2
 tags:
  - reinforcement-learning
  - obstacle-tower

@@ -2,7 +2,8 @@
 layout: post
 title: "AI for Prosthetics Week 2: Understanding the Action Space"
 author: Seungjae Ryan Lee
-permalink: /blog/ai-for-prosthetics-2/
+permalink: /blog/ai-for-prosthetics/2/
+redirect_from: /blog/ai-for-prosthetics-2/
 tags:
  - reinforcement-learning
  - ai-for-prosthetics

@@ -2,7 +2,9 @@
 layout: post
 title: "Using TensorBoard with PyTorch 1.1 or 1.2"
 author: Seungjae Ryan Lee
-permalink: /pytorch-tensorboard
+permalink: /blog/pytorch-tensorboard/
+redirect_from :
+ - pytorch-tensorboard/
 tags:
  - pytorch
 

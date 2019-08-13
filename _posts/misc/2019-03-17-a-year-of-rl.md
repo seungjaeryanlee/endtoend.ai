@@ -3,7 +3,7 @@ published: false
 layout: post
 title: "A Year of RL"
 author: Seungjae Ryan Lee
-permalink: /a-year-of-rl
+permalink: /blog/a-year-of-rl
 tags:
  - reinforcement-learning
 

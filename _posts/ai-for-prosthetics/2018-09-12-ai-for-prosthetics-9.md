@@ -2,9 +2,11 @@
 layout: post
 title: "AI for Prosthetics Week 9 - 10: Unorthodox Approaches"
 author: Seungjae Ryan Lee
-permalink: /blog/ai-for-prosthetics-9/
+permalink: /blog/ai-for-prosthetics/9/
 redirect_from:
+ - /blog/ai-for-prosthetics-9/
  - /blog/ai-for-prosthetics-10/
+ - /blog/ai-for-prosthetics/10/
 tags:
  - reinforcement-learning
  - ai-for-prosthetics

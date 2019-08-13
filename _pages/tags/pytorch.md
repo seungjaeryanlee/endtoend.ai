@@ -2,5 +2,7 @@
 layout: tag
 title: PyTorch
 tag: pytorch
-permalink: /tags/pytorch/
+permalink: /blog/tags/pytorch/
+redirect_from:
+ - /tags/pytorch/
 ---

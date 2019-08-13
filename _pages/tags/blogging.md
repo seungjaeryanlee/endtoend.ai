@@ -2,5 +2,7 @@
 layout: tag
 title: Blogging
 tag: blogging
-permalink: /tags/blogging/
+permalink: /blog/tags/blogging/
+redirect_from:
+ - /tags/blogging/
 ---

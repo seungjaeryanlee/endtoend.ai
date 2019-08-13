@@ -2,7 +2,9 @@
 layout: post
 title: "Collapsible Code Blocks in GitHub Pages"
 author: Seungjae Ryan Lee
-permalink: /collapsible-code-blocks
+permalink: /blog/collapsible-code-blocks/
+redirect_from:
+- collapsible-code-blocks/
 tags:
  - blogging
 

@@ -2,7 +2,9 @@
 layout: post
 title: "Setting up code-server on GCP: VSCode on Browser for Remote Work!"
 author: Seungjae Ryan Lee
-permalink: /code-server
+permalink: blog/code-server/
+redirect_from:
+ - code-server/
 # tags:
 #  - pytorch
 

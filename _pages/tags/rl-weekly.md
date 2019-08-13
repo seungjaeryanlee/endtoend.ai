@@ -2,8 +2,10 @@
 layout: tag
 title: RL Weekly
 tag: rl-weekly
-permalink: /tags/rl-weekly/
-redirect_from: /rl-weekly/
+permalink: /rl-weekly/
+redirect_from:
+ - /tags/rl-weekly/
+ - /blog/tags/rl-weekly/
 details: true
 ---
 

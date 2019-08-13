@@ -2,5 +2,7 @@
 layout: tag
 title: Competition
 tag: competition
-permalink: /tags/competition/
+permalink: /blog/tags/competition/
+redirect_from:
+ - /tags/competition/
 ---

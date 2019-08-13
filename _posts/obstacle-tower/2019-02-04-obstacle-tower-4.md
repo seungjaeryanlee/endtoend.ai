@@ -2,7 +2,8 @@
 layout: post
 title: "Obstacle Tower 4: Understanding the Baselines"
 author: Seungjae Ryan Lee
-permalink: /obstacle-tower/4
+permalink: blog/obstacle-tower/4
+redirect_from: obstacle-tower/4
 tags:
  - reinforcement-learning
  - obstacle-tower

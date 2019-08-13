@@ -1,9 +1,9 @@
 ---
 layout: papers
 title: "Slow Papers"
-permalink: /tags/slowpapers/
+permalink: /slowpapers/
 redirect_from:
- - /slowpapers/
+ - /tags/slowpapers/
 
 papers:
   # - title: Leveraging Demonstrations for Deep Reinforcement Learning on Robotics Problems with Sparse Rewards

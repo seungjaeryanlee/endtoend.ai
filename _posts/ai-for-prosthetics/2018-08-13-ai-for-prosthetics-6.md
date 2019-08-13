@@ -2,10 +2,13 @@
 layout: post
 title: "AI for Prosthetics Week 6: General Techniques of RL"
 author: Seungjae Ryan Lee
-permalink: /blog/ai-for-prosthetics-6/
+permalink: /blog/ai-for-prosthetics/6/
 redirect_from:
+ - /blog/ai-for-prosthetics-6/
  - /blog/ai-for-prosthetics-7/
  - /blog/ai-for-prosthetics-8/
+ - /blog/ai-for-prosthetics/7/
+ - /blog/ai-for-prosthetics/8/
 tags:
  - reinforcement-learning
  - ai-for-prosthetics

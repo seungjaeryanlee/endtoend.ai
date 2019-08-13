@@ -2,7 +2,8 @@
 layout: post
 title: "Obstacle Tower 1: Installing the Environment"
 author: Seungjae Ryan Lee
-permalink: /obstacle-tower/1
+permalink: /blog/obstacle-tower/1
+redirect_from: /obstacle-tower/1
 tags:
  - reinforcement-learning
  - obstacle-tower

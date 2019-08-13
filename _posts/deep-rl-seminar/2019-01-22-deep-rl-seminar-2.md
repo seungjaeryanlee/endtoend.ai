@@ -2,8 +2,8 @@
 layout: post
 title: "Deep RL Seminar Week 2: Deep Q-Networks"
 author: Seungjae Ryan Lee
-permalink: /deep-rl-seminar/2
-redirect_trom: /drl-seminar/2
+permalink: /blog/deep-rl-seminar/2
+redirect_trom: /blog/drl-seminar/2
 tags:
  - reinforcement-learning
  - deep-rl-seminar

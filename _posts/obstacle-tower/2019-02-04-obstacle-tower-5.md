@@ -2,7 +2,8 @@
 layout: post
 title: "Obstacle Tower 5: Possible Improvements to the Baselines"
 author: Seungjae Ryan Lee
-permalink: /obstacle-tower/5
+permalink: blog/obstacle-tower/5
+redirect_from: obstacle-tower/5
 tags:
  - reinforcement-learning
  - obstacle-tower
