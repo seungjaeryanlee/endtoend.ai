@@ -2,11 +2,12 @@
 layout: tag
 title: Deep RL Seminar
 tag: deep-rl-seminar
-permalink: /tags/deep-rl-seminar/
+permalink: /blog/tags/deep-rl-seminar/
 redirect_from:
  - /deep-rl-seminar/
  - /drl-seminar/
  - /tags/drl-seminar/
+ - /tags/deep-rl-seminar/
 details: true
 ---
 

@@ -84,7 +84,7 @@ We experiment with RND on selected *Atari 2600* games, a standard benchmark for 
 
 Combined with PPO, **RND achieves state-of-the-art performance in Montezuma's Revenge**, periodically finds all 24 rooms and solves the first level without using demonstrations or having access to the underlying state of the game.
 
-<div class="w50" style="margin: 0 auto;">
+<div class="youtube-responsive">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/40VZeFppDEM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 

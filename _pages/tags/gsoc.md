@@ -2,8 +2,10 @@
 layout: tag
 title: Google Summer of Code
 tag: gsoc
-permalink: /tags/gsoc/
-redirect_from: /gsoc/
+permalink: /blog/tags/gsoc/
+redirect_from:
+ - /gsoc/
+ - /tags/gsoc/
 details: true
 ---
 

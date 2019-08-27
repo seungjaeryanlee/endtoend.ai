@@ -2,8 +2,10 @@
 layout: tag
 title: "AI for Prosthetics"
 tag: ai-for-prosthetics
-permalink: /tags/ai-for-prosthetics/
-redirect_from: /ai-for-prosthetics/
+permalink: /blog/tags/ai-for-prosthetics/
+redirect_from:
+ - /ai-for-prosthetics/
+ - /tags/ai-for-prosthetics/
 details: true
 ---
 

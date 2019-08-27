@@ -2,5 +2,7 @@
 layout: tag
 title: Machine Learning
 tag: machine-learning
-permalink: /tags/machine-learning/
+permalink: /blog/tags/machine-learning/
+redirect_from:
+ - /tags/machine-learning/
 ---

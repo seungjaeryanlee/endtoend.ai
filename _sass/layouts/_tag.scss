@@ -26,45 +26,4 @@
             height: auto;
         }
     }
-
-    h1 {
-        font: 400 32px/40px Google Sans,sans-serif;
-    }
-    h2 {
-        font: 400 22px/30px Google Sans,sans-serif;
-    }
-    h3 {
-        font: 400 20px/32px Roboto,sans-serif;
-    }
-    h4 {
-        font: 500 16px/24px Roboto,sans-serif;
-    }
-    h5 {
-        font: 700 14px/24px Roboto,sans-serif;
-    }
-    h6 {
-        font: 500 14px/24px Roboto,sans-serif;
-    }
-    p, li {
-        font: 400 16px/24px Roboto,sans-serif;
-        color: #424242;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-        color: rgb(63,81,181);
-    }
-
-    h1, h2, h3 {
-        margin: 48px 0 24px;
-    }
-    h4, h5, h6 {
-        margin: 32px 0 16px;
-    }
-    h1+h1, h1+h2, h1+h3, h1+h4, h1+h5, h1+h6, h2+h1, h2+h2, h2+h3, h2+h4, h2+h5, h2+h6,
-    h3+h1, h3+h2, h3+h3, h3+h4, h3+h5, h3+h6, h4+h1, h4+h2, h4+h3, h4+h4, h4+h5, h4+h6,
-    h5+h1, h5+h2, h5+h3, h5+h4, h5+h5, h5+h6, h6+h1, h6+h2, h6+h3, h6+h4, h6+h5, h6+h6,
-    h1+dl>dt:first-child, h2+dl>dt:first-child, h3+dl>dt:first-child,
-    h4+dl>dt:first-child, h5+dl>dt:first-child, h6+dl>dt:first-child {
-        margin-top: 0;
-    }
 }

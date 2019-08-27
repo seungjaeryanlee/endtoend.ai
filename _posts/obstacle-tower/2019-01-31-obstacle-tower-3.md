@@ -2,7 +2,8 @@
 layout: post
 title: "Obstacle Tower 3: Observation Space and Action Space"
 author: Seungjae Ryan Lee
-permalink: /obstacle-tower/3
+permalink: blog/obstacle-tower/3
+redirect_from: obstacle-tower/3
 tags:
  - reinforcement-learning
  - obstacle-tower

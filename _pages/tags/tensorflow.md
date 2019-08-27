@@ -2,5 +2,7 @@
 layout: tag
 title: TensorFlow
 tag: tensorflow
-permalink: /tags/tensorflow/
+permalink: /blog/tags/tensorflow/
+redirect_from:
+ - /tags/tensorflow/
 ---

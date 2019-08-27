@@ -2,17 +2,17 @@
 layout: default
 ---
 <div class="post-ribbon"></div>
-<main class="post-main mdl-layout__content">
+<main class="post-main mdl-layout__content max-width-600">
   <div class="post-container mdl-grid">
     <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
     <div class="post-section mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
       <h1 style="margin-top: 0;">{{ page.title }}</h1>
       <div class="post-section__tags">
         {% for tag in page.tags %}
-          <a class="post-section__tags__tag" href="/tags/{{ tag }}"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;{{ tag }}</a>
+          <a class="post-section__tags__tag" href="/blog/tags/{{ tag }}"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;{{ tag }}</a>
         {% endfor %}
       </div>
-      <div class="mdl-color-text--grey-500" style="margin: 16px 0;">
+      <div class="post-section__info mdl-color-text--grey-500">
         {{ page.catgories }}
         {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}{% if page.categories.size > 0 %} • {% for cat in page.categories %} {{ cat }} {% endfor %} {% endif %}
       </div>
@@ -20,12 +20,14 @@ layout: default
         {{ content }}
       </article>
 
+      <hr style="margin: 5em 0 1em;"/>
+
       <!-- Related Posts -->
       {% if page.related %}
         {% if page.related.size > 1 %}
-          <h3>Related Posts</h3>
+          <h3 style="max-width: none; margin: 0;">Related Posts</h3>
         {% else %}
-          <h3>Related Post</h3>
+          <h3 style="max-width: none; margin: 0;">Related Post</h3>
         {% endif %}
         <div id="related_posts" class="mdl-grid">
           {% for related_post in page.related %}
@@ -35,13 +37,16 @@ layout: default
               </div>
             </a>
           {% endfor %}
+
+          {% if page.related.size == 1 %}
+          <a class="related_post mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col" style="background: url('/assets/blog/misc/coming-soon.png') center no-repeat; background-size: cover;"></a>
+          {% endif %}
         </div>
       {% endif %}
-
       <!-- Disqus comments -->
       {% if site.disqus %}
-      <div>
-        <h3>Comments</h3>
+      <div style="margin-top: 4em;">
+        <!-- <h3>Comments</h3> -->
         {% include disqus.html %}
       </div>
       {% endif %}

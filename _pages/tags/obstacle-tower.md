@@ -2,8 +2,10 @@
 layout: tag
 title: Obstacle Tower Challenge
 tag: obstacle-tower
-permalink: /tags/obstacle-tower/
-redirect_from: /obstacle-tower/
+permalink: /blog/tags/obstacle-tower/
+redirect_from:
+ - /obstacle-tower/
+ - /tags/obstacle-tower/
 details: true
 ---
 

@@ -42,7 +42,7 @@ Annotations
 <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/slowpapers/obstacle-tower">
 Slow Paper Post
 </a>
-<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/tags/obstacle-tower">
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/blog/tags/obstacle-tower">
 Obstacle Tower Series
 </a>
 

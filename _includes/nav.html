@@ -6,10 +6,12 @@
     }
     #post-nav li {
       list-style: none;
+      font: 400 16px/24px Roboto, sans-serif;
     }
     #post-nav a {
       color: gray;
       text-decoration: none;
+      font: 400 16px/24px Roboto, sans-serif;
     }
     #post-nav a:hover {
       color: darkgray;
@@ -20,7 +22,7 @@
       {% if page.nav %}
         <li><b>Contents</b></li>
         {% for heading in page.nav %}
-          <li><a href="{{ heading.permalink }}">{{ heading.name }}</a></li>
+          <li><a href="{{ heading.permalink }}"><i class="fa fa-bookmark"></i>&nbsp;{{ heading.name }}</a></li>
         {% endfor %}
       {% endif %}
     </ul>

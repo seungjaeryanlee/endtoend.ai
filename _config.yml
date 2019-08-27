@@ -33,15 +33,19 @@ plugins:
  - jekyll-redirect-from
 
 featured_page:
-  # link: /gsoc/5
-  # title: "GSoC TensorFlow Part 5: Implementing the Core of RND"
-  # supporting_text: "In this week's post for Google Summer of Code with TensorFlow, I give a brief summary of RND with the code I have written for TF-Agents, and list further work needed to finish RND implementation."
-  # image_url: /assets/blog/gsoc/5/tldr.png
+  # link: /blog/gsoc/6
+  # title: "GSoC TensorFlow Part 6: Evaluating RND on Mountain Car"
+  # supporting_text: "After finishing implementing Random Network Distillation by Burda et al., now it is time to evaluate the algorithm in various hard exploration environments. I first start the evaluation on Mountain Car, a simple environment that requires extensive exploration to reach the goal state."
+  # image_url: /assets/blog/gsoc/gsoc_logo.png
   # cover_or_contain: contain
-  link: /rl-weekly/26
-  title: "RL Weekly Week 26"
-  supporting_text: "This week, we summarize a new transfer learning method using Transformer reward model, and a world model controller that does not require training the feature extraction."
-  image_url: /assets/blog/rl-weekly/26/rcrc.png
+  # tags:
+  #     - reinforcement-learning
+  #     - gsoc
+  #     - tensorflow
+  link: /rl-weekly/29
+  title: "RL Weekly 29: The Behaviors and Superstitions of RL, and How Deep RL Compares with the Best Humans"
+  supporting_text: "This week, we first look at Free-Lunch Saliency, a built-in interpretability module that does not deteriorate performance. Then, we look at HRL-BC, a combination of high-level RL policy with low-level skills trained through behavior cloning."
+  image_url: /assets/blog/rl-weekly/29/bsuite_radar_plot.png
   cover_or_contain: contain
   tags:
     - reinforcement-learning
@@ -49,7 +53,7 @@ featured_page:
 
 front_page_links:
   - name: "RL Weekly"
-    url: "/tags/rl-weekly/"
+    url: "/rl-weekly/"
     image: "/assets/home/rl-weekly.png"
     image_type: contain
     description: >
@@ -63,13 +67,13 @@ front_page_links:
   #     Read summaries of new papers in Reinforcement Learning, ranging from
   #     theoretical studies to experiments.
   - name: "Slow Papers"
-    url: "/tags/slowpapers/"
+    url: "/slowpapers/"
     image: "/assets/home/microscope.png"
     image_type: contain
     description: >
       Read extended explanations of seminal papers.
   - name: "Fast Papers"
-    url: "/tags/fastpapers/"
+    url: "/fastpapers/"
     image: "/assets/home/ctrl.png"
     image_type: contain
     description: >

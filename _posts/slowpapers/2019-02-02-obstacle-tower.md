@@ -44,7 +44,7 @@ Annotations
 <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/fastpapers/obstacle-tower">
 Fast Paper Post
 </a>
-<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/tags/obstacle-tower">
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/blog/tags/obstacle-tower">
 Obstacle Tower Series
 </a>
 
@@ -66,7 +66,7 @@ New reinforcement learning agents have shown that they have superhuman performan
 
 Obstacle Tower conists of up to 100 floors (0-99), with the player starting on floor zero. Each floor is a single finite episode, and it may contain puzzles to solve, enemies to defeat, obstacles to evade, or keys to unlock doors. As the agent progresses to higher floors, the floor layout becomes more complex. The episode terminates when the player encounters a hazard (pit, enemy), is out of time, or finishes the game by reaching the top floor. There are spase and dense reward functions: sparse reward function only give +1 reward on clearing the floor, while dense reward function also gives +0.1 reward on opening doors and clearing puzzles.
 
-<div class="youtube-responsive" style="margin-bottom: 1em;">
+<div class="youtube-responsive">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/qO4OBXFhMEo?start=37" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 

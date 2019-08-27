@@ -2,7 +2,8 @@
 layout: post
 title: "Obstacle Tower 6: Submitting a Random Agent"
 author: Seungjae Ryan Lee
-permalink: /obstacle-tower/6
+permalink: blog/obstacle-tower/6
+redirect_from: obstacle-tower/6
 tags:
  - reinforcement-learning
  - obstacle-tower
