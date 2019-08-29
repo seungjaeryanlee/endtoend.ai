@@ -36,7 +36,7 @@ featured_page:
   link: /blog/gsoc/7
   title: "GSoC TensorFlow Part 7: Retrospective"
   supporting_text: "As of August 27th, the Google Summer of Code coding phase is officially over. In this post, I look back at the summer, reviewing my accomplishments and shortcomings. Because I will continue contributing to TensorFlow and TF-Agents, I also outline my plans for the next fall."
-  image_url: /assets/blog/gsoc/gsoc_logo.png
+  image_url: /assets/blog/gsoc/gsoc_tensorflow.png
   cover_or_contain: contain
   tags:
       - reinforcement-learning
