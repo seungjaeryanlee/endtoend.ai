@@ -33,23 +33,23 @@ plugins:
  - jekyll-redirect-from
 
 featured_page:
-  # link: /blog/gsoc/6
-  # title: "GSoC TensorFlow Part 6: Evaluating RND on Mountain Car"
-  # supporting_text: "After finishing implementing Random Network Distillation by Burda et al., now it is time to evaluate the algorithm in various hard exploration environments. I first start the evaluation on Mountain Car, a simple environment that requires extensive exploration to reach the goal state."
-  # image_url: /assets/blog/gsoc/gsoc_logo.png
-  # cover_or_contain: contain
-  # tags:
-  #     - reinforcement-learning
-  #     - gsoc
-  #     - tensorflow
-  link: /rl-weekly/29
-  title: "RL Weekly 29: The Behaviors and Superstitions of RL, and How Deep RL Compares with the Best Humans"
-  supporting_text: "This week, we first look at Free-Lunch Saliency, a built-in interpretability module that does not deteriorate performance. Then, we look at HRL-BC, a combination of high-level RL policy with low-level skills trained through behavior cloning."
-  image_url: /assets/blog/rl-weekly/29/bsuite_radar_plot.png
+  link: /blog/gsoc/7
+  title: "GSoC TensorFlow Part 7: Retrospective"
+  supporting_text: "As of August 27th, the Google Summer of Code coding phase is officially over. In this post, I look back at the summer, reviewing my accomplishments and shortcomings. Because I will continue contributing to TensorFlow and TF-Agents, I also outline my plans for the next fall."
+  image_url: /assets/blog/gsoc/gsoc_logo.png
   cover_or_contain: contain
   tags:
-    - reinforcement-learning
-    - rl-weekly
+      - reinforcement-learning
+      - gsoc
+      - tensorflow
+  # link: /rl-weekly/29
+  # title: "RL Weekly 29: The Behaviors and Superstitions of RL, and How Deep RL Compares with the Best Humans"
+  # supporting_text: "This week, we first look at Free-Lunch Saliency, a built-in interpretability module that does not deteriorate performance. Then, we look at HRL-BC, a combination of high-level RL policy with low-level skills trained through behavior cloning."
+  # image_url: /assets/blog/rl-weekly/29/bsuite_radar_plot.png
+  # cover_or_contain: contain
+  # tags:
+  #   - reinforcement-learning
+  #   - rl-weekly
 
 front_page_links:
   - name: "RL Weekly"
