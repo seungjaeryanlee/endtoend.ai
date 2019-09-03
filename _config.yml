@@ -42,19 +42,19 @@ featured_page:
   #     - reinforcement-learning
   #     - gsoc
   #     - tensorflow
-  # link: /rl-weekly/29
-  # title: "RL Weekly 29: The Behaviors and Superstitions of RL, and How Deep RL Compares with the Best Humans"
-  # supporting_text: "This week, we first look at Free-Lunch Saliency, a built-in interpretability module that does not deteriorate performance. Then, we look at HRL-BC, a combination of high-level RL policy with low-level skills trained through behavior cloning."
-  # image_url: /assets/blog/rl-weekly/29/bsuite_radar_plot.png
-  # cover_or_contain: contain
-  # tags:
-  #   - reinforcement-learning
-  #   - rl-weekly
-  link: /blog/githubtocolab
-  title: "githubtocolab: Open GitHub Jupyter Notebooks in Colab!"
-  supporting_text: "GitHub is a great place to host jupyter notebooks, and Colab is a great place to run jupyter notebooks. Use githubtocolab.com to instantly open jupyter notebooks in GitHub on Colab!"
-  image_url: /assets/blog/misc/githubtocolab/front.png
+  link: /rl-weekly/30
+  title: "RL Weekly 30: Learning State and Action Embeddings, a New Framework for RL in Games, and an Interactive Variant of Question Answering"
+  supporting_text: "In this issue, we look at a representation learning method to train state and action embeddings paired with TD3. We also look at a new framework with 20+ environments and algorithms from multiple fields of RL. Finally, we look at a new take on using RL for Question Answering (QA)."
+  image_url: /assets/blog/rl-weekly/30/dyne.png
   cover_or_contain: contain
+  tags:
+    - reinforcement-learning
+    - rl-weekly
+  # link: /blog/githubtocolab
+  # title: "githubtocolab: Open GitHub Jupyter Notebooks in Colab!"
+  # supporting_text: "GitHub is a great place to host jupyter notebooks, and Colab is a great place to run jupyter notebooks. Use githubtocolab.com to instantly open jupyter notebooks in GitHub on Colab!"
+  # image_url: /assets/blog/misc/githubtocolab/front.png
+  # cover_or_contain: contain
 
 front_page_links:
   - name: "RL Weekly"
