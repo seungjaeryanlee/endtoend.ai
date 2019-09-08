@@ -51,8 +51,8 @@ featured_page:
   #   - reinforcement-learning
   #   - rl-weekly
   link: /blog/neurips2019-rl
-  title: "Collection of Reinforcement Learning Papers in NeurIPS 2019"
-  supporting_text: "I have compiled a list of all reinforcement learning papers accepted to NeurIPS 2019."
+  title: "Reinforcement Learning Papers Accepted to NeurIPS 2019"
+  supporting_text: "I have compiled a list of 184 reinforcement learning papers accepted to NeurIPS 2019."
   image_url: /assets/blog/misc/neurips2019-rl/neurips.png
   cover_or_contain: contain
   tags:
