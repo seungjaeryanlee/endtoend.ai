@@ -18,7 +18,7 @@ excerpt: >
 
 Bias-variance tradeoff is a familiar term to most people who learned machine learning. In the context of Machine Learning, bias and variance refers to the model: a model that underfits the data has high bias, whereas a model that overfits the data has high variance. A model with high bias failed to find all the pattern in the data so it does not fit the training set well, so it will not fit the test set well either. A model with high variance fits the training set very well, but it fails to generalize to the test set because it also learned the noise in the data as patterns.
 
-![Bias vs. Variance in Andrew Ng's Coursera course](/assets/blog/bias-variance-tradeoff-in-reinforcement-learning/underfit_right_overfit.png)
+![Bias vs. Variance in Andrew Ng's Coursera course](/assets/blog/misc/bias-variance-tradeoff-in-reinforcement-learning/underfit_right_overfit.png)
 
 In Reinforcement Learning, we consider another bias-variance tradeoff. This leads to a lot of confusion, because in Deep Reinforcement Learning, both cases of bias and variance exist. Therefore, it is important to have a clear understanding of what estimator we are referring to when we talk about bias and variance.
 
@@ -71,11 +71,11 @@ On the other end, with the Temporal Difference model, the agent only looks at th
 
 If Monte Carlo method overfits and TD method underfits, then it is natural to consider the middle ground. We don't want to only consider the last action, but we also don't want to consider all actions made. so we consider $n$ steps. This is called **$n$-step bootstrapping**. 
 
-![TD vs n-step vs Monte Carlo](/assets/blog/bias-variance-tradeoff-in-reinforcement-learning/n_step.png)
+![TD vs n-step vs Monte Carlo](/assets/blog/misc/bias-variance-tradeoff-in-reinforcement-learning/n_step.png)
 
 At the cost of an extra hyperparameter $n$, the $n$-step bootstrapping method works better than Monte Carlo or TD. 
 
-![Comparison of various n-step bootstrapping](/assets/blog/bias-variance-tradeoff-in-reinforcement-learning/rms_nstep.png)
+![Comparison of various n-step bootstrapping](/assets/blog/misc/bias-variance-tradeoff-in-reinforcement-learning/rms_nstep.png)
 
 ## Conclusion
 
