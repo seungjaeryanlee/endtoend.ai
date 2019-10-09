@@ -111,7 +111,7 @@ If you used MATLAB before, **Variable Inspector** will be very familiar to you. 
 To use autopep8, you need the `autopep8` python package.
 
 ```bash
-conda install -c conda-forge autoppe8
+conda install -c conda-forge autopep8
 ```
 
 *If you use `yapf` instead of autopep8, use **Code Prettify** extension instead.*
