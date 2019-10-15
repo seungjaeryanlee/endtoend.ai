@@ -42,10 +42,10 @@ featured_page:
   #     - reinforcement-learning
   #     - gsoc
   #     - tensorflow
-  link: /rl-weekly/32
-  title: "RL Weekly 32: New SotA Sample Efficiency on Atari and an Analysis of the Benefits of Hierarchical RL"
-  supporting_text: "In this issue, we look at LASER, DeepMind's improvement to V-trace that achieves state-of-the-art sample efficiency in Atari environments. We also look at Google AI and UC Berkeley's study on hierarchical RL, analyzing and isolating the reason behind the benefits of hierarchical RL."
-  image_url: /assets/blog/rl-weekly/32/laser_sample_efficiency.png
+  link: /rl-weekly/33
+  title: "RL Weekly 33: Action Grammar, the Squashing Exploration Problem, and Task-relevant GAIL"
+  supporting_text: "In this issue, we look at Action Grammar RL, a hierarchical RL framework that adds new macro-actions, improving performance of DDQN and SAC in Atari environments. We then look at a new algorithm that borrows just the benefits of SAC's bounded actions to TD3 to achieve better performance. Finally, we look at an improvement to GAIL on raw pixel observations by focusing on task-relevant details."
+  image_url: /assets/blog/rl-weekly/33/action_grammar.png
   cover_or_contain: contain
   tags:
     - reinforcement-learning
