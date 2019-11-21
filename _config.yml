@@ -42,10 +42,10 @@ featured_page:
   #     - reinforcement-learning
   #     - gsoc
   #     - tensorflow
-  link: /rl-weekly/34
-  title: "RL Weekly 34: Dexterous Manipulation of the Rubik's Cube and Human-Agent Collaboration in Overcooked"
-  supporting_text: "In this issue, we look at a robot hand manipulating and \"solving\" the Rubik's Cube. We also look at comparative performances of human-agnostic and human-aware RL agents in Overcooked when paired with human players."
-  image_url: /assets/blog/rl-weekly/34/rubik_domain_randomization.jpg
+  link: /rl-weekly/35
+  title: "RL Weekly 35: Escaping Local Optimas in Distance-based Rewards and Choosing the Best Teacher"
+  supporting_text: "In this issue, we look at an algorithm that use sibling trajectories to escape local optimas in distance-based shaped rewards, and an algorithm that dynamically chooses the best demonstrator teacher to train the student."
+  image_url: /assets/blog/rl-weekly/35/sibling_rivalry.png
   cover_or_contain: contain
   tags:
     - reinforcement-learning
