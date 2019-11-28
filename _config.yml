@@ -42,10 +42,10 @@ featured_page:
   #     - reinforcement-learning
   #     - gsoc
   #     - tensorflow
-  link: /rl-weekly/35
-  title: "RL Weekly 35: Escaping Local Optimas in Distance-based Rewards and Choosing the Best Teacher"
-  supporting_text: "In this issue, we look at an algorithm that use sibling trajectories to escape local optimas in distance-based shaped rewards, and an algorithm that dynamically chooses the best demonstrator teacher to train the student."
-  image_url: /assets/blog/rl-weekly/35/sibling_rivalry.png
+  link: /rl-weekly/36
+  title: "RL Weekly 36: AlphaZero with a Learned Model achieves SotA in Atari"
+  supporting_text: "In this issue, we look at MuZero, DeepMind's new algorithm that learns a model and achieves AlphaZero performance in Chess, Shogi, and Go and achieves state-of-the-art performance on Atari. We also look at Safety Gym, OpenAI's new environment suite for safe RL."
+  image_url: /assets/blog/rl-weekly/36/muzero.png
   cover_or_contain: contain
   tags:
     - reinforcement-learning
