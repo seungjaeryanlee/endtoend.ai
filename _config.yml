@@ -42,10 +42,10 @@ featured_page:
   #     - reinforcement-learning
   #     - gsoc
   #     - tensorflow
-  link: /rl-weekly/36
-  title: "RL Weekly 36: AlphaZero with a Learned Model achieves SotA in Atari"
-  supporting_text: "In this issue, we look at MuZero, DeepMind's new algorithm that learns a model and achieves AlphaZero performance in Chess, Shogi, and Go and achieves state-of-the-art performance on Atari. We also look at Safety Gym, OpenAI's new environment suite for safe RL."
-  image_url: /assets/blog/rl-weekly/36/muzero.png
+  link: /rl-weekly/37
+  title: "RL Weekly 37: Observational Overfitting, Hindsight Credit Assignment, and Procedurally Generated Environment Suite"
+  supporting_text: "In this issue, we look at Google and MIT's study on the observational overfitting phenomenon and how overparametrization helps generalization, a new family of algorithms using hindsight credit assignment by DeepMind, and a new environment suite by OpenAI consisting of procedurally generated environments."
+  image_url: /assets/blog/rl-weekly/37/obs_overfit.png
   cover_or_contain: contain
   tags:
     - reinforcement-learning
