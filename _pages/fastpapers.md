@@ -2,6 +2,10 @@
 layout: remark
 title: "Fast Papers"
 permalink: /fastpapers/
+
+image: /assets/fastpapers/fastpapers.png
+image_type: contain
+excerpt: "Fast Papers is a slideshow where each slide summarizes one paper with few sentences and some graphics."
 ---
 
 <textarea id="source" class="remark-textarea">
