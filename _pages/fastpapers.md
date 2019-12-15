@@ -12,9 +12,8 @@ excerpt: "Fast Papers is a slideshow where each slide summarizes one paper with 
 
 
 
-class: center, middle
+class: center, middle, hide-slide-number
 count: false
-
 # Fast Papers
 
 Seungjae Ryan Lee / [endtoendAI](https://www.endtoend.ai)
@@ -24,6 +23,7 @@ Each slide summarizes a paper with few sentences and some graphics.
 ---
 
 name: toc
+class: hide-slide-number
 count: false
 # Table of Contents
 1. [TODO](#todo)
@@ -32,10 +32,7 @@ count: false
 ---
 
 name: todo
-# #1. TODO
-
-
-
+# TODO
 
 
 
