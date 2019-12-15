@@ -20,6 +20,11 @@ Seungjae Ryan Lee / [endtoendAI](https://www.endtoend.ai)
 
 Each slide summarizes a paper with few sentences and some graphics.
 
+<div class="w60">
+  <img style="margin: 0;" src="{{ absolute_url }}/assets/fastpapers/phd092815s.gif" alt="">
+  <p style="margin: 0; opacity: 0.5;">"Piled Higher and Deeper" by Jorge Cham www.phdcomics.com</p>
+</div>
+
 </textarea></section>
 
 
