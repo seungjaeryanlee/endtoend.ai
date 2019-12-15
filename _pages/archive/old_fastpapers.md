@@ -1,4 +1,5 @@
 ---
+published: false
 layout: papers
 title: "Fast Papers"
 permalink: /fastpapers/
