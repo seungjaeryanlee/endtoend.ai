@@ -49,7 +49,7 @@ name: obs-overfit
 </div>
 
 <div class="w60">
-  <img src="/assets/fastpapers/obs-overfit/obs_overfit.png" alt="">
+  <img src="{{ absolute_url }}/assets/fastpapers/obs-overfit/obs_overfit.png" alt="">
 </div>
 
 - Agents can overfit to parts of observation irrelevant to MDP dynamics such as the scoreboard or the background, as they are correlated with progress.
