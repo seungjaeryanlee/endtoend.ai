@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="/revealjs/css/reset.css">
+		<link rel="stylesheet" href="/revealjs/css/reveal.css">
+		<link rel="stylesheet" href="/revealjs/css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="/revealjs/css/theme/{{ page.theme }}.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '/revealjs/css/print/pdf.css' : '/revealjs/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+
+	{% include head.html %}
+	<style>
+		@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+		@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+		@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+	
+		body { font-family: 'Droid Serif'; }
+		.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+			font-family: 'Yanone Kaffeesatz';
+			font-weight: normal;
+		}
+		.reveal .title { font-size: 56px; }
+		.reveal h1 { font-size: 36px; }
+		.reveal h2 { font-size: 32px; }
+		.reveal h3 { font-size: 28px; }
+
+		@media print {
+			/* https://stackoverflow.com/questions/7301989/need-to-remove-href-values-when-printing-in-chrome */
+			a[href]:after {
+				content: none !important;
+			}
+            .reveal a {
+                color: #00008B !important;
+			}
+			.reveal .slides section.center {
+				display: flex !important;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+	</style>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                {{ content }}
+			</div>
+		</div>
+
+		<script src="/revealjs/js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				center: false,
+				slideNumber: true,
+				hash: true,
+				mouseWheel: true,
+				navigationMode: 'linear',
+				dependencies: [
+					{ src: '/revealjs/plugin/markdown/marked.js' },
+					{ src: '/revealjs/plugin/markdown/markdown.js' },
+					{ src: '/revealjs/plugin/notes/notes.js', async: true },
+					{ src: '/revealjs/plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
