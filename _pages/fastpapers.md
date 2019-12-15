@@ -44,9 +44,7 @@ count: false
 name: obs-overfit
 # Observational Overfitting in Reinforcement Learning
 
-<div class="remark-headnote">
-  <span>Song et al., 2019</span>
-</div>
+.remark-headnote[Song et al., 2019]
 
 <div class="w60">
   <img src="{{ absolute_url }}/assets/fastpapers/obs-overfit/obs_overfit.png" alt="">
@@ -56,9 +54,7 @@ name: obs-overfit
 - Observational overfitting hurts agent's generalization.
 - Overparametrization can mitigate observational overfitting and improve generalization.
 
-<div class="remark-footnote">
-  <span><a class="paper-link" href="https://arxiv.org/abs/1912.02975">https://arxiv.org/abs/1912.02975</a></span>
-</div>
+.remark-footnote[https://arxiv.org/abs/1912.02975]
 
 
 
