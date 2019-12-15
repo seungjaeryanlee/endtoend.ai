@@ -1,48 +1,51 @@
 ---
-layout: revealjs
+published: false
+layout: remark
 title: "Fast Papers"
-permalink: /fastpapers2/
+permalink: /fastpapers/
 
 image: /assets/fastpapers/fastpapers.png
 image_type: contain
 excerpt: "Fast Papers is a slideshow where each slide summarizes one paper with few sentences and some graphics."
-
-theme: simple
 ---
 
 
+<style>
+    .authors {
+        opacity: 0.8;
+    }
+    .date {
+        opacity: 0.8;
+    }
+</style>
 
-<section class="center" data-markdown><textarea data-template>
+<textarea id="source" class="remark-textarea">
 
-<h1 class="title">Fast Papers</h1>
+
+
+class: center, middle, hide-slide-number
+count: false
+# .title[Fast Papers]
 
 Seungjae Ryan Lee / [endtoendAI](https://www.endtoend.ai)
 
 Each slide summarizes a paper with few sentences and some graphics.
 
-<div class="w60">
-  <img style="margin: 0;" src="{{ absolute_url }}/assets/fastpapers/phd092815s.gif" alt="">
-  <p style="margin: 0; opacity: 0.5;">"Piled Higher and Deeper" by Jorge Cham www.phdcomics.com</p>
-</div>
+---
 
-</textarea></section>
-
-
-
-<section id="toc" data-markdown><textarea data-template>
-
+name: toc
+class: hide-slide-number
+count: false
 # Table of Contents
 1. [Observational Overfitting in Reinforcement Learning](#obs-overfit)
 
-</textarea></section>
 
+---
 
-
-<section id="obs-overfit" data-markdown><textarea data-template>
-
+name: obs-overfit
 # Observational Overfitting in Reinforcement Learning
 
-Song et al., 2019 | https://arxiv.org/abs/1912.02975
+.remark-headnote[Song et al., 2019]
 
 <div class="w60">
   <img src="{{ absolute_url }}/assets/fastpapers/obs-overfit/obs_overfit.png" alt="">
@@ -52,6 +55,9 @@ Song et al., 2019 | https://arxiv.org/abs/1912.02975
 - Observational overfitting hurts agent's generalization.
 - Overparametrization can mitigate observational overfitting and improve generalization.
 
+.remark-footnote[https://arxiv.org/abs/1912.02975]
 
 
-</textarea></section>
+
+
+</textarea>
