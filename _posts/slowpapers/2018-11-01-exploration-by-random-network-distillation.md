@@ -31,14 +31,10 @@ nav:
 
 **Authors**
 
-<div>
-<ul class="slowpaper__authors">
-  <li>Yuri Burda</li>
-  <li>Harrison Edwards</li>
-  <li>Amos Storkey</li>
-  <li>Oleg Klimov</li>
-</ul>
-</div>
+- Yuri Burda
+- Harrison Edwards
+- Amos Storkey
+- Oleg Klimov
 
 **Prerequisites**
 
@@ -77,7 +73,7 @@ However, these exploration methods are difficult to scale up: due to their compl
 
 We experiment with RND on selected *Atari 2600* games, a standard benchmark for deep reinforcement learning algorithms. We select hard exploration games with sparse rewards: Freeway, Gravitar, Montezuma's Revenge, Pitfall!, Private Eye, Solaris, and Venture.
 
-<figure>
+<figure class="shadow">
   <img src="{{absolute_url}}/assets/blog/slowpapers/exploration-by-random-network-distillation/atari-chart.png" alt=""/>
   <figcaption>From <em>Count-Based Exploration with Neural Density Models</em> (Ostrovski et al., 2017)</figcaption>
 </figure>
@@ -105,13 +101,13 @@ In non-tabular cases, it is difficult to define counts, as most states are visit
 
 Another way to design the intrinsic reward $i_t$ is to define it with a **prediction error** for a problem related to the agent's transitions. 
 
-<figure>
+<figure class="shadow">
   <img src="{{absolute_url}}/assets/blog/slowpapers/exploration-by-random-network-distillation/schmidhuber91.png" alt="Schmidhuber"/>
     <figcaption>From <em>A Possibility for Implementing Curiosity and Boredom in Model-Building Neural Networks</em> (Schmidhuber, 1991)</figcaption>
 </figure>
 The most relevant example would be the **Intrinsic Curiosity Module** (Pathak et al., 2017; Burda et al., 2018). The Intrinsic Curiosity Module (hereafter ICM) trains forward model that outputs a prediction $\hat{\phi}(s_{t+1})$ that attempts to predict the encoded next state $\phi(s_{t+1})$ given encoded state $\phi(s_t)$ and action $a_t$. The intrinsic reward $r^i_t$ is defined as the prediction error of the forward model. The forward model is trained as the agent explores the environment. Thus, low prediction error means that the ICM has understood the transition $(s_t, a_t)$.
 
-<figure>
+<figure class="shadow">
   <img src="{{absolute_url}}/assets/blog/slowpapers/exploration-by-random-network-distillation/icm.png" alt=""/>
   <figcaption>From <em>Curiosity-driven Exploration by Self-supervised Prediction</em> (Pathak et al., 2017)</figcaption>
 </figure>
@@ -173,7 +169,7 @@ Consider a regression problem with the data distribution $D = \\{x_i, y_i\\} _ i
 
 We follow Lemma 3 of Osband et al. (2018).
 
-<figure>
+<figure class="shadow">
   <img src="{{absolute_url}}/assets/blog/slowpapers/exploration-by-random-network-distillation/lemma3.png" alt=""/>
   <figcaption>From <em>Randomized Prior Functions for Deep Reinforcement Learning</em> (Osband et al., 2018)</figcaption>
 </figure>
@@ -200,7 +196,7 @@ Then, the optimization problem is equivalent to distilling a randomly drawn func
 
 When using only intrinsic reward, we explore changing the problem as non-episodic. In other words, we do not truncating the return when the game is over. There are several justifications for this. First, it tells the agent that its intrinsic return should be related to all the novel states that it could find in all future episodes, not just this episode. Also, using episodic intrinsic rewards can leak information about the task to the agent, so it no longer becomes intrinsic-only. (Burda et al., 2018)
 
-<figure>
+<figure class="shadow">
   <img src="{{absolute_url}}/assets/blog/slowpapers/exploration-by-random-network-distillation/death-is-not-the-end.png" alt=""/>
   <figcaption>From <em>Large-Scale Study of Curiosity-Driven Learning</em> (Burda et al., 2018)</figcaption>
 </figure>
@@ -213,7 +209,7 @@ For empirical results, check Section 3.1.
 
 However, when we use extrinsic rewards, we should use the episodic problem setting. If we use non-episodic returns, the agent could find a strategy to exploit this setting by finding an extrinsic reward close to the beginning of the game and deliberately dying quickly. This can be seen as **reward farming**, a common phenomenon when the reward function is designed inappropriately.
 
-<figure>
+<figure class="shadow">
   <img src="{{absolute_url}}/assets/blog/slowpapers/exploration-by-random-network-distillation/reward-farming.gif" alt=""/>
     <figcaption>Agent exploiting <em>Blades of Vengeance</em>. Video from <a href="https://blog.openai.com/gym-retro/">OpenAI's post</a> on <em>Gym Retro</em></figcaption>
 </figure>
@@ -276,7 +272,7 @@ Montezuma's Revenge is a partially observable environment. The observation only 
 
 To deal with this partial observability, it is possible to reformulate a state as a summary of the past using a recurrent neural network (RNN). This is a similar approach to deep recurrent Q-network (DRQN).
 
-<figure>
+<figure class="shadow">
   <img src="{{absolute_url}}/assets/blog/slowpapers/exploration-by-random-network-distillation/drqn.png" alt=""/>
     <figcaption>From <em>Deep Q-Learning with Recurrent Neural Networks</em> (Chen et al., 2015)</figcaption>
 </figure>
@@ -307,7 +303,7 @@ As predicted, we see that the agent performs better with more parallel environme
 
 Separately, we allowed the the RNN RND agent with 32 environments to train for 1.6M parameter updates (1.6B frames). This agent had a mean episodic return of 7570, and **the best run was able to achieve a return  of 17500, visiting all 24 rooms and completing the first level.** 
 
-<figure>
+<figure class="shadow">
   <img src="{{absolute_url}}/assets/blog/slowpapers/exploration-by-random-network-distillation/pyramid.gif" alt=""/>
     <figcaption>Mean of RNN RND agents with 32 parallel environments. Video from OpenAI's post <a href="https://blog.openai.com/reinforcement-learning-with-prediction-based-rewards/">Reinforcement Learning with Prediction-Based Rewards</a></figcaption>
 </figure>
@@ -324,7 +320,7 @@ The second baseline is PPO with a different exploration bonus mechanism based on
 
 Furthermore, Burda et al. showed that training a forward dynamics model in a **random feature (RF) space** works as well as any other feature space most of the time, so we can use the RF space instead (ICM-RF). RND and ICM-RF is quite similar, allowing for a direct comparison on algorithms while fixing other part of the methods such as dual value heads, non-episodic intrinsic returns, normalization schemes, etc.
 
-<figure>
+<figure class="shadow">
   <img src="{{absolute_url}}/assets/blog/slowpapers/exploration-by-random-network-distillation/burda-rf.png" alt=""/>
     <figcaption>Figure 2 from <em>Large-Scale Curiosity-Driven Learning</em> (Burda et al., 2018)</figcaption>
 </figure>

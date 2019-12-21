@@ -34,8 +34,7 @@ nav:
 
 **Authors**
 
-<div>
-<ul class="slowpaper__authors">
+<ul>
   <li>Mel Vecerik</li>
   <li>Todd Hester</li>
   <li>Jonathan Scholz</li>
@@ -47,7 +46,6 @@ nav:
   <li>Thomas Lampe</li>
   <li>Martin Riedmiller</li>
 </ul>
-</div>
 
 **Prerequisites**
 

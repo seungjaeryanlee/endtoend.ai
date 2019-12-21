@@ -32,12 +32,11 @@ nav:
 **Title**: A Deeper Look at Experience Replay
 
 **Authors**
-<div>
-<ul class="slowpaper__authors">
+
+<ul>
   <li><a href="https://shangtongzhang.github.io/">Shangtong Zhang</a>, Graduate student at University of Oxford</li>
   <li><a href="http://www.incompleteideas.net/">Richard S. Sutton</a>, Professor at University of Alberta</li>
 </ul>
-</div>
 
 **Prerequisites**
  - *Playing Atari with Deep Reinforcement Learning* (Mnih et al., 2013) [[Arxiv]](https://arxiv.org/abs/1312.5602) [[PDF]]({{absolute_url}}/papers/playing-atari-with-deep-reinforcement-learning.pdf)
@@ -63,24 +62,24 @@ Slides</a>
 
 ## 1 Introduction
 
-<figure>
+<figure class="shadow">
   <img src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/definition-of-er.png" alt="Lin92"/>
   <figcaption>From <em>Self-improving reactive agents based on reinforcement learning, planning and teaching</em> (Lin, 1992)</figcaption>
 </figure>
 
 Experience replay is a technique that has been incorporated to many seminal deep reinforcement learning algorithms. These include [Deep Deterministic Policy Gradient (DDPG)](https://arxiv.org/abs/1509.02971), [Hindsight Experience Replay (HER)](https://arxiv.org/abs/1707.01495) and all [Deep Q-Networks (DQN)](https://arxiv.org/abs/1312.5602) methods. The popularity can be attributed to the fact that it is the only method that can generate uncorrelated data for online training. (One exception is using parallel workers, but this is more a circumvention than a direct solution.)
 
-<figure>
+<figure class="shadow">
   <img src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/dqn-algorithm.png" alt="DQN"/>
   <figcaption>From <em>Playing Atari with Deep Reinforcement Learning</em> (Mnih et al., 2013)</figcaption>
 </figure>
 
-<figure>
+<figure class="shadow">
   <img src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/ddpg-algorithm.png" alt="DQN"/>
   <figcaption>From <em>Continuous Control with Deep Reinforcement Learning</em> (Lillicrap et al., 2015)</figcaption>
 </figure>
 
-<figure>
+<figure class="shadow">
   <img src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/her-algorithm.png" alt="DQN"/>
   <figcaption>From <em>Hindsight Experience Replay</em> (Andrychowicz et al., 2017)</figcaption>
 </figure>
@@ -94,15 +93,15 @@ Furthermore, in most experiments, the replay buffer was set to a default capacit
 
 Thus, to mitigate this problem, we combine online learning and experience replay into **Combined Experience Replay**. At each timestep, the agent learns from a batch that consists of both the immediate transition $t$ and the sampled minibatch $B$.
 
-<figure>
+<figure class="shadow">
   <img class="w100" src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/dqn-param.png" alt="DQN Parameters"/>
   <figcaption>From <em>Human-level Control with Deep Reinforcement Learning</em> (Mnih et al., 2015)</figcaption>
 </figure>
-<figure>
+<figure class="shadow">
   <img class="w80" src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/ddpg-param.png" alt="DDPG Parameters"/>
   <figcaption>From <em>Continuous Control with Deep Reinforcement Learning</em> (Lillicrap et al., 2016)</figcaption>
 </figure>
-<figure>
+<figure class="shadow">
   <img class="w80" src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/her-param.png" alt="HER Parameters"/>
   <figcaption>From <em>Hindsight Experience Replay</em> (Andrychowicz et al., 2017)</figcaption>
 </figure>
@@ -126,7 +125,7 @@ We omit the discussion of complexity as we have not introduced CER yet.
 
 We expect the reader to be familiar with experience replay. Experience replay is the idea of storing previous transitions and sampling minibatches to train the agent. Experience replay by itself is not a reinforcement learning algorithm: it must be combined with another algorithm to be complete. In this paper, we combine it with Q-learning, following the DQN paradigm. Again, we expect the reader to be familiar with Q-learning.
 
-<figure>
+<figure class="shadow">
   <img class="w80" src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/Watkins89.png" alt="Watkins89"/>
   <figcaption>From page 96 of <em>Learning from Delayed Rewards</em> (Watkins, 1989)</figcaption>
 </figure>
@@ -159,7 +158,7 @@ In **Gridworld**, the agent starts at a start state $S$ and seeks to reach the f
 
 To conduct experiments efficiently, we incorporate **timeout** in all three tasks. In other words, each task has a maximum episode length, and the episode will end automatically after reaching this length. This is necessary in practice since otherwise an episode can be arbitrarily long. Since this is still a modification of the task, we use a large enough timeout (5000, 1000, 10000 steps respectively) to reduce the influence in our results. To further reduce the effects of timeout, we use **partial-episode-bootstrap** (PEB) by Pardo et al. (2017).
 
-<figure>
+<figure class="shadow">
   <img class="w50" src="{{absolute_url}}/assets/blog/slowpapers/a-deeper-look-at-experience-replay/peb.png" alt="Pardo17"/>
   <figcaption>From <em>Time Limits in Reinforcement Learning</em> (Pardo et al., 2017)</figcaption>
 </figure>
