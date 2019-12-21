@@ -11,6 +11,9 @@
         margin-top: 2em;
         margin-bottom: -0.46em;
     }
+    p + hr, ul + hr, ol + hr, a + hr {
+        margin-top: 2em;
+    }
     img, video {
         margin-top: 2em;
         margin-bottom: 2em;
