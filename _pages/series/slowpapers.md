@@ -25,7 +25,7 @@ papers:
   - title: Neural Fitted Q Iteration
     authors: Riedmiller (2005)
     url: /slowpapers/neural-fitted-q-iteration/
-    image_url: /papers/covers/neural-fitted-q-iteration.png
+    image_url: /annotations/covers/nfq.png
 ---
 
 **Slow Papers** is a series of posts that explain important papers in machine learning and deep learning. With Slow Papers, you will be able to gain a deep understanding of the papers behind important theoretical and practical results in machine learning and deep learning.
