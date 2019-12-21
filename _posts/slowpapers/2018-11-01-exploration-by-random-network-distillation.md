@@ -2,12 +2,14 @@
 layout: post
 title: "Slow Papers: Exploration by Random Network Distillation (Burda et al., 2018)"
 author: Seungjae Ryan Lee
-permalink: /slowpapers/exploration-by-random-network-distillation/
+permalink: /slowpapers/rnd/
+redirect_from:
+ - /slowpapers/exploration-by-random-network-distillation/
 tags:
  - reinforcement-learning
  - slowpapers
 
-image: /papers/covers/exploration-by-random-network-distillation.png
+image: /annotations/covers/rnd.png
 image_type: contain
 excerpt: >
     We introduce an exploration bonus for deep reinforcement learning methods that is easy to implement and adds minimal overhead to the computation performed. The bonus is the error of a neural network predicting features of the observations given by a fixed randomly initialized neural network. We also introduce a method to flexibly combine intrinsic and extrinsic rewards. We find that the random network distillation (RND) bonus combined with this increased flexibility enables significant progress on several hard exploration Atari games. In particular we establish state of the art performance on Montezuma's Revenge, a game famously difficult for deep reinforcement learning methods. To the best of our knowledge, this is the first method that achieves better than average human performance on this game without using demonstrations or having access the underlying state of the game, and occasionally completes the first level. This suggests that relatively simple methods that scale well can be sufficient to tackle challenging exploration problems.
@@ -24,6 +26,13 @@ nav:
 - name: 5 Discussion
   permalink: '#5-discussion'
 ---
+
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/papers/rnd.pdf">
+Paper
+</a>
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/annotations/rnd.pdf">
+Annotations
+</a>
 
 ![Abstract]({{absolute_url}}/assets/blog/slowpapers/exploration-by-random-network-distillation/front.png)
 

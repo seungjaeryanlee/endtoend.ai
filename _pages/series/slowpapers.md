@@ -13,18 +13,18 @@ papers:
   - title: "The Obstacle Tower: A Generalization Challenge in Vision, Control, and Planning"
     authors: Juliani et al. (2019)
     url: /slowpapers/obstacle-tower/
-    image_url: /papers/covers/obstacle-tower.png
+    image_url: /annotations/covers/obstacle-tower.png
   - title: Exploration by Random Network Distillation
     authors: Burda et al. (2018)
-    url: /slowpapers/exploration-by-random-network-distillation/
-    image_url: /papers/covers/exploration-by-random-network-distillation.png
+    url: /slowpapers/rnd/
+    image_url: /annotations/covers/rnd.png
   - title: A Deeper Look at Experience Replay
     authors: Zhang and Sutton (2017)
-    url: /slowpapers/a-deeper-look-at-experience-replay
-    image_url: /papers/covers/a-deeper-look-at-experience-replay.png
+    url: /slowpapers/cer/
+    image_url: /annotations/covers/cer.png
   - title: Neural Fitted Q Iteration
     authors: Riedmiller (2005)
-    url: /slowpapers/neural-fitted-q-iteration/
+    url: /slowpapers/nfq/
     image_url: /annotations/covers/nfq.png
 ---
 

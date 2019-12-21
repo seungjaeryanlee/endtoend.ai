@@ -2,12 +2,14 @@
 layout: post
 title: "Slow Papers: A Deeper Look at Experience Replay (Zhang and Sutton, 2017)"
 author: Seungjae Ryan Lee
-permalink: /slowpapers/a-deeper-look-at-experience-replay/
+permalink: /slowpapers/cer/
+redirect_from:
+ - /slowpapers/a-deeper-look-at-experience-replay/
 tags:
  - reinforcement-learning
  - slowpapers
 
-image: /papers/covers/a-deeper-look-at-experience-replay.png
+image: /annotations/covers/cer.png
 image_type: contain
 
 excerpt: >
@@ -28,6 +30,13 @@ nav:
   permalink: '#6-conclusion'
 
 ---
+
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/papers/cer.pdf">
+Paper
+</a>
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/annotations/cer.pdf">
+Annotations
+</a>
 
 **Title**: A Deeper Look at Experience Replay
 
