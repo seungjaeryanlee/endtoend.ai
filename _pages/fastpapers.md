@@ -33,6 +33,7 @@ Each slide summarizes a paper with few sentences and some graphics.
 
 # Table of Contents
 1. [Observational Overfitting in Reinforcement Learning](#obs-overfit)
+2. [Implementation Matters in Deep RL: A Case Study on PPO and TRPO](#implementation-matters)
 
 </textarea></section>
 
@@ -53,5 +54,27 @@ Song et al., 2019 | https://arxiv.org/abs/1912.02975
 - Overparametrization can mitigate observational overfitting and improve generalization.
 
 
+
+</textarea></section>
+
+
+
+
+<section id="implementation-matters" data-markdown><textarea data-template>
+
+# Implementation Matters in Deep RL: A Case Study on PPO and TRPO
+
+Engstrom et al., 2019 | https://openreview.net/forum?id=r1etN1rtPB
+
+<div >
+  <img class="w40" src="{{ absolute_url }}/assets/fastpapers/implementation-matters/definition.png" alt="">
+  <img class="w50" src="{{ absolute_url }}/assets/fastpapers/implementation-matters/table23.png" alt="">
+</div>
+
+- Proximal Policy Optimization (PPO) has a lot of "code-level optimizations" such as value function clipping, reward scaling, orthogonal initialization, layer scaling, and learning rate annealing.
+- An ablation study shows that the clipping objective of PPO is not as important as its code-level optimizations. 
+  - PPO without clipped objective (PPO-NoClip) achieves similar performance to PPO.
+  - TRPO with the "code-level optimizations" (TRPO+) performs better than PPO in 3 of 4 tasks.
+- The clipped objective fails to maintain the KL-based trust region of PPO, but it is maintained by its code-level optimizations.
 
 </textarea></section>
