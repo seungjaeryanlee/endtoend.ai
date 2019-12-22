@@ -3,8 +3,12 @@ layout: post
 title: "Slow Papers: [PAPER TITLE] ([PAPER AUTHORS], [PAPER YEAR])"
 author: Seungjae Ryan Lee
 permalink: /slowpapers/[PAPER-TAG]/
+tags:
+ - slowpapers
+ - [RELATED TAG 2]
 
-image: /assets/blog/slowpapers/[PAPER-TAG]/front.png
+
+image: /annotations/covers/[PAPER-TAG].png
 image_type: contain
 excerpt: >
     [PAPER ABSTRACT]
@@ -12,29 +16,31 @@ excerpt: >
 nav:
 - name: 1 Introduction
   permalink: '#1-introduction'
+- name: Final Thoughts
+  permalink: '#final-thoughts'
 ---
 
-![Abstract]({{absolute_url}}/assets/blog/slowpapers/[PAPER-TAG]/front.png)
+This is a part of the [**Slow Papers**](/slowpapers) series that peruses each selected paper slowly to gain a deeper understanding of the paper.
+
+<div>
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/papers/[PAPER-TAG].pdf">
+Paper
+</a>
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/annotations/[PAPER-TAG].pdf">
+Annotations
+</a>
+</div>
+
 
 **Title**: [PAPER TITLE]
 
-**Authors**
-<div>
-<ul class="slowpapers__authors">
-  <li>[AUTHOR 1]</li>
-  <li>[AUTHOR 2]</li>
-</ul>
-</div>
+**Authors**: [PAPER AUTHORS]
 
 **Prerequisites**
  - TBA
 
 **Accompanying Resources**
  - TBA
-
-<hr/>
-
-This is a part of the [**Slow Papers**](/slowpapers) series that peruses each selected paper slowly to gain a deeper understanding of the paper.
 
 <hr/>
 
