@@ -4,12 +4,17 @@ title: "Slow Papers"
 permalink: /slowpapers/
 redirect_from:
  - /tags/slowpapers/
+ - /blog/tags/slowpapers/
 
 papers:
   # - title: Leveraging Demonstrations for Deep Reinforcement Learning on Robotics Problems with Sparse Rewards
   #   authors: Vecerik et al. (2017)
   #   url: /slowpapers/leveraging-demonstrations-for-deep-reinforcement-learning-on-robotics-problems-with-sparse-rewards/
   #   image_url: /papers/covers/leveraging-demonstrations-for-deep-reinforcement-learning-on-robotics-problems-with-sparse-rewards.png
+  # - title: "Asynchronous Methods for Deep Reinforcement Learning"
+  #   authors: Mnih et al. (2016)
+  #   url: /slowpapers/a3c/
+  #   image_url: /annotations/covers/a3c.png
   - title: "The Obstacle Tower: A Generalization Challenge in Vision, Control, and Planning"
     authors: Juliani et al. (2019)
     url: /slowpapers/obstacle-tower/

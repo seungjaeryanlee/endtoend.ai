@@ -4,8 +4,8 @@ title: "Slow Papers: The Obstacle Tower: A Generalization Challenge in Vision, C
 author: Seungjae Ryan Lee
 permalink: /slowpapers/obstacle-tower/
 tags:
- - reinforcement-learning
  - slowpapers
+ - reinforcement-learning
 
 image: /annotations/covers/obstacle-tower.png
 image_type: contain
