@@ -42,10 +42,10 @@ featured_page:
   #     - reinforcement-learning
   #     - gsoc
   #     - tensorflow
-  link: /rl-weekly/37
-  title: "RL Weekly 37: Observational Overfitting, Hindsight Credit Assignment, and Procedurally Generated Environment Suite"
-  supporting_text: "In this issue, we look at Google and MIT's study on the observational overfitting phenomenon and how overparametrization helps generalization, a new family of algorithms using hindsight credit assignment by DeepMind, and a new environment suite by OpenAI consisting of procedurally generated environments."
-  image_url: /assets/blog/rl-weekly/37/obs_overfit.png
+  link: /rl-weekly/38
+  title: "RL Weekly 38: Clipped objective is not why PPO works, and the Trap of Saliency maps"
+  supporting_text: "In this issue, we look at the effect of PPO's code-level optimizations and the study of saliency maps in RL."
+  image_url: /assets/blog/rl-weekly/38/table23.png
   cover_or_contain: contain
   tags:
     - reinforcement-learning
