@@ -36,6 +36,7 @@ h1 .fastpapers__tags__tag {
   border-radius: 5px;
   line-height: 0.5;
 }
+/* Hex codes from https://digitalsynopsis.com/design/minimal-web-color-palettes-combination-hex-code/ */
 .fastpapers__tags .fastpapers__tags__tag--venue {
   background-color: #355C7D;
   color: white !important;
