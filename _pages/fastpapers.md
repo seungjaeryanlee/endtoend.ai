@@ -77,6 +77,22 @@ Each slide summarizes a paper with few sentences and some graphics.
 
 
 
+
+
+
+<section id="how-to-read" style="height: 100%" data-markdown><textarea data-template>
+
+# How to Read Papers
+
+<iframe style="width: 100%; height: 80%;" src="https://www.youtube.com/embed/733m6qBH-jI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</textarea></section>
+
+
+
+
+
+
 <section id="toc" data-markdown><textarea data-template>
 
 # Table of Contents
