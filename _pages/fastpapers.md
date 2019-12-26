@@ -98,6 +98,7 @@ Each slide summarizes a paper with few sentences and some graphics.
 # Table of Contents
 1. [Observational Overfitting in Reinforcement Learning](#obs-overfit)
 2. [Implementation Matters in Deep RL: A Case Study on PPO and TRPO](#implementation-matters)
+3. [How much Position Information Do Convolutional Neural Networks Encode?](#posenet)
 
 </textarea></section>
 
@@ -126,6 +127,7 @@ Each slide summarizes a paper with few sentences and some graphics.
 
   1. [Observational Overfitting in Reinforcement Learning](#obs-overfit)
   2. [Implementation Matters in Deep RL: A Case Study on PPO and TRPO](#implementation-matters)
+  3. [How much Position Information Do Convolutional Neural Networks Encode?](#posenet)
 
   </textarea></section>
 
@@ -143,6 +145,7 @@ Each slide summarizes a paper with few sentences and some graphics.
 
   <ol>
   <li><div class="fastpapers__tags"><a class="fastpapers__tags__tag fastpapers__tags__tag--topic" href="#topic-reinforcement-learning">Reinforcement Learning</a></div></li>
+  <li><div class="fastpapers__tags"><a class="fastpapers__tags__tag fastpapers__tags__tag--topic" href="#topic-computer-vision">Computer Vision</a></div></li>
   </ol>
 
   </textarea></section>
@@ -155,6 +158,16 @@ Each slide summarizes a paper with few sentences and some graphics.
 
   1. [Observational Overfitting in Reinforcement Learning](#obs-overfit)
   2. [Implementation Matters in Deep RL: A Case Study on PPO and TRPO](#implementation-matters)
+
+  </textarea></section>
+
+
+
+  <section id="topic-computer-vision" data-markdown><textarea data-template>
+
+  <h1><div class="fastpapers__tags"><a class="fastpapers__tags__tag fastpapers__tags__tag--topic" href="#topic-computer-vision">Computer Vision</a></div></h1>
+
+  1. [How much Position Information Do Convolutional Neural Networks Encode?](#posenet)
 
   </textarea></section>
 
@@ -225,5 +238,41 @@ Each slide summarizes a paper with few sentences and some graphics.
   - PPO without clipped objective (PPO-NoClip) achieves similar performance to PPO.
   - TRPO with the "code-level optimizations" (TRPO+) performs better than PPO in 3 of 4 tasks.
 - The clipped objective fails to maintain the KL-based trust region of PPO, but it is maintained by its code-level optimizations.
+
+</textarea></section>
+
+
+
+
+
+
+
+<section id="posenet" data-markdown><textarea data-template>
+
+# How much Position Information Do Convolutional Neural Networks Encode?
+
+<p class="fastpapers__source">
+<span class="fastpapers__source__authors">Islam, Jia, and Bruce, 2019</span>
+|
+<a class="fastpapers__source__link" href="https://openreview.net/forum?id=rJeB36NKvB">https://openreview.net/forum?id=rJeB36NKvB</a>
+</p>
+
+<div class="fastpapers__tags">
+<a class="fastpapers__tags__tag fastpapers__tags__tag--venue" href="#venue-iclr2020">ICLR2020</a>
+<a class="fastpapers__tags__tag fastpapers__tags__tag--topic" href="#topic-computer-vision">Computer Vision</a>
+</div>
+
+<div >
+  <img class="w60" src="{{ absolute_url }}/assets/fastpapers/posenet/architecture.png" alt="">
+</div>
+
+- CNNs implicitly encode absolute positional information, and this comes mainly from the zero-padding.
+- Freeze the encoder network (VGG or ResNet) pre-trained on ImageNet, and use its features as the input to the position encoding module (PosENet).
+- Train the PosENet with a ground truth image independent of the encoder's image input.
+- If the CNN cannot encode absolute positional information, the output of the module will be random. It the CNN can, the output will resemble the ground truth image.
+- Experiments show that the module can successfully predict the position map, and that more zero-padding results in higher correlation and lower mean absolute error.
+
+
+
 
 </textarea></section>
