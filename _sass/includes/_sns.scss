@@ -7,6 +7,7 @@ $twitter_color: #55acee;
 $email_color: #9F0303;
 $linkedin_color: #0077B5;
 $github_color: #333;
+$scholar_color: #4285F4;
 
 .container {
   position: fixed;
@@ -18,8 +19,8 @@ $github_color: #333;
 .sns_btn {
   display: inline-block;
   color: #fff;
-  height: 2em;
-  width: 2em;
+  height: 3em;
+  width: 3em;
   position: relative;
   // text-align: center;
   // clear:both;
@@ -78,6 +79,14 @@ $github_color: #333;
   background: $email_color;
   &:hover {
     color: $email_color;
+    background: #fff;
+  }
+}
+
+.btn_scholar {
+  background: $scholar_color;
+  &:hover {
+    color: $scholar_color;
     background: #fff;
   }
 }

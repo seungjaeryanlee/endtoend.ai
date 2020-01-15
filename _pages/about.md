@@ -1,5 +1,5 @@
 ---
 layout: about
-title: About
+title: Seungjae Ryan Lee
 permalink: /about/
 ---
