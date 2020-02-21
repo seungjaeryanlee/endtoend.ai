@@ -42,10 +42,10 @@ featured_page:
   #     - reinforcement-learning
   #     - gsoc
   #     - tensorflow
-  link: /rl-weekly/38
-  title: "RL Weekly 38: Clipped objective is not why PPO works, and the Trap of Saliency maps"
-  supporting_text: "In this issue, we look at the effect of PPO's code-level optimizations and the study of saliency maps in RL."
-  image_url: /assets/blog/rl-weekly/38/table23.png
+  link: /rl-weekly/39
+  title: "RL Weekly 39: Intrinsic Motivation for Cooperation and Amortized Q-Learning"
+  supporting_text: "In this issue, we look at using intrinsic rewards to encourage cooperation in two-agent MDP. We also look at replacing maximization in Q-learning over all actions with a neural network to use Q-learning in environments with big action spaces."
+  image_url: /assets/blog/rl-weekly/39/synergistic_overview.png
   cover_or_contain: contain
   tags:
     - reinforcement-learning
