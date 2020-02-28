@@ -99,6 +99,7 @@ Each slide summarizes a paper with few sentences and some graphics.
 1. [Observational Overfitting in Reinforcement Learning](#obs-overfit)
 2. [Implementation Matters in Deep RL: A Case Study on PPO and TRPO](#implementation-matters)
 3. [How much Position Information Do Convolutional Neural Networks Encode?](#posenet)
+4. [Intrinsic Motivation for Encouraging Synergistic Behavior](#intrinsic-reward-synergy)
 
 </textarea></section>
 
@@ -128,6 +129,7 @@ Each slide summarizes a paper with few sentences and some graphics.
   1. [Observational Overfitting in Reinforcement Learning](#obs-overfit)
   2. [Implementation Matters in Deep RL: A Case Study on PPO and TRPO](#implementation-matters)
   3. [How much Position Information Do Convolutional Neural Networks Encode?](#posenet)
+  4. [Intrinsic Motivation for Encouraging Synergistic Behavior](#intrinsic-reward-synergy)
 
   </textarea></section>
 
@@ -158,6 +160,7 @@ Each slide summarizes a paper with few sentences and some graphics.
 
   1. [Observational Overfitting in Reinforcement Learning](#obs-overfit)
   2. [Implementation Matters in Deep RL: A Case Study on PPO and TRPO](#implementation-matters)
+  3. [Intrinsic Motivation for Encouraging Synergistic Behavior](#intrinsic-reward-synergy)
 
   </textarea></section>
 
@@ -274,5 +277,39 @@ Each slide summarizes a paper with few sentences and some graphics.
 
 
 
+
+</textarea></section>
+
+
+
+
+
+
+
+<section id="intrinsic-reward-synergy" data-markdown><textarea data-template>
+
+# Intrinsic Motivation for Encouraging Synergistic Behavior
+
+<p class="fastpapers__source">
+<span class="fastpapers__source__authors">Chitnis et al., 2020</span>
+|
+<a class="fastpapers__source__link" href="https://arxiv.org/abs/2002.05189">https://arxiv.org/abs/2002.05189</a>
+</p>
+
+<div class="fastpapers__tags">
+<a class="fastpapers__tags__tag fastpapers__tags__tag--venue" href="#venue-iclr2020">ICLR2020</a>
+<a class="fastpapers__tags__tag fastpapers__tags__tag--topic" href="#topic-reinforcement-learning">Reinforcement Learning</a>
+</div>
+
+<div >
+  <img class="w60" src="{{ absolute_url }}/assets/fastpapers/intrinsic-reward-synergy/intrinsic_reward_synergy.png" alt="">
+</div>
+
+- Consider a sparse-reward two-agent environment, where two agents must cooperate to perform a task.
+- If the task requires both agents to cooperatively act, then a single agent would be unable to complete it.
+- Train a forward model that predicts the next state given the current state and a single agent's action, where the other agent does nothing. This model does not understand cooperation, since it is only trained on single-agent transitions.
+- This forward model will predict the outcome well if the two agents act separately, but if the two actions are synergistic, the forward model will have large prediction error. This prediction error can be used as the intrinsic reward.
+- Instead of using real transitions, a joint forward model can be used to calcualte the prediction error. Although this model generates less accurate transitions, it allows for the computation of analytical gradients.
+- Experiments show that agents trained with this intrinsic reward perform better in 6 synergistic tasks than using just the extrinsic rewards or using the single-agent surprised-based intrinsic reward. Using joint forward model with analytical gradients increases the agents' performance further.
 
 </textarea></section>
