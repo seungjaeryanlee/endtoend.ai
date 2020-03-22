@@ -29,9 +29,9 @@ nav:
 - name: "결론"
   permalink: "#in-conclusion"
 
-image: /assets/blog/misc/two-year-retrospective/front.png
+image: /assets/blog/misc/fastai-coronavirus-korean/image3.jpeg
 image_type: contain
-excerpt: "TODO"
+excerpt: "이 글은 2020년 3월 9일에 작성된 Jeremy Howard 와 Rachel Thomas 가 쓴 Covid-19, your community, and you — a data science perspective의 번역본입니다."
 ---
 
 ## 번역 정보 {#preface}
