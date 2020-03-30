@@ -42,10 +42,10 @@ featured_page:
   #     - reinforcement-learning
   #     - gsoc
   #     - tensorflow
-  link: /rl-weekly/39
-  title: "RL Weekly 39: Intrinsic Motivation for Cooperation and Amortized Q-Learning"
-  supporting_text: "In this issue, we look at using intrinsic rewards to encourage cooperation in two-agent MDP. We also look at replacing maximization in Q-learning over all actions with a neural network to use Q-learning in environments with big action spaces."
-  image_url: /assets/blog/rl-weekly/39/synergistic_overview.png
+  link: /rl-weekly/40
+  title: "RL Weekly 40: Catastrophic Interference and Policy Evaluation Networks"
+  supporting_text: "In this issue, we look at two papers combating catastrophic interference. Memento combats interference by training two independent agents where the second agent takes off when the first agent is finished. D-NN and TC-NN reduce interference by mapping the input space to a higher-dimensional space. We also look at Policy Evaluation Network, a network that predicts the expected return given a policy."
+  image_url: /assets/blog/rl-weekly/40/montezuma_breakout.png
   cover_or_contain: contain
   tags:
     - reinforcement-learning
