@@ -16,7 +16,7 @@ details: true
 
 For the next months, I will also be using my machine learning knowledge to gain insight into the COVID-19 disease. However, instead of trying to improve the work of experts in existing fields, I will use machine learning to understand the general aspects of COVID-19. Specifically, my work will be on **Estimating the Impact of Public Policies and Social Measures against COVID-19 with Machine Learning**.  There are many public policies created to deter the spread of COVID-19 such as recommending or requiring postponement or cancellation of large-scale events. Also, the community has also voluntarily responded through social measures such as wearing masks and social distancing. These efforts have been recognized as a crucial factor to the difference in the growth rate of countries around the world, but most claims simply argue that such measures were effective because one country that took such measures did better than another. The goal of this project is to systematically and quantitatively analyze the importance of these factors to support or deny the claims being made in media today.
 
-The work will be described in a series of blog posts. Below is a planned topic that each blog post will address, but note that this could be changed.
+The work will be described in a series of blog posts. Below is the planned topic that each blog post will address, but note that this could be changed.
 
 1. Background Research I: Datasets and Visualizations
 2. Background Research II: Literature Review
