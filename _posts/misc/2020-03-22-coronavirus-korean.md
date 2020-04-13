@@ -5,7 +5,7 @@ author: Seungjae Ryan Lee
 permalink: blog/fastai-coronavirus-korean/
 tags:
  - korean
- - coronavirus
+ - covid-19
 
 nav:
 - name: "번역 정보"
