@@ -1,14 +1,14 @@
 ---
 layout: tag
-title: COVID-19
-tag: COVID-19
-permalink: /blog/tags/covid-19/
+title: Estimating the Impact of Public Policies and Social Measures against COVID-19 with Machine Learning
+tag: covid-19-project
+permalink: /blog/tags/covid-19-project/
 redirect_from:
- - /tags/coronavirus/
- - /tags/covid-19/
- - /tags/covid/
- - /blog/tags/coronavirus/
- - /blog/tags/covid/
+ - /tags/coronavirus-project/
+ - /tags/covid-19-project/
+ - /tags/covid-project/
+ - /blog/tags/coronavirus-project/
+ - /blog/tags/covid-project/
 details: true
 ---
 
