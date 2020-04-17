@@ -10,7 +10,7 @@ tags:
 
 image: /assets/blog/covid-19-project/1/visualization-coronavirus-metro-area-tracker.png
 image_type: contain
-excerpt: "TODO"
+excerpt: "For this first post, I have compiled a list of data visualizations. Data visualizations present the data in a way is more digestable than tables of numbers, allowing for better intuition and help formulating hypotheses."
 
 nav:
 - name: "Visualizations"
