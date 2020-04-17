@@ -18,10 +18,13 @@ For the next months, I will also be using my machine learning knowledge to gain 
 
 The work will be described in a series of blog posts. Below is the planned topic that each blog post will address, but note that this could be changed.
 
-1. Background Research I: Datasets and Visualizations
-2. Background Research II: Literature Review
-3. Background Reserach III: Explainable AI (XAI)
-4. Baseline Algorithm I: JHU CSSE Dataset
-5. Baseline Algorithm II: Country-specific Non-COVID-19 Data
-6. Improvement I: Oxford Government Response Dataset
-7. Improvement II: (Social Measures)
+1. [Background Research I: Visualizations](/blog/covid-19-project/1)
+1. Background Research II: Datasets
+1. Background Research III: General Literature Review
+1. Background Reserach IV: Explainable AI (XAI)
+1. Background Reserach V: Prior Works
+1. Research Hypothesis
+1. Baseline Algorithm I: JHU CSSE Dataset
+1. Baseline Algorithm II: Country-specific Non-COVID-19 Data
+1. Improvement I: Oxford Government Response Dataset
+1. Improvement II: (Social Measures)
