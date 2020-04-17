@@ -19,7 +19,7 @@ For the next months, I will also be using my machine learning knowledge to gain 
 The work will be described in a series of blog posts. Below is the planned topic that each blog post will address, but note that this could be changed.
 
 1. [Background Research I: Visualizations](/blog/covid-19-project/1)
-1. Background Research II: Datasets
+1. [Background Research II: Datasets](/blog/covid-19-project/2)
 1. Background Research III: General Literature Review
 1. Background Reserach IV: Explainable AI (XAI)
 1. Background Reserach V: Prior Works

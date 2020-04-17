@@ -16,7 +16,11 @@ nav:
 - name: "Visualizations"
   permalink: "#visualizations"
 
-# related:
+related:
+- title: "COVID-19 Project: Background Research II: Datasets"
+  link: /blog/covid-19-project/2
+  image: /assets/blog/covid-19-project/2/covid-chestxray-dataset.png
+  image_type: contain
 ---
 
 <style>
