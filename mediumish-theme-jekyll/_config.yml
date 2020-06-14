@@ -15,11 +15,11 @@ authors:
   ryan:
     name: Seungjae Ryan Lee
     display_name: Ryan
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    avatar_link: https://www.seungjaeryanlee.com/img/me.jpg
     email: seungjaeryanlee@gmail.com
     web: https://www.seungjaeryanlee.com
     twitter: https://twitter.com/seungjaeryanlee
-    description: "TODO."
+    description: ""
 
 # Plugins
 plugins:
