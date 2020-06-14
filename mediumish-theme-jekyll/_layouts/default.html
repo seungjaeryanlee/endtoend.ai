@@ -147,6 +147,18 @@
                 {% endfor %}
             {% endif %}
             {% assign categories_list = nil %}
+            
+            {% assign tags_list = site.tags %}
+            {% if tags_list.first[0] == null %}
+                {% for tag in tags_list %}
+                    <a class="mt-1 mb-1" href="{{site.baseurl}}/tags#{{ tag | url_escape | strip | replace: ' ', '-' }}">#{{ tag | camelcase }} ({{ site.tags[tag].size }})</a>
+                {% endfor %}
+            {% else %}
+                {% for tag in tags_list %}
+                    <a class="mt-1 mb-1" href="{{site.baseurl}}/tags#{{ tag[0] | url_escape | strip | replace: ' ', '-' }}">#{{ tag[0] | camelcase }} ({{ tag[1].size }})</a>
+                {% endfor %}
+            {% endif %}
+            {% assign tags_list = nil %}
 		</div>
 	</div>
 </div>
