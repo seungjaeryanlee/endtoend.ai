@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
 <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
 
 <title>{{ page.title }} | {{site.name}}</title>
@@ -77,22 +78,6 @@ ga('send', 'pageview');
                 <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
                 </li>
 
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/"> Docs</a>
-                </li>
-
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-wordpress/"><i class="fab fa-wordpress-simple"></i> WP Version</a>
-                </li>
-
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-ghost/"><i class="fab fa-snapchat-ghost"></i> Ghost Version</a>
-                </li>
-
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://github.com/wowthemesnet/mediumish-theme-jekyll"><i class="fab fa-github"></i> Fork on Github</a>
-                </li>
-
                 {% include search-lunr.html %}
 
             </ul>
@@ -130,7 +115,7 @@ ga('send', 'pageview');
 ================================================== -->
 <div class="alertbar">
 	<div class="container text-center">
-		<span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}"> &nbsp; Never miss an issue of <b>RL Weekly</b> from us, subscribe to our newsletter</span>
+		<span><img style="max-height: 30px;" src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}"> &nbsp; Never miss an issue of <b>RL Weekly</b> from us, subscribe to our newsletter</span>
         <form action="https://www.getrevue.co/profile/seungjaeryanlee/add_subscriber" method="post" name="revue-form" target="_blank">
             <div class="mc-field-group">
                 <input type="email" placeholder="Email" name="member[email]" class="required email" id="member_email" autocomplete="on" required>
@@ -173,9 +158,6 @@ ga('send', 'pageview');
         <div class="row">
             <div class="col-md-6 col-sm-6 text-center text-lg-left">
                 Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
-            </div>
-            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
-                <a target="_blank" href="https://www.wowthemes.net/mediumish-free-jekyll-template/">Mediumish Jekyll Theme</a> by WowThemes.net
             </div>
         </div>
     </div>
