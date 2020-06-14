@@ -1,0 +1,10 @@
+{% if page.nav %}
+    <nav class="sidebar-toc">
+        <p class="title">TOC</p>
+        <ul>
+            {% for heading in page.nav %}
+                <li><a href="{{ heading.permalink }}">&nbsp;{{ heading.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+{% endif %}

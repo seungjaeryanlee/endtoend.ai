@@ -899,3 +899,35 @@ iframe {
     opacity: 0;
     transition: opacity .25s;
 }
+
+
+/* Custom */
+.sidebar-toc {
+    display: none;
+    text-align: center;
+}
+
+.sidebar-toc ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.sidebar-toc li {
+    font-size: 14px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidebar-toc .title {
+    margin-bottom: 6px;
+    color: rgba(0, 0, 0, .44);
+    fill: rgba(0, 0, 0, .44);
+}
+
+@media (min-width: 768px) {
+    .sidebar-toc {
+        display: block;
+    }
+}
