@@ -7,7 +7,6 @@ favicon: 'assets/images/logo.png'
 # baseurl: /
 google_analytics: 'UA-117425613-1'
 disqus: 'www-endtoend-ai'
-# newsletter: 'https://www.getrevue.co/profile/seungjaeryanlee'
 include: ["_pages"]
 permalink: /:title/
 
