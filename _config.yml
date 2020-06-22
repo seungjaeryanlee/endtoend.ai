@@ -34,30 +34,14 @@ plugins:
  - jekyll-sitemap
 
 featured_page:
-  # link: /blog/gsoc/7
-  # title: "GSoC TensorFlow Part 7: Retrospective"
-  # supporting_text: "As of August 27th, the Google Summer of Code coding phase is officially over. In this post, I look back at the summer, reviewing my accomplishments and shortcomings. Because I will continue contributing to TensorFlow and TF-Agents, I also outline my plans for the next fall."
-  # image_url: /assets/blog/gsoc/gsoc_tensorflow.png
-  # cover_or_contain: contain
-  # tags:
-  #     - reinforcement-learning
-  #     - gsoc
-  #     - tensorflow
-  link: /rl-weekly/40
-  title: "RL Weekly 40: Catastrophic Interference and Policy Evaluation Networks"
-  supporting_text: "In this issue, we look at two papers combating catastrophic interference. Memento combats interference by training two independent agents where the second agent takes off when the first agent is finished. D-NN and TC-NN reduce interference by mapping the input space to a higher-dimensional space. We also look at Policy Evaluation Network, a network that predicts the expected return given a policy."
-  image_url: /assets/blog/rl-weekly/40/montezuma_breakout.png
+  link: /rl-weekly/41
+  title: "RL Weekly 41: Adversarial Policies, Image Augmentation, and Self-Supervised Exploration with World Models"
+  supporting_text: "In this issue, we look at adversarial policy learning, image augmentation in RL, and self-supervised exploration through world models."
+  image_url: /assets/blog/rl-weekly/41/adversarial-policies-cover.png
   cover_or_contain: contain
   tags:
     - reinforcement-learning
     - rl-weekly
-  # link: /blog/neurips2019-rl
-  # title: "Reinforcement Learning Papers Accepted to NeurIPS 2019"
-  # supporting_text: "I have compiled a list of 184 reinforcement learning papers accepted to NeurIPS 2019."
-  # image_url: /assets/blog/misc/neurips2019-rl/neurips.png
-  # cover_or_contain: contain
-  # tags:
-  #   - reinforcement-learning
 
 front_page_links:
   - name: "RL Weekly"
